@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-49] No way to set defaults other than Strings</title>
+<link>http://issues.osjava.org/jira/browse/RRR-49</link>
+
+                    <description>Most notably, setting the time to &apos;now&apos; would be useful.</description>
+                <environment/>
+            <key id='10325'>RRR-49</key>
+        <summary>No way to set defaults other than Strings</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 16 Dec 2004 16:27:15 -0800 (PST)</created>
+    <updated>Thu, 16 Dec 2004 16:27:15 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

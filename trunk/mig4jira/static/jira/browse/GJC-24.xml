@@ -1,0 +1,53 @@
+<item>
+<title>[GJC-24] Wrong number of fields when last character is fieldDelimiter</title>
+<link>http://issues.osjava.org/jira/browse/GJC-24</link>
+
+                    <description>CsvReader readerA = new CsvReader(new StringReader(&amp;quot;1;2;;&amp;quot;)&lt;br/&gt;
+CsvReader readerB = new CsvReader(new StringReader(&amp;quot;1;2;;4&amp;quot;)&lt;br/&gt;
+&lt;br/&gt;
+assertTrue(readerA.readLine().length == readerB.readLine().length)&lt;br/&gt;
+&lt;br/&gt;
+// Shouldn&apos;t both readers return the same number, ie 4 in this example?</description>
+                <environment>Java HotSpot(TM) Client VM (build 1.4.2_05-b04, mixed mode)</environment>
+            <key id='10255'>GJC-24</key>
+        <summary>Wrong number of fields when last character is fieldDelimiter</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='dserodio'>Daniel Serodio</reporter>
+            
+    <created>Mon, 2 Aug 2004 12:00:23 -0700 (PDT)</created>
+    <updated>Wed, 22 Sep 2004 20:00:19 -0700 (PDT)</updated>
+
+                        <version>csv-1.0</version>
+            
+                        <fixVersion>csv-1.1</fixVersion>
+            
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10243' created='Wed, 22 Sep 2004 19:45:27 -0700 (PDT)'>Seems that it should. &lt;br/&gt;
+&lt;br/&gt;
+Will either fix that in a next release, or I might be merging this code in with someone elses at Jakarta Commons.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

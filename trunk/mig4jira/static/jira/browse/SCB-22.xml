@@ -1,0 +1,42 @@
+<item>
+<title>[SCB-22] Ability to scrape pop:// urls</title>
+<link>http://issues.osjava.org/jira/browse/SCB-22</link>
+
+                    <description>Need a plugin to fetch from pop mail boxes.</description>
+                <environment/>
+            <key id='10400'>SCB-22</key>
+        <summary>Ability to scrape pop:// urls</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Aug 2005 18:21:37 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 21:36:19 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.6</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

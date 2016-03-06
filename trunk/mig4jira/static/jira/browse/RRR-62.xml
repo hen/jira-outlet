@@ -1,0 +1,54 @@
+<item>
+<title>[RRR-62] &apos;Enter Information&apos; needs to clear previous value in URL.</title>
+<link>http://issues.osjava.org/jira/browse/RRR-62</link>
+
+                    <description>after selecting your resources and entering your infomation, click again on &apos;enter information&apos; and choose a different value.  the old information remains in the url and is still used since it comes before the new information.&lt;br/&gt;
+&lt;br/&gt;
+here&apos;s an example defective url: &lt;a href=&quot;http://baal.genscape.com:8080/reports/list_renderers.jsp?SqlReportDS=euro&amp;entity-id=60001&amp;_group=eric&amp;_report=mutc&amp;z=1&amp;entity-id=60002&quot;&gt;http://baal.genscape.com:8080/reports/list_renderers.jsp?SqlReportDS=euro&amp;amp;entity-id=60001&amp;amp;_group=eric&amp;amp;_report=mutc&amp;amp;z=1&amp;amp;entity-id=60002&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+notice the two entity_id&apos;s?  60001 will be used. </description>
+                <environment/>
+            <key id='10342'>RRR-62</key>
+        <summary>&apos;Enter Information&apos; needs to clear previous value in URL.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Tue, 11 Jan 2005 13:44:06 -0800 (PST)</created>
+    <updated>Thu, 17 Mar 2005 20:58:18 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10323' created='Wed, 12 Jan 2005 15:16:33 -0800 (PST)'>actually, it needs to preselect with the chosen info too.</comment>
+                    <comment author='bayard' id='10333' created='Thu, 3 Feb 2005 12:53:14 -0800 (PST)'>Eric to test if it&apos;s still a problem.</comment>
+                    <comment author='bayard' id='10353' created='Thu, 17 Mar 2005 20:58:18 -0800 (PST)'>Not essential for 0.4</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+            <subtask id='10353'>RRR-69</subtask>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

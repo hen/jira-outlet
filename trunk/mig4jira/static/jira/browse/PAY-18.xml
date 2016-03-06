@@ -1,0 +1,45 @@
+<item>
+<title>[PAY-18] Create JarSignerPaylet</title>
+<link>http://issues.osjava.org/jira/browse/PAY-18</link>
+
+                    <description/>
+                <environment/>
+            <key id='10377'>PAY-18</key>
+        <summary>Create JarSignerPaylet</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10373'>PAY-14</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 18:00:44 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:49:19 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10371' created='Mon, 16 May 2005 10:48:06 -0700 (PDT)'>Killing until later.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

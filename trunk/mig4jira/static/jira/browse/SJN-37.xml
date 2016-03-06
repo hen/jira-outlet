@@ -1,0 +1,46 @@
+<item>
+<title>[SJN-37] Need to improve how site archiving is done</title>
+<link>http://issues.osjava.org/jira/browse/SJN-37</link>
+
+                    <description>Need to switch the archiving system so that the download page has a download for the website for previous versions. &lt;br/&gt;
+&lt;br/&gt;
+On a release, zip up all of the old documentation and store it??</description>
+                <environment/>
+            <key id='10113'>SJN-37</key>
+        <summary>Need to improve how site archiving is done</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 28 Sep 2003 17:35:18 -0700 (PDT)</created>
+    <updated>Fri, 21 Nov 2003 02:55:44 -0800 (PST)</updated>
+
+                        <version>0.6</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10096' created='Fri, 21 Nov 2003 02:55:44 -0800 (PST)'>This is being ignored.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

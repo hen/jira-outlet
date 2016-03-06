@@ -1,0 +1,81 @@
+<item>
+<title>[SJN-78] Does not compiled with JDK-1.6</title>
+<link>http://issues.osjava.org/jira/browse/SJN-78</link>
+
+                    <description>is not compiled with JDK-1.,6 since in JDK-1.6 two methods are added to DataSource interface, so we have next errors:
+&lt;br/&gt;
+
+&lt;br/&gt;
+[INFO] Compilation failure
+&lt;br/&gt;
+/home/rssh/packages/simple-jndi/repository/trunk/simple-jndi/src/java/org/osjava/sj/loader/SJDataSource.java:[44,7] org.osjava.sj.loader.SJDataSource is not abstract and does not override abstract method isWrapperFor(java.lang.Class&amp;lt;?&amp;gt;) in java.sql.Wrapper
+&lt;br/&gt;
+
+&lt;br/&gt;
+
+&lt;br/&gt;
+
+&lt;br/&gt;
+/home/rssh/packages/simple-jndi/repository/trunk/simple-jndi/src/java/org/osjava/sj/loader/SJDataSource.java:[44,7] org.osjava.sj.loader.SJDataSource is not abstract and does not override abstract method isWrapperFor(java.lang.Class&amp;lt;?&amp;gt;) in java.sql.Wrapper
+&lt;br/&gt;
+
+&lt;br/&gt;
+</description>
+                <environment>[&lt;a href=&apos;mailto:rssh@a22&apos;&gt;rssh@a22&lt;/a&gt; trunk]$ java -version
+&lt;br/&gt;
+java version &amp;quot;1.6.0_02&amp;quot;
+&lt;br/&gt;
+Java(TM) SE Runtime Environment (build 1.6.0_02-b05)
+&lt;br/&gt;
+Java HotSpot(TM) Client VM (build 1.6.0_02-b05, mixed mode, sharing)
+&lt;br/&gt;
+</environment>
+            <key id='10750'>SJN-78</key>
+        <summary>Does not compiled with JDK-1.6</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='-1'>Unassigned</assignee>
+            
+                        <reporter username='rssh'>Ruslan Shevchenko</reporter>
+            
+    <created>Mon, 4 Feb 2008 17:50:18 -0800 (PST)</created>
+    <updated>Tue, 5 Feb 2008 00:53:30 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.11.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='rssh' id='10650' created='Mon, 4 Feb 2008 17:53:46 -0800 (PST)'>Hmm, Why I can&apos;t attach patch ?
+&lt;br/&gt;
+(patch with fix this will be send to mail list)</comment>
+                    <comment author='bayard' id='10651' created='Tue, 5 Feb 2008 00:53:30 -0800 (PST)'>svn ci -m &amp;quot;Applying Ruslan Shevchenko&apos;s patch for JDK 1.6 compatibility (&lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-78&quot; title=&quot;Does not compiled with JDK-1.6&quot;&gt;&lt;strike&gt;SJN-78&lt;/strike&gt;&lt;/a&gt;)&amp;quot; src pom.xml 
+&lt;br/&gt;
+Sending        pom.xml
+&lt;br/&gt;
+Sending        src/java/org/osjava/sj/loader/SJDataSource.java
+&lt;br/&gt;
+Transmitting file data ..
+&lt;br/&gt;
+Committed revision 2614.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

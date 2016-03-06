@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Poll Plugin for JIRA</title>
+  <style media="screen" type="text/css">
+body {
+    margin: 2em 1em 2em 70px;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+}
+th, td {
+  font-family: sans-serif;
+}
+
+h1,h4 { color: #5a9c00 }
+h1 { font: 170% sans-serif }
+h4 { font: bold 100% sans-serif }
+  </style>  
+</head>
+<body>
+<h1>Poll Plugin for JIRA</h1>
+<p>Created by <a href="http://www.yandell.org/henri/">Henri Yandell</a> at <a href="http://www.sourcelabs.com/">SourceLabs, Inc.</a>. </p>
+<img src="images/LoggedIn.png"/>
+<h4>Legal bit</h4>
+<p>Released under the <a href="http://www.opensource.org/licenses/bsd-license.php">BSD License</a> and Copyright 2007 SourceLabs, Inc. </p>
+<p>This project uses the excellent <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com Silk icons</a>. </p>
+<h4>About the plugin</h4>
+<p>I realized that the JIRA voting mechanism provides site admins with the model needed to setup basic polls. All that was needed to finish the job was the interface. This portlet provides said interface and it's expected that this portlet will be of use in all JIRAs for a myriad of lateral thinking reasons. </p>
+<p>Version 1.0 was released on 13th of May 2007. </p>
+<h4>Installing &amp; Using</h4>
+<p>Install the plugin by downloading the <a href="http://dist.sourcelabs.org/poll/sourcelabs-jira-plugin-portlet-poll-1.0.jar">plugin jar</a>, place it in your <code>$JIRA/WEB-INF/lib/</code> and giving your JIRA a restart. </p>
+<p>Once it's installed you can add it to your dashboard by selecting the <code>Poll</code> portlet. Please follow the instructions from Atlassian for configuring your <a href="http://www.atlassian.com/software/jira/docs/latest/dashboard.html">personal dashboard</a> or the <a href="http://www.atlassian.com/software/jira/docs/latest/default_dashboard.html">default dashboard</a>. </p>
+<p>The source is available for perusing by downloading the <a href="http://dist.sourcelabs.org/poll/jira-poll-1.0-src.zip">source zip</a> and unpacking. </p>
+<h4>Configuring</h4>
+<p>The first of two configurations is a comma-separated list of issue keys who will form the elements of the poll. If you just specify one issue key then its subtasks will be used. </p>
+<p>The second configuration is the title for the poll. If you have specified just the one issue key then this is optional - the summary of the parent issue will be used if the title isn't specified. </p>
+<h4>The future</h4>
+<p>The current plan is to add the following ideas:</p>
+<ul>
+<li>An end date such that a winner is declared at the right time and the issues are closed. </li>
+<li>A more adaptive version that points at a project and lists the highest voted upon issues. There are obvious problems with this approach in that it will cause more and more votes to go to the top items. Another that shows recently voted on might be of value if implementable. </li>
+</ul>
+<h4>Complaints, bugs, ideas...</h4>
+<p>Please mail these to me at henri-at-sourcelabs.com, or add them as comments to the <a href="http://confluence.atlassian.com/display/JIRAEXT/Current+User+Status+Plugin">JIRA plugin page</a>. </p>
+<h4>Screenshots</h4>
+<p>There are two modes for the portlet. Logged in users see the following (also at the top of this page): </p>
+<img src="images/LoggedIn.png"/>
+<p>The information icon takes the user to the page for that issue, the thumb shows whether the user has voted for this issue and the pencil icon is used by the user to vote for an issue or remove their vote. </p>
+<p>The difference for anonymous users is that they don't get access to a few of the icons:</p>
+<img src="images/Anonymous.png"/>
+</body>
+</html>

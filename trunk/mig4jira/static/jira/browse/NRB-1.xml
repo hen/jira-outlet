@@ -1,0 +1,50 @@
+<item>
+<title>[NRB-1] Unit Tests are hardcoded</title>
+<link>http://issues.osjava.org/jira/browse/NRB-1</link>
+
+                    <description>As I&apos;m not sure where the Maven code is running, I haven&apos;t figured out a relative path yet for the unit test data. Ought to be able to look at others projects and understand.</description>
+                <environment>Maven</environment>
+            <key id='10064'>NRB-1</key>
+        <summary>Unit Tests are hardcoded</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 22 Aug 2003 09:46:43 -0700 (PDT)</created>
+    <updated>Mon, 3 May 2004 21:58:02 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10075' created='Sat, 25 Oct 2003 17:19:09 -0700 (PDT)'>Still clueless. Have extracted the variable into one place to make it easier to handle me moving the checked out code to a new place.</comment>
+                    <comment author='bayard' id='10078' created='Sat, 25 Oct 2003 17:53:50 -0700 (PDT)'>obviously not really a blocker as i released regardless</comment>
+                    <comment author='bayard' id='10173' created='Mon, 3 May 2004 21:58:02 -0700 (PDT)'>Fixed. Gooooaaaaallllllll!&lt;br/&gt;
+&lt;br/&gt;
+Nice to get this one out of the way. Was pissing me off. Ended up specifying the location of the data/ as:&lt;br/&gt;
+&lt;br/&gt;
+    private String hardCode = &amp;quot;file://&amp;quot;+new File(&amp;quot;data/&amp;quot;).getAbsoluteFile()+File.separator;&lt;br/&gt;
+</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

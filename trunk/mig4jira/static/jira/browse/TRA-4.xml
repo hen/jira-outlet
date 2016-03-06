@@ -1,0 +1,41 @@
+<item>
+<title>[TRA-4] Wrong attribute value for the list tag</title>
+<link>http://issues.osjava.org/jira/browse/TRA-4</link>
+
+                    <description>When showFinalDelimiter is set to true, the last delimiter is not shown, and vice versa.</description>
+                <environment>All</environment>
+            <key id='10530'>TRA-4</key>
+        <summary>Wrong attribute value for the list tag</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='barakori'>Barak Ori</reporter>
+            
+    <created>Tue, 22 Nov 2005 06:39:05 -0800 (PST)</created>
+    <updated>Tue, 22 Nov 2005 06:39:05 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TRA'>Trail-Taglib</project>
+</item>

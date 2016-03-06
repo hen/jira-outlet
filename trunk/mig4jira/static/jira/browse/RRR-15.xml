@@ -1,0 +1,46 @@
+<item>
+<title>[RRR-15] Create a Param object</title>
+<link>http://issues.osjava.org/jira/browse/RRR-15</link>
+
+                    <description>Params are increasingly becoming first-class and not second-class objects and so should not be just welded onto Report.</description>
+                <environment/>
+            <key id='10276'>RRR-15</key>
+        <summary>Create a Param object</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:53:37 -0700 (PDT)</created>
+    <updated>Sat, 2 Oct 2004 15:44:08 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10246' created='Sat, 2 Oct 2004 15:44:08 -0700 (PDT)'>Done</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

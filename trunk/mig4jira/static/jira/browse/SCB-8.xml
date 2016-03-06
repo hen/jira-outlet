@@ -1,0 +1,44 @@
+<item>
+<title>[SCB-8] Examples zip download</title>
+<link>http://issues.osjava.org/jira/browse/SCB-8</link>
+
+                    <description>There should be an examples zip which contains a fully working examples directory. Possibly with a variable to set for file location.</description>
+                <environment/>
+            <key id='10126'>SCB-8</key>
+        <summary>Examples zip download</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 4 Dec 2003 02:14:59 -0800 (PST)</created>
+    <updated>Thu, 29 Apr 2004 22:02:38 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10166' created='Thu, 29 Apr 2004 22:02:37 -0700 (PDT)'>This is done. Uploaded and documentation updated. </comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

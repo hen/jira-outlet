@@ -1,0 +1,65 @@
+<item>
+<title>[JDF-5] ArrayIndexOutOfBoundsException when comparing jaxb 2.0 and 2.1 APi jars</title>
+<link>http://issues.osjava.org/jira/browse/JDF-5</link>
+
+                    <description>Downloaded latest versions of Sun JAXB APIs, v2.0 and 2.1. Tried to use jardiff to compare the api jars, recieved the following stack trace - &lt;br/&gt;
+&lt;br/&gt;
+java.lang.ArrayIndexOutOfBoundsException: 401&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.objectweb.asm.ClassReader.readByte(Unknown Source)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.objectweb.asm.ClassReader.a(Unknown Source)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.objectweb.asm.ClassReader.a(Unknown Source)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.objectweb.asm.ClassReader.accept(Unknown Source)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.objectweb.asm.ClassReader.accept(Unknown Source)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jardiff.JarDiff.loadClassInfo(JarDiff.java:194)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jardiff.JarDiff.loadClasses(JarDiff.java:257)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jardiff.JarDiff.loadOldClasses(JarDiff.java:293)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jardiff.Main.main(Main.java:238)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at java.lang.reflect.Method.invoke(Method.java:585)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.codehaus.classworlds.Launcher.launchStandard(Launcher.java:410)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.codehaus.classworlds.Launcher.launch(Launcher.java:344)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.codehaus.classworlds.Launcher.main(Launcher.java:474)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at java.lang.reflect.Method.invoke(Method.java:585)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.codehaus.classworlds.boot.Bootstrapper.bootstrap(Bootstrapper.java:209)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.codehaus.classworlds.boot.Bootstrapper.main(Bootstrapper.java:116)</description>
+                <environment>apple osx 10.4, Apple JDK 1.5</environment>
+            <key id='10710'>JDF-5</key>
+        <summary>ArrayIndexOutOfBoundsException when comparing jaxb 2.0 and 2.1 APi jars</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='antony'>Antony Riley</assignee>
+            
+                        <reporter username='bjones'>Bill Jones</reporter>
+            
+    <created>Tue, 3 Jul 2007 08:54:44 -0700 (PDT)</created>
+    <updated>Tue, 3 Jul 2007 08:54:44 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='JDF'>JarDiff</project>
+</item>

@@ -1,0 +1,9 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='SCB-7'>Add a FileStore concept so that scraped data may be saved</issue>
+    <issue status='Closed' key='SCB-5'>Add the PrinterStore, a store that prints out</issue>
+    <issue status='Closed' key='SCB-3'>Needs to respect robots.txt before being unleashed fully</issue>
+    <issue status='Closed' key='SCB-2'>Infinite loops on africainsight.org</issue>
+  </fixes-issues>
+  <name>scraping-engine-0.1</name>
+</version>

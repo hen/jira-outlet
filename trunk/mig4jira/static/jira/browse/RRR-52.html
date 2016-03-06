@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#RRR-52] Logging</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [RRR-52]&#xA0;Logging<br/><span class="subText">
+                   Created: Tue, 21 Dec 2004 14:14:11 -0800 (PST)                       &#xA0;Updated: Thu, 3 Feb 2005 12:54:58 -0800 (PST)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Open</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="RRR.html">ReportRunner</a></td></tr><tr><td><b>Component/s:</b></td><td></td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/RRR-0.3.html">0.3</a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/RRR-0.6.html">0.6</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">New Feature</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/-1.html">None</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Unresolved</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">Usage logging including time taken to run report...</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Wed, 22 Dec 2004 11:48:39 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">ReportRunnerServlet writes to a log file, rrr.log.<br/>
+Then there's a rrr.xml report file that is added to the reportrunner.xml. It uses rrr.log as a resource.<br/>
+<br/>
+Custom report that turns the rrr.log into a Report object. </td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Thu, 23 Dec 2004 14:06:24 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">The rrr.log file is made nicely. Needs to have a header.<br/>
+CsvReport is written, though the resource finding part is yet to be figured out.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Wed, 29 Dec 2004 10:06:11 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">LogQL. Maybe use the perl log.rules scripts I wrote as a design. Regexp should be of use here. Where clause, ordering, grouping is the tricky one.</td></tr></table></body></html>

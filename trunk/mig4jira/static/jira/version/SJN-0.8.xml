@@ -1,0 +1,15 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='SJN-48'>Can/t use System properties to initialise the JNDI</issue>
+    <issue status='Closed' key='SJN-42'>Seems to accept anything as a DS id in java.properties</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-45'>XML variant cannot handle multiple properties to make a List</issue>
+    <issue status='Closed' key='SJN-43'>.ini files do not lod blockless values correctly</issue>
+    <issue status='Closed' key='SJN-42'>Seems to accept anything as a DS id in java.properties</issue>
+    <issue status='Closed' key='SJN-41'>Add examples download</issue>
+    <issue status='Closed' key='SJN-38'>Inline all dependencies and see how it feels</issue>
+    <issue status='Closed' key='SJN-31'>Switch to Log4J</issue>
+  </fixes-issues>
+  <name>0.8</name>
+</version>

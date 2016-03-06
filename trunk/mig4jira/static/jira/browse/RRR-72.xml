@@ -1,0 +1,56 @@
+<item>
+<title>[RRR-72] Results need a Header</title>
+<link>http://issues.osjava.org/jira/browse/RRR-72</link>
+
+                    <description>Results need a Header, probably adding a String[] of headers to the results.&lt;br/&gt;
+&lt;br/&gt;
+Reports would have to set them in various places, Renderers would use them.</description>
+                <environment/>
+            <key id='10356'>RRR-72</key>
+        <summary>Results need a Header</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Feb 2005 14:26:38 -0800 (PST)</created>
+    <updated>Mon, 7 Feb 2005 12:51:01 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Reports</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10344' created='Mon, 7 Feb 2005 12:51:01 -0800 (PST)'>Now handled. Possibly there needs to be a way to turn headers off in renderers at the xml level that is standardized.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                    <customfield id='customfield_10000' key='com.atlassian.jira.plugin.system.customfieldtypes:select'>
+                    <customfieldname>Estimate</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue><![CDATA[EZ - M]]></customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                        </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

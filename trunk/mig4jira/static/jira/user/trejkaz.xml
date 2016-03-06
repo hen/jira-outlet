@@ -1,0 +1,13 @@
+<user>
+  <login>trejkaz</login>
+  <name>Trejkaz</name>
+  <commented>
+    <issue status='Closed' key='GJC-34'>CsvWriter doesn&apos;t gracefully handle null field values</issue>
+    <issue status='Open' key='GJC-31'>Doesn&apos;t quote the field when the field contains a block delimiter</issue>
+  </commented>
+  <reported>
+    <issue status='Closed' key='GJC-34'>CsvWriter doesn&apos;t gracefully handle null field values</issue>
+    <issue status='Open' key='GJC-33'>CSV outputs with the wrong line endings on Windows</issue>
+    <issue status='Open' key='GJC-31'>Doesn&apos;t quote the field when the field contains a block delimiter</issue>
+  </reported>
+</user>

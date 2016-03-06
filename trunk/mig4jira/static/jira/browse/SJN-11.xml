@@ -1,0 +1,42 @@
+<item>
+<title>[SJN-11] Add Types to the system</title>
+<link>http://issues.osjava.org/jira/browse/SJN-11</link>
+
+                    <description>A property com.foo.Value may have a com.foo.Value.type which specifies the classname of the object to use for the value.&lt;br/&gt;
+If it equals java.lang.Integer, and com.foo.Value=12, then it&apos;s akin to doing new Integer(12).</description>
+                <environment/>
+            <key id='10011'>SJN-11</key>
+        <summary>Add Types to the system</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:49:56 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:50:06 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

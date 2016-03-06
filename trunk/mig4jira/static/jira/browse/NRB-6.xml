@@ -1,0 +1,71 @@
+<item>
+<title>[NRB-6] Spec bug; check user agents first and then the first wildcard</title>
+<link>http://issues.osjava.org/jira/browse/NRB-6</link>
+
+                    <description>(Thanks to Tim Patton)&lt;br/&gt;
+&lt;br/&gt;
+User-agent: Project Kolinka Forum Search (&lt;a href=&quot;http://www.kolinka.com&quot;&gt;www.kolinka.com&lt;/a&gt;)&lt;br/&gt;
+Disallow:&lt;br/&gt;
+&lt;br/&gt;
+User-agent: *&lt;br/&gt;
+Disallow: /redir.asp&lt;br/&gt;
+Disallow: /site_redir.asp&lt;br/&gt;
+Disallow: /searchpro.asp&lt;br/&gt;
+Disallow: /memberlist.asp&lt;br/&gt;
+Disallow: /showprofile.asp&lt;br/&gt;
+Disallow: /photosearch.asp&lt;br/&gt;
+Disallow: /albumphoto.asp&lt;br/&gt;
+Disallow: /photo.asp&lt;br/&gt;
+Disallow: /printable.asp&lt;br/&gt;
+Disallow: /post.asp&lt;br/&gt;
+Disallow: /address.asp&lt;br/&gt;
+Disallow: /onlineuser.asp&lt;br/&gt;
+Disallow: /fb.asp&lt;br/&gt;
+Disallow: /postpro.asp&lt;br/&gt;
+&lt;br/&gt;
+I have two blocks here, if I put the Kolinka block 2nd, Norbert will seem to&lt;br/&gt;
+only use the first block, so my robot is disallowed from visiting&lt;br/&gt;
+&amp;quot;printable.asp&amp;quot; even though to a human reader of the file it looks allowed.&lt;br/&gt;
+Is this correct behavior?  I just wanted to clarify before I send notices to&lt;br/&gt;
+webmasters to update their robots.txt if they want my bot to visit.&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10511'>NRB-6</key>
+        <summary>Spec bug; check user agents first and then the first wildcard</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Oct 2005 08:01:09 -0700 (PDT)</created>
+    <updated>Wed, 5 Oct 2005 10:01:16 -0700 (PDT)</updated>
+
+                        <version>0.3.1</version>
+            
+                        <fixVersion>0.3.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10450' created='Wed, 5 Oct 2005 10:01:16 -0700 (PDT)'>Fixed. Create a second RulesEngine instance (for wildcards) and modified the API so that null can indicate that a rule did not match, allowing the second engine to be used.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

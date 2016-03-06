@@ -1,0 +1,46 @@
+<item>
+<title>[GJC-22] enumerateNode cannot handle single-nodes</title>
+<link>http://issues.osjava.org/jira/browse/GJC-22</link>
+
+                    <description>If you enumerateNode when there is only one of those nodes, it seems to return an empty enumeration.</description>
+                <environment/>
+            <key id='10251'>GJC-22</key>
+        <summary>enumerateNode cannot handle single-nodes</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 12 Jul 2004 12:58:43 -0700 (PDT)</created>
+    <updated>Mon, 22 Nov 2004 15:19:54 -0800 (PST)</updated>
+
+                        <version>xml-1.0</version>
+            
+                        <fixVersion>xml-1.1</fixVersion>
+            
+                        <component>gj-xml</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10228' created='Tue, 13 Jul 2004 14:06:42 -0700 (PDT)'>Node was returning EMPTY when it had a single value. Easily fixed and test added.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-81] weird empty param</title>
+<link>http://issues.osjava.org/jira/browse/RRR-81</link>
+
+                    <description>notice the first empty entity-id&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&amp;amp;date-clause=days&amp;amp;entity-id=&amp;amp;entity-id=60045&amp;amp;entity-id=58&amp;amp;entity-id=61&amp;amp;entity-id=60047&amp;amp;num-days=7</description>
+                <environment/>
+            <key id='10366'>RRR-81</key>
+        <summary>weird empty param</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Mon, 21 Mar 2005 14:53:13 -0800 (PST)</created>
+    <updated>Mon, 21 Mar 2005 14:53:13 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

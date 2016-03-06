@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-32] Not possible to mix delimiters</title>
+<link>http://issues.osjava.org/jira/browse/SJN-32</link>
+
+                    <description>An instance of simple-jndi has to have a single delimiter set and is unable to handle different configuration files having their own delimiters. Or for there to be a list of delimiters.</description>
+                <environment/>
+            <key id='10041'>SJN-32</key>
+        <summary>Not possible to mix delimiters</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 9 Aug 2003 00:24:08 -0700 (PDT)</created>
+    <updated>Sun, 28 Nov 2004 06:43:20 -0800 (PST)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.10</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10285' created='Sun, 28 Nov 2004 06:43:20 -0800 (PST)'>This issue is &apos;sort of&apos; fixed.  It was actually moved out of being an issue of Simple-JNDI because it is now controlled by Name objects.  If it&apos;s still an issue, it&apos;s something that SimpleNameParser has to deal with, but I don&apos;t think so.  I think the Name objects deal with this now.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

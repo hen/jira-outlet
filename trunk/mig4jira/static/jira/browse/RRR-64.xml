@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-64] Need page when results are empty</title>
+<link>http://issues.osjava.org/jira/browse/RRR-64</link>
+
+                    <description>EmptyReportException is thrown, and needs to hit a jsp.</description>
+                <environment/>
+            <key id='10344'>RRR-64</key>
+        <summary>Need page when results are empty</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 12 Jan 2005 21:15:12 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:46:31 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10330' created='Thu, 3 Feb 2005 12:38:55 -0800 (PST)'>Yepyepyep.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

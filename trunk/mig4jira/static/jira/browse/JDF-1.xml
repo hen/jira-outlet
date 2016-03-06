@@ -1,0 +1,55 @@
+<item>
+<title>[JDF-1] Listing untrue differences between xmlwriter 2.1 and 2.2</title>
+<link>http://issues.osjava.org/jira/browse/JDF-1</link>
+
+                    <description>The diff report has lots of diffs for AbstractXmlWriter; a class that doesn&apos;t seem to have changed: &lt;a href=&quot;http://dist.osjava.org/releases/multidoc-jnr/xmlwriter/diff-report-2.2_2.1.html&quot;&gt;http://dist.osjava.org/releases/multidoc-jnr/xmlwriter/diff-report-2.2_2.1.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+Based on jars:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.1.jar&quot;&gt;http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.1.jar&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+and&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.2.jar&quot;&gt;http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.2.jar&lt;/a&gt;</description>
+                <environment/>
+            <key id='10580'>JDF-1</key>
+        <summary>Listing untrue differences between xmlwriter 2.1 and 2.2</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_resolved.gif' id='5'>Resolved</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='antony'>Antony Riley</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 13 Feb 2006 09:21:38 -0800 (PST)</created>
+    <updated>Wed, 6 Jun 2007 08:43:18 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='antony' id='10480' created='Mon, 13 Feb 2006 09:30:54 -0800 (PST)'>This is due to a compiler bug.&lt;br/&gt;
+&lt;br/&gt;
+Whatever compiler was used to compile xmlwriter 2.1 did not mark the methods it inserted as synthetic in AbstractXmlWriter.&lt;br/&gt;
+&lt;br/&gt;
+If the compiler doesn&apos;t insert the correct information at compile time, there is no way this can be reconstructed by jardiff.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='JDF'>JarDiff</project>
+</item>

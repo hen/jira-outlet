@@ -1,0 +1,47 @@
+<item>
+<title>[GJC-16] Easy Iterate method</title>
+<link>http://issues.osjava.org/jira/browse/GJC-16</link>
+
+                    <description>Would be very nice to say:  For &amp;quot;table&amp;quot; iterate over child &amp;quot;td&amp;quot;s.&lt;br/&gt;
+&lt;br/&gt;
+Iterator iterate(String container, String tag)</description>
+                <environment/>
+            <key id='10225'>GJC-16</key>
+        <summary>Easy Iterate method</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jun 2004 12:54:30 -0700 (PDT)</created>
+    <updated>Fri, 18 Jun 2004 15:25:24 -0700 (PDT)</updated>
+
+                
+                
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10202' created='Thu, 17 Jun 2004 12:55:04 -0700 (PDT)'>Ought to be an iterate(String tag) too.</comment>
+                    <comment author='bayard' id='10209' created='Fri, 18 Jun 2004 15:25:24 -0700 (PDT)'>String[] getChildren(String,String) exists, so pushing this one back as it is less essential.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

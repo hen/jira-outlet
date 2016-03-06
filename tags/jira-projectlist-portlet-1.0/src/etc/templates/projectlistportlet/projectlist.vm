@@ -1,0 +1,167 @@
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+      <td class="colHeaderLink" colspan="2">
+         <!-- TODO: Find some way to check isGoodBrowser -->
+         #if ($chosenCategories && $chosenCategories.size() > 0)
+         <span class="switch actionLinks subText" id="categories_panel_${portletId}-switch" onclick="CookieUtil.toggleVisibility('categories_panel_$portletId', '$i18n.getText('displaypane.show')', '$i18n.getText('displaypane.hide')', false)">$i18n.getText('displaypane.hide')</span>
+         #end
+          $projectTitle
+          #if ($admin && $includeLinks)
+          <font size="1">
+          (<a href="$req.contextPath/secure/admin/AddProject!default.jspa">$i18n.getText('portlet.projectportlet.createnew')</a>
+          |
+          <a href="$req.contextPath/secure/admin">$i18n.getText('portlet.projectportlet.manage')</a>)</font>
+          #end
+     </td>
+    </tr>
+    #if ($chosenProjects && $chosenProjects.size() > 0)
+      #if ($chosenCategories && $chosenCategories.size() > 0)
+        <script>
+        function changeMenu(portletId) {
+            var select = document.getElementById("category-dropdown-"+portletId);
+            var i = select.selectedIndex;
+            var value = select.options[i].value;
+            var opts = document.forms["project-dropdown-"+portletId].requestId.options;
+
+            #foreach( $category in $chosenCategories )
+             if(value == '$category.id') {
+                opts.length = $chosenCategoryMap.get($category).size() + 1;
+                #set( $index = 1 )
+                #foreach( $project in $chosenCategoryMap.get($category) )
+                  opts[$index].text = '$project.name';
+                  opts[$index].value = '$project.key';
+                  #set( $index = $index + 1 )
+                #end
+             }
+            #end
+            if(value == '-1') {
+                opts.length = $chosenProjects.size() + 1;
+                #set( $index = 1 )
+                #foreach( $project in $chosenProjects )
+                  opts[$index].text = '$project.name';
+                  opts[$index].value = '$project.key';
+                  #set( $index = $index + 1 )
+                #end
+            }
+            if(value == '-2') {
+                opts.length = $noCategory.size() + 1;
+                #set( $index = 1 )
+                #foreach( $project in $noCategory )
+                  opts[$index].text = '$project.name';
+                  opts[$index].value = '$project.key';
+                  #set( $index = $index + 1 )
+                #end
+            }
+        }
+        </script>
+      #end
+            <tr class="rowNormal">
+                <td width="100%">
+                <form action="$req.contextPath/secure/BrowseProjects.jspa" name="project-dropdown-$portletId" onSubmit="if(document.forms['dropdown-$portletId'].requestId.selectedIndex == 0) { window.location='$req.contextPath/secure/BrowseProjects.jspa'; return false; }">
+                <table width="100%"><tr><td align="left">
+                <select name="requestId" onChange="dropdown=document.forms['project-dropdown-$portletId'].requestId; reqId=dropdown.options[dropdown.selectedIndex].value; if(reqId && reqId != '') location.href = '$req.contextPath/browse/' + reqId;">
+                <option value="-1">$i18n.getText('portlet.projectportlet.selecttext')</option>
+                #foreach ($project in $chosenProjects)
+                    <option value="$project.key">$textutils.htmlEncode($project.getString('name'))</option>
+                #end
+                </select>
+                &nbsp;
+                <input type="image" src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.projectlist:projectlist/control_play.png"/>
+                </td>
+                #if ($chosenCategories && $chosenCategories.size() > 0)
+                <td align="right">
+                <img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.projectlist:projectlist/control_rewind.png"/>
+                &nbsp;
+                <select id="category-dropdown-$portletId" name="categoryId" onChange="changeMenu('$portletId')">
+                  <option value="-1">$i18n.getText('portlet.projectportlet.showall')</option>
+                 #foreach ($category in $chosenCategories)
+                    <option value="$category.getLong('id')">$textutils.htmlEncode($category.getString('name'))</option>
+                 #end
+                  <option value="-2">$i18n.getText('portlet.projectportlet.nocategory')</option>
+                </select>
+                </td>
+                #end
+            </tr>
+            </table>
+                </form></td></tr>
+         <tr id="categories_panel_$portletId"><td class="rowNormal">
+          #foreach( $category in $chosenCategories )
+            <table border="0" cellpadding="3" cellspacing="1" width="100%">
+              <tr class=rowHeader>
+                <td class="colHeaderLink" colspan="1">
+                     <span class="switch actionLinks subText" id="categories_panel_${portletId}_${category.id}-switch" onclick="CookieUtil.toggleVisibility('categories_panel_${portletId}_${category.id}', '$i18n.getText('displaypane.show')', '$i18n.getText('displaypane.hide')', false)">$i18n.getText('displaypane.hide')</span>
+                     $category.name - <font size="1">($category.description)</font>:
+                </td>
+              </tr>
+              <tr class="rowNormal">
+              <td>
+                <table width="90%" id="categories_panel_${portletId}_${category.id}">
+                #foreach( $project in $chosenCategoryMap.get($category) )
+                  #if ($velocityCount % 3 == 1)
+                  <tr>
+                  #end
+                  <td>
+                    <a href="$req.contextPath/browse/$project.key">$project.name</a> ($project.key)
+                  </td>
+                  #if ($velocityCount % 3 == 0)
+                  </tr>
+                  #end
+                #end
+                </table>
+              </td>
+              </tr>
+            </table>
+            <script>
+            // Hide by default
+            CookieUtil.toggleVisibility('categories_panel_${portletId}_${category.id}', '$i18n.getText('displaypane.show')', '$i18n.getText('displaypane.hide')', false);
+            </script>
+          #end
+          #if ($noCategory && $noCategory.size() > 0)
+            <table border="0" cellpadding="3" cellspacing="1" width="100%">
+              <tr class=rowHeader>
+                <td class="colHeaderLink" colspan="1">
+                     <span class="switch actionLinks subText" id="categories_panel_${portletId}_nocategory-switch" onclick="CookieUtil.toggleVisibility('categories_panel_${portletId}_nocategory', '$i18n.getText('displaypane.show')', '$i18n.getText('displaypane.hide')', false)">$i18n.getText('displaypane.hide')</span>
+                     $i18n.getText('portlet.projectportlet.nocategory') - <font size="1">($i18n.getText('portlet.projectportlet.nocategory.description'))</font>:
+                </td>
+              </tr>
+              <tr class="rowNormal">
+              <td>
+                <table width="90%" id="categories_panel_${portletId}_nocategory">
+                #foreach( $project in $noCategory )
+                  #if ($velocityCount % 3 == 1)
+                  <tr>
+                  #end
+                  <td>
+                    <a href="$req.contextPath/browse/$project.key">$project.name</a> ($project.key)
+                  </td>
+                  #if ($velocityCount % 3 == 0)
+                  </tr>
+                  #end
+                #end
+                </table>
+              </td>
+              </tr>
+            </table>
+            <script>
+            // Hide by default
+            CookieUtil.toggleVisibility('categories_panel_${portletId}_nocategory', '$i18n.getText('displaypane.show')', '$i18n.getText('displaypane.hide')', false);
+            </script>
+          #end
+         </td></tr>
+      #if ($chosenCategories && $chosenCategories.size() > 0)
+         <script>
+         // Hide by default
+         CookieUtil.toggleVisibility('categories_panel_$portletId', '$i18n.getText('displaypane.show')', '$i18n.getText('displaypane.hide')', false);
+         </script>
+      #end
+    #else
+         <tr bgcolor="#FFFFFF">
+            <td width="100%" colspan="2">
+                $i18n.getText('portlet.projectportlet.noprojects').
+            </td>
+        </tr>
+    #end
+
+</table></td></tr>
+</table>

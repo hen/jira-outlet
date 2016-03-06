@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-38] Pages show the name and not the label for things</title>
+<link>http://issues.osjava.org/jira/browse/RRR-38</link>
+
+                    <description>Laziness mainly, the pages print out the name of the report and not a pretty label that&apos;s nice to read.</description>
+                <environment/>
+            <key id='10312'>RRR-38</key>
+        <summary>Pages show the name and not the label for things</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 19 Nov 2004 11:44:32 -0800 (PST)</created>
+    <updated>Fri, 19 Nov 2004 13:50:55 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

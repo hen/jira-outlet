@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#RRR-16] Writer vs OutputStream</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [RRR-16]&#xA0;Writer vs OutputStream<br/><span class="subText">
+                   Created: Sun, 3 Oct 2004 09:19:06 -0700 (PDT)                       &#xA0;Updated: Thu, 7 Oct 2004 12:54:19 -0700 (PDT)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="RRR.html">ReportRunner</a></td></tr><tr><td><b>Component/s:</b></td><td>Renderers</td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/RRR-.html"></a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/RRR-0.2.html">0.2</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Bug</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">When rendering, should it be to an OutputStream or to a Writer?<br/>
+<br/>
+Excel and images will need an OutputStream. Is there any reason to keep a Writer for the others? They can always use an OutputStreamWriter to get around things.<br/>
+<br/>
+So seems to me....the system should switch to being OutputStream based and not Writer based.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sun, 3 Oct 2004 09:26:12 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Currently both are supported, with an automatic version for OutputStream that promotes it to a Writer.<br/>
+<br/>
+Possibly an AbstractBinaryRenderer class should exist to stop people using the Writer from the other one. Shame you can't make a method abstract that a super class already defines.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Thu, 7 Oct 2004 12:54:19 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">This'll do for now.</td></tr></table></body></html>

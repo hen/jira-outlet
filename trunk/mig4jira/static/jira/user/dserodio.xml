@@ -1,0 +1,7 @@
+<user>
+  <login>dserodio</login>
+  <name>Daniel Serodio</name>
+  <reported>
+    <issue status='Open' key='GJC-24'>Wrong number of fields when last character is fieldDelimiter</issue>
+  </reported>
+</user>

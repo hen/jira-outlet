@@ -1,0 +1,147 @@
+<item>
+<title>[SJN-73] Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException</title>
+<link>http://issues.osjava.org/jira/browse/SJN-73</link>
+
+                    <description>Using shared memory (org.osjava.sj.jndi.shared=true) causes a javax.naming.NameAlreadyBoundException to occur when instantiating an InitialContext object for the second time, since it seems org.osjava.sj.SimpleContext attempts to reload the jndi values into the already initialized StaticHashTable on subsequent instantiations.&lt;br/&gt;
+&lt;br/&gt;
+Reproduce by inserting this method into org.osjava.sj.SimpleContextTest testcase:&lt;br/&gt;
+&lt;br/&gt;
+	public void testSharedMemory() throws Exception {&lt;br/&gt;
+		String propShared = &amp;quot;org.osjava.sj.jndi.shared&amp;quot;;&lt;br/&gt;
+		System.setProperty(propShared, &amp;quot;true&amp;quot;);&lt;br/&gt;
+		Context ctx = new InitialContext();&lt;br/&gt;
+		assertNotNull(ctx.lookup(&amp;quot;test.value&amp;quot;));&lt;br/&gt;
+		Context ctx1 = new InitialContext();&lt;br/&gt;
+		assertNotNull(ctx1.lookup(&amp;quot;test.value&amp;quot;));&lt;br/&gt;
+		System.getProperties().remove(propShared);&lt;br/&gt;
+	}&lt;br/&gt;
+&lt;br/&gt;
+Running the above test method results in this stack trace:&lt;br/&gt;
+&lt;br/&gt;
+javax.naming.NameAlreadyBoundException&lt;br/&gt;
+	at org.osjava.sj.memory.MemoryContext.createSubcontext(MemoryContext.java:159)&lt;br/&gt;
+	at org.osjava.sj.jndi.AbstractContext.createSubcontext(AbstractContext.java:590)&lt;br/&gt;
+	at javax.naming.InitialContext.createSubcontext(InitialContext.java:413)&lt;br/&gt;
+	at org.osjava.sj.jndi.DelegatingContext.createSubcontext(DelegatingContext.java:124)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:138)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:104)&lt;br/&gt;
+	at org.osjava.sj.SimpleContext.&amp;lt;init&amp;gt;(SimpleContext.java:96)&lt;br/&gt;
+	at org.osjava.sj.SimpleContextFactory.getInitialContext(SimpleContextFactory.java:69)&lt;br/&gt;
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:662)&lt;br/&gt;
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:243)&lt;br/&gt;
+	at javax.naming.InitialContext.init(InitialContext.java:219)&lt;br/&gt;
+	at javax.naming.InitialContext.&amp;lt;init&amp;gt;(InitialContext.java:175)&lt;br/&gt;
+	at org.osjava.sj.SimpleContextTest.setUp(SimpleContextTest.java:56)&lt;br/&gt;
+	at junit.framework.TestCase.runBare(TestCase.java:125)&lt;br/&gt;
+	at junit.framework.TestResult$1.protect(TestResult.java:106)&lt;br/&gt;
+	at junit.framework.TestResult.runProtected(TestResult.java:124)&lt;br/&gt;
+	at junit.framework.TestResult.run(TestResult.java:109)&lt;br/&gt;
+	at junit.framework.TestCase.run(TestCase.java:118)&lt;br/&gt;
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)&lt;br/&gt;
+	at junit.framework.TestSuite.run(TestSuite.java:203)&lt;br/&gt;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:478)&lt;br/&gt;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:344)&lt;br/&gt;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)&lt;br/&gt;
+</description>
+                <environment>Windows XP; JRE 1.4.2_06 (and 1.5.0)</environment>
+            <key id='10524'>SJN-73</key>
+        <summary>Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='mortenhattesen'>Morten Hattesen</reporter>
+            
+    <created>Tue, 15 Nov 2005 06:46:14 -0800 (PST)</created>
+    <updated>Sun, 6 Apr 2008 01:11:54 -0700 (PDT)</updated>
+
+                        <version>0.11.1</version>
+            
+                        <fixVersion>0.11.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='mortenhattesen' id='10458' created='Tue, 15 Nov 2005 06:53:18 -0800 (PST)'>Simply adding this line...&lt;br/&gt;
+&lt;br/&gt;
+org.osjava.sj.jndi.shared=true&lt;br/&gt;
+&lt;br/&gt;
+... to the jndi.properties file associated with the testcases org.osjava.sj.SimpleContextTest results in a different Exception when running the (unmodified) test case:&lt;br/&gt;
+&lt;br/&gt;
+javax.naming.NotContextException&lt;br/&gt;
+	at org.osjava.sj.jndi.AbstractContext.destroySubcontext(AbstractContext.java:529)&lt;br/&gt;
+	at org.osjava.sj.jndi.AbstractContext.destroySubcontext(AbstractContext.java:549)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.jndiPut(JndiLoader.java:315)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.load(JndiLoader.java:276)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:155)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:139)&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:104)&lt;br/&gt;
+	at org.osjava.sj.SimpleContext.&amp;lt;init&amp;gt;(SimpleContext.java:96)&lt;br/&gt;
+	at org.osjava.sj.SimpleContextFactory.getInitialContext(SimpleContextFactory.java:69)&lt;br/&gt;
+	at javax.naming.spi.NamingManager.getInitialContext(NamingManager.java:662)&lt;br/&gt;
+	at javax.naming.InitialContext.getDefaultInitCtx(InitialContext.java:243)&lt;br/&gt;
+	at javax.naming.InitialContext.init(InitialContext.java:219)&lt;br/&gt;
+	at javax.naming.InitialContext.&amp;lt;init&amp;gt;(InitialContext.java:175)&lt;br/&gt;
+	at org.osjava.sj.SimpleContextTest.setUp(SimpleContextTest.java:56)&lt;br/&gt;
+	at junit.framework.TestCase.runBare(TestCase.java:125)&lt;br/&gt;
+	at junit.framework.TestResult$1.protect(TestResult.java:106)&lt;br/&gt;
+	at junit.framework.TestResult.runProtected(TestResult.java:124)&lt;br/&gt;
+	at junit.framework.TestResult.run(TestResult.java:109)&lt;br/&gt;
+	at junit.framework.TestCase.run(TestCase.java:118)&lt;br/&gt;
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)&lt;br/&gt;
+	at junit.framework.TestSuite.run(TestSuite.java:203)&lt;br/&gt;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:478)&lt;br/&gt;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:344)&lt;br/&gt;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)&lt;br/&gt;
+</comment>
+                    <comment author='bayard' id='10691' created='Sun, 6 Apr 2008 01:11:54 -0700 (PDT)'>The main issue is, I believe, fixed:
+&lt;br/&gt;
+
+&lt;br/&gt;
+r2670 | flamefew | 2008-04-05 21:50:13 -0700 (Sat, 05 Apr 2008) | 1 line
+&lt;br/&gt;
+Changed paths:
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;M /trunk/simple-jndi/src/java/org/osjava/sj/SimpleContext.java
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;M /trunk/simple-jndi/src/java/org/osjava/sj/jndi/AbstractContext.java
+&lt;br/&gt;
+
+&lt;br/&gt;
+Fixing &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-73&quot; title=&quot;Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException&quot;&gt;&lt;strike&gt;SJN-73&lt;/strike&gt;&lt;/a&gt; by asking the AbstractContext if it has any data in either of its static stores. Kludgy, but fixes the test
+&lt;br/&gt;
+------------------------------------------------------------------------
+&lt;br/&gt;
+r2669 | flamefew | 2008-04-05 21:49:44 -0700 (Sat, 05 Apr 2008) | 1 line
+&lt;br/&gt;
+Changed paths:
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;M /trunk/simple-jndi/src/test/org/osjava/sj/memory/SharedMemoryTest.java
+&lt;br/&gt;
+
+&lt;br/&gt;
+Adding unit test for &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-73&quot; title=&quot;Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException&quot;&gt;&lt;strike&gt;SJN-73&lt;/strike&gt;&lt;/a&gt;, courtesy of Morten Hattesen
+&lt;br/&gt;
+
+&lt;br/&gt;
+Making the jndi.properties for all the tests be shared is not; but I think that is because many of the tests are not expecting a shared context.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

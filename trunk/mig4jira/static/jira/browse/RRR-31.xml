@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-31] XML files need to stop being loaded throgh classpath</title>
+<link>http://issues.osjava.org/jira/browse/RRR-31</link>
+
+                    <description>Currently reports.xml and renderers.xml are loaded through the classpath and not able to be edited live. This should switch to a configuraton in the servlet parameter(?) and be grabbed locally through a URL.</description>
+                <environment/>
+            <key id='10292'>RRR-31</key>
+        <summary>XML files need to stop being loaded throgh classpath</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 8 Oct 2004 05:34:16 -0700 (PDT)</created>
+    <updated>Fri, 12 Nov 2004 06:42:55 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10280' created='Fri, 12 Nov 2004 06:42:55 -0800 (PST)'>Now that report groups have been added, the reports themselves are reloaded form the file system each time. Only the renderers and report groups are loaded through the class loading system.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

@@ -1,0 +1,9 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='NRB-5'>User-Agent setting doesn&apos;t work</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='NRB-4'>Doesn&apos;t send User-Agent in the request</issue>
+  </fixes-issues>
+  <name>0.3</name>
+</version>

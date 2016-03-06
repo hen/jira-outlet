@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.sourcelabs.jira</groupId>
+        <artifactId>jira-outlet-parent</artifactId>
+        <version>1-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sourcelabs.jira</groupId>
+    <artifactId>jira-outlet-csv-issueview</artifactId>
+    <version>0.2</version>
+
+    <name>CSV Issue View for JIRA</name>
+    <packaging>jar</packaging>
+
+    <description>See a list of issues as a CSV. </description>
+    <url>http://confluence.atlassian.com/display/JIRAEXT/JIRA+CSV+View+Plugin</url>
+
+    <scm>
+        <connection>scm:svn:https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-csv-view</connection>
+        <developerConnection>scm:svn:https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-csv-view</developerConnection>
+        <url>https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-csv-view</url>
+    </scm>
+
+</project>

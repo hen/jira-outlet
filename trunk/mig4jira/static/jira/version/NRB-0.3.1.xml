@@ -1,0 +1,13 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='NRB-10'>If a 3xx response code; follow links</issue>
+    <issue status='Closed' key='NRB-9'>&quot;Disallow: &quot; should indicate that nothing is disallowed</issue>
+    <issue status='Closed' key='NRB-8'>User-Agent name comparison should be case insensitive</issue>
+    <issue status='Open' key='NRB-7'>A 403 or 401 should be considered a false and not an error</issue>
+    <issue status='Closed' key='NRB-6'>Spec bug; check user agents first and then the first wildcard</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='NRB-5'>User-Agent setting doesn&apos;t work</issue>
+  </fixes-issues>
+  <name>0.3.1</name>
+</version>

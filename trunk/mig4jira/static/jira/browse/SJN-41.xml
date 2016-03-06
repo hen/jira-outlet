@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-41] Add examples download</title>
+<link>http://issues.osjava.org/jira/browse/SJN-41</link>
+
+                    <description>There should be an examples zip which contains a fully working examples directory. Possibly with a variable to set for file location.</description>
+                <environment/>
+            <key id='10125'>SJN-41</key>
+        <summary>Add examples download</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 4 Dec 2003 02:14:31 -0800 (PST)</created>
+    <updated>Fri, 2 Jan 2004 14:21:10 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.8</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10125' created='Fri, 2 Jan 2004 14:08:03 -0800 (PST)'>Two example sets done now. Probably all there will be for 0.8.</comment>
+                    <comment author='bayard' id='10126' created='Fri, 2 Jan 2004 14:21:10 -0800 (PST)'>Considering this done. Will add another issue for the further examples that are planned.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

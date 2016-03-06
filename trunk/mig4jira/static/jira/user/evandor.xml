@@ -1,0 +1,7 @@
+<user>
+  <login>evandor</login>
+  <name>Carsten Graef</name>
+  <reported>
+    <issue status='Open' key='SJN-80'>strange behavior if property file is named  &quot;default.properties&quot;</issue>
+  </reported>
+</user>

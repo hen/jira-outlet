@@ -1,0 +1,7 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='TRA-3'>tld link is broken.</issue>
+    <issue status='Open' key='TRA-1'>Does not work under 2.3</issue>
+  </affects-issues>
+  <name>0.2</name>
+</version>

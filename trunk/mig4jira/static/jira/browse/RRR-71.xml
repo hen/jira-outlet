@@ -1,0 +1,61 @@
+<item>
+<title>[RRR-71] Temporary widget hack</title>
+<link>http://issues.osjava.org/jira/browse/RRR-71</link>
+
+                    <description>Before a widget system is implemented, a textfield widget is needed so that a multiple select may be put into one and a parser set (comma delimited parser). &lt;br/&gt;
+&lt;br/&gt;
+This could be hardcoded by adding a widget=&amp;quot;&amp;quot; attribute to a param. </description>
+                <environment/>
+            <key id='10355'>RRR-71</key>
+        <summary>Temporary widget hack</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Feb 2005 13:16:58 -0800 (PST)</created>
+    <updated>Fri, 4 Feb 2005 15:01:54 -0800 (PST)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10338' created='Thu, 3 Feb 2005 22:35:38 -0800 (PST)'>Hack implemented. Needs testing.</comment>
+                    <comment author='bayard' id='10341' created='Fri, 4 Feb 2005 15:01:54 -0800 (PST)'>Painful to have to hack. Ended up seeing hacks in two places:&lt;br/&gt;
+&lt;br/&gt;
+1) A hack so that a widget plugin system appears to exist.&lt;br/&gt;
+2) A hack into the servlet to handle the confusion over getParameter and getParameterValues. If there&apos;s only 1 item, it is placed singularly and code that expects an array needs to wrap it.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                    <customfield id='customfield_10000' key='com.atlassian.jira.plugin.system.customfieldtypes:select'>
+                    <customfieldname>Estimate</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue><![CDATA[EZ - M]]></customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                        </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

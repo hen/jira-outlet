@@ -1,0 +1,125 @@
+#if($votingEnabled)
+<div id="voteportlet-$portletId">
+<script type="text/javascript">
+
+    function createRequestObject${portletId}()
+    {
+        var ro;
+        try
+        {
+                    // Opera 8.0+, Firefox, Safari
+                    ro = new XMLHttpRequest();
+            }
+        catch (e)
+        {
+                    // Internet Explorer Browsers
+                    try
+            {
+                            ro = new ActiveXObject("Msxml2.XMLHTTP");
+                    }
+            catch (e)
+            {
+                            try
+                {
+                                    ro = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                catch (e)
+                {
+                                    // Unable to create a request object
+                                    return false;
+                            }
+                    }
+            }
+        return ro;
+    }
+
+
+    function toggleVote${portletId}(portletId, elementId, toggleKey, issueKeys, title)
+    {
+        var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.poll:poll&issue-keys="+issueKeys+"%3A"+portletId+"%3A"+toggleKey+"&title="+title;
+
+        var elementId = "voteportlet-"+portletId;
+        var elem = document.getElementById(elementId);
+
+        var icon = document.getElementById("voteIcon"+toggleKey+portletId);
+
+        var httpReq = createRequestObject${portletId}();
+        httpReq.open('get', reqUrl, true);
+        httpReq.onreadystatechange = function() {
+            if (httpReq.readyState == 4)
+            {
+                var response = httpReq.responseText;
+                elem.innerHTML = response;
+            }
+        }
+        icon.src = "${req.ContextPath}/images/icons/wait.gif";
+
+        httpReq.send(null);
+    }
+</script>
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+ <tr class=rowHeader>
+  <td class="colHeaderLink" colspan="2">$title</td>
+ </tr>
+ <tr><td class="rowClear" colspan="2">
+
+ <table class="tableBorder" border="0" cellpadding="0" cellspacing="0" width="100%">
+ #foreach ($entry in $entries)
+ <tr #if ($velocityCount % 2 == 1) class="rowNormal" #else class="rowAlternate" #end >
+
+  <td nowrap width="1%">
+  #if($loggedIn)
+    #if($entry.hasVoted)
+      <img id="voteIcon${entry.issue.key}${portletId}" src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/thumb_up.png" title="$i18n.getText('portlet.poll.icons.thumbsup.description')"/>
+    #else
+      <img id="voteIcon${entry.issue.key}${portletId}" src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/thumb_down.png" title="$i18n.getText('portlet.poll.icons.thumbsdown.description')"/>
+    #end
+  #end
+  </td>
+
+  <td width="50%">
+      <a href="$req.contextPath/browse/$entry.getIssue().getKey()" style="text-decoration: none; ">$textutils.htmlEncode($entry.getIssue().getSummary())</a>
+  </td>
+
+  <td align="right" width="1%">$entry.issue.votes&nbsp;</td>
+<td width="30%" nowrap>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td width="$entry.percentage%">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%"">
+                <tr><td bgcolor="#3c78b5" >
+                    <a title="$entry.percentage">
+                        <img src="$req.contextPath/images/border/spacer.gif"
+                             height="10"
+                             width="100%"
+                             title="$entry.percentage%">
+                    </a>
+                </td></tr>
+            </table>
+        </td>
+        <td width="$entry.nonPercentage%">&nbsp;&nbsp;#if($entry.percentage != "0") $entry.percentage% #end</td>
+    </tr>
+</table>
+</td>
+
+  <td nowrap width="1%">
+    <a href="$req.contextPath/browse/$entry.getIssue().getKey()"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/information.png" title="$entry.getIssue().getKey()"/></a>
+  #if($loggedIn)
+    #if($entry.hasVoted)
+      <a href="javascript:toggleVote${portletId}('$portletId', 'voteportlet-${portletId}', '$entry.issue.key', '${issue-keys}', '${title}')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/pencil_delete.png" title="$i18n.getText('portlet.poll.icons.unvote.description')"/></a>
+    #else
+      <a href="javascript:toggleVote${portletId}('$portletId', 'voteportlet-${portletId}', '$entry.issue.key', '${issue-keys}', '${title}')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/pencil_add.png" title="$i18n.getText('portlet.poll.icons.vote.description')"/></a>
+    #end
+  #end
+  </td>
+
+ </tr>
+ #end
+ </table>
+
+ </td></tr></table>
+</td></tr></table>
+</div>
+#end

@@ -1,0 +1,47 @@
+<item>
+<title>[OSC-5] FileStore needs to output csv</title>
+<link>http://issues.osjava.org/jira/browse/OSC-5</link>
+
+                    <description>Currently FileStore only works with single-arrays.&lt;br/&gt;
+It needs to output csv&apos;s if possible.&lt;br/&gt;
+&lt;br/&gt;
+Possibly need a file.type value.&lt;br/&gt;
+&lt;br/&gt;
+How to handle multiple files too?</description>
+                <environment/>
+            <key id='10233'>OSC-5</key>
+        <summary>FileStore needs to output csv</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 22 Jun 2004 13:52:10 -0700 (PDT)</created>
+    <updated>Sun, 8 Apr 2007 23:53:38 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

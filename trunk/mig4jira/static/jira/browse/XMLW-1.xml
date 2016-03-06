@@ -1,0 +1,45 @@
+<item>
+<title>[XMLW-1] Test xmlenc 0.37 works</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-1</link>
+
+                    <description>xmlenc 0.20 is what we&apos;re tested against. 0.37 is the latest, so need to see whether this works.</description>
+                <environment/>
+            <key id='10090'>XMLW-1</key>
+        <summary>Test xmlenc 0.37 works</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 31 Aug 2003 23:03:27 -0700 (PDT)</created>
+    <updated>Mon, 1 Sep 2003 20:41:58 -0700 (PDT)</updated>
+
+                        <version>2.0</version>
+            
+                        <fixVersion>2.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10040' created='Mon, 1 Sep 2003 20:41:58 -0700 (PDT)'>Now works with 0.37</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

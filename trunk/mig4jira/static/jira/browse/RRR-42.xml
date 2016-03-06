@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-42] View xml code for each report</title>
+<link>http://issues.osjava.org/jira/browse/RRR-42</link>
+
+                    <description>A little icon to the right of a report that lets you view the xml behind the report.</description>
+                <environment/>
+            <key id='10316'>RRR-42</key>
+        <summary>View xml code for each report</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Nov 2004 14:27:14 -0800 (PST)</created>
+    <updated>Wed, 1 Dec 2004 21:00:50 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10290' created='Wed, 1 Dec 2004 21:00:50 -0800 (PST)'>The icon is currently plaintext, but functionality is now there.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

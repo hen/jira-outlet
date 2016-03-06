@@ -1,0 +1,42 @@
+<item>
+<title>[SJN-67] Pluggable lookup system + http lookup</title>
+<link>http://issues.osjava.org/jira/browse/SJN-67</link>
+
+                    <description>Create a plugin system for lookup, use that for http lookup.&lt;br/&gt;
+&lt;br/&gt;
+As this will need to be driven by lookup() requests, maybe create an alternative file one that does not load recursively on startup.</description>
+                <environment/>
+            <key id='10498'>SJN-67</key>
+        <summary>Pluggable lookup system + http lookup</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:57:39 -0700 (PDT)</created>
+    <updated>Wed, 30 May 2007 22:49:29 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

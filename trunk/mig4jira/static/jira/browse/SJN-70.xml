@@ -1,0 +1,47 @@
+<item>
+<title>[SJN-70] AbstractContext: Can&apos;t unbind a subcontext</title>
+<link>http://issues.osjava.org/jira/browse/SJN-70</link>
+
+                    <description>The unbind method only removes from the table Hashtable (ie the data in that Context) and not from the subContexts variable.</description>
+                <environment/>
+            <key id='10509'>SJN-70</key>
+        <summary>AbstractContext: Can&apos;t unbind a subcontext</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 28 Sep 2005 20:26:34 -0700 (PDT)</created>
+    <updated>Thu, 29 Sep 2005 07:58:39 -0700 (PDT)</updated>
+
+                        <version>0.11</version>
+            
+                        <fixVersion>0.11.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10435' created='Wed, 28 Sep 2005 20:27:51 -0700 (PDT)'>Code changed. Will mention it to Robert to make sure it&apos;s a legal thing to be asking for.</comment>
+                    <comment author='bayard' id='10438' created='Thu, 29 Sep 2005 07:58:11 -0700 (PDT)'>We&apos;re going to NOTFIX this. I should have used destroySubcontext instead.</comment>
+                    <comment author='bayard' id='10439' created='Thu, 29 Sep 2005 07:58:39 -0700 (PDT)'>&amp;nbsp;I should have used destroySubcontext instead.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

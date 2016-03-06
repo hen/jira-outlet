@@ -1,0 +1,142 @@
+<!--
+   Copyright 2007 SourceLabs, Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.html" name="Improved HTML Plugin">
+    <plugin-info>
+        <description>Improved HTML Plugin</description>
+        <version>1.0</version>
+        <application-version min="3.0" max="3.0"/>
+        <vendor name="SourceLabs" url="http://www.sourcelabs.com"/>
+    </plugin-info>
+
+    <portlet key="html" name="Improved HTML" class="com.sourcelabs.jira.plugin.portlet.html.HtmlPortlet">
+        <description key="portlet.html.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/html.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.html" />
+        <label key="portlet.html.name" />
+        <objectdescriptor key="portlet.html.display.name" />
+        <properties>
+            <property>
+                <key>anonymousTitleType</key>
+                <name>portlet.html.field.anonymoustitletype.display.name</name>
+                <description>portlet.html.field.anonymoustitletype.display.description</description>
+                <type>select</type>
+                <default>none</default>
+                <values>
+                    <value>
+                        <key>title</key>
+                        <value>portlet.html.field.type.display.title</value>
+                    </value>
+                    <value>
+                        <key>none</key>
+                        <value>portlet.html.field.type.display.none</value>
+                    </value>
+                    <value>
+                        <key>specified</key>
+                        <value>portlet.html.field.type.display.specified</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>anonymousTitleText</key>
+                <name>portlet.html.field.anonymoustitletext.title.name</name>
+                <description>portlet.html.field.anonymoustitletext.title.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>anonymousType</key>
+                <name>portlet.html.field.anonymoustype.display.name</name>
+                <description>portlet.html.field.anonymoustype.display.description</description>
+                <type>select</type>
+                <default>introduction</default>
+                <values>
+                    <value>
+                        <key>introduction</key>
+                        <value>portlet.html.field.type.display.introduction</value>
+                    </value>
+                    <value>
+                        <key>none</key>
+                        <value>portlet.html.field.type.display.none</value>
+                    </value>
+                    <value>
+                        <key>specified</key>
+                        <value>portlet.html.field.type.display.specified</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>anonymousText</key>
+                <name>portlet.html.field.anonymoustext.title.name</name>
+                <description>portlet.html.field.anonymoustext.title.description</description>
+                <type>text</type>
+            </property>
+            <property>
+                <key>userTitleType</key>
+                <name>portlet.html.field.usertitletype.display.name</name>
+                <description>portlet.html.field.usertitletype.display.description</description>
+                <type>select</type>
+                <default>none</default>
+                <values>
+                    <value>
+                        <key>title</key>
+                        <value>portlet.html.field.type.display.title</value>
+                    </value>
+                    <value>
+                        <key>none</key>
+                        <value>portlet.html.field.type.display.none</value>
+                    </value>
+                    <value>
+                        <key>specified</key>
+                        <value>portlet.html.field.type.display.specified</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>userTitleText</key>
+                <name>portlet.html.field.usertitletext.title.name</name>
+                <description>portlet.html.field.usertitletext.title.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>userType</key>
+                <name>portlet.html.field.usertype.display.name</name>
+                <description>portlet.html.field.usertype.display.description</description>
+                <type>select</type>
+                <default>introduction</default>
+                <values>
+                    <value>
+                        <key>introduction</key>
+                        <value>portlet.html.field.type.display.introduction</value>
+                    </value>
+                    <value>
+                        <key>none</key>
+                        <value>portlet.html.field.type.display.none</value>
+                    </value>
+                    <value>
+                        <key>specified</key>
+                        <value>portlet.html.field.type.display.specified</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>userText</key>
+                <name>portlet.html.field.usertext.title.name</name>
+                <description>portlet.html.field.usertext.title.description</description>
+                <type>text</type>
+            </property>
+        </properties>
+    </portlet>
+
+</atlassian-plugin>

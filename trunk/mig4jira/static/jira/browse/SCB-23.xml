@@ -1,0 +1,41 @@
+<item>
+<title>[SCB-23] Create a tutorial entry on how to scrape from RSS</title>
+<link>http://issues.osjava.org/jira/browse/SCB-23</link>
+
+                    <description>Using an external RSS library, show how easy it is to implement an RSS scraper.</description>
+                <environment/>
+            <key id='10401'>SCB-23</key>
+        <summary>Create a tutorial entry on how to scrape from RSS</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Aug 2005 18:22:53 -0700 (PDT)</created>
+    <updated>Sat, 24 May 2008 04:34:18 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

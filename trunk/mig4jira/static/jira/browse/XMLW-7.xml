@@ -1,0 +1,49 @@
+<item>
+<title>[XMLW-7] Use an xmlenc version that&apos;s on ibiblio</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-7</link>
+
+                    <description/>
+                <environment/>
+            <key id='10690'>XMLW-7</key>
+        <summary>Use an xmlenc version that&apos;s on ibiblio</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 7 Apr 2007 22:28:59 -0700 (PDT)</created>
+    <updated>Sat, 7 Apr 2007 22:31:13 -0700 (PDT)</updated>
+
+                        <version>2.2</version>
+            
+                        <fixVersion>2.2.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10610' created='Sat, 7 Apr 2007 22:31:13 -0700 (PDT)'>&amp;nbsp;svn ci -m &amp;quot;Upgrading to xmlenc 0.52 - &lt;a href=&quot;http://issues.osjava.org/jira/browse/XMLW-7&quot; title=&quot;Use an xmlenc version that&apos;s on ibiblio&quot;&gt;&lt;strike&gt;XMLW-7&lt;/strike&gt;&lt;/a&gt;&amp;quot;&lt;br/&gt;
+Sending        xmlwriter/pom.xml&lt;br/&gt;
+Sending        xmlwriter/project.xml&lt;br/&gt;
+Transmitting file data ..&lt;br/&gt;
+Committed revision 2575.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

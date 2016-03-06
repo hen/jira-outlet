@@ -1,0 +1,110 @@
+#if( $loggedin )
+
+#macro(percentageBar $graphModel)
+    <table cellpadding="0" border="0" cellspacing="0"><tr height="6">
+    #if (!$graphModel || $graphModel.rows.size() == 0)
+        <td width="100" align="right"><font size=1>$i18n.getText("common.concepts.noissues")</font></td>
+    #else
+        #foreach ($row in $graphModel.rows)
+            #if ($graphModel.getPercentage($row) != 0)
+            <td width="$graphModel.getPercentage($row)" bgcolor="$row.colour" >
+                #if ($row.statuses)
+                    <a href="$req.contextPath/secure/IssueNavigator.jspa?reset=true$row.statuses"
+                        title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)"
+                    ><img src="$req.contextPath/images/border/spacer.gif"
+                        height=10 width="$graphModel.getPercentage($row)" border=0
+                        title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)"></a>
+                #else
+                    <img src="$req.contextPath/images/border/spacer.gif"
+                        height=10 width="$graphModel.getPercentage($row)" border=0
+                        title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)">
+                #end
+            </td>
+            #end
+        #end
+    #end
+    </tr></table>
+#end
+
+<div id="currentuserstatus-$portletId" class="currentuserstatus">
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">
+  <table width="100%">
+  <tr>
+  <td>
+      <script>
+        function rollUserIcon() {
+            var index = getCookieValue("currentusericon");
+            index++;
+            if(index == 9) {
+                index = 1;
+            }
+            saveCookie("currentusericon", index);
+            setUserIconFromCookie();
+        }
+        function setUserIconFromCookie() {
+            var index = getCookieValue("currentusericon");
+            if(index == null) {
+                saveCookie("currentusericon", "1");
+            } else {
+                document.getElementById("currentusericon-${portletId}").src = "$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/user" + index + ".png";
+            }
+        }
+      </script>
+
+      <img id="currentusericon-${portletId}" src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/user1.png" onclick="rollUserIcon()"/></a>
+      (<a href="$req.contextPath/secure/ViewProfile.jspa" title="$i18n.getText('portlet.currentuser.links.profile.description')"><font size="1"> $user.fullName </font></a>)
+  </td>
+      <script>
+        // initialize the image from the cookie
+        setUserIconFromCookie();
+      </script>
+  <td align="right">
+  <a href="$req.contextPath/secure/UserWatches!default.jspa" title="$i18n.getText('portlet.currentuser.icons.mywatches.description')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/eye.png"/></a>&nbsp;
+  <a href="$req.contextPath/secure/UserVotes!default.jspa" title="$i18n.getText('portlet.currentuser.icons.myvotes.description')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/thumb_up.png"/></a>&nbsp;
+  <a href="$req.contextPath/secure/BrowsePersonalProject.jspa?subset=-1" title="$i18n.getText('portlet.currentuser.icons.personalroadmap.description')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/report_user.png"/></a>&nbsp;
+  </td>
+  </tr>
+
+  </table>
+  </td></tr>
+
+  <tr bgcolor="#ffffff">
+    <td width="40%">
+
+  <table width="100%">
+  <tr>
+    <td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&reporterSelect=issue_current_user" title='$i18n.getText("portlet.currentuser.words.reported.description", $totalReported)'>$i18n.getText("portlet.currentuser.words.reported"):</td>
+    <td align="right">
+    #percentageBar ($reportedPgm)
+    </td>
+  </tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&status=5&status=6&reporterSelect=issue_current_user&updated:previous=-1w&sorter/field=updated&sorter/order=DESC" title='$i18n.getText("portlet.currentuser.words.resolvedRecently.description")'>$i18n.getText("portlet.currentuser.words.resolvedRecently")</a>:</td><td align="right">$resolvedCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&reporterSelect=issue_current_user&created:previous=-1w&sorter/field=created&sorter/order=DESC" title='$i18n.getText("portlet.currentuser.words.addedRecently.description")'>$i18n.getText("portlet.currentuser.words.addedRecently")</a>:</td><td align="right">$addedCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&reporterSelect=issue_current_user&updated:previous=-1w&sorter/field=updated&sorter/order=DESC" title='$i18n.getText("portlet.currentuser.words.updatedRecently.description")'>$i18n.getText("portlet.currentuser.words.updatedRecently")</a>:</td><td align="right">$updatedCount</td></tr>
+
+  </table>
+
+</td><td width="40%">
+  <table width="100%">
+  <tr>
+    <td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&assigneeSelect=issue_current_user" title='$i18n.getText("portlet.currentuser.words.assigned.description", $totalAssigned)'>$i18n.getText("portlet.currentuser.words.assigned"):</td>
+    <td align="right">
+    #percentageBar ($assignedPgm)
+    </td>
+  </tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&assigneeSelect=issue_current_user&resolution=-1&duedate%3Anext=0&sorter/field=updated&sorter/order=DESC" title='$i18n.getText("portlet.currentuser.words.overdue.description")'>$i18n.getText("portlet.currentuser.words.overdue")</a>:</td><td align="right">$overdueCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&assigneeSelect=issue_current_user&resolution=-1&duedate%3Aprevious=0&duedate%3Anext=1w&sorter/field=updated&sorter/order=DESC" title='$i18n.getText("portlet.currentuser.words.dueSoon.description")'>$i18n.getText("portlet.currentuser.words.dueSoon")</a>:</td><td align="right">$dueSoonCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&assigneeSelect=issue_current_user&resolution=-1&status=3" title='$i18n.getText("portlet.currentuser.words.inProgress.description")'>$i18n.getText("portlet.currentuser.words.inProgress")</a>:</td><td align="right">$inProgressCount</td></tr>
+
+  </table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+
+</div>
+ #end

@@ -1,0 +1,11 @@
+<project>
+  <key>JDF</key>
+  <name>JarDiff</name>
+  <issues>
+    <issue status='Open' key='JDF-5'>ArrayIndexOutOfBoundsException when comparing jaxb 2.0 and 2.1 APi jars</issue>
+    <issue status='Open' key='JDF-4'>Oddity in commons-discovery 0.2 to 0.4 comparison (there was no 0.3)</issue>
+    <issue status='Open' key='JDF-3'>Inheritence confusion on Jardiff&apos;s part</issue>
+    <issue status='Open' key='JDF-2'>Support serialVersionID</issue>
+    <issue status='Resolved' key='JDF-1'>Listing untrue differences between xmlwriter 2.1 and 2.2</issue>
+  </issues>
+</project>

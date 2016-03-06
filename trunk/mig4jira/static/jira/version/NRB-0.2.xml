@@ -1,0 +1,6 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='NRB-4'>Doesn&apos;t send User-Agent in the request</issue>
+  </affects-issues>
+  <name>0.2</name>
+</version>

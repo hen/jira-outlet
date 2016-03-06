@@ -1,0 +1,41 @@
+<item>
+<title>[SJN-20] simple-jndi sees System.getProperty first</title>
+<link>http://issues.osjava.org/jira/browse/SJN-20</link>
+
+                    <description>By having the System properties as the first lookup, the -D flag may override values in simple-jndi.</description>
+                <environment/>
+            <key id='10020'>SJN-20</key>
+        <summary>simple-jndi sees System.getProperty first</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:59:56 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 12:00:02 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,15 @@
+<project>
+  <key>XMLW</key>
+  <name>XmlWriter</name>
+  <issues>
+    <issue status='Closed' key='XMLW-9'>PrettyPrinterXMLWriter does not implement all methods</issue>
+    <issue status='Closed' key='XMLW-8'>expected/actual in the incorrect order in XmlWriterTest</issue>
+    <issue status='Closed' key='XMLW-7'>Use an xmlenc version that&apos;s on ibiblio</issue>
+    <issue status='Closed' key='XMLW-6'>Fix or remove java-channel link</issue>
+    <issue status='Closed' key='XMLW-5'>No data entities lead to </issue>
+    <issue status='Closed' key='XMLW-4'>Need to link old sf site to the new one, so people can see old docs</issue>
+    <issue status='Closed' key='XMLW-3'>Redirect Sourceforge site over to OSJava</issue>
+    <issue status='Open' key='XMLW-2'>Need to re-run Pete&apos;s benchmarks</issue>
+    <issue status='Closed' key='XMLW-1'>Test xmlenc 0.37 works</issue>
+  </issues>
+</project>

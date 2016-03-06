@@ -1,0 +1,37 @@
+Input should be an RSS. That puts relatively finegrained control in the hands of the user. You can point to the url, or if it's private, you can save it to disk and point to the file.
+
+Output is the RSS imported into the secondary JIRA. Looking at an RSS, there's no record of the project an issue belongs to beyond the key. This means that a) the project being imported into in the secondary JIRA would need to be supplied as an input, and also that b) this gives more power as it lets you move from one project to another, possibly even in the same JIRA.
+
+So, Input is now RSS url and Project id. Subtasks and Attachments won't make it in. For subtasks there could be an optional input that says "These issues are all subtasks". That might allow for them to be a secondary step, and the normal usage could refuse to run if there's a subtask in there. Attachments, more painful. One option there might be to write a plugin that provides attachment info in RSS :) Alternatively, the whole thing could be an RSS plugin that provides a richer RSS than the default does.
+
+Fortunately I don't think I have subtasks or attachments for my initial itch.
+
+Presumably Jelly is still the best way. I'd be tempted to output three Jelly scripts. Script one is conformance, it checks that versions, usernames, components all exist. Script two is conform, it not only checks the previous, but goes ahead and enforces it. This is one where xmlrpc to the source JIRA would be nice as it would allow for descriptions/release-dates to be created for versions. Alternatively a source plugin that provides project information as RSS would be damn useful here, and would in general be nice - "Know when the project metadata changes".
+
+Lastly, a third script that loads the actual issues. Even without the xmlrpc or source plugin to do conformance fixing, scripts 1 and 3 could be done.
+
+My instinct is to script it rather than try and use velocity/jirareport. JRuby + SwizzleJIRA might be an interesting one, but I'm not sure how happy the latter would be if all it had was an RSS and no actual JIRA. I suspect it'd get rather pissed. 
+
+So....
+
+INPUT:
+  Source Issue RSS url (be it file or http) (optionally an enhanced RSS plugin)
+  Source Metadata url (optional)
+  Target project id
+
+OUTPUT:
+  Check Conformance script
+  Force Conformance script
+  Import issues script
+
+
+PROBLEMS
+========
+
+Versions don't include their description and release dates. 
+Components don't include their descriptions (or owners).
+Descriptions that contain ad-hoc description links to other issues within the same JIRA continue to have those links. 
+It's all a big hack.
+In the end teaching Swizzle to do basic auth and to be based on a static RSS file might be simpler.
+
+The scripts do work, so for the current requirement it might be enough to use them as a one off.

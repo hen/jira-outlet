@@ -1,0 +1,14 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='SCB-20'>Sub-fetching should pass referrer of last page</issue>
+    <issue status='Open' key='SCB-19'>Set a referer for initial scrape</issue>
+    <issue status='Closed' key='SCB-18'>Add userAgent configuration</issue>
+    <issue status='Closed' key='SCB-17'>Support Cookies</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SCB-16'>Add support for POST requests</issue>
+    <issue status='Closed' key='SCB-14'>Create .bat files for the example</issue>
+    <issue status='Closed' key='SCB-12'>Move the example UrlScraper into the main distro so everyone may use it</issue>
+  </fixes-issues>
+  <name>scraping-engine-0.3</name>
+</version>

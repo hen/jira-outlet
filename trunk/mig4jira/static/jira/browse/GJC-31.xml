@@ -1,0 +1,70 @@
+<item>
+<title>[GJC-31] Doesn&apos;t quote the field when the field contains a block delimiter</title>
+<link>http://issues.osjava.org/jira/browse/GJC-31</link>
+
+                    <description>If I do something like this:&lt;br/&gt;
+&lt;br/&gt;
+csvWriter.writeField(&amp;quot;a\nb&amp;quot;);&lt;br/&gt;
+&lt;br/&gt;
+The output is: a &amp;lt;newline&amp;gt; b&lt;br/&gt;
+The output probably should be: &amp;lt;dbl-quote&amp;gt; a &amp;lt;newline&amp;gt; b &amp;lt;dbl-quote&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+A similar unusual issue occurs if the field itself starts or ends with double-quotes.&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10590'>GJC-31</key>
+        <summary>Doesn&apos;t quote the field when the field contains a block delimiter</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='trejkaz'>Trejkaz</reporter>
+            
+    <created>Thu, 16 Mar 2006 15:12:18 -0800 (PST)</created>
+    <updated>Wed, 6 Jun 2007 08:47:43 -0700 (PDT)</updated>
+
+                        <version>csv-1.0</version>
+            
+                
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='trejkaz' id='10490' created='Sun, 19 Mar 2006 16:32:08 -0800 (PST)'>Here&apos;s a patch to escape quotes and block delimiters properly.&lt;br/&gt;
+</comment>
+                    <comment author='bayard' id='10491' created='Mon, 27 Mar 2006 00:25:50 -0800 (PST)'>Thanks for the patch/bug report Trejkaz.&lt;br/&gt;
+&lt;br/&gt;
+Sorry for the delay in replying, I was away last week. I&apos;ll get to looking at the patch asap.</comment>
+                    <comment author='trejkaz' id='10510' created='Tue, 6 Jun 2006 16:40:57 -0700 (PDT)'>Is this not applied yet?&lt;br/&gt;
+</comment>
+                    <comment author='bayard' id='10511' created='Tue, 6 Jun 2006 17:36:12 -0700 (PDT)'>Nope, pretty pathetic I know.&lt;br/&gt;
+&lt;br/&gt;
+More in that I didn&apos;t reply to here with the info on why it didn&apos;t get applied. Applying the patch made a unit test fail and I haven&apos;t dug into figuring out why:&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+Testcase: testEscapeQuotes(com.generationjava.io.CsvWriterTest):        FAILED&lt;br/&gt;
+Does not write simple csv file out correctly.  expected:&amp;lt;...Not &amp;quot;Monkey...&amp;gt; but was:&amp;lt;...&amp;quot;Not &amp;quot;&amp;quot;Monkey&amp;quot;&amp;quot;...&amp;gt;&lt;br/&gt;
+junit.framework.ComparisonFailure: Does not write simple csv file out correctly.  expected:&amp;lt;...Not &amp;quot;Monkey...&amp;gt; but was:&amp;lt;...&amp;quot;Not &amp;quot;&amp;quot;Monkey&amp;quot;&amp;quot;...&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at com.generationjava.io.CsvWriterTest.testEscapeQuotes(CsvWriterTest.java:114)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</comment>
+                </comments>
+    
+    <attachments>
+            <attachment name='gj-csv-escapefix.patch' size='663' author='trejkaz' id='10000' created='Sun, 19 Mar 2006 16:32:08 -0800 (PST)'/>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

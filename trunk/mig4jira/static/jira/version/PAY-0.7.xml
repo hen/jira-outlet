@@ -1,0 +1,9 @@
+<version>
+  <fixes-issues>
+    <issue status='Open' key='PAY-9'>org.osjava.payload.interpolate.conf=sar.properties</issue>
+    <issue status='Open' key='PAY-8'>Create a maven plugin</issue>
+    <issue status='Open' key='PAY-7'>Build an Ant task</issue>
+    <issue status='Open' key='PAY-6'>Optional GUI mode?</issue>
+  </fixes-issues>
+  <name>0.7</name>
+</version>

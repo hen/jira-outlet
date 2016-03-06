@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-43] .ini files do not lod blockless values correctly</title>
+<link>http://issues.osjava.org/jira/browse/SJN-43</link>
+
+                    <description>.ini files prepend any entries that don&apos;t fall into a [block] with the delimiter. they should not.</description>
+                <environment/>
+            <key id='10134'>SJN-43</key>
+        <summary>.ini files do not lod blockless values correctly</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 14 Dec 2003 20:25:58 -0800 (PST)</created>
+    <updated>Sun, 14 Dec 2003 20:26:25 -0800 (PST)</updated>
+
+                        <version>0.7</version>
+            
+                        <fixVersion>0.8</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10122' created='Sun, 14 Dec 2003 20:26:25 -0800 (PST)'>unit test written and checked into cvs with fix</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

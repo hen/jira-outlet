@@ -1,0 +1,2528 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Dashboard for Henri Yandell - ASF JIRA </title>
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+    <link rel="shortcut icon" href="/jira/s/335/1/_/favicon.ico">
+    <link rel="icon" type="image/png" href="/jira/s/335/1/_/images/icons/favicon.png">
+    
+
+
+
+
+<link rel="stylesheet" type="text/css" media="print" href="/jira/s/335/1/_/styles/combined-printable.css">
+<link type="text/css" rel="StyleSheet" media="all" href="/jira/s/335/1/_/styles/combined.css"/>
+
+<link type="text/css" rel="StyleSheet" media="all" href="/jira/s/335/1/4/_/styles/global.css"/>
+
+    <script language="JavaScript" type="text/javascript" src="/jira/s/335/1/_/includes/js/combined-javascript.js"></script>
+
+<script type="text/javascript" src="/jira/s/335/1/1.0/_/download/resources/jira.webresources:yui/yahoo-dom-event-min.js" ></script>
+<script type="text/javascript" src="/jira/s/335/1/1.0/_/download/resources/jira.webresources:yui-container/connection.js" ></script>
+<script type="text/javascript" src="/jira/s/335/1/1.0/_/download/resources/jira.webresources:yui-container/container.js" ></script>
+<link type="text/css" rel="stylesheet" href="/jira/s/335/1/1.0/_/download/resources/jira.webresources:yui-container/container.css" media="all"/>
+<script type="text/javascript" src="/jira/s/335/1/1.0/_/download/resources/jira.webresources:json/json.js" ></script>
+<script type="text/javascript" src="/jira/s/335/1/1.0/_/download/resources/jira.webresources:jira-menubutton/menubutton-widget.js" ></script>
+
+<link type="text/css" rel="stylesheet" href="/jira/s/335/1/1.0/_/download/resources/jira.webresources:jira-menubutton/menubutton-widget.css" media="all"/>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body bgcolor="#f0f0f0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000">
+
+
+<div id="header">
+    <div id="header-top">
+            <a id="logo" href="/jira/secure/Dashboard.jspa">
+                            <img class="logo" src="/jira/s/335/1/_/images/asf_logo_wide.gif" width="537" height="51" border="0" alt="ASF JIRA">
+                        </a>
+            
+            <ul id="account-options">
+            <li>        <a id="user_nav_bar_bayard" href="/jira/secure/ViewProfile.jspa?name=bayard">Henri Yandell</a></li>
+
+                <li>
+                                    <a class="dropdownmenu" id="saved_filters" title="View and open your favourite filters" href="/jira/secure/FavouriteFilters.jspa" onClick="return false;"><span>Filters</span></a>
+                <script type="text/javascript">
+                    YAHOO.util.Event.addListener(window, 'load', function() { new jira.widget.MenuButton('saved_filters','/jira/secure/FavouriteFilters.jspa', '/jira')});
+                </script>
+                            </li>
+            <li>
+                    <a href="/jira/logout" title="Log out and cancel any automatic login.">Log Out</a>
+                </li>
+
+                <li class="icon">
+                    <a rel="nofollow" href="https://issues.apache.org/jira/secure/Dashboard.jspa?decorator=printable" ><img src="/jira/images/icons/print.gif" width="16" height="16" align="absmiddle" border="0" alt="View a printable version of the current page." title="View a printable version of the current page."></a>
+                </li>
+            <li class="icon">
+                    
+                    <a class="helpLink" href="http://www.atlassian.com/software/jira/docs/v3.13.2/index.html?clicked=jirahelp" target="_jirahelp">
+    
+        <img src="/jira/images/icons/help_blue.gif" width="16" height="16" align="absmiddle"
+            title="Get online help about Using and setting up JIRA"
+        /></a>
+
+                </li>
+    </ul>
+
+            
+    </div>
+    <div id="menu">
+        
+        <ul id="main-nav">
+        <li>
+        <a href="/jira/secure/Dashboard.jspa"
+             class="selected"              id="home_link"             title="A configurable overview of JIRA"             accessKey="h"            ><u>h</u>ome</a>
+    </li>
+        <li>
+
+        <a href="/jira/secure/BrowseProject.jspa"
+                         id="browse_link"             title="Browse the projects you have permissions to view"             accessKey="b"            ><u>b</u>rowse projects</a>
+    </li>
+        <li>
+        <a href="/jira/secure/IssueNavigator.jspa"
+                         id="find_link"             title="Find issues in the projects you have permissions to view"             accessKey="f"            ><u>f</u>ind issues</a>
+    </li>
+        <li>
+        <a href="/jira/secure/CreateIssue!default.jspa"
+                         id="create_link"             title="Create a new issue / bug / feature request / etc"             accessKey="c"            ><u>c</u>reate new issue</a>
+
+    </li>
+        <li>
+        <a href="/jira/secure/project/ViewProjects.jspa"
+                         id="admin_link"             title="Manage this JIRA instance"             accessKey="a"            ><u>a</u>dministration</a>
+    </li>
+    </ul>
+
+        
+
+                <form id="quicksearch" action="/jira/secure/QuickSearch.jspa" method="post">
+            <label onclick="quickSearchTextBoxSetFocus();" onmouseover="showToolTip()" onmouseout="hideToolTip()">&nbsp; &nbsp;<u>Q</u>uick Search:</label>
+
+            <input id="quickSearchInput" class="quickSearchInput" title="Go directly to an issue by typing a valid issue key, or run a free-text search." type="text" size="25" name="searchString" accessKey="q"  valign="absmiddle" />
+        </form>
+        <div onmouseover="recordInTip()" onmouseout="recordOutTip()" id="quicksearchhelp" class="informationBox"
+             style="display: none; text-align: center; width: 20em; position: absolute; top: 55px; right: 10px; padding: 0.5em;">
+                        Learn more about <a href='http://www.atlassian.com/software/jira/docs/v3.13.2/quicksearch.html?clicked=jirahelp' target='_jirahelp'>Quick Search</a>
+        </div>
+            </div>
+</div>
+
+
+<!--This should always be included as it is not part of a themable plugin, instead it is core functionality-->
+
+
+
+
+
+<table border="0" cellpadding="5" cellspacing="0" width="100%" bgcolor="#ffffff">
+<tr><td valign="top">
+
+        
+        <h1 class="pagetitle">ASF JIRA</h1>
+            
+        <table id="dashboard_tabs" cellpadding="2" cellspacing="0" border="0" width="100%" align="center" style="border-bottom: 1px solid #bbb;">
+    <tr>
+        
+            
+            <style type="text/css">
+                #dashboard_tabs {
+                    margin-top: 5px;
+                }
+            </style>
+
+            
+                
+                    <td class="pageTabSelected">&nbsp;Dashboard for Henri Yandell&nbsp;</td>
+                
+                
+            
+                
+                
+                    <td class="pageTab">&nbsp;<a href="Dashboard.jspa?selectPageId=12312273">Commons Dashboard</a>&nbsp;</td>
+                
+            
+                
+                
+                    <td class="pageTab">&nbsp;<a href="Dashboard.jspa?selectPageId=12312303">ASF-wide</a>&nbsp;</td>
+                
+            
+        
+
+        <td align="right" style="white-space: nowrap; width: 100%">
+            &nbsp;
+            
+                <font size="1">
+                    
+                        <b>Configure:</b>
+
+                        
+                        
+                            <a id="configure_on" href="Dashboard.jspa?configuring=true&amp;selectPageId=12312250">ON</a> |
+                            <span id="configure_off" style="color: darkred; font-weight: bold;">OFF</span>
+                        
+                        &nbsp;
+                    
+                    <a id="manage_dashboard" href="ConfigurePortalPages!default.jspa">Manage Dashboard</a>
+                </font>
+            
+        </td>
+    </tr>
+
+    </table>
+
+    
+
+    
+
+    
+    
+    
+    <script language="JavaScript" type="text/javascript" src="/jira/s/335/1/_/includes/js/cookieUtil-min.js"></script>
+
+<table cellpadding="5" cellspacing="0" border="0" width="100%" align="center">
+<tr>
+        <td valign="top" width="50%">
+
+                                                        
+                                    <p>
+                                                <table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+
+    <tr class=rowHeader>
+      <td class="colHeaderLink" colspan="2">
+          All Projects
+               </td>
+    </tr>
+                  <script>
+        function changeMenu(portletId) {
+            var select = document.getElementById("category-dropdown-"+portletId);
+            var i = select.selectedIndex;
+            var value = select.options[i].value;
+            var opts = document.forms["project-dropdown-"+portletId].requestId.options;
+
+                         if(value == '10310') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'Ivy';
+                  opts[1].value = 'IVY';
+                                                    opts[2].text = 'IvyDE';
+                  opts[2].value = 'IVYDE';
+                                               }
+                         if(value == '10130') {
+                opts.length = 5 + 1;
+                                                  opts[1].text = '   Community Development ';
+                  opts[1].value = 'COMDEV';
+                                                    opts[2].text = 'Attic';
+                  opts[2].value = 'ATTIC';
+                                                    opts[3].text = 'Infrastructure';
+                  opts[3].value = 'INFRA';
+                                                    opts[4].text = 'Legal Discuss';
+                  opts[4].value = 'LEGAL';
+                                                    opts[5].text = 'Public Relations';
+                  opts[5].value = 'PRC';
+                                               }
+                         if(value == '10023') {
+                opts.length = 7 + 1;
+                                                  opts[1].text = 'Avalon Castle';
+                  opts[1].value = 'AVNSHARP';
+                                                    opts[2].text = 'Avalon Merlin Runtime';
+                  opts[2].value = 'RUNTIME';
+                                                    opts[3].text = 'Avalon Merlin Studio';
+                  opts[3].value = 'STUDIO';
+                                                    opts[4].text = 'Avalon Metro Central';
+                  opts[4].value = 'CENTRAL';
+                                                    opts[5].text = 'Avalon Metro Planet';
+                  opts[5].value = 'PLANET';
+                                                    opts[6].text = 'Avalon Metro Tools';
+                  opts[6].value = 'TOOLS';
+                                                    opts[7].text = 'Phoenix';
+                  opts[7].value = 'PNIX';
+                                               }
+                         if(value == '10140') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Beehive';
+                  opts[1].value = 'BEEHIVE';
+                                               }
+                         if(value == '10350') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Buildr';
+                  opts[1].value = 'BUILDR';
+                                               }
+                         if(value == '10290') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'C++ Standard Library';
+                  opts[1].value = 'STDCXX';
+                                               }
+                         if(value == '10300') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'CXF';
+                  opts[1].value = 'CXF';
+                                               }
+                         if(value == '10330') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Cayenne';
+                  opts[1].value = 'CAY';
+                                               }
+                         if(value == '10160') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'Cocoon';
+                  opts[1].value = 'COCOON';
+                                                    opts[2].text = 'Cocoon 3';
+                  opts[2].value = 'COCOON3';
+                                               }
+                         if(value == '10260') {
+                opts.length = 41 + 1;
+                                                  opts[1].text = 'Commons All';
+                  opts[1].value = 'COMMONSSITE';
+                                                    opts[2].text = 'Commons Attributes';
+                  opts[2].value = 'ATTRIBUTES';
+                                                    opts[3].text = 'Commons BeanUtils';
+                  opts[3].value = 'BEANUTILS';
+                                                    opts[4].text = 'Commons Betwixt';
+                  opts[4].value = 'BETWIXT';
+                                                    opts[5].text = 'Commons Chain';
+                  opts[5].value = 'CHAIN';
+                                                    opts[6].text = 'Commons CLI';
+                  opts[6].value = 'CLI';
+                                                    opts[7].text = 'Commons Codec';
+                  opts[7].value = 'CODEC';
+                                                    opts[8].text = 'Commons Collections';
+                  opts[8].value = 'COLLECTIONS';
+                                                    opts[9].text = 'Commons Compress';
+                  opts[9].value = 'COMPRESS';
+                                                    opts[10].text = 'Commons Configuration';
+                  opts[10].value = 'CONFIGURATION';
+                                                    opts[11].text = 'Commons Daemon';
+                  opts[11].value = 'DAEMON';
+                                                    opts[12].text = 'Commons Dbcp';
+                  opts[12].value = 'DBCP';
+                                                    opts[13].text = 'Commons DbUtils';
+                  opts[13].value = 'DBUTILS';
+                                                    opts[14].text = 'Commons Digester';
+                  opts[14].value = 'DIGESTER';
+                                                    opts[15].text = 'Commons Discovery';
+                  opts[15].value = 'DISCOVERY';
+                                                    opts[16].text = 'Commons Dormant';
+                  opts[16].value = 'DORMANT';
+                                                    opts[17].text = 'Commons EL';
+                  opts[17].value = 'EL';
+                                                    opts[18].text = 'Commons Email';
+                  opts[18].value = 'EMAIL';
+                                                    opts[19].text = 'Commons Exec';
+                  opts[19].value = 'EXEC';
+                                                    opts[20].text = 'Commons FileUpload';
+                  opts[20].value = 'FILEUPLOAD';
+                                                    opts[21].text = 'Commons IO';
+                  opts[21].value = 'IO';
+                                                    opts[22].text = 'Commons JCI';
+                  opts[22].value = 'JCI';
+                                                    opts[23].text = 'Commons Jelly';
+                  opts[23].value = 'JELLY';
+                                                    opts[24].text = 'Commons JEXL';
+                  opts[24].value = 'JEXL';
+                                                    opts[25].text = 'Commons JXPath';
+                  opts[25].value = 'JXPATH';
+                                                    opts[26].text = 'Commons Lang';
+                  opts[26].value = 'LANG';
+                                                    opts[27].text = 'Commons Launcher';
+                  opts[27].value = 'LAUNCHER';
+                                                    opts[28].text = 'Commons Logging';
+                  opts[28].value = 'LOGGING';
+                                                    opts[29].text = 'Commons Math';
+                  opts[29].value = 'MATH';
+                                                    opts[30].text = 'Commons Modeler';
+                  opts[30].value = 'MODELER';
+                                                    opts[31].text = 'Commons Net';
+                  opts[31].value = 'NET';
+                                                    opts[32].text = 'Commons Pool';
+                  opts[32].value = 'POOL';
+                                                    opts[33].text = 'Commons Primitives';
+                  opts[33].value = 'PRIMITIVES';
+                                                    opts[34].text = 'Commons Proxy';
+                  opts[34].value = 'PROXY';
+                                                    opts[35].text = 'Commons Resources';
+                  opts[35].value = 'RESOURCES';
+                                                    opts[36].text = 'Commons Sandbox';
+                  opts[36].value = 'SANDBOX';
+                                                    opts[37].text = 'Commons Sanselan';
+                  opts[37].value = 'SANSELAN';
+                                                    opts[38].text = 'Commons SCXML';
+                  opts[38].value = 'SCXML';
+                                                    opts[39].text = 'Commons Transaction';
+                  opts[39].value = 'TRANSACTION';
+                                                    opts[40].text = 'Commons Validator';
+                  opts[40].value = 'VALIDATOR';
+                                                    opts[41].text = 'Commons VFS';
+                  opts[41].value = 'VFS';
+                                               }
+                         if(value == '10320') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'CouchDB';
+                  opts[1].value = 'COUCHDB';
+                                               }
+                         if(value == '10090') {
+                opts.length = 6 + 1;
+                                                  opts[1].text = 'DdlUtils';
+                  opts[1].value = 'DDLUTILS';
+                                                    opts[2].text = 'Derby';
+                  opts[2].value = 'DERBY';
+                                                    opts[3].text = 'JDO';
+                  opts[3].value = 'JDO';
+                                                    opts[4].text = 'OJB';
+                  opts[4].value = 'OJB';
+                                                    opts[5].text = 'Torque';
+                  opts[5].value = 'TORQUE';
+                                                    opts[6].text = 'Torque issues (old)';
+                  opts[6].value = 'TORQUEOLD';
+                                               }
+                         if(value == '10041') {
+                opts.length = 9 + 1;
+                                                  opts[1].text = 'Directory';
+                  opts[1].value = 'DIR';
+                                                    opts[2].text = 'Directory ApacheDS';
+                  opts[2].value = 'DIRSERVER';
+                                                    opts[3].text = 'Directory client API';
+                  opts[3].value = 'DIRAPI';
+                                                    opts[4].text = 'Directory Groovy LDAP';
+                  opts[4].value = 'DIRGROOVY';
+                                                    opts[5].text = 'Directory Kerberos';
+                  opts[5].value = 'DIRKRB';
+                                                    opts[6].text = 'Directory Naming';
+                  opts[6].value = 'DIRNAMING';
+                                                    opts[7].text = 'Directory Shared';
+                  opts[7].value = 'DIRSHARED';
+                                                    opts[8].text = 'Directory Studio';
+                  opts[8].value = 'DIRSTUDIO';
+                                                    opts[9].text = 'Triplesec';
+                  opts[9].value = 'DIRTSEC';
+                                               }
+                         if(value == '10021') {
+                opts.length = 3 + 1;
+                                                  opts[1].text = 'Avalon';
+                  opts[1].value = 'AVALON';
+                                                    opts[2].text = 'Excalibur Components';
+                  opts[2].value = 'EXLBR';
+                                                    opts[3].text = 'Excalibur Fortress';
+                  opts[3].value = 'FORTRESS';
+                                               }
+                         if(value == '10121') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'Felix';
+                  opts[1].value = 'FELIX';
+                                                    opts[2].text = 'Felix M2 Plugin';
+                  opts[2].value = 'FELIXM2';
+                                               }
+                         if(value == '10112') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Forrest';
+                  opts[1].value = 'FOR';
+                                               }
+                         if(value == '10061') {
+                opts.length = 7 + 1;
+                                                  opts[1].text = 'DayTrader';
+                  opts[1].value = 'DAYTRADER';
+                                                    opts[2].text = 'GBuild';
+                  opts[2].value = 'GBUILD';
+                                                    opts[3].text = 'Geronimo';
+                  opts[3].value = 'GERONIMO';
+                                                    opts[4].text = 'Geronimo-Devtools';
+                  opts[4].value = 'GERONIMODEVTOOLS';
+                                                    opts[5].text = 'GShell';
+                  opts[5].value = 'GSHELL';
+                                                    opts[6].text = 'XBean';
+                  opts[6].value = 'XBEAN';
+                                                    opts[7].text = 'Yoko - CORBA Server';
+                  opts[7].value = 'YOKO';
+                                               }
+                         if(value == '10030') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Gump';
+                  opts[1].value = 'GUMP';
+                                               }
+                         if(value == '10080') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'mod_python';
+                  opts[1].value = 'MODPYTHON';
+                                               }
+                         if(value == '10292') {
+                opts.length = 9 + 1;
+                                                  opts[1].text = 'Avro';
+                  opts[1].value = 'AVRO';
+                                                    opts[2].text = 'Hadoop Chukwa';
+                  opts[2].value = 'CHUKWA';
+                                                    opts[3].text = 'Hadoop Common';
+                  opts[3].value = 'HADOOP';
+                                                    opts[4].text = 'Hadoop HBase';
+                  opts[4].value = 'HBASE';
+                                                    opts[5].text = 'Hadoop HDFS';
+                  opts[5].value = 'HDFS';
+                                                    opts[6].text = 'Hadoop Hive';
+                  opts[6].value = 'HIVE';
+                                                    opts[7].text = 'Hadoop Map/Reduce';
+                  opts[7].value = 'MAPREDUCE';
+                                                    opts[8].text = 'Pig';
+                  opts[8].value = 'PIG';
+                                                    opts[9].text = 'Zookeeper';
+                  opts[9].value = 'ZOOKEEPER';
+                                               }
+                         if(value == '10111') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Harmony';
+                  opts[1].value = 'HARMONY';
+                                               }
+                         if(value == '10280') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'HttpComponents HttpClient';
+                  opts[1].value = 'HTTPCLIENT';
+                                                    opts[2].text = 'HttpComponents HttpCore';
+                  opts[2].value = 'HTTPCORE';
+                                               }
+                         if(value == '10024') {
+                opts.length = 34 + 1;
+                                                  opts[1].text = 'Ace';
+                  opts[1].value = 'ACE';
+                                                    opts[2].text = 'Bluesky';
+                  opts[2].value = 'BLUESKY';
+                                                    opts[3].text = 'Cassandra';
+                  opts[3].value = 'CASSANDRA';
+                                                    opts[4].text = 'Chemistry';
+                  opts[4].value = 'CMIS';
+                                                    opts[5].text = 'Clerezza';
+                  opts[5].value = 'CLEREZZA';
+                                                    opts[6].text = 'Click';
+                  opts[6].value = 'CLK';
+                                                    opts[7].text = 'Click Eclipse';
+                  opts[7].value = 'CLKE';
+                                                    opts[8].text = 'Droids';
+                  opts[8].value = 'DROIDS';
+                                                    opts[9].text = 'Empire-DB';
+                  opts[9].value = 'EMPIREDB';
+                                                    opts[10].text = 'ESME';
+                  opts[10].value = 'ESME';
+                                                    opts[11].text = 'Etch';
+                  opts[11].value = 'ETCH';
+                                                    opts[12].text = 'Hama';
+                  opts[12].value = 'HAMA';
+                                                    opts[13].text = 'HISE';
+                  opts[13].value = 'HISE';
+                                                    opts[14].text = 'Imperius';
+                  opts[14].value = 'IMPERIUS';
+                                                    opts[15].text = 'Incubator';
+                  opts[15].value = 'INCUBATOR';
+                                                    opts[16].text = 'JSecurity';
+                  opts[16].value = 'JSEC';
+                                                    opts[17].text = 'JSPWiki';
+                  opts[17].value = 'JSPWIKI';
+                                                    opts[18].text = 'Kato';
+                  opts[18].value = 'KATO';
+                                                    opts[19].text = 'Ki';
+                  opts[19].value = 'KI';
+                                                    opts[20].text = 'Olio';
+                  opts[20].value = 'OLIO';
+                                                    opts[21].text = 'OpenWebBeans';
+                  opts[21].value = 'OWB';
+                                                    opts[22].text = 'PhotArk';
+                  opts[22].value = 'PHOTARK';
+                                                    opts[23].text = 'Pivot';
+                  opts[23].value = 'PIVOT';
+                                                    opts[24].text = 'RAT';
+                  opts[24].value = 'RAT';
+                                                    opts[25].text = 'River';
+                  opts[25].value = 'RIVER';
+                                                    opts[26].text = 'Shindig';
+                  opts[26].value = 'SHINDIG';
+                                                    opts[27].text = 'Shiro';
+                  opts[27].value = 'SHIRO';
+                                                    opts[28].text = 'Stonehenge';
+                  opts[28].value = 'STONEHENGE';
+                                                    opts[29].text = 'Tashi';
+                  opts[29].value = 'TASHI';
+                                                    opts[30].text = 'Thrift';
+                  opts[30].value = 'THRIFT';
+                                                    opts[31].text = 'Traffic Server';
+                  opts[31].value = 'TS';
+                                                    opts[32].text = 'UIMA';
+                  opts[32].value = 'UIMA';
+                                                    opts[33].text = 'VCL';
+                  opts[33].value = 'VCL';
+                                                    opts[34].text = 'Wookie';
+                  opts[34].value = 'WOOKIE';
+                                               }
+                         if(value == '10170') {
+                opts.length = 8 + 1;
+                                                  opts[1].text = 'Jackrabbit Content Repository';
+                  opts[1].value = 'JCR';
+                                                    opts[2].text = 'Jackrabbit JCR Benchmark';
+                  opts[2].value = 'JCRBENCH';
+                                                    opts[3].text = 'Jackrabbit JCR Classloader';
+                  opts[3].value = 'JCRCL';
+                                                    opts[4].text = 'Jackrabbit JCR Servlets';
+                  opts[4].value = 'JCRSERVLET';
+                                                    opts[5].text = 'Jackrabbit JCR Tests';
+                  opts[5].value = 'JCRTCK';
+                                                    opts[6].text = 'Jackrabbit JCR-RMI';
+                  opts[6].value = 'JCRRMI';
+                                                    opts[7].text = 'Jackrabbit OCM';
+                  opts[7].value = 'OCM';
+                                                    opts[8].text = 'Jackrabbit Site';
+                  opts[8].value = 'JCRSITE';
+                                               }
+                         if(value == '10025') {
+                opts.length = 4 + 1;
+                                                  opts[1].text = 'BSF';
+                  opts[1].value = 'BSF';
+                                                    opts[2].text = 'Cactus';
+                  opts[2].value = 'CACTUS';
+                                                    opts[3].text = 'ECS';
+                  opts[3].value = 'ECS';
+                                                    opts[4].text = 'JCS';
+                  opts[4].value = 'JCS';
+                                               }
+                         if(value == '10020') {
+                opts.length = 12 + 1;
+                                                  opts[1].text = 'JAMES Basic Mailet Toolkit';
+                  opts[1].value = 'MAILETBASE';
+                                                    opts[2].text = 'JAMES Crytography Mailets';
+                  opts[2].value = 'MAILETCRYPTO';
+                                                    opts[3].text = 'JAMES Imap';
+                  opts[3].value = 'IMAP';
+                                                    opts[4].text = 'JAMES jSieve';
+                  opts[4].value = 'JSIEVE';
+                                                    opts[5].text = 'JAMES jSPF';
+                  opts[5].value = 'JSPF';
+                                                    opts[6].text = 'JAMES MailetDocs Maven Plugin';
+                  opts[6].value = 'MAILETDOCS';
+                                                    opts[7].text = 'JAMES Mime4j';
+                  opts[7].value = 'MIME4J';
+                                                    opts[8].text = 'JAMES MPT';
+                  opts[8].value = 'MPT';
+                                                    opts[9].text = 'JAMES Postage';
+                  opts[9].value = 'POSTAGE';
+                                                    opts[10].text = 'JAMES Server';
+                  opts[10].value = 'JAMES';
+                                                    opts[11].text = 'JAMES Standard Mailets';
+                  opts[11].value = 'MAILETSTANDARD';
+                                                    opts[12].text = 'Mailet';
+                  opts[12].value = 'MAILET';
+                                               }
+                         if(value == '10210') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'Labs';
+                  opts[1].value = 'LABS';
+                                                    opts[2].text = 'Labs WebArch draft-fielding-http';
+                  opts[2].value = 'HTTPDRAFT';
+                                               }
+                         if(value == '10060') {
+                opts.length = 4 + 1;
+                                                  opts[1].text = 'Log4cxx';
+                  opts[1].value = 'LOGCXX';
+                                                    opts[2].text = 'Log4j 2';
+                  opts[2].value = 'LOG4J2';
+                                                    opts[3].text = 'Log4net';
+                  opts[3].value = 'LOG4NET';
+                                                    opts[4].text = 'Log4php';
+                  opts[4].value = 'LOG4PHP';
+                                               }
+                         if(value == '10150') {
+                opts.length = 9 + 1;
+                                                  opts[1].text = 'Lucene - Java';
+                  opts[1].value = 'LUCENE';
+                                                    opts[2].text = 'Lucene.Net';
+                  opts[2].value = 'LUCENENET';
+                                                    opts[3].text = 'Lucy';
+                  opts[3].value = 'LUCY';
+                                                    opts[4].text = 'Mahout';
+                  opts[4].value = 'MAHOUT';
+                                                    opts[5].text = 'Nutch';
+                  opts[5].value = 'NUTCH';
+                                                    opts[6].text = 'Open Relevance Project ';
+                  opts[6].value = 'ORP';
+                                                    opts[7].text = 'PyLucene';
+                  opts[7].value = 'PYLUCENE';
+                                                    opts[8].text = 'Solr';
+                  opts[8].value = 'SOLR';
+                                                    opts[9].text = 'Tika';
+                  opts[9].value = 'TIKA';
+                                               }
+                         if(value == '10240') {
+                opts.length = 5 + 1;
+                                                  opts[1].text = 'Asyncweb';
+                  opts[1].value = 'ASYNCWEB';
+                                                    opts[2].text = 'FtpServer';
+                  opts[2].value = 'FTPSERVER';
+                                                    opts[3].text = 'MINA';
+                  opts[3].value = 'DIRMINA';
+                                                    opts[4].text = 'MINA SSHD';
+                  opts[4].value = 'SSHD';
+                                                    opts[5].text = 'VYSPER';
+                  opts[5].value = 'VYSPER';
+                                               }
+                         if(value == '10100') {
+                opts.length = 12 + 1;
+                                                  opts[1].text = 'Apache MyFaces Test';
+                  opts[1].value = 'MYFACESTEST';
+                                                    opts[2].text = 'MyFaces ADF-Faces';
+                  opts[2].value = 'ADFFACES';
+                                                    opts[3].text = 'MyFaces Commons';
+                  opts[3].value = 'MFCOMMONS';
+                                                    opts[4].text = 'MyFaces Core';
+                  opts[4].value = 'MYFACES';
+                                                    opts[5].text = 'MyFaces Extensions Scripting';
+                  opts[5].value = 'EXTSCRIPT';
+                                                    opts[6].text = 'MyFaces Extensions Validator';
+                  opts[6].value = 'EXTVAL';
+                                                    opts[7].text = 'MyFaces Orchestra';
+                  opts[7].value = 'ORCHESTRA';
+                                                    opts[8].text = 'MyFaces Portlet Bridge';
+                  opts[8].value = 'PORTLETBRIDGE';
+                                                    opts[9].text = 'MyFaces Tobago';
+                  opts[9].value = 'TOBAGO';
+                                                    opts[10].text = 'MyFaces Tomahawk';
+                  opts[10].value = 'TOMAHAWK';
+                                                    opts[11].text = 'MyFaces Trinidad';
+                  opts[11].value = 'TRINIDAD';
+                                                    opts[12].text = 'RCF';
+                  opts[12].value = 'RCF';
+                                               }
+                         if(value == '10311') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'ODE';
+                  opts[1].value = 'ODE';
+                                               }
+                         if(value == '10230') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'OFBiz';
+                  opts[1].value = 'OFBIZ';
+                                               }
+                         if(value == '10251') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'OpenEJB';
+                  opts[1].value = 'OPENEJB';
+                                                    opts[2].text = 'OpenEJB Eclipse Plugin';
+                  opts[2].value = 'OEP';
+                                               }
+                         if(value == '10252') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'OpenJPA';
+                  opts[1].value = 'OPENJPA';
+                                               }
+                         if(value == '10360') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'PDFBox';
+                  opts[1].value = 'PDFBOX';
+                                               }
+                         if(value == '10050') {
+                opts.length = 6 + 1;
+                                                  opts[1].text = 'Jetspeed';
+                  opts[1].value = 'JS1';
+                                                    opts[2].text = 'Jetspeed 2';
+                  opts[2].value = 'JS2';
+                                                    opts[3].text = 'Pluto';
+                  opts[3].value = 'PLUTO';
+                                                    opts[4].text = 'Portals';
+                  opts[4].value = 'PORTALS';
+                                                    opts[5].text = 'Portals Apps';
+                  opts[5].value = 'APA';
+                                                    opts[6].text = 'Portals Bridges';
+                  opts[6].value = 'PB';
+                                               }
+                         if(value == '10220') {
+                opts.length = 19 + 1;
+                                                  opts[1].text = ' Agila';
+                  opts[1].value = 'AGILA';
+                                                    opts[2].text = 'Addressing';
+                  opts[2].value = 'ADDR';
+                                                    opts[3].text = 'AltRMI';
+                  opts[3].value = 'ARMI';
+                                                    opts[4].text = 'Commons FeedParser';
+                  opts[4].value = 'FEEDPARSER';
+                                                    opts[5].text = 'Depot';
+                  opts[5].value = 'DEPOT';
+                                                    opts[6].text = 'ews';
+                  opts[6].value = 'EWS';
+                                                    opts[7].text = 'Graffito';
+                  opts[7].value = 'GRFT';
+                                                    opts[8].text = 'Heraldry';
+                  opts[8].value = 'HERALDRY';
+                                                    opts[9].text = 'HiveMind';
+                  opts[9].value = 'HIVEMIND';
+                                                    opts[10].text = 'Lokahi';
+                  opts[10].value = 'LOKAHI';
+                                                    opts[11].text = 'Lucene4c';
+                  opts[11].value = 'LCN4C';
+                                                    opts[12].text = 'Mirae';
+                  opts[12].value = 'MIRAE';
+                                                    opts[13].text = 'Pubscribe';
+                  opts[13].value = 'HERMES';
+                                                    opts[14].text = 'SOAP';
+                  opts[14].value = 'SOAP';
+                                                    opts[15].text = 'TripleSoup';
+                  opts[15].value = 'TRIPLES';
+                                                    opts[16].text = 'TSIK';
+                  opts[16].value = 'TSIK';
+                                                    opts[17].text = 'WADI';
+                  opts[17].value = 'WADI';
+                                                    opts[18].text = 'WSRF';
+                  opts[18].value = 'APOLLO';
+                                                    opts[19].text = 'XAP';
+                  opts[19].value = 'XAP';
+                                               }
+                         if(value == '10331') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Roller';
+                  opts[1].value = 'ROL';
+                                               }
+                         if(value == '10340') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Sling';
+                  opts[1].value = 'SLING';
+                                               }
+                         if(value == '10291') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Synapse';
+                  opts[1].value = 'SYNAPSE';
+                                               }
+                         if(value == '10190') {
+                opts.length = 2 + 1;
+                                                  opts[1].text = 'Tapestry';
+                  opts[1].value = 'TAPESTRY';
+                                                    opts[2].text = 'Tapestry 5';
+                  opts[2].value = 'TAP5';
+                                               }
+                         if(value == '10250') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Turbine';
+                  opts[1].value = 'TRB';
+                                               }
+                         if(value == '10200') {
+                opts.length = 6 + 1;
+                                                  opts[1].text = 'Anakia';
+                  opts[1].value = 'ANAKIA';
+                                                    opts[2].text = 'DocBook Framework';
+                  opts[2].value = 'DBF';
+                                                    opts[3].text = 'Dvsl';
+                  opts[3].value = 'DVSL';
+                                                    opts[4].text = 'Texen';
+                  opts[4].value = 'TEXEN';
+                                                    opts[5].text = 'Velocity';
+                  opts[5].value = 'VELOCITY';
+                                                    opts[6].text = 'Velocity Tools';
+                  opts[6].value = 'VELTOOLS';
+                                               }
+                         if(value == '10028') {
+                opts.length = 22 + 1;
+                                                  opts[1].text = 'Axis';
+                  opts[1].value = 'AXIS';
+                                                    opts[2].text = 'Axis 2.0 (Axis2)';
+                  opts[2].value = 'AXIS2';
+                                                    opts[3].text = 'Axis-C++';
+                  opts[3].value = 'AXISCPP';
+                                                    opts[4].text = 'Axis-WSIF';
+                  opts[4].value = 'WSIF';
+                                                    opts[5].text = 'Axis2-C';
+                  opts[5].value = 'AXIS2C';
+                                                    opts[6].text = 'JaxMe';
+                  opts[6].value = 'JAXME';
+                                                    opts[7].text = 'jUDDI';
+                  opts[7].value = 'JUDDI';
+                                                    opts[8].text = 'Kandula';
+                  opts[8].value = 'KAND';
+                                                    opts[9].text = 'Muse';
+                  opts[9].value = 'MUSE';
+                                                    opts[10].text = 'Rampart';
+                  opts[10].value = 'RAMPART';
+                                                    opts[11].text = 'Rampart/C';
+                  opts[11].value = 'RAMPARTC';
+                                                    opts[12].text = 'Sandesha';
+                  opts[12].value = 'SAND';
+                                                    opts[13].text = 'Sandesha2';
+                  opts[13].value = 'SANDESHA2';
+                                                    opts[14].text = 'Sandesha2/C';
+                  opts[14].value = 'SANDESHA2C';
+                                                    opts[15].text = 'Savan';
+                  opts[15].value = 'SAVAN';
+                                                    opts[16].text = 'Scout';
+                  opts[16].value = 'SCOUT';
+                                                    opts[17].text = 'Tuscany';
+                  opts[17].value = 'TUSCANY';
+                                                    opts[18].text = 'Woden';
+                  opts[18].value = 'WODEN';
+                                                    opts[19].text = 'WS-Commons';
+                  opts[19].value = 'WSCOMMONS';
+                                                    opts[20].text = 'WSRP4J';
+                  opts[20].value = 'WSRP4J';
+                                                    opts[21].text = 'WSS4J';
+                  opts[21].value = 'WSS';
+                                                    opts[22].text = 'XML-RPC';
+                  opts[22].value = 'XMLRPC';
+                                               }
+                         if(value == '10270') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'Wicket';
+                  opts[1].value = 'WICKET';
+                                               }
+                         if(value == '10040') {
+                opts.length = 6 + 1;
+                                                  opts[1].text = 'JuiCE';
+                  opts[1].value = 'JUICE';
+                                                    opts[2].text = 'XalanC';
+                  opts[2].value = 'XALANC';
+                                                    opts[3].text = 'XalanJ2';
+                  opts[3].value = 'XALANJ';
+                                                    opts[4].text = 'Xerces-C++';
+                  opts[4].value = 'XERCESC';
+                                                    opts[5].text = 'Xerces-P';
+                  opts[5].value = 'XERCESP';
+                                                    opts[6].text = 'Xerces2-J';
+                  opts[6].value = 'XERCESJ';
+                                               }
+                         if(value == '10110') {
+                opts.length = 1 + 1;
+                                                  opts[1].text = 'XMLBeans';
+                  opts[1].value = 'XMLBEANS';
+                                               }
+                         if(value == '10120') {
+                opts.length = 3 + 1;
+                                                  opts[1].text = 'iBatis for .NET';
+                  opts[1].value = 'IBATISNET';
+                                                    opts[2].text = 'iBatis for Java';
+                  opts[2].value = 'IBATIS';
+                                                    opts[3].text = 'iBATIS for Ruby';
+                  opts[3].value = 'RBATIS';
+                                               }
+                        if(value == '-1') {
+                opts.length = 279 + 1;
+                                                  opts[1].text = '   Community Development ';
+                  opts[1].value = 'COMDEV';
+                                                    opts[2].text = ' Agila';
+                  opts[2].value = 'AGILA';
+                                                    opts[3].text = 'Abdera';
+                  opts[3].value = 'ABDERA';
+                                                    opts[4].text = 'Ace';
+                  opts[4].value = 'ACE';
+                                                    opts[5].text = 'Addressing';
+                  opts[5].value = 'ADDR';
+                                                    opts[6].text = 'AltRMI';
+                  opts[6].value = 'ARMI';
+                                                    opts[7].text = 'Anakia';
+                  opts[7].value = 'ANAKIA';
+                                                    opts[8].text = 'Apache MyFaces Test';
+                  opts[8].value = 'MYFACESTEST';
+                                                    opts[9].text = 'Aries';
+                  opts[9].value = 'ARIES';
+                                                    opts[10].text = 'Asyncweb';
+                  opts[10].value = 'ASYNCWEB';
+                                                    opts[11].text = 'Attic';
+                  opts[11].value = 'ATTIC';
+                                                    opts[12].text = 'Avalon';
+                  opts[12].value = 'AVALON';
+                                                    opts[13].text = 'Avalon Castle';
+                  opts[13].value = 'AVNSHARP';
+                                                    opts[14].text = 'Avalon Merlin Runtime';
+                  opts[14].value = 'RUNTIME';
+                                                    opts[15].text = 'Avalon Merlin Studio';
+                  opts[15].value = 'STUDIO';
+                                                    opts[16].text = 'Avalon Metro Central';
+                  opts[16].value = 'CENTRAL';
+                                                    opts[17].text = 'Avalon Metro Planet';
+                  opts[17].value = 'PLANET';
+                                                    opts[18].text = 'Avalon Metro Tools';
+                  opts[18].value = 'TOOLS';
+                                                    opts[19].text = 'Avro';
+                  opts[19].value = 'AVRO';
+                                                    opts[20].text = 'Axis';
+                  opts[20].value = 'AXIS';
+                                                    opts[21].text = 'Axis 2.0 (Axis2)';
+                  opts[21].value = 'AXIS2';
+                                                    opts[22].text = 'Axis-C++';
+                  opts[22].value = 'AXISCPP';
+                                                    opts[23].text = 'Axis-WSIF';
+                  opts[23].value = 'WSIF';
+                                                    opts[24].text = 'Axis2-C';
+                  opts[24].value = 'AXIS2C';
+                                                    opts[25].text = 'Beehive';
+                  opts[25].value = 'BEEHIVE';
+                                                    opts[26].text = 'Bluesky';
+                  opts[26].value = 'BLUESKY';
+                                                    opts[27].text = 'BSF';
+                  opts[27].value = 'BSF';
+                                                    opts[28].text = 'Buildr';
+                  opts[28].value = 'BUILDR';
+                                                    opts[29].text = 'C++ Standard Library';
+                  opts[29].value = 'STDCXX';
+                                                    opts[30].text = 'Cactus';
+                  opts[30].value = 'CACTUS';
+                                                    opts[31].text = 'Cassandra';
+                  opts[31].value = 'CASSANDRA';
+                                                    opts[32].text = 'Cayenne';
+                  opts[32].value = 'CAY';
+                                                    opts[33].text = 'Chemistry';
+                  opts[33].value = 'CMIS';
+                                                    opts[34].text = 'Clerezza';
+                  opts[34].value = 'CLEREZZA';
+                                                    opts[35].text = 'Click';
+                  opts[35].value = 'CLK';
+                                                    opts[36].text = 'Click Eclipse';
+                  opts[36].value = 'CLKE';
+                                                    opts[37].text = 'Cocoon';
+                  opts[37].value = 'COCOON';
+                                                    opts[38].text = 'Cocoon 3';
+                  opts[38].value = 'COCOON3';
+                                                    opts[39].text = 'Commons All';
+                  opts[39].value = 'COMMONSSITE';
+                                                    opts[40].text = 'Commons Attributes';
+                  opts[40].value = 'ATTRIBUTES';
+                                                    opts[41].text = 'Commons BeanUtils';
+                  opts[41].value = 'BEANUTILS';
+                                                    opts[42].text = 'Commons Betwixt';
+                  opts[42].value = 'BETWIXT';
+                                                    opts[43].text = 'Commons Chain';
+                  opts[43].value = 'CHAIN';
+                                                    opts[44].text = 'Commons CLI';
+                  opts[44].value = 'CLI';
+                                                    opts[45].text = 'Commons Codec';
+                  opts[45].value = 'CODEC';
+                                                    opts[46].text = 'Commons Collections';
+                  opts[46].value = 'COLLECTIONS';
+                                                    opts[47].text = 'Commons Compress';
+                  opts[47].value = 'COMPRESS';
+                                                    opts[48].text = 'Commons Configuration';
+                  opts[48].value = 'CONFIGURATION';
+                                                    opts[49].text = 'Commons Daemon';
+                  opts[49].value = 'DAEMON';
+                                                    opts[50].text = 'Commons Dbcp';
+                  opts[50].value = 'DBCP';
+                                                    opts[51].text = 'Commons DbUtils';
+                  opts[51].value = 'DBUTILS';
+                                                    opts[52].text = 'Commons Digester';
+                  opts[52].value = 'DIGESTER';
+                                                    opts[53].text = 'Commons Discovery';
+                  opts[53].value = 'DISCOVERY';
+                                                    opts[54].text = 'Commons Dormant';
+                  opts[54].value = 'DORMANT';
+                                                    opts[55].text = 'Commons EL';
+                  opts[55].value = 'EL';
+                                                    opts[56].text = 'Commons Email';
+                  opts[56].value = 'EMAIL';
+                                                    opts[57].text = 'Commons Exec';
+                  opts[57].value = 'EXEC';
+                                                    opts[58].text = 'Commons FeedParser';
+                  opts[58].value = 'FEEDPARSER';
+                                                    opts[59].text = 'Commons FileUpload';
+                  opts[59].value = 'FILEUPLOAD';
+                                                    opts[60].text = 'Commons IO';
+                  opts[60].value = 'IO';
+                                                    opts[61].text = 'Commons JCI';
+                  opts[61].value = 'JCI';
+                                                    opts[62].text = 'Commons Jelly';
+                  opts[62].value = 'JELLY';
+                                                    opts[63].text = 'Commons JEXL';
+                  opts[63].value = 'JEXL';
+                                                    opts[64].text = 'Commons JXPath';
+                  opts[64].value = 'JXPATH';
+                                                    opts[65].text = 'Commons Lang';
+                  opts[65].value = 'LANG';
+                                                    opts[66].text = 'Commons Launcher';
+                  opts[66].value = 'LAUNCHER';
+                                                    opts[67].text = 'Commons Logging';
+                  opts[67].value = 'LOGGING';
+                                                    opts[68].text = 'Commons Math';
+                  opts[68].value = 'MATH';
+                                                    opts[69].text = 'Commons Modeler';
+                  opts[69].value = 'MODELER';
+                                                    opts[70].text = 'Commons Net';
+                  opts[70].value = 'NET';
+                                                    opts[71].text = 'Commons Pool';
+                  opts[71].value = 'POOL';
+                                                    opts[72].text = 'Commons Primitives';
+                  opts[72].value = 'PRIMITIVES';
+                                                    opts[73].text = 'Commons Proxy';
+                  opts[73].value = 'PROXY';
+                                                    opts[74].text = 'Commons Resources';
+                  opts[74].value = 'RESOURCES';
+                                                    opts[75].text = 'Commons Sandbox';
+                  opts[75].value = 'SANDBOX';
+                                                    opts[76].text = 'Commons Sanselan';
+                  opts[76].value = 'SANSELAN';
+                                                    opts[77].text = 'Commons SCXML';
+                  opts[77].value = 'SCXML';
+                                                    opts[78].text = 'Commons Transaction';
+                  opts[78].value = 'TRANSACTION';
+                                                    opts[79].text = 'Commons Validator';
+                  opts[79].value = 'VALIDATOR';
+                                                    opts[80].text = 'Commons VFS';
+                  opts[80].value = 'VFS';
+                                                    opts[81].text = 'CouchDB';
+                  opts[81].value = 'COUCHDB';
+                                                    opts[82].text = 'CXF';
+                  opts[82].value = 'CXF';
+                                                    opts[83].text = 'DayTrader';
+                  opts[83].value = 'DAYTRADER';
+                                                    opts[84].text = 'DdlUtils';
+                  opts[84].value = 'DDLUTILS';
+                                                    opts[85].text = 'Depot';
+                  opts[85].value = 'DEPOT';
+                                                    opts[86].text = 'Derby';
+                  opts[86].value = 'DERBY';
+                                                    opts[87].text = 'Directory';
+                  opts[87].value = 'DIR';
+                                                    opts[88].text = 'Directory ApacheDS';
+                  opts[88].value = 'DIRSERVER';
+                                                    opts[89].text = 'Directory client API';
+                  opts[89].value = 'DIRAPI';
+                                                    opts[90].text = 'Directory Groovy LDAP';
+                  opts[90].value = 'DIRGROOVY';
+                                                    opts[91].text = 'Directory Kerberos';
+                  opts[91].value = 'DIRKRB';
+                                                    opts[92].text = 'Directory Naming';
+                  opts[92].value = 'DIRNAMING';
+                                                    opts[93].text = 'Directory Shared';
+                  opts[93].value = 'DIRSHARED';
+                                                    opts[94].text = 'Directory Studio';
+                  opts[94].value = 'DIRSTUDIO';
+                                                    opts[95].text = 'DocBook Framework';
+                  opts[95].value = 'DBF';
+                                                    opts[96].text = 'Droids';
+                  opts[96].value = 'DROIDS';
+                                                    opts[97].text = 'Dvsl';
+                  opts[97].value = 'DVSL';
+                                                    opts[98].text = 'ECS';
+                  opts[98].value = 'ECS';
+                                                    opts[99].text = 'Empire-DB';
+                  opts[99].value = 'EMPIREDB';
+                                                    opts[100].text = 'ESME';
+                  opts[100].value = 'ESME';
+                                                    opts[101].text = 'Etch';
+                  opts[101].value = 'ETCH';
+                                                    opts[102].text = 'ews';
+                  opts[102].value = 'EWS';
+                                                    opts[103].text = 'Excalibur Components';
+                  opts[103].value = 'EXLBR';
+                                                    opts[104].text = 'Excalibur Fortress';
+                  opts[104].value = 'FORTRESS';
+                                                    opts[105].text = 'Felix';
+                  opts[105].value = 'FELIX';
+                                                    opts[106].text = 'Felix M2 Plugin';
+                  opts[106].value = 'FELIXM2';
+                                                    opts[107].text = 'Forrest';
+                  opts[107].value = 'FOR';
+                                                    opts[108].text = 'FtpServer';
+                  opts[108].value = 'FTPSERVER';
+                                                    opts[109].text = 'GBuild';
+                  opts[109].value = 'GBUILD';
+                                                    opts[110].text = 'Geronimo';
+                  opts[110].value = 'GERONIMO';
+                                                    opts[111].text = 'Geronimo-Devtools';
+                  opts[111].value = 'GERONIMODEVTOOLS';
+                                                    opts[112].text = 'Graffito';
+                  opts[112].value = 'GRFT';
+                                                    opts[113].text = 'GShell';
+                  opts[113].value = 'GSHELL';
+                                                    opts[114].text = 'Gump';
+                  opts[114].value = 'GUMP';
+                                                    opts[115].text = 'Hadoop Chukwa';
+                  opts[115].value = 'CHUKWA';
+                                                    opts[116].text = 'Hadoop Common';
+                  opts[116].value = 'HADOOP';
+                                                    opts[117].text = 'Hadoop HBase';
+                  opts[117].value = 'HBASE';
+                                                    opts[118].text = 'Hadoop HDFS';
+                  opts[118].value = 'HDFS';
+                                                    opts[119].text = 'Hadoop Hive';
+                  opts[119].value = 'HIVE';
+                                                    opts[120].text = 'Hadoop Map/Reduce';
+                  opts[120].value = 'MAPREDUCE';
+                                                    opts[121].text = 'Hama';
+                  opts[121].value = 'HAMA';
+                                                    opts[122].text = 'Harmony';
+                  opts[122].value = 'HARMONY';
+                                                    opts[123].text = 'Heraldry';
+                  opts[123].value = 'HERALDRY';
+                                                    opts[124].text = 'HISE';
+                  opts[124].value = 'HISE';
+                                                    opts[125].text = 'HiveMind';
+                  opts[125].value = 'HIVEMIND';
+                                                    opts[126].text = 'HttpComponents HttpClient';
+                  opts[126].value = 'HTTPCLIENT';
+                                                    opts[127].text = 'HttpComponents HttpCore';
+                  opts[127].value = 'HTTPCORE';
+                                                    opts[128].text = 'iBatis for .NET';
+                  opts[128].value = 'IBATISNET';
+                                                    opts[129].text = 'iBatis for Java';
+                  opts[129].value = 'IBATIS';
+                                                    opts[130].text = 'iBATIS for Ruby';
+                  opts[130].value = 'RBATIS';
+                                                    opts[131].text = 'Imperius';
+                  opts[131].value = 'IMPERIUS';
+                                                    opts[132].text = 'Incubator';
+                  opts[132].value = 'INCUBATOR';
+                                                    opts[133].text = 'Infrastructure';
+                  opts[133].value = 'INFRA';
+                                                    opts[134].text = 'Ivy';
+                  opts[134].value = 'IVY';
+                                                    opts[135].text = 'IvyDE';
+                  opts[135].value = 'IVYDE';
+                                                    opts[136].text = 'Jackrabbit Content Repository';
+                  opts[136].value = 'JCR';
+                                                    opts[137].text = 'Jackrabbit JCR Benchmark';
+                  opts[137].value = 'JCRBENCH';
+                                                    opts[138].text = 'Jackrabbit JCR Classloader';
+                  opts[138].value = 'JCRCL';
+                                                    opts[139].text = 'Jackrabbit JCR Servlets';
+                  opts[139].value = 'JCRSERVLET';
+                                                    opts[140].text = 'Jackrabbit JCR Tests';
+                  opts[140].value = 'JCRTCK';
+                                                    opts[141].text = 'Jackrabbit JCR-RMI';
+                  opts[141].value = 'JCRRMI';
+                                                    opts[142].text = 'Jackrabbit OCM';
+                  opts[142].value = 'OCM';
+                                                    opts[143].text = 'Jackrabbit Site';
+                  opts[143].value = 'JCRSITE';
+                                                    opts[144].text = 'JAMES Basic Mailet Toolkit';
+                  opts[144].value = 'MAILETBASE';
+                                                    opts[145].text = 'JAMES Crytography Mailets';
+                  opts[145].value = 'MAILETCRYPTO';
+                                                    opts[146].text = 'JAMES Hupa';
+                  opts[146].value = 'HUPA';
+                                                    opts[147].text = 'JAMES Imap';
+                  opts[147].value = 'IMAP';
+                                                    opts[148].text = 'JAMES jDKIM';
+                  opts[148].value = 'JDKIM';
+                                                    opts[149].text = 'JAMES jSieve';
+                  opts[149].value = 'JSIEVE';
+                                                    opts[150].text = 'JAMES jSPF';
+                  opts[150].value = 'JSPF';
+                                                    opts[151].text = 'JAMES MailetDocs Maven Plugin';
+                  opts[151].value = 'MAILETDOCS';
+                                                    opts[152].text = 'JAMES Mime4j';
+                  opts[152].value = 'MIME4J';
+                                                    opts[153].text = 'JAMES MPT';
+                  opts[153].value = 'MPT';
+                                                    opts[154].text = 'JAMES Postage';
+                  opts[154].value = 'POSTAGE';
+                                                    opts[155].text = 'JAMES Server';
+                  opts[155].value = 'JAMES';
+                                                    opts[156].text = 'JAMES Standard Mailets';
+                  opts[156].value = 'MAILETSTANDARD';
+                                                    opts[157].text = 'JaxMe';
+                  opts[157].value = 'JAXME';
+                                                    opts[158].text = 'JCS';
+                  opts[158].value = 'JCS';
+                                                    opts[159].text = 'JDO';
+                  opts[159].value = 'JDO';
+                                                    opts[160].text = 'Jetspeed';
+                  opts[160].value = 'JS1';
+                                                    opts[161].text = 'Jetspeed 2';
+                  opts[161].value = 'JS2';
+                                                    opts[162].text = 'JSecurity';
+                  opts[162].value = 'JSEC';
+                                                    opts[163].text = 'JSPWiki';
+                  opts[163].value = 'JSPWIKI';
+                                                    opts[164].text = 'jUDDI';
+                  opts[164].value = 'JUDDI';
+                                                    opts[165].text = 'JuiCE';
+                  opts[165].value = 'JUICE';
+                                                    opts[166].text = 'Kandula';
+                  opts[166].value = 'KAND';
+                                                    opts[167].text = 'Kato';
+                  opts[167].value = 'KATO';
+                                                    opts[168].text = 'Ki';
+                  opts[168].value = 'KI';
+                                                    opts[169].text = 'Labs';
+                  opts[169].value = 'LABS';
+                                                    opts[170].text = 'Labs WebArch draft-fielding-http';
+                  opts[170].value = 'HTTPDRAFT';
+                                                    opts[171].text = 'Legal Discuss';
+                  opts[171].value = 'LEGAL';
+                                                    opts[172].text = 'Log4cxx';
+                  opts[172].value = 'LOGCXX';
+                                                    opts[173].text = 'Log4j 2';
+                  opts[173].value = 'LOG4J2';
+                                                    opts[174].text = 'Log4net';
+                  opts[174].value = 'LOG4NET';
+                                                    opts[175].text = 'Log4php';
+                  opts[175].value = 'LOG4PHP';
+                                                    opts[176].text = 'Lokahi';
+                  opts[176].value = 'LOKAHI';
+                                                    opts[177].text = 'Lucene - Java';
+                  opts[177].value = 'LUCENE';
+                                                    opts[178].text = 'Lucene.Net';
+                  opts[178].value = 'LUCENENET';
+                                                    opts[179].text = 'Lucene4c';
+                  opts[179].value = 'LCN4C';
+                                                    opts[180].text = 'Lucy';
+                  opts[180].value = 'LUCY';
+                                                    opts[181].text = 'Mahout';
+                  opts[181].value = 'MAHOUT';
+                                                    opts[182].text = 'Mailet';
+                  opts[182].value = 'MAILET';
+                                                    opts[183].text = 'MINA';
+                  opts[183].value = 'DIRMINA';
+                                                    opts[184].text = 'MINA SSHD';
+                  opts[184].value = 'SSHD';
+                                                    opts[185].text = 'Mirae';
+                  opts[185].value = 'MIRAE';
+                                                    opts[186].text = 'mod_python';
+                  opts[186].value = 'MODPYTHON';
+                                                    opts[187].text = 'Muse';
+                  opts[187].value = 'MUSE';
+                                                    opts[188].text = 'MyFaces ADF-Faces';
+                  opts[188].value = 'ADFFACES';
+                                                    opts[189].text = 'MyFaces Commons';
+                  opts[189].value = 'MFCOMMONS';
+                                                    opts[190].text = 'MyFaces Core';
+                  opts[190].value = 'MYFACES';
+                                                    opts[191].text = 'MyFaces Extensions Scripting';
+                  opts[191].value = 'EXTSCRIPT';
+                                                    opts[192].text = 'MyFaces Extensions Validator';
+                  opts[192].value = 'EXTVAL';
+                                                    opts[193].text = 'MyFaces Orchestra';
+                  opts[193].value = 'ORCHESTRA';
+                                                    opts[194].text = 'MyFaces Portlet Bridge';
+                  opts[194].value = 'PORTLETBRIDGE';
+                                                    opts[195].text = 'MyFaces Tobago';
+                  opts[195].value = 'TOBAGO';
+                                                    opts[196].text = 'MyFaces Tomahawk';
+                  opts[196].value = 'TOMAHAWK';
+                                                    opts[197].text = 'MyFaces Trinidad';
+                  opts[197].value = 'TRINIDAD';
+                                                    opts[198].text = 'Nutch';
+                  opts[198].value = 'NUTCH';
+                                                    opts[199].text = 'ODE';
+                  opts[199].value = 'ODE';
+                                                    opts[200].text = 'OFBiz';
+                  opts[200].value = 'OFBIZ';
+                                                    opts[201].text = 'OJB';
+                  opts[201].value = 'OJB';
+                                                    opts[202].text = 'Olio';
+                  opts[202].value = 'OLIO';
+                                                    opts[203].text = 'Open Relevance Project ';
+                  opts[203].value = 'ORP';
+                                                    opts[204].text = 'OpenEJB';
+                  opts[204].value = 'OPENEJB';
+                                                    opts[205].text = 'OpenEJB Eclipse Plugin';
+                  opts[205].value = 'OEP';
+                                                    opts[206].text = 'OpenJPA';
+                  opts[206].value = 'OPENJPA';
+                                                    opts[207].text = 'OpenWebBeans';
+                  opts[207].value = 'OWB';
+                                                    opts[208].text = 'PDFBox';
+                  opts[208].value = 'PDFBOX';
+                                                    opts[209].text = 'Phoenix';
+                  opts[209].value = 'PNIX';
+                                                    opts[210].text = 'PhotArk';
+                  opts[210].value = 'PHOTARK';
+                                                    opts[211].text = 'Pig';
+                  opts[211].value = 'PIG';
+                                                    opts[212].text = 'Pivot';
+                  opts[212].value = 'PIVOT';
+                                                    opts[213].text = 'Pluto';
+                  opts[213].value = 'PLUTO';
+                                                    opts[214].text = 'Portals';
+                  opts[214].value = 'PORTALS';
+                                                    opts[215].text = 'Portals Apps';
+                  opts[215].value = 'APA';
+                                                    opts[216].text = 'Portals Bridges';
+                  opts[216].value = 'PB';
+                                                    opts[217].text = 'Public Relations';
+                  opts[217].value = 'PRC';
+                                                    opts[218].text = 'Pubscribe';
+                  opts[218].value = 'HERMES';
+                                                    opts[219].text = 'PyLucene';
+                  opts[219].value = 'PYLUCENE';
+                                                    opts[220].text = 'Qpid';
+                  opts[220].value = 'QPID';
+                                                    opts[221].text = 'Rampart';
+                  opts[221].value = 'RAMPART';
+                                                    opts[222].text = 'Rampart/C';
+                  opts[222].value = 'RAMPARTC';
+                                                    opts[223].text = 'RAT';
+                  opts[223].value = 'RAT';
+                                                    opts[224].text = 'RCF';
+                  opts[224].value = 'RCF';
+                                                    opts[225].text = 'River';
+                  opts[225].value = 'RIVER';
+                                                    opts[226].text = 'Roller';
+                  opts[226].value = 'ROL';
+                                                    opts[227].text = 'Sandesha';
+                  opts[227].value = 'SAND';
+                                                    opts[228].text = 'Sandesha2';
+                  opts[228].value = 'SANDESHA2';
+                                                    opts[229].text = 'Sandesha2/C';
+                  opts[229].value = 'SANDESHA2C';
+                                                    opts[230].text = 'Savan';
+                  opts[230].value = 'SAVAN';
+                                                    opts[231].text = 'Scout';
+                  opts[231].value = 'SCOUT';
+                                                    opts[232].text = 'Shindig';
+                  opts[232].value = 'SHINDIG';
+                                                    opts[233].text = 'Shiro';
+                  opts[233].value = 'SHIRO';
+                                                    opts[234].text = 'Sling';
+                  opts[234].value = 'SLING';
+                                                    opts[235].text = 'SOAP';
+                  opts[235].value = 'SOAP';
+                                                    opts[236].text = 'Solr';
+                  opts[236].value = 'SOLR';
+                                                    opts[237].text = 'Stonehenge';
+                  opts[237].value = 'STONEHENGE';
+                                                    opts[238].text = 'Synapse';
+                  opts[238].value = 'SYNAPSE';
+                                                    opts[239].text = 'Tapestry';
+                  opts[239].value = 'TAPESTRY';
+                                                    opts[240].text = 'Tapestry 5';
+                  opts[240].value = 'TAP5';
+                                                    opts[241].text = 'Tashi';
+                  opts[241].value = 'TASHI';
+                                                    opts[242].text = 'Test Project';
+                  opts[242].value = 'TST';
+                                                    opts[243].text = 'Texen';
+                  opts[243].value = 'TEXEN';
+                                                    opts[244].text = 'Thrift';
+                  opts[244].value = 'THRIFT';
+                                                    opts[245].text = 'Tika';
+                  opts[245].value = 'TIKA';
+                                                    opts[246].text = 'Torque';
+                  opts[246].value = 'TORQUE';
+                                                    opts[247].text = 'Torque issues (old)';
+                  opts[247].value = 'TORQUEOLD';
+                                                    opts[248].text = 'Traffic Server';
+                  opts[248].value = 'TS';
+                                                    opts[249].text = 'Triplesec';
+                  opts[249].value = 'DIRTSEC';
+                                                    opts[250].text = 'TripleSoup';
+                  opts[250].value = 'TRIPLES';
+                                                    opts[251].text = 'TSIK';
+                  opts[251].value = 'TSIK';
+                                                    opts[252].text = 'Turbine';
+                  opts[252].value = 'TRB';
+                                                    opts[253].text = 'Tuscany';
+                  opts[253].value = 'TUSCANY';
+                                                    opts[254].text = 'UIMA';
+                  opts[254].value = 'UIMA';
+                                                    opts[255].text = 'VCL';
+                  opts[255].value = 'VCL';
+                                                    opts[256].text = 'Velocity';
+                  opts[256].value = 'VELOCITY';
+                                                    opts[257].text = 'Velocity Tools';
+                  opts[257].value = 'VELTOOLS';
+                                                    opts[258].text = 'VXQuery';
+                  opts[258].value = 'VXQUERY';
+                                                    opts[259].text = 'VYSPER';
+                  opts[259].value = 'VYSPER';
+                                                    opts[260].text = 'WADI';
+                  opts[260].value = 'WADI';
+                                                    opts[261].text = 'Wicket';
+                  opts[261].value = 'WICKET';
+                                                    opts[262].text = 'Wink';
+                  opts[262].value = 'WINK';
+                                                    opts[263].text = 'Woden';
+                  opts[263].value = 'WODEN';
+                                                    opts[264].text = 'Wookie';
+                  opts[264].value = 'WOOKIE';
+                                                    opts[265].text = 'WS-Commons';
+                  opts[265].value = 'WSCOMMONS';
+                                                    opts[266].text = 'WSRF';
+                  opts[266].value = 'APOLLO';
+                                                    opts[267].text = 'WSRP4J';
+                  opts[267].value = 'WSRP4J';
+                                                    opts[268].text = 'WSS4J';
+                  opts[268].value = 'WSS';
+                                                    opts[269].text = 'XalanC';
+                  opts[269].value = 'XALANC';
+                                                    opts[270].text = 'XalanJ2';
+                  opts[270].value = 'XALANJ';
+                                                    opts[271].text = 'XAP';
+                  opts[271].value = 'XAP';
+                                                    opts[272].text = 'XBean';
+                  opts[272].value = 'XBEAN';
+                                                    opts[273].text = 'Xerces-C++';
+                  opts[273].value = 'XERCESC';
+                                                    opts[274].text = 'Xerces-P';
+                  opts[274].value = 'XERCESP';
+                                                    opts[275].text = 'Xerces2-J';
+                  opts[275].value = 'XERCESJ';
+                                                    opts[276].text = 'XML-RPC';
+                  opts[276].value = 'XMLRPC';
+                                                    opts[277].text = 'XMLBeans';
+                  opts[277].value = 'XMLBEANS';
+                                                    opts[278].text = 'Yoko - CORBA Server';
+                  opts[278].value = 'YOKO';
+                                                    opts[279].text = 'Zookeeper';
+                  opts[279].value = 'ZOOKEEPER';
+                                              }
+            if(value == '-2') {
+                opts.length = 8 + 1;
+                                                  opts[1].text = 'Abdera';
+                  opts[1].value = 'ABDERA';
+                                                    opts[2].text = 'Aries';
+                  opts[2].value = 'ARIES';
+                                                    opts[3].text = 'JAMES Hupa';
+                  opts[3].value = 'HUPA';
+                                                    opts[4].text = 'JAMES jDKIM';
+                  opts[4].value = 'JDKIM';
+                                                    opts[5].text = 'Qpid';
+                  opts[5].value = 'QPID';
+                                                    opts[6].text = 'Test Project';
+                  opts[6].value = 'TST';
+                                                    opts[7].text = 'VXQuery';
+                  opts[7].value = 'VXQUERY';
+                                                    opts[8].text = 'Wink';
+                  opts[8].value = 'WINK';
+                                              }
+        }
+        </script>
+                  <tr class="rowNormal">
+                <td width="100%">
+                <form action="/jira/secure/BrowseProjects.jspa" name="project-dropdown-12320422" onSubmit="if(document.forms['dropdown-12320422'].requestId.selectedIndex == 0) { window.top.location.href='/jira/secure/BrowseProjects.jspa'; return false; }">
+
+                <table width="100%"><tr><td align="left">
+                <select name="requestId" onChange="dropdown=document.forms['project-dropdown-12320422'].requestId; reqId=dropdown.options[dropdown.selectedIndex].value; if(reqId && reqId != '') window.top.location.href = '/jira/browse/' + reqId;">
+                <option value="-1">Select project...</option>
+                                    <option value="COMDEV">      Community Development </option>
+                                    <option value="AGILA"> Agila</option>
+                                    <option value="ABDERA">Abdera</option>
+
+                                    <option value="ACE">Ace</option>
+                                    <option value="ADDR">Addressing</option>
+                                    <option value="ARMI">AltRMI</option>
+                                    <option value="ANAKIA">Anakia</option>
+                                    <option value="MYFACESTEST">Apache MyFaces Test</option>
+                                    <option value="ARIES">Aries</option>
+
+                                    <option value="ASYNCWEB">Asyncweb</option>
+                                    <option value="ATTIC">Attic</option>
+                                    <option value="AVALON">Avalon</option>
+                                    <option value="AVNSHARP">Avalon Castle</option>
+                                    <option value="RUNTIME">Avalon Merlin Runtime</option>
+                                    <option value="STUDIO">Avalon Merlin Studio</option>
+
+                                    <option value="CENTRAL">Avalon Metro Central</option>
+                                    <option value="PLANET">Avalon Metro Planet</option>
+                                    <option value="TOOLS">Avalon Metro Tools</option>
+                                    <option value="AVRO">Avro</option>
+                                    <option value="AXIS">Axis</option>
+                                    <option value="AXIS2">Axis 2.0 (Axis2)</option>
+
+                                    <option value="AXISCPP">Axis-C++</option>
+                                    <option value="WSIF">Axis-WSIF</option>
+                                    <option value="AXIS2C">Axis2-C</option>
+                                    <option value="BEEHIVE">Beehive</option>
+                                    <option value="BLUESKY">Bluesky</option>
+                                    <option value="BSF">BSF</option>
+
+                                    <option value="BUILDR">Buildr</option>
+                                    <option value="STDCXX">C++ Standard Library</option>
+                                    <option value="CACTUS">Cactus</option>
+                                    <option value="CASSANDRA">Cassandra</option>
+                                    <option value="CAY">Cayenne</option>
+                                    <option value="CMIS">Chemistry</option>
+
+                                    <option value="CLEREZZA">Clerezza</option>
+                                    <option value="CLK">Click</option>
+                                    <option value="CLKE">Click Eclipse</option>
+                                    <option value="COCOON">Cocoon</option>
+                                    <option value="COCOON3">Cocoon 3</option>
+                                    <option value="COMMONSSITE">Commons All</option>
+
+                                    <option value="ATTRIBUTES">Commons Attributes</option>
+                                    <option value="BEANUTILS">Commons BeanUtils</option>
+                                    <option value="BETWIXT">Commons Betwixt</option>
+                                    <option value="CHAIN">Commons Chain</option>
+                                    <option value="CLI">Commons CLI</option>
+                                    <option value="CODEC">Commons Codec</option>
+
+                                    <option value="COLLECTIONS">Commons Collections</option>
+                                    <option value="COMPRESS">Commons Compress</option>
+                                    <option value="CONFIGURATION">Commons Configuration</option>
+                                    <option value="DAEMON">Commons Daemon</option>
+                                    <option value="DBCP">Commons Dbcp</option>
+                                    <option value="DBUTILS">Commons DbUtils</option>
+
+                                    <option value="DIGESTER">Commons Digester</option>
+                                    <option value="DISCOVERY">Commons Discovery</option>
+                                    <option value="DORMANT">Commons Dormant</option>
+                                    <option value="EL">Commons EL</option>
+                                    <option value="EMAIL">Commons Email</option>
+                                    <option value="EXEC">Commons Exec</option>
+
+                                    <option value="FEEDPARSER">Commons FeedParser</option>
+                                    <option value="FILEUPLOAD">Commons FileUpload</option>
+                                    <option value="IO">Commons IO</option>
+                                    <option value="JCI">Commons JCI</option>
+                                    <option value="JELLY">Commons Jelly</option>
+                                    <option value="JEXL">Commons JEXL</option>
+
+                                    <option value="JXPATH">Commons JXPath</option>
+                                    <option value="LANG">Commons Lang</option>
+                                    <option value="LAUNCHER">Commons Launcher</option>
+                                    <option value="LOGGING">Commons Logging</option>
+                                    <option value="MATH">Commons Math</option>
+                                    <option value="MODELER">Commons Modeler</option>
+
+                                    <option value="NET">Commons Net</option>
+                                    <option value="POOL">Commons Pool</option>
+                                    <option value="PRIMITIVES">Commons Primitives</option>
+                                    <option value="PROXY">Commons Proxy</option>
+                                    <option value="RESOURCES">Commons Resources</option>
+                                    <option value="SANDBOX">Commons Sandbox</option>
+
+                                    <option value="SANSELAN">Commons Sanselan</option>
+                                    <option value="SCXML">Commons SCXML</option>
+                                    <option value="TRANSACTION">Commons Transaction</option>
+                                    <option value="VALIDATOR">Commons Validator</option>
+                                    <option value="VFS">Commons VFS</option>
+                                    <option value="COUCHDB">CouchDB</option>
+
+                                    <option value="CXF">CXF</option>
+                                    <option value="DAYTRADER">DayTrader</option>
+                                    <option value="DDLUTILS">DdlUtils</option>
+                                    <option value="DEPOT">Depot</option>
+                                    <option value="DERBY">Derby</option>
+                                    <option value="DIR">Directory</option>
+
+                                    <option value="DIRSERVER">Directory ApacheDS</option>
+                                    <option value="DIRAPI">Directory client API</option>
+                                    <option value="DIRGROOVY">Directory Groovy LDAP</option>
+                                    <option value="DIRKRB">Directory Kerberos</option>
+                                    <option value="DIRNAMING">Directory Naming</option>
+                                    <option value="DIRSHARED">Directory Shared</option>
+
+                                    <option value="DIRSTUDIO">Directory Studio</option>
+                                    <option value="DBF">DocBook Framework</option>
+                                    <option value="DROIDS">Droids</option>
+                                    <option value="DVSL">Dvsl</option>
+                                    <option value="ECS">ECS</option>
+                                    <option value="EMPIREDB">Empire-DB</option>
+
+                                    <option value="ESME">ESME</option>
+                                    <option value="ETCH">Etch</option>
+                                    <option value="EWS">ews</option>
+                                    <option value="EXLBR">Excalibur Components</option>
+                                    <option value="FORTRESS">Excalibur Fortress</option>
+                                    <option value="FELIX">Felix</option>
+
+                                    <option value="FELIXM2">Felix M2 Plugin</option>
+                                    <option value="FOR">Forrest</option>
+                                    <option value="FTPSERVER">FtpServer</option>
+                                    <option value="GBUILD">GBuild</option>
+                                    <option value="GERONIMO">Geronimo</option>
+                                    <option value="GERONIMODEVTOOLS">Geronimo-Devtools</option>
+
+                                    <option value="GRFT">Graffito</option>
+                                    <option value="GSHELL">GShell</option>
+                                    <option value="GUMP">Gump</option>
+                                    <option value="CHUKWA">Hadoop Chukwa</option>
+                                    <option value="HADOOP">Hadoop Common</option>
+                                    <option value="HBASE">Hadoop HBase</option>
+
+                                    <option value="HDFS">Hadoop HDFS</option>
+                                    <option value="HIVE">Hadoop Hive</option>
+                                    <option value="MAPREDUCE">Hadoop Map/Reduce</option>
+                                    <option value="HAMA">Hama</option>
+                                    <option value="HARMONY">Harmony</option>
+                                    <option value="HERALDRY">Heraldry</option>
+
+                                    <option value="HISE">HISE</option>
+                                    <option value="HIVEMIND">HiveMind</option>
+                                    <option value="HTTPCLIENT">HttpComponents HttpClient</option>
+                                    <option value="HTTPCORE">HttpComponents HttpCore</option>
+                                    <option value="IBATISNET">iBatis for .NET</option>
+                                    <option value="IBATIS">iBatis for Java</option>
+
+                                    <option value="RBATIS">iBATIS for Ruby</option>
+                                    <option value="IMPERIUS">Imperius</option>
+                                    <option value="INCUBATOR">Incubator</option>
+                                    <option value="INFRA">Infrastructure</option>
+                                    <option value="IVY">Ivy</option>
+                                    <option value="IVYDE">IvyDE</option>
+
+                                    <option value="JCR">Jackrabbit Content Repository</option>
+                                    <option value="JCRBENCH">Jackrabbit JCR Benchmark</option>
+                                    <option value="JCRCL">Jackrabbit JCR Classloader</option>
+                                    <option value="JCRSERVLET">Jackrabbit JCR Servlets</option>
+                                    <option value="JCRTCK">Jackrabbit JCR Tests</option>
+                                    <option value="JCRRMI">Jackrabbit JCR-RMI</option>
+
+                                    <option value="OCM">Jackrabbit OCM</option>
+                                    <option value="JCRSITE">Jackrabbit Site</option>
+                                    <option value="MAILETBASE">JAMES Basic Mailet Toolkit</option>
+                                    <option value="MAILETCRYPTO">JAMES Crytography Mailets</option>
+                                    <option value="HUPA">JAMES Hupa</option>
+                                    <option value="IMAP">JAMES Imap</option>
+
+                                    <option value="JDKIM">JAMES jDKIM</option>
+                                    <option value="JSIEVE">JAMES jSieve</option>
+                                    <option value="JSPF">JAMES jSPF</option>
+                                    <option value="MAILETDOCS">JAMES MailetDocs Maven Plugin</option>
+                                    <option value="MIME4J">JAMES Mime4j</option>
+                                    <option value="MPT">JAMES MPT</option>
+
+                                    <option value="POSTAGE">JAMES Postage</option>
+                                    <option value="JAMES">JAMES Server</option>
+                                    <option value="MAILETSTANDARD">JAMES Standard Mailets</option>
+                                    <option value="JAXME">JaxMe</option>
+                                    <option value="JCS">JCS</option>
+                                    <option value="JDO">JDO</option>
+
+                                    <option value="JS1">Jetspeed</option>
+                                    <option value="JS2">Jetspeed 2</option>
+                                    <option value="JSEC">JSecurity</option>
+                                    <option value="JSPWIKI">JSPWiki</option>
+                                    <option value="JUDDI">jUDDI</option>
+                                    <option value="JUICE">JuiCE</option>
+
+                                    <option value="KAND">Kandula</option>
+                                    <option value="KATO">Kato</option>
+                                    <option value="KI">Ki</option>
+                                    <option value="LABS">Labs</option>
+                                    <option value="HTTPDRAFT">Labs WebArch draft-fielding-http</option>
+                                    <option value="LEGAL">Legal Discuss</option>
+
+                                    <option value="LOGCXX">Log4cxx</option>
+                                    <option value="LOG4J2">Log4j 2</option>
+                                    <option value="LOG4NET">Log4net</option>
+                                    <option value="LOG4PHP">Log4php</option>
+                                    <option value="LOKAHI">Lokahi</option>
+                                    <option value="LUCENE">Lucene - Java</option>
+
+                                    <option value="LUCENENET">Lucene.Net</option>
+                                    <option value="LCN4C">Lucene4c</option>
+                                    <option value="LUCY">Lucy</option>
+                                    <option value="MAHOUT">Mahout</option>
+                                    <option value="MAILET">Mailet</option>
+                                    <option value="DIRMINA">MINA</option>
+
+                                    <option value="SSHD">MINA SSHD</option>
+                                    <option value="MIRAE">Mirae</option>
+                                    <option value="MODPYTHON">mod_python</option>
+                                    <option value="MUSE">Muse</option>
+                                    <option value="ADFFACES">MyFaces ADF-Faces</option>
+                                    <option value="MFCOMMONS">MyFaces Commons</option>
+
+                                    <option value="MYFACES">MyFaces Core</option>
+                                    <option value="EXTSCRIPT">MyFaces Extensions Scripting</option>
+                                    <option value="EXTVAL">MyFaces Extensions Validator</option>
+                                    <option value="ORCHESTRA">MyFaces Orchestra</option>
+                                    <option value="PORTLETBRIDGE">MyFaces Portlet Bridge</option>
+                                    <option value="TOBAGO">MyFaces Tobago</option>
+
+                                    <option value="TOMAHAWK">MyFaces Tomahawk</option>
+                                    <option value="TRINIDAD">MyFaces Trinidad</option>
+                                    <option value="NUTCH">Nutch</option>
+                                    <option value="ODE">ODE</option>
+                                    <option value="OFBIZ">OFBiz</option>
+                                    <option value="OJB">OJB</option>
+
+                                    <option value="OLIO">Olio</option>
+                                    <option value="ORP">Open Relevance Project </option>
+                                    <option value="OPENEJB">OpenEJB</option>
+                                    <option value="OEP">OpenEJB Eclipse Plugin</option>
+                                    <option value="OPENJPA">OpenJPA</option>
+                                    <option value="OWB">OpenWebBeans</option>
+
+                                    <option value="PDFBOX">PDFBox</option>
+                                    <option value="PNIX">Phoenix</option>
+                                    <option value="PHOTARK">PhotArk</option>
+                                    <option value="PIG">Pig</option>
+                                    <option value="PIVOT">Pivot</option>
+                                    <option value="PLUTO">Pluto</option>
+
+                                    <option value="PORTALS">Portals</option>
+                                    <option value="APA">Portals Apps</option>
+                                    <option value="PB">Portals Bridges</option>
+                                    <option value="PRC">Public Relations</option>
+                                    <option value="HERMES">Pubscribe</option>
+                                    <option value="PYLUCENE">PyLucene</option>
+
+                                    <option value="QPID">Qpid</option>
+                                    <option value="RAMPART">Rampart</option>
+                                    <option value="RAMPARTC">Rampart/C</option>
+                                    <option value="RAT">RAT</option>
+                                    <option value="RCF">RCF</option>
+                                    <option value="RIVER">River</option>
+
+                                    <option value="ROL">Roller</option>
+                                    <option value="SAND">Sandesha</option>
+                                    <option value="SANDESHA2">Sandesha2</option>
+                                    <option value="SANDESHA2C">Sandesha2/C</option>
+                                    <option value="SAVAN">Savan</option>
+                                    <option value="SCOUT">Scout</option>
+
+                                    <option value="SHINDIG">Shindig</option>
+                                    <option value="SHIRO">Shiro</option>
+                                    <option value="SLING">Sling</option>
+                                    <option value="SOAP">SOAP</option>
+                                    <option value="SOLR">Solr</option>
+                                    <option value="STONEHENGE">Stonehenge</option>
+
+                                    <option value="SYNAPSE">Synapse</option>
+                                    <option value="TAPESTRY">Tapestry</option>
+                                    <option value="TAP5">Tapestry 5</option>
+                                    <option value="TASHI">Tashi</option>
+                                    <option value="TST">Test Project</option>
+                                    <option value="TEXEN">Texen</option>
+
+                                    <option value="THRIFT">Thrift</option>
+                                    <option value="TIKA">Tika</option>
+                                    <option value="TORQUE">Torque</option>
+                                    <option value="TORQUEOLD">Torque issues (old)</option>
+                                    <option value="TS">Traffic Server</option>
+                                    <option value="DIRTSEC">Triplesec</option>
+
+                                    <option value="TRIPLES">TripleSoup</option>
+                                    <option value="TSIK">TSIK</option>
+                                    <option value="TRB">Turbine</option>
+                                    <option value="TUSCANY">Tuscany</option>
+                                    <option value="UIMA">UIMA</option>
+                                    <option value="VCL">VCL</option>
+
+                                    <option value="VELOCITY">Velocity</option>
+                                    <option value="VELTOOLS">Velocity Tools</option>
+                                    <option value="VXQUERY">VXQuery</option>
+                                    <option value="VYSPER">VYSPER</option>
+                                    <option value="WADI">WADI</option>
+                                    <option value="WICKET">Wicket</option>
+
+                                    <option value="WINK">Wink</option>
+                                    <option value="WODEN">Woden</option>
+                                    <option value="WOOKIE">Wookie</option>
+                                    <option value="WSCOMMONS">WS-Commons</option>
+                                    <option value="APOLLO">WSRF</option>
+                                    <option value="WSRP4J">WSRP4J</option>
+
+                                    <option value="WSS">WSS4J</option>
+                                    <option value="XALANC">XalanC</option>
+                                    <option value="XALANJ">XalanJ2</option>
+                                    <option value="XAP">XAP</option>
+                                    <option value="XBEAN">XBean</option>
+                                    <option value="XERCESC">Xerces-C++</option>
+
+                                    <option value="XERCESP">Xerces-P</option>
+                                    <option value="XERCESJ">Xerces2-J</option>
+                                    <option value="XMLRPC">XML-RPC</option>
+                                    <option value="XMLBEANS">XMLBeans</option>
+                                    <option value="YOKO">Yoko - CORBA Server</option>
+                                    <option value="ZOOKEEPER">Zookeeper</option>
+
+                                </select>
+                &nbsp;
+                <input type="image" src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.projectlist:projectlist/control_play.png"/>
+                </td>
+                                <td align="right">
+                <img src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.projectlist:projectlist/control_rewind.png"/>
+                &nbsp;
+                <select id="category-dropdown-12320422" name="categoryId" onChange="changeMenu('12320422')">
+                  <option value="-1">Show All</option>
+
+                                     <option value="10310">Ant</option>
+                                     <option value="10130">Apache Software Foundation</option>
+                                     <option value="10023">Avalon</option>
+                                     <option value="10140">Beehive</option>
+                                     <option value="10350">Buildr</option>
+                                     <option value="10290">C++ Standard Library</option>
+
+                                     <option value="10300">CXF</option>
+                                     <option value="10330">Cayenne</option>
+                                     <option value="10160">Cocoon</option>
+                                     <option value="10260">Commons</option>
+                                     <option value="10320">CouchDB</option>
+                                     <option value="10090">DB</option>
+
+                                     <option value="10041">Directory</option>
+                                     <option value="10021">Excalibur</option>
+                                     <option value="10121">Felix</option>
+                                     <option value="10112">Forrest</option>
+                                     <option value="10061">Geronimo</option>
+                                     <option value="10030">Gump</option>
+
+                                     <option value="10080">HTTP Server</option>
+                                     <option value="10292">Hadoop</option>
+                                     <option value="10111">Harmony</option>
+                                     <option value="10280">HttpComponents</option>
+                                     <option value="10024">Incubator</option>
+                                     <option value="10170">Jackrabbit</option>
+
+                                     <option value="10025">Jakarta</option>
+                                     <option value="10020">James</option>
+                                     <option value="10210">Labs</option>
+                                     <option value="10060">Logging</option>
+                                     <option value="10150">Lucene</option>
+                                     <option value="10240">MINA</option>
+
+                                     <option value="10100">MyFaces</option>
+                                     <option value="10311">ODE</option>
+                                     <option value="10230">OFBiz</option>
+                                     <option value="10251">OpenEJB</option>
+                                     <option value="10252">OpenJPA</option>
+                                     <option value="10360">PDFBox</option>
+
+                                     <option value="10050">Portals</option>
+                                     <option value="10220">Retired</option>
+                                     <option value="10331">Roller</option>
+                                     <option value="10340">Sling</option>
+                                     <option value="10291">Synapse</option>
+                                     <option value="10190">Tapestry</option>
+
+                                     <option value="10250">Turbine</option>
+                                     <option value="10200">Velocity</option>
+                                     <option value="10028">Web Services</option>
+                                     <option value="10270">Wicket</option>
+                                     <option value="10040">XML</option>
+                                     <option value="10110">XMLBeans</option>
+
+                                     <option value="10120">iBATIS</option>
+                                   <option value="-2">No Category</option>
+                </select>
+                </td>
+                            </tr>
+            </table>
+                </form></td></tr>
+    
+
+</table></td></tr>
+</table>
+
+                                    <p>
+                                                <!-- Use macros to simplify this -->
+
+
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">Latest Releases</td>
+
+    </tr>
+                            <tr  class="rowNormal"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%"><a title="" href="/jira/browse/CXF">CXF</a></td>
+                    <td width="45%"><a title="" href="/jira/secure/IssueNavigator.jspa?reset=true&pid=12310511&fixfor=12313931">dOSGi-1.1</a></td>
+                    <td width="10%"><a title="Release Notes" href="/jira/secure/ReleaseNote.jspa?projectId=12310511&styleName=Html&version=12313931">            <span title="Release Date">04/Dec/09</span>
+    </a></td>
+
+                    </tr></table></td>
+                </tr>
+                            <tr  class="rowAlternate"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%"><a title="Open source Java SE and modular VM platform architecture project." href="/jira/browse/HARMONY">Harmony</a></td>
+                    <td width="45%"><a title="Milestone 12" href="/jira/secure/IssueNavigator.jspa?reset=true&pid=12310050&fixfor=12314191">5.0M12</a></td>
+                    <td width="10%"><a title="Release Notes" href="/jira/secure/ReleaseNote.jspa?projectId=12310050&styleName=Html&version=12314191">            <span title="Release Date">04/Dec/09</span>
+
+    </a></td>
+                    </tr></table></td>
+                </tr>
+                            <tr  class="rowNormal"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%"><a title="Sling is a framework to develop content centric web applications based on the idea of modularizing the rendering of HTTP resources." href="/jira/browse/SLING">Sling</a></td>
+                    <td width="45%"><a title="First public release" href="/jira/secure/IssueNavigator.jspa?reset=true&pid=12310710&fixfor=12313605">Scripting Java 1.0.0</a></td>
+                    <td width="10%"><a title="Release Notes" href="/jira/secure/ReleaseNote.jspa?projectId=12310710&styleName=Html&version=12313605">            <span title="Release Date">02/Dec/09</span>
+
+    </a></td>
+                    </tr></table></td>
+                </tr>
+                            <tr  class="rowAlternate"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%"><a title="Sling is a framework to develop content centric web applications based on the idea of modularizing the rendering of HTTP resources." href="/jira/browse/SLING">Sling</a></td>
+                    <td width="45%"><a title="Maintenance Release" href="/jira/secure/IssueNavigator.jspa?reset=true&pid=12310710&fixfor=12314256">Commons HTML 1.0.0</a></td>
+                    <td width="10%"><a title="Release Notes" href="/jira/secure/ReleaseNote.jspa?projectId=12310710&styleName=Html&version=12314256">            <span title="Release Date">02/Dec/09</span>
+
+    </a></td>
+                    </tr></table></td>
+                </tr>
+                            <tr  class="rowNormal"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%"><a title="Sling is a framework to develop content centric web applications based on the idea of modularizing the rendering of HTTP resources." href="/jira/browse/SLING">Sling</a></td>
+                    <td width="45%"><a title="First public release" href="/jira/secure/IssueNavigator.jspa?reset=true&pid=12310710&fixfor=12314382">JCR Compiler 1.0.0</a></td>
+                    <td width="10%"><a title="Release Notes" href="/jira/secure/ReleaseNote.jspa?projectId=12310710&styleName=Html&version=12314382">            <span title="Release Date">02/Dec/09</span>
+
+    </a></td>
+                    </tr></table></td>
+                </tr>
+                            <tr  class="rowAlternate"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%"><a title="Apache Directory Studio is a complete LDAP tooling platform intended to be used with any LDAP server however it is particularly designed for use with the Apache Directory Server." href="/jira/browse/DIRSTUDIO">Directory Studio</a></td>
+                    <td width="45%"><a title="Service update for the 1.5 version" href="/jira/secure/IssueNavigator.jspa?reset=true&pid=12310590&fixfor=12314389">1.5.1</a></td>
+                    <td width="10%"><a title="Release Notes" href="/jira/secure/ReleaseNote.jspa?projectId=12310590&styleName=Html&version=12314389">            <span title="Release Date">02/Dec/09</span>
+
+    </a></td>
+                    </tr></table></td>
+                </tr>
+            </table>
+</td></tr>
+</table>
+
+
+
+
+                                    <p>
+                                                <table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">
+            Search by Bugzilla ID
+        </td>
+</tr>
+    <tr>
+        <td class=rowAlternate width="20%">
+            <b><a href='http://issues.apache.org/bugzilla'>Bugzilla</a> ID</b>
+
+        </td>
+        <td class=rowNormal>
+            <form action="/jira/bugzillasearch.jsp">
+                <input type="text" name="id" size="10" value="">
+                <input type="hidden" name="bugzilla_url" value="http://issues.apache.org/bugzilla"/>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</td></tr></table>
+
+
+                                    <p>
+                <p>
+    </td>
+        <td valign="top" width="50%">
+
+                                                        
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+
+        <td class="colHeaderLink" colspan="2">Saved Filters&nbsp;
+                <font size="1">
+        (<a href="/jira/secure/IssueNavigator.jspa?createNew=true&mode=show">Create New</a>
+        |
+        <a href="/jira/secure/ManageFilters.jspa">Manage Filters</a>)</font>
+                        </td>
+    </tr>
+
+                        <tr class="rowNormal">
+                <td><form action="/jira/secure/IssueNavigator.jspa?mode=hide" name="dropdown-12320425" onSubmit="if(document.forms['dropdown-12320425'].requestId.selectedIndex == 0) { window.location='/jira/secure/IssueNavigator.jspa?createNew=true&mode=show'; return false; }"><select name="requestId" onChange="dropdown=document.forms['dropdown-12320425'].requestId; reqId=dropdown.options[dropdown.selectedIndex].value; if(reqId && reqId != '') location.href = '/jira/secure/IssueNavigator.jspa?mode=hide&requestId=' + reqId;">
+                <option value="-1">Select filter...</option>
+                                    <option value="12311442">10.2.2_OPEN_ISSUES
+                                                                                        </option>
+                                    <option value="12311088">10.2_DOC_ISSUES
+                                                                                        </option>
+                                    <option value="12313254">Active JIRAs with Patch Attached
+                                                                                        </option>
+                                    <option value="12311233">All Open Doc Issues
+                                                                                        </option>
+
+                                    <option value="12313467">All Wookie Issues
+                                                                                        </option>
+                                    <option value="12312853">allDroids
+                                                                                        </option>
+                                    <option value="12311157">Axis2 - Blockers
+                                                                                        </option>
+                                    <option value="12311131">Axis2 - Outstanding Bugs
+                                                                                        </option>
+                                    <option value="12311243">Axis2 - Resolved Recently
+                                                                                        </option>
+                                    <option value="12312461">Axis2-Must-Fix-For-1.4
+                                                                                        </option>
+
+                                    <option value="12312460">Axis2-Try-To-Fix-For-1.4
+                                                                                        </option>
+                                    <option value="12312026">Axis2/C 1.1.0 Fixes
+                                                                                        </option>
+                                    <option value="12310203">Beehive - Unassigned
+                                                                                        </option>
+                                    <option value="12310157">BeehiveV1Bugs
+                                                                                        </option>
+                                    <option value="12312650">Closed V3
+                                                                                        </option>
+                                    <option value="12310771">COCOON-open-with-patch
+                                                                                        </option>
+
+                                    <option value="12311136">Commons Outstanding Bugs
+                                                                                        </option>
+                                    <option value="12313621">Content bugs
+                                                                                        </option>
+                                    <option value="12313359">CXF-Open
+                                                                                        </option>
+                                    <option value="12312155">CXFNotClosed
+                                                                                        </option>
+                                    <option value="12312521">Derby 10.4 Fixed Bugs
+                                                                                        </option>
+                                    <option value="12312524">Derby 10.4 Improvements
+                                                                                        </option>
+
+                                    <option value="12312522">Derby 10.4 Release Note
+                                                                                        </option>
+                                    <option value="12313586">Derby Closed Doc. Bugs
+                                                                                        </option>
+                                    <option value="12313546">Derby Closed Product Bugs
+                                                                                        </option>
+                                    <option value="12313545">Derby Closed Test Bugs
+                                                                                        </option>
+                                    <option value="12310691">Derby Language+JDBC bugs
+                                                                                        </option>
+                                    <option value="12313483">Derby Open Crashes
+                                                                                        </option>
+
+                                    <option value="12313481">Derby Open Data Corruptions
+                                                                                        </option>
+                                    <option value="12313585">Derby Open Doc. Bugs
+                                                                                        </option>
+                                    <option value="12313489">Derby Open Product Bugs
+                                                                                        </option>
+                                    <option value="12313513">Derby Open Test Bugs
+                                                                                        </option>
+                                    <option value="12313482">Derby Open Wrong Results
+                                                                                        </option>
+                                    <option value="12310751">Derby: JIRA issues with patch available
+                                                                                        </option>
+
+                                    <option value="12310744">Derby: Regression Test Failures
+                                                                                        </option>
+                                    <option value="12312796">Fixed in Geronimo 2.1
+                                                                                        </option>
+                                    <option value="12312795">Fixed in Geronimo 2.1.1
+                                                                                        </option>
+                                    <option value="12312777">Fixed in Geronimo 2.1.2
+                                                                                        </option>
+                                    <option value="12312776">Fixed in Geronimo 2.1.3
+                                                                                        </option>
+                                    <option value="12312793">Fixed in Geronimo 2.1.4-SNAPSHOT
+                                                                                        </option>
+
+                                    <option value="12312794">Fixed in Geronimo 2.2-SNAPSHOT
+                                                                                        </option>
+                                    <option value="12310472">FOR-open-with-patch
+                                                                                        </option>
+                                    <option value="12310825">FOR-plugins-blocker
+                                                                                        </option>
+                                    <option value="12310824">FOR-plugins-urgent
+                                                                                        </option>
+                                    <option value="12310820">FOR-roadmap-dev
+                                                                                        </option>
+                                    <option value="12310476">FOR-unresolved-with-attachment
+                                                                                        </option>
+
+                                    <option value="12310043">FOR-unscheduled
+                                                                                        </option>
+                                    <option value="12310822">FOR-unscheduled-not-plugin
+                                                                                        </option>
+                                    <option value="12310473">FOR-urgency-blocker
+                                                                                        </option>
+                                    <option value="12310475">FOR-urgency-urgent
+                                                                                        </option>
+                                    <option value="12310367">Geronimo - Patch Pending
+                                                                                        </option>
+                                    <option value="12310362">Geronimo - Resolved Issues
+                                                                                        </option>
+
+                                    <option value="12312789">Geronimo 2.1.4 Open Bugs
+                                                                                        </option>
+                                    <option value="12312791">Geronimo 2.1.4 Open Features
+                                                                                        </option>
+                                    <option value="12312790">Geronimo 2.1.4 Open Improvements
+                                                                                        </option>
+                                    <option value="12312792">Geronimo 2.1.4 Open JIRAs
+                                                                                        </option>
+                                    <option value="12312797">Geronimo 2.2 Open JIRAs
+                                                                                        </option>
+                                    <option value="12312861">Geronimo fixes for past week
+                                                                                        </option>
+
+                                    <option value="10154">global: closed today
+                                                                                        </option>
+                                    <option value="10152">global: created today
+                                                                                        </option>
+                                    <option value="10153">global: updated today
+                                                                                        </option>
+                                    <option value="12311922">Hadoop closeable
+                                                                                        </option>
+                                    <option value="12313301">Hadoop HDFS Review Queue
+                                                                                        </option>
+                                    <option value="12313302">Hadoop MapReduce Review Queue
+                                                                                        </option>
+
+                                    <option value="12311921">Hadoop need version
+                                                                                        </option>
+                                    <option value="12311124">Hadoop Review Queue
+                                                                                        </option>
+                                    <option value="12312392">HBase Review Queue
+                                                                                        </option>
+                                    <option value="12311033">HttpClient 4.0 pending issues
+                                                                                        </option>
+                                    <option value="10816">Language+JDBC
+                                                                                        </option>
+                                    <option value="12312272">Lucene Open Ascending
+                                                                                        </option>
+
+                                    <option value="12312844">New Tapestry 5 Bugs
+                                                                                        </option>
+                                    <option value="12313465">New Wookie issues awaiting review
+                                                                                        </option>
+                                    <option value="12312463">Open Axiom
+                                                                                        </option>
+                                    <option value="12313145">Open JIRA issues
+                                                                                        </option>
+                                    <option value="12313147">Open Legal issues
+                                                                                        </option>
+                                    <option value="12311087">OPEN_DOC_ISSUES
+                                                                                        </option>
+
+                                    <option value="12313227">OpenJPA Iterations
+                                                                                        </option>
+                                    <option value="12313253">OpenJPA Patches
+                                                                                        </option>
+                                    <option value="12312187">Pig Review Queue
+                                                                                        </option>
+                                    <option value="12313122">Popular Commons Issues
+                                                                                        </option>
+                                    <option value="12312868">Qpid - M4 Issues
+                                                                                        </option>
+                                    <option value="12312869">Qpid - Open and Unversioned Issues
+                                                                                        </option>
+
+                                    <option value="12313629">Qpid 0.6 release blockers
+                                                                                        </option>
+                                    <option value="12313090">Qpid M4 Java Release Notes
+                                                                                        </option>
+                                    <option value="12313643">Qpid Non-Blocking Fix 0.6   
+                                                                                        </option>
+                                    <option value="12313274">Resolved in OpenJPA 2.0.0
+                                                                                        </option>
+                                    <option value="12313532">Resolved in OpenJPA 2.0.0-M1
+                                                                                        </option>
+                                    <option value="12313531">Resolved in OpenJPA 2.0.0-M2
+                                                                                        </option>
+
+                                    <option value="12313530">Resolved in OpenJPA 2.0.0-M3
+                                                                                        </option>
+                                    <option value="12313170">ReviewQueue
+                                                                                        </option>
+                                    <option value="12313206">Sling Release 4
+                                                                                        </option>
+                                    <option value="12312970">Sling Unreleased
+                                                                                        </option>
+                                    <option value="12312319">Solr/Lucene Highlighting
+                                                                                        </option>
+                                    <option value="12311379">STDCXX EDG eccp issues
+                                                                                        </option>
+
+                                    <option value="12310379">STDCXX gcc issues
+                                                                                        </option>
+                                    <option value="12311195">STDCXX HP aCC issues
+                                                                                        </option>
+                                    <option value="12311377">STDCXX HP/Compaq C++ issues
+                                                                                        </option>
+                                    <option value="12311373">STDCXX IBM XLC++ issues
+                                                                                        </option>
+                                    <option value="12311378">STDCXX Intel C++ issues
+                                                                                        </option>
+                                    <option value="12311082">STDCXX issues fixed for the next version
+                                                                                        </option>
+
+                                    <option value="12310708">STDCXX issues fixed in 4.1.3
+                                                                                        </option>
+                                    <option value="12311754">STDCXX issues fixed in 4.2.0
+                                                                                        </option>
+                                    <option value="12311375">STDCXX MSVC issues
+                                                                                        </option>
+                                    <option value="12310512">STDCXX OS X issues
+                                                                                        </option>
+                                    <option value="12311376">STDCXX SGI MIPSpro issues
+                                                                                        </option>
+                                    <option value="12311374">STDCXX Sun C++ issues
+                                                                                        </option>
+
+                                    <option value="12312599">Synapse-1.2-Open
+                                                                                        </option>
+                                    <option value="12312598">Synapse-1.2-Resolved
+                                                                                        </option>
+                                    <option value="12312668">Thrift Review Queue
+                                                                                        </option>
+                                    <option value="12313470">UIMA fixes missing versions
+                                                                                        </option>
+                                    <option value="12313257">Unenhanced Classes (sub-classing)
+                                                                                        </option>
+                                    <option value="12313364">Wicket 1.4 New Features and Improvements
+                                                                                        </option>
+
+                                    <option value="12313464">Wookie patch awaiting review
+                                                                                        </option>
+                                </select><input type="image" src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.filterlist:filterlist/control_play.png"/></form></td>
+            </tr>
+            
+</table>
+</table>
+
+                                    <p>
+                                                
+
+<div id="currentuserstatus-12320426" class="currentuserstatus">
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">
+  <table width="100%">
+  <tr>
+  <td>
+      <script>
+        function rollUserIcon() {
+            var index = getCookieValue("currentusericon");
+            index++;
+            if(index == 9) {
+                index = 1;
+            }
+            saveCookie("currentusericon", index);
+            setUserIconFromCookie();
+        }
+        function setUserIconFromCookie() {
+            var index = getCookieValue("currentusericon");
+            if(index == null) {
+                saveCookie("currentusericon", "1");
+            } else {
+                document.getElementById("currentusericon-12320426").src = "/jira/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/user" + index + ".png";
+            }
+        }
+      </script>
+
+      <img id="currentusericon-12320426" src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/user1.png" onclick="rollUserIcon()"/></a>
+
+      (<a href="/jira/secure/ViewProfile.jspa" title="Your Profile"><font size="1"> Henri Yandell </font></a>)
+  </td>
+      <script>
+        // initialize the image from the cookie
+        setUserIconFromCookie();
+      </script>
+  <td align="right">
+  <a href="/jira/secure/UserWatches!default.jspa" title="Your Watches"><img src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/eye.png"/></a>&nbsp;
+  <a href="/jira/secure/UserVotes!default.jspa" title="Your Votes"><img src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/thumb_up.png"/></a>&nbsp;
+  <a href="/jira/secure/BrowsePersonalProject.jspa?subset=-1" title="Your Roadmap"><img src="/jira/download/resources/com.sourcelabs.jira.plugin.portlet.currentuser:currentuser/icons/report_user.png"/></a>&nbsp;
+
+  <a href="/jira/secure/IssueNavigator.jspa?reset=true&assigneeSelect=issue_current_user&resolution=-1" title="Your 3 Open Issues"><img src="/jira/images/icons/genericissue.gif"/></a>&nbsp;
+  </td>
+  </tr>
+
+  </table>
+  </td></tr>
+
+  <tr bgcolor="#ffffff">
+    <td width="40%">
+
+  <table width="100%">
+  <tr>
+    <td><a href="/jira/secure/IssueNavigator.jspa?reset=true&reporterSelect=issue_current_user" title='All 289 of the issues you have reported'>Reported:</td>
+    <td align="right">
+        <table cellpadding="0" border="0" cellspacing="0"><tr height="6">
+                                    <td width="79" bgcolor="009900" >
+                                    <a href="/jira/secure/IssueNavigator.jspa?reset=true&reporterSelect=issue_current_user&resolution=1&resolution=2&resolution=3&resolution=6&resolution=4&resolution=5&resolution=7&resolution=8"
+                        title="Resolved Issues - 79% (229 issues)"
+                    ><img src="/jira/images/border/spacer.gif"
+                        height=10 width="79" border=0
+                        title="Resolved Issues - 79% (229 issues)"></a>
+                            </td>
+
+                                            <td width="21" bgcolor="CC0000" >
+                                    <a href="/jira/secure/IssueNavigator.jspa?reset=true&reporterSelect=issue_current_user&resolution=-1"
+                        title="Open Issues - 21% (60 issues)"
+                    ><img src="/jira/images/border/spacer.gif"
+                        height=10 width="21" border=0
+                        title="Open Issues - 21% (60 issues)"></a>
+                            </td>
+                            </tr></table>
+    </td>
+  </tr>
+  <tr><td><a href="/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&status=5&status=6&reporterSelect=issue_current_user&updated:previous=-1w&sorter/field=updated&sorter/order=DESC" title='Your issues that have been resolved or closed in the last 7 days'>Resolved Recently</a>:</td><td align="right">0</td></tr>
+
+  <tr><td><a href="/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&reporterSelect=issue_current_user&created:previous=-1w&sorter/field=created&sorter/order=DESC" title='Your issues that have been created in the last 7 days'>Added Recently</a>:</td><td align="right">0</td></tr>
+  <tr><td><a href="/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&reporterSelect=issue_current_user&updated:previous=-1w&sorter/field=updated&sorter/order=DESC" title='Your issues that have been updated in the last 7 days'>Updated Recently</a>:</td><td align="right">0</td></tr>
+
+  </table>
+
+</td><td width="40%">
+  <table width="100%">
+
+  <tr>
+    <td><a href="/jira/secure/IssueNavigator.jspa?reset=true&assigneeSelect=issue_current_user" title='All 88 of the issues assigned to you'>Assigned:</td>
+    <td align="right">
+        <table cellpadding="0" border="0" cellspacing="0"><tr height="6">
+                                    <td width="96" bgcolor="009900" >
+                                    <a href="/jira/secure/IssueNavigator.jspa?reset=true&assigneeSelect=issue_current_user&resolution=1&resolution=2&resolution=3&resolution=6&resolution=4&resolution=5&resolution=7&resolution=8"
+                        title="Resolved Issues - 96% (85 issues)"
+                    ><img src="/jira/images/border/spacer.gif"
+                        height=10 width="96" border=0
+                        title="Resolved Issues - 96% (85 issues)"></a>
+                            </td>
+                                            <td width="4" bgcolor="CC0000" >
+
+                                    <a href="/jira/secure/IssueNavigator.jspa?reset=true&assigneeSelect=issue_current_user&resolution=-1"
+                        title="Open Issues - 4% (3 issues)"
+                    ><img src="/jira/images/border/spacer.gif"
+                        height=10 width="4" border=0
+                        title="Open Issues - 4% (3 issues)"></a>
+                            </td>
+                            </tr></table>
+    </td>
+  </tr>
+  <tr><td><a href="/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&assigneeSelect=issue_current_user&resolution=-1&duedate%3Anext=0&sorter/field=updated&sorter/order=DESC" title='Issues that have passed their due date'>Overdue</a>:</td><td align="right">0</td></tr>
+  <tr><td><a href="/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&assigneeSelect=issue_current_user&resolution=-1&duedate%3Aprevious=0&duedate%3Anext=1w&sorter/field=updated&sorter/order=DESC" title='Issues due in the next 7 days'>Due Soon</a>:</td><td align="right">0</td></tr>
+
+  <tr><td><a href="/jira/secure/IssueNavigator.jspa?reset=true&mode=hide&assigneeSelect=issue_current_user&resolution=-1&status=3" title='Issues currently in progress'>In Progress</a>:</td><td align="right">0</td></tr>
+
+  </table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+
+</div>
+ 
+                                    <p>
+                                                <table id="admin_portlet_12320427" class="tableBorder maxWidth" border="0" cellpadding="3" cellspacing="1" width="100%">
+
+    <tr class="rowHeader">
+        <td class="colHeaderLink" colspan="2">
+            Tasks: <b><a href="/jira/secure/admin/">Administration</a></b>
+        </td>
+    </tr>
+
+<tr>
+    <td class="rowAlternate"><b>Projects</b></td>
+
+    <td class="rowNormal">
+        <a href="/jira/secure/admin/">View all</a> or
+        <a href="/jira/secure/admin/AddProject!default.jspa">create new</a>.<br>
+    </td>
+</tr>
+    <tr>
+        <td class="rowAlternate"><b>Users</b></td>
+
+        <td class="rowNormal">
+                        Browse <a href="/jira/secure/admin/user/UserBrowser.jspa">users</a>, <a href="/jira/secure/admin/user/GroupBrowser.jspa">groups</a> or <a href="/jira/secure/admin/user/AddUser!default.jspa">create a new user</a>.<br>
+        </td>
+    </tr>
+
+    <tr>
+        <td class="rowAlternate"><b>Data</b></td>
+        <td class="rowNormal">
+                            <a href="/jira/secure/admin/XmlRestore!default.jspa">Restore</a> or <a href="/jira/secure/admin/XmlBackup!default.jspa">backup</a> JIRA data as XML.<br>
+                    </td>
+
+    </tr>
+
+<tr>
+    <td class="rowAlternate"><b>Setup</b></td>
+    <td class="rowNormal">
+        <a href="/jira/secure/admin/jira/ViewApplicationProperties.jspa">Configure</a> JIRA
+        or <a href="/jira/secure/admin/jira/GlobalPermissions.jspa">modify global permissions</a>.<br>
+    </td>
+
+</tr>
+
+<tr>
+    <td valign="top" bgcolor="#fffff0">
+        <b>License</b>
+    </td>
+    <td bgcolor="#ffffff">
+        JIRA Enterprise: Open Source License
+                    (<a href="/jira/secure/admin/ViewLicense.jspa">view details</a>)
+        
+                <br><small>(Support and updates available until <b>26/May/10</b>)</small>
+
+    </td>
+</tr>
+
+
+
+
+</table>
+
+                                    <p>
+                <p>
+    </td>
+    </tr>
+
+</table>
+
+</td></tr>
+</table>
+
+
+
+
+
+
+
+
+
+    
+    <div class="footer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                    <tr>
+                <td bgcolor="#bbbbbb"><img src="/jira/s/335/1/_/images/border/spacer.gif" height="1" width="100" border="0" alt=""></td>
+            </tr>
+                        <tr>
+            <td class="licensemessage">
+        
+        Powered by a free Atlassian <a href='http://www.atlassian.com/software/jira'>JIRA</a> open source license for Apache Software Foundation. Try JIRA - <a href='http://www.atlassian.com/software/jira'>bug tracking software</a> for <i>your</i> team.
+
+
+            </td>
+
+    </tr>
+    
+    <tr>
+        <td height="12" style="background-image:url(/jira/s/335/1/_/images/border/border_bottom.gif)"><img src="/jira/s/335/1/_/images/border/spacer.gif" width="1" height="1" border="0" alt=""></td>
+    </tr>
+</table>
+
+<span  class="poweredbymessage" >
+    <a href="http://www.atlassian.com/software/jira" class="smalltext">Atlassian JIRA</a>
+    the Professional <a href="http://www.atlassian.com/software/jira">Issue Tracker</a>.
+    <span  style="color: #666666;" >(Enterprise Edition, Version: 3.13.2-#335)</span>    - <a href="http://jira.atlassian.com/default.jsp?clicked=footer">Bug/feature request</a>
+
+    - <a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=jira-stayintouch">Atlassian news</a>
+    - <a href="/jira/secure/Administrators.jspa">Contact Administrators</a>
+</span>
+
+
+</div>
+    
+
+</body>
+</html>
+
+

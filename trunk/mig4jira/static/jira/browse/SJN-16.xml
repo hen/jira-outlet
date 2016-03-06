@@ -1,0 +1,42 @@
+<item>
+<title>[SJN-16] Implement BooleanConverter</title>
+<link>http://issues.osjava.org/jira/browse/SJN-16</link>
+
+                    <description>Turns Strings into Booleans if type is java.lang.Boolean</description>
+                <environment/>
+            <key id='10016'>SJN-16</key>
+        <summary>Implement BooleanConverter</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:54:45 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:54:51 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                        <component>Converter</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

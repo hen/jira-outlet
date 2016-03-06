@@ -1,0 +1,67 @@
+<item>
+<title>[SCB-26] Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</title>
+<link>http://issues.osjava.org/jira/browse/SCB-26</link>
+
+                    <description>Problem statement: The 0.5 release of scraping-engine depends on HttpClient 2.0.2. A more recent stable version of this dependency, HttpClient 3.0.1, is available from Apache Commons. HttpClient 3.0.1 offers improved functionality which would expand the capabilities of scraping-engine, if the latter could be built using it. However, the HttpClient.startSession() method of HttpClient 2.0.2, which scraping-engine uses in spite of it being a deprecated method, is entirely absent in the HttpClient 3.0.1 version of the API. It is referenced in two classes within scraping-engine, namely HttpFetcher and HttpsFetcher, where it is invoked as a part of those classes own startSession() methods.&lt;br/&gt;
+&lt;br/&gt;
+Suggested fix: reimplement startSession() within HttpFetcher and HttpsFetcher to use methods compatible with HttpClient 3.0.1, including a call to the constructors for org.apache.commons.httpclient.HttpURL  and org.apache.commons.httpclient.HttpsURL. For example, the body of the proposed new implementation of HttpsFetcher.startSession() looks like this:&lt;br/&gt;
+&lt;br/&gt;
+            client.getHostConfiguration().setHost(&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;new HttpsURL(&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;cfg.getString(&amp;quot;username&amp;quot;), &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;cfg.getString(&amp;quot;password&amp;quot;), &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;url.getHost(), &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;port, &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;url.getPath(),&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;url.getQuery()&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;) &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;);   &lt;br/&gt;
+&lt;br/&gt;
+Modules affected: &lt;br/&gt;
+&lt;br/&gt;
+src/java/org/osjava/scraping/AbstractHttpFetcher.java&lt;br/&gt;
+src/java/org/osjava/scraping/HttpFetcher.java&lt;br/&gt;
+src/java/org/osjava/scraping/HttpsFetcher.java&lt;br/&gt;
+&lt;br/&gt;
+The benefit of the suggested fix is the possibility to run scraping-engine using either HttpClient 2.0.2 or 3.0.1.&lt;br/&gt;
+&lt;br/&gt;
+A potential pitfall of the above method is that the constructors for HttpURL and HttpsURL throw a subclass of java.io.IOException, namely org.apache.commons.httpclient.URIException. This may cause a compile-time incompatibility with existing custom implementations of Fetcher. However, within the existing API, the only invocation of the AbstractHttpFetcher.startSession() method is found within AbstractHttpFetcher.fetch(), and it already traps IOExceptions. &lt;br/&gt;
+&lt;br/&gt;
+As an alternative to adding the throws clause, the new implementations could catch this exception, issue a logging message, and then consume the exception (as opposed to re-throwing it, although a later exception is almost certain to occur as a consequence.) A hybrid between this method and that described above could be acheived with the addition of a property file setting to conditionally suppress the throwing of URIExceptions from startSession().</description>
+                <environment/>
+            <key id='10631'>SCB-26</key>
+        <summary>Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='alancanon'>Alan B. Canon</reporter>
+            
+    <created>Mon, 23 Oct 2006 12:25:36 -0700 (PDT)</created>
+    <updated>Mon, 23 Oct 2006 12:25:36 -0700 (PDT)</updated>
+
+                        <version>scraping-engine-0.6</version>
+            
+                
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-14] report needs column names</title>
+<link>http://issues.osjava.org/jira/browse/RRR-14</link>
+
+                    <description>currently there are no column names.&lt;br/&gt;
+&lt;br/&gt;
+these need to be settable in reports.xml, but also need to be automatically created from the db.&lt;br/&gt;
+&lt;br/&gt;
+add to Report API; though would not be available until after the SQL perhaps?</description>
+                <environment/>
+            <key id='10275'>RRR-14</key>
+        <summary>report needs column names</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:42:24 -0700 (PDT)</created>
+    <updated>Tue, 5 Oct 2004 16:22:39 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

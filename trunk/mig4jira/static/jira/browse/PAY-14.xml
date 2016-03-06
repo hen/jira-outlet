@@ -1,0 +1,54 @@
+<item>
+<title>[PAY-14] Paylets</title>
+<link>http://issues.osjava.org/jira/browse/PAY-14</link>
+
+                    <description>Paylets are small Java programs which run once a deployment is complete. &lt;br/&gt;
+&lt;br/&gt;
+Most likely the API will be:&lt;br/&gt;
+&lt;br/&gt;
+interface Paylet:&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;void execute(String arguments, Properties payloadProperties, Properties configurationProperties);</description>
+                <environment/>
+            <key id='10373'>PAY-14</key>
+        <summary>Paylets</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='3'>Duplicate</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 17:56:38 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:48:43 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10374' created='Mon, 16 May 2005 10:48:43 -0700 (PDT)'>Done</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+            <subtask id='10374'>PAY-15</subtask>
+            <subtask id='10375'>PAY-16</subtask>
+            <subtask id='10376'>PAY-17</subtask>
+            <subtask id='10377'>PAY-18</subtask>
+            <subtask id='10378'>PAY-19</subtask>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

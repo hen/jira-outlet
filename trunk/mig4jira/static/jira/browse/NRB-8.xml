@@ -1,0 +1,57 @@
+<item>
+<title>[NRB-8] User-Agent name comparison should be case insensitive</title>
+<link>http://issues.osjava.org/jira/browse/NRB-8</link>
+
+                    <description>From the spec:&lt;br/&gt;
+&lt;br/&gt;
+   The name comparisons are case-insensitive.&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&lt;br/&gt;
+   For example, a fictional company FigTree Search Services who names&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;their robot &amp;quot;Fig Tree&amp;quot;, send HTTP requests like:&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&lt;br/&gt;
+     GET / HTTP/1.0&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;User-agent: FigTree/0.1 Robot libwww-perl/5.04&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br/&gt;
+   might scan the &amp;quot;/robots.txt&amp;quot; file for records with:&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&lt;br/&gt;
+     User-agent: figtree</description>
+                <environment/>
+            <key id='10513'>NRB-8</key>
+        <summary>User-Agent name comparison should be case insensitive</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Oct 2005 08:42:43 -0700 (PDT)</created>
+    <updated>Wed, 5 Oct 2005 10:15:21 -0700 (PDT)</updated>
+
+                        <version>0.3.1</version>
+            
+                        <fixVersion>0.3.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10452' created='Wed, 5 Oct 2005 10:15:21 -0700 (PDT)'>Added a nice little equalsIgnoreCase and we&apos;re there.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

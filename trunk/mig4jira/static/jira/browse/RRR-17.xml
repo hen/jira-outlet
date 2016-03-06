@@ -1,0 +1,64 @@
+<item>
+<title>[RRR-17] Use Velocity instead of JSP</title>
+<link>http://issues.osjava.org/jira/browse/RRR-17</link>
+
+                    <description>The WebWizard wants to be easily configurable, but I also want to maintain the workflow in reportrunner and not let people easily mess with that.&lt;br/&gt;
+&lt;br/&gt;
+Seems that I could have a velocity system in which I turn _report and _renderer into the relevant objects, which will save me constantly using ReportFactory in the jsp, and then implement the site in .vm files, rather than .jsp files.</description>
+                <environment/>
+            <key id='10278'>RRR-17</key>
+        <summary>Use Velocity instead of JSP</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_inprogress.gif' id='3'>In Progress</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 3 Oct 2004 09:47:30 -0700 (PDT)</created>
+    <updated>Sun, 10 Apr 2005 19:19:14 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10336' created='Thu, 3 Feb 2005 13:02:43 -0800 (PST)'>Velocity will allow for a nice plugin system I believe.</comment>
+                </comments>
+    
+    <issuelinks>
+                <issuelinktype id='10000'>
+            <name>Depends on</name>
+                                        <inwardlinks description='is depended on by'>
+                            <issuelink>
+            <issuekey id='10273'>RRR-12</issuekey>
+        </issuelink>
+                    </inwardlinks>
+                    </issuelinktype>
+            </issuelinks>
+    <attachments>
+        </attachments>
+
+    <subtasks>
+            <subtask id='10393'>RRR-82</subtask>
+            <subtask id='10394'>RRR-83</subtask>
+            <subtask id='10395'>RRR-84</subtask>
+            <subtask id='10396'>RRR-85</subtask>
+            <subtask id='10398'>RRR-87</subtask>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

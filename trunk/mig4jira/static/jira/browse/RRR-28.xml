@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-28] Parsing needs to happen after data entered</title>
+<link>http://issues.osjava.org/jira/browse/RRR-28</link>
+
+                    <description>Currently parsing happens before the report is run. This is fine, but it also needs to be run after it is entered so that error values may be close to the point of entry.</description>
+                <environment/>
+            <key id='10289'>RRR-28</key>
+        <summary>Parsing needs to happen after data entered</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 5 Oct 2004 21:02:38 -0700 (PDT)</created>
+    <updated>Wed, 6 Oct 2004 10:00:42 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

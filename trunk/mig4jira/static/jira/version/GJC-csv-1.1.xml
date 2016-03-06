@@ -1,0 +1,11 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-34'>CsvWriter doesn&apos;t gracefully handle null field values</issue>
+    <issue status='Open' key='GJC-24'>Wrong number of fields when last character is fieldDelimiter</issue>
+    <issue status='Closed' key='GJC-20'>Improve CsvWriter API</issue>
+    <issue status='Open' key='GJC-15'>Reconsider the END_OF_LINE variable</issue>
+    <issue status='Open' key='GJC-14'>Unit test and Javadoc</issue>
+    <issue status='Open' key='GJC-9'>Hard-coded to escape field delimiters of &quot; and not the field delimiter</issue>
+  </fixes-issues>
+  <name>csv-1.1</name>
+</version>

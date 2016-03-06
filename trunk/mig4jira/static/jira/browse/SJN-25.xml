@@ -1,0 +1,41 @@
+<item>
+<title>[SJN-25] Implement binding persistence</title>
+<link>http://issues.osjava.org/jira/browse/SJN-25</link>
+
+                    <description>Need to allow the concept of read/write stores into which values &lt;br/&gt;
+may be bound and persisted.</description>
+                <environment/>
+            <key id='10025'>SJN-25</key>
+        <summary>Implement binding persistence</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:31:52 -0700 (PDT)</created>
+    <updated>Thu, 29 Mar 2007 20:25:18 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

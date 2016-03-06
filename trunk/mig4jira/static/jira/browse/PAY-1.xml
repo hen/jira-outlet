@@ -1,0 +1,42 @@
+<item>
+<title>[PAY-1] Handle directories</title>
+<link>http://issues.osjava.org/jira/browse/PAY-1</link>
+
+                    <description>Need to be able to handle directories recursively. As payload cannot have jar dependencies, the code needs to be copied over from genjava&apos;s finder system.</description>
+                <environment/>
+            <key id='10150'>PAY-1</key>
+        <summary>Handle directories</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 3 Feb 2004 22:56:38 -0800 (PST)</created>
+    <updated>Wed, 4 Feb 2004 18:00:11 -0800 (PST)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

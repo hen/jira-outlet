@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-47] Descriptions for params, columns and resource-params</title>
+<link>http://issues.osjava.org/jira/browse/RRR-47</link>
+
+                    <description>Anything without a description yet basically.</description>
+                <environment/>
+            <key id='10323'>RRR-47</key>
+        <summary>Descriptions for params, columns and resource-params</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 7 Dec 2004 16:45:53 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:55:39 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Reports</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

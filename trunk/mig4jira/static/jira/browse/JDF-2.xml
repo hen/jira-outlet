@@ -1,0 +1,43 @@
+<item>
+<title>[JDF-2] Support serialVersionID</title>
+<link>http://issues.osjava.org/jira/browse/JDF-2</link>
+
+                    <description>Compare serialVersionIDs of each class in the diff.</description>
+                <environment/>
+            <key id='10630'>JDF-2</key>
+        <summary>Support serialVersionID</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='antony'>Antony Riley</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 19 Oct 2006 12:22:00 -0700 (PDT)</created>
+    <updated>Mon, 23 Oct 2006 11:55:42 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10520' created='Mon, 23 Oct 2006 11:55:41 -0700 (PDT)'>It&apos;s a private static final variable, so not currently picked up</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='JDF'>JarDiff</project>
+</item>

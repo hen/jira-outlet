@@ -1,0 +1,45 @@
+<item>
+<title>[PAY-10] Jarring on Windows puts in backslashes</title>
+<link>http://issues.osjava.org/jira/browse/PAY-10</link>
+
+                    <description>Means  if you build on Windows, you can&apos;t deploy on Unix.</description>
+                <environment/>
+            <key id='10248'>PAY-10</key>
+        <summary>Jarring on Windows puts in backslashes</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 30 Jun 2004 12:26:21 -0700 (PDT)</created>
+    <updated>Wed, 30 Jun 2004 12:31:49 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10225' created='Wed, 30 Jun 2004 12:31:49 -0700 (PDT)'>Quite simply changed so that I always use UNIX slashes, /.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

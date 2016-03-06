@@ -1,0 +1,74 @@
+<item>
+<title>[SJN-58] Unable to create subcontexts</title>
+<link>http://issues.osjava.org/jira/browse/SJN-58</link>
+
+                    <description>The new GenericContext seems to have a problem with subcontexts. From email to Robert a while back:&lt;br/&gt;
+&lt;br/&gt;
+****&lt;br/&gt;
+If I were to do:&lt;br/&gt;
+&lt;br/&gt;
+Context tmp = ctxt.createSubcontext(&amp;quot;path&amp;quot;);&lt;br/&gt;
+tmp = tmp.createSubcontext(&amp;quot;one&amp;quot;);&lt;br/&gt;
+tmp = tmp.createSubcontext(&amp;quot;two&amp;quot;);&lt;br/&gt;
+&lt;br/&gt;
+It gives me a NotContextException in getNameParser.&lt;br/&gt;
+&lt;br/&gt;
+=============&lt;br/&gt;
+&lt;br/&gt;
+I think the problem is in the method getNameParse(Name);NameParser (line 623 of AbstractContext).&lt;br/&gt;
+&lt;br/&gt;
+For a hierarchy of   &apos;path/one/two&apos;   when creating the &apos;two&apos; subcontext, that method is given a Name of &apos;path/one&apos;. It&lt;br/&gt;
+then attempts to find the name in the subcontext, which it won&apos;t be. It needs to somehow talk to the parent subcontext,&lt;br/&gt;
+and it needs to pass in &amp;quot;one&amp;quot; and not &amp;quot;path&amp;quot; as it currently is (getPrefix(1) should become getSuffix(name.size()-1)).&lt;br/&gt;
+&lt;br/&gt;
+Also, in GenericContext, in createSubcontext(Name);Context, line 142, I think there should be a bind(name, newContext)&lt;br/&gt;
+after line 150.&lt;br/&gt;
+&lt;br/&gt;
+I&apos;ll commit my failing unit test.&lt;br/&gt;
+****************&lt;br/&gt;
+&lt;br/&gt;
+The unit test was committed and currently fails.&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10381'>SJN-58</key>
+        <summary>Unable to create subcontexts</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 1 Jun 2005 22:07:56 -0700 (PDT)</created>
+    <updated>Wed, 6 Jun 2007 08:45:06 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10376' created='Thu, 2 Jun 2005 03:49:06 -0700 (PDT)'>Fixed the NameParser lookup.  &lt;br/&gt;
+&lt;br/&gt;
+r1727</comment>
+                    <comment author='bayard' id='10441' created='Thu, 29 Sep 2005 11:48:02 -0700 (PDT)'>Done</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

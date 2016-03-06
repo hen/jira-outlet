@@ -1,0 +1,68 @@
+<item>
+<title>[SJN-49] Unable to load a DS in jdbc/FooDS.properties</title>
+<link>http://issues.osjava.org/jira/browse/SJN-49</link>
+
+                    <description>When I call datasource.getConnection(), I receive the error&lt;br/&gt;
+&amp;quot;java.sql.SQLException: The url cannot be null.&amp;quot;&lt;br/&gt;
+&lt;br/&gt;
+However, my properties clearly have a URL:&lt;br/&gt;
+&lt;br/&gt;
+  type=javax.sql.DataSource&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;url=jdbc:db2:DSNT&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;driver=COM.ibm.db2.jdbc.app.DB2Driver&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;user=TheUser&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;password=xxxxxxxx&lt;br/&gt;
+&lt;br/&gt;
+I don&apos;t know if this matters, but I am creating InitialContext this way:&lt;br/&gt;
+&lt;br/&gt;
+  Hashtable parms = new Hashtable(1);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;parms.put(Context.INITIAL_CONTEXT_FACTORY,&lt;br/&gt;
+&amp;quot;org.osjava.jndi.PropertiesFactory&amp;quot;);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;parms.put(&amp;quot;org.osjava.jndi.root&amp;quot;, &amp;quot;&lt;a href=&quot;classpath://conf/dev&quot;&gt;classpath://conf/dev&lt;/a&gt;&amp;quot;);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;parms.put(&amp;quot;org.osjava.jndi.delimiter&amp;quot;, &amp;quot;/&amp;quot;);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;Context ctx = new InitialContext(parms);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;DataSource ds = (DataSource)ctx.lookup(&amp;quot;jdbc/RAMWorkbench4DB2Data&amp;quot;);</description>
+                <environment/>
+            <key id='10160'>SJN-49</key>
+        <summary>Unable to load a DS in jdbc/FooDS.properties</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 10 Feb 2004 20:20:29 -0800 (PST)</created>
+    <updated>Tue, 10 Feb 2004 20:26:09 -0800 (PST)</updated>
+
+                        <version>0.9</version>
+            
+                        <fixVersion>0.9.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10148' created='Tue, 10 Feb 2004 20:21:52 -0800 (PST)'>Reported by Eric Jung.&lt;br/&gt;
+&lt;br/&gt;
+ClasspathUnitTest breaks on 0.9.&lt;br/&gt;
+&lt;br/&gt;
+I believe the problem was introduced recently, I&apos;ve put together a fix but that block of code could do with a bit of an improvement. 0.9.1 passes the test.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

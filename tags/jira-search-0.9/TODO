@@ -1,0 +1,3 @@
+Allow custom fields to be searched. ie) list of extra things to search; both the standard stuff and being able to list custom fields.
+Consider flattening so it only takes up one line. Same thing is needed for filterlist.
+Consider merging into filter list?

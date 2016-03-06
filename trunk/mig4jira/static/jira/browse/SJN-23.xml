@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-23] Implement DirContext</title>
+<link>http://issues.osjava.org/jira/browse/SJN-23</link>
+
+                    <description>Consider the concept of doing searches in simple-jndi.</description>
+                <environment/>
+            <key id='10023'>SJN-23</key>
+        <summary>Implement DirContext</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:30:30 -0700 (PDT)</created>
+    <updated>Thu, 29 Mar 2007 20:20:21 -0700 (PDT)</updated>
+
+                        <version>0.9.1</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10152' created='Wed, 28 Apr 2004 20:30:54 -0700 (PDT)'>Pushing back, thought it was something else.</comment>
+                    <comment author='bayard' id='10410' created='Mon, 22 Aug 2005 14:54:54 -0700 (PDT)'>Part of the in-memory implementation. Unsure if you&apos;ve implemented DirContexts yet; or if you have any desire for them. </comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

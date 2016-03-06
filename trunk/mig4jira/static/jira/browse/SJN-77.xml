@@ -1,0 +1,230 @@
+<item>
+<title>[SJN-77] InitialContext.close() improperly throws exception when using JNDI Memory implementation separately</title>
+<link>http://issues.osjava.org/jira/browse/SJN-77</link>
+
+                    <description>According to this page &lt;a href=&quot;http://www.osjava.org/simple-jndi/manual/MemoryContext.html&quot;&gt;http://www.osjava.org/simple-jndi/manual/MemoryContext.html&lt;/a&gt; it should be possible to use Simple JNDI as an in-memory context.&lt;br/&gt;
+&lt;br/&gt;
+When I try with this jndi.properties in classpath:&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;java.naming.factory.initial=org.osjava.sj.memory.MemoryContextFactory&lt;br/&gt;
+&lt;br/&gt;
+this code:&lt;br/&gt;
+&lt;br/&gt;
+        Context ctx = new InitialContext();&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ctx.bind(&amp;quot;aaa&amp;quot;, &amp;quot;bbb&amp;quot;);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ctx.close();&lt;br/&gt;
+&lt;br/&gt;
+throws this exception:&lt;br/&gt;
+&lt;br/&gt;
+java.lang.ClassCastException&lt;br/&gt;
+	at org.osjava.sj.jndi.AbstractContext.close(AbstractContext.java:704)&lt;br/&gt;
+	at javax.naming.InitialContext.close(InitialContext.java:478)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;...&lt;br/&gt;
+&lt;br/&gt;
+and if you set this property in jndi.properties:&lt;br/&gt;
+&lt;br/&gt;
+        org.osjava.sj.jndi.shared=true&lt;br/&gt;
+&lt;br/&gt;
+you get that exception instead:&lt;br/&gt;
+&lt;br/&gt;
+javax.naming.NotContextException&lt;br/&gt;
+	at org.osjava.sj.jndi.AbstractContext.destroySubcontext(AbstractContext.java:529)&lt;br/&gt;
+	at org.osjava.sj.jndi.AbstractContext.close(AbstractContext.java:697)&lt;br/&gt;
+	at javax.naming.InitialContext.close(InitialContext.java:478)</description>
+                <environment/>
+            <key id='10635'>SJN-77</key>
+        <summary>InitialContext.close() improperly throws exception when using JNDI Memory implementation separately</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='lorban'>Ludovic Orban</reporter>
+            
+    <created>Mon, 25 Dec 2006 12:47:13 -0800 (PST)</created>
+    <updated>Sun, 6 Apr 2008 00:31:01 -0700 (PDT)</updated>
+
+                        <version>0.11.1</version>
+            
+                        <fixVersion>0.11.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bulenterdemir' id='10660' created='Sun, 17 Feb 2008 06:28:27 -0800 (PST)'>Hi, the problem is in the AbstractContext&apos;s close() method. This method iterates through the internal HashTable (called table) in which it holds the JNDI bound objects. And while iterating it casts each object from this table to a Thread and tries to see it the thread&apos;s are alive by calling isAlive() on them. 
+&lt;br/&gt;
+
+&lt;br/&gt;
+So, obviously, if you&apos;ve bound an object to the JNDI which is NOT a Thread, then the cast operation fails. Here&apos;s the code:
+&lt;br/&gt;
+
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;while(table.size() &amp;gt; 0 || subContexts.size() &amp;gt; 0) {
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;it = table.keySet().iterator();
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;while(it.hasNext()) {
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Name name = (Name)it.next();
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(!((Thread)table.get(name)).isAlive()) {
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;table.remove(name);
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}
+&lt;br/&gt;
+
+&lt;br/&gt;
+I don&apos;t understand why the author does this (Thread casting and calling isAlive()), however, this is the cause of your problem. And mine, too... :)
+&lt;br/&gt;
+
+&lt;br/&gt;
+Here&apos;s a JUnit 4 test to reproduce the problem:
+&lt;br/&gt;
+
+&lt;br/&gt;
+package org.falez.falez.jndi.test;
+&lt;br/&gt;
+import javax.naming.InitialContext;
+&lt;br/&gt;
+import javax.naming.NamingException;
+&lt;br/&gt;
+import org.junit.Before;
+&lt;br/&gt;
+import org.junit.Test;
+&lt;br/&gt;
+
+&lt;br/&gt;
+public class TestMemoryContext {
+&lt;br/&gt;
+	InitialContext ic;
+&lt;br/&gt;
+	@Before
+&lt;br/&gt;
+	public void setup() throws NamingException {
+&lt;br/&gt;
+		System.setProperty(&amp;quot;java.naming.factory.initial&amp;quot;, &amp;quot;org.osjava.sj.memory.MemoryContextFactory&amp;quot;);
+&lt;br/&gt;
+		ic = new InitialContext();
+&lt;br/&gt;
+	}
+&lt;br/&gt;
+	@Test
+&lt;br/&gt;
+	public void testPut() throws NamingException {
+&lt;br/&gt;
+		String name = &amp;quot;falez:/hoba&amp;quot;;
+&lt;br/&gt;
+		String value = &amp;quot;hoba1&amp;quot;;
+&lt;br/&gt;
+		ic.bind(name, value);
+&lt;br/&gt;
+		String result = (String) ic.lookup(name);
+&lt;br/&gt;
+		ic.close();
+&lt;br/&gt;
+	}
+&lt;br/&gt;
+}
+&lt;br/&gt;
+</comment>
+                    <comment author='bulenterdemir' id='10661' created='Sun, 17 Feb 2008 11:43:51 -0800 (PST)'>Another problem with the MemoryContext is that, the close() method on the AbstractContext, literally closes everything. :) 
+&lt;br/&gt;
+This means, it releases all the resources related to the particular context: unbind objects, frees up the internal HashTable, etc. 
+&lt;br/&gt;
+This essentially destroys the Jndi registry. 
+&lt;br/&gt;
+
+&lt;br/&gt;
+However, the close() call should deallocate the resources the JNDI client uses to connect to the JNDI contect. For example, for a remote JNDI connection, the socket should be closed. 
+&lt;br/&gt;
+In other words, when close() is called, the registry should continue to live. 
+&lt;br/&gt;
+
+&lt;br/&gt;
+If you execute the code below:
+&lt;br/&gt;
+Context ctx = new InitialContext();
+&lt;br/&gt;
+ic.bind(&amp;quot;falez:/hoba&amp;quot;, &amp;quot;hoba&amp;quot;);
+&lt;br/&gt;
+ic.close();
+&lt;br/&gt;
+
+&lt;br/&gt;
+the object bound is lost forever. If you create another InitialContext() and try to lookup for the object just bound, you won&apos;t find it there. 
+&lt;br/&gt;
+
+&lt;br/&gt;
+Normally, the resources used to connect to the registry should be freed. Not the JNDI registry itself.
+&lt;br/&gt;
+
+&lt;br/&gt;
+Another implication is, if you use Spring&apos;s JndiTemplate to access the JNDI registry, you won&apos;t be able to use it all because JndiTemplate automatically closes the created InitialContext for every expression it executes. Therefore, after every call, the JNDI registry is destroyed. 
+&lt;br/&gt;
+
+&lt;br/&gt;
+As a result, AbstractContext&apos;s close() method should be empty. 
+&lt;br/&gt;
+
+&lt;br/&gt;
+Regards,
+&lt;br/&gt;
+Bulent Erdemir
+&lt;br/&gt;
+</comment>
+                    <comment author='bayard' id='10681' created='Sat, 22 Mar 2008 13:21:56 -0700 (PDT)'>svn ci -m &amp;quot;Applying Bulent Erdemir&apos;s unit test and protecting from the ClassCastException as per &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-77&quot; title=&quot;InitialContext.close() improperly throws exception when using JNDI Memory implementation separately&quot;&gt;&lt;strike&gt;SJN-77&lt;/strike&gt;&lt;/a&gt;&amp;quot;
+&lt;br/&gt;
+
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/jndi/AbstractContext.java
+&lt;br/&gt;
+Adding         simple-jndi/src/test/org/osjava/sj/Sjn77Test.java
+&lt;br/&gt;
+Transmitting file data ..
+&lt;br/&gt;
+Committed revision 2657.</comment>
+                    <comment author='bayard' id='10682' created='Sat, 22 Mar 2008 13:22:23 -0700 (PDT)'>Still need to deal with the question of what should be in the close() method.</comment>
+                    <comment author='bayard' id='10683' created='Sat, 22 Mar 2008 13:25:56 -0700 (PDT)'>Doesn&apos;t fix the NotContextException. </comment>
+                    <comment author='bayard' id='10684' created='Sat, 22 Mar 2008 13:49:01 -0700 (PDT)'>Latter problem is because StaticHashTable is used twice; which makes it the same table.
+&lt;br/&gt;
+
+&lt;br/&gt;
+svn ci -m &amp;quot;Making it so there can be more than one StaticHashtable. This fixes the NotContextException reported in &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-77&quot; title=&quot;InitialContext.close() improperly throws exception when using JNDI Memory implementation separately&quot;&gt;&lt;strike&gt;SJN-77&lt;/strike&gt;&lt;/a&gt;&amp;quot;
+&lt;br/&gt;
+
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/jndi/AbstractContext.java
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/jndi/StaticHashtable.java
+&lt;br/&gt;
+Sending        simple-jndi/src/test/org/osjava/sj/Sjn77Test.java
+&lt;br/&gt;
+Transmitting file data ...
+&lt;br/&gt;
+Committed revision 2658.</comment>
+                    <comment author='bayard' id='10689' created='Sun, 6 Apr 2008 00:31:01 -0700 (PDT)'>As for what should be in the close() method - that&apos;s the reason why the Static option exists. In that instance the registry exists beyond the mere object that was created.
+&lt;br/&gt;
+
+&lt;br/&gt;
+So I believe this issue can be closed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,66 @@
+<!--
+   Copyright 2007 SourceLabs, Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.releases" name="Releases Plugin">
+    <plugin-info>
+        <description>Portlet Releases Plugin</description>
+        <version>2.0</version>
+        <application-version min="3.0" max="3.0"/>
+        <vendor name="SourceLabs" url="http://www.sourcelabs.com"/>
+    </plugin-info>
+
+    <portlet key="releases" name="Release Status portlet" class="com.sourcelabs.jira.plugin.portlet.releases.ReleaseStatusPortlet">
+        <description key="portlet.releases.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/releasesportlet/releasestatus.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.releases.releases_portlet" />
+        <label key="portlet.releases.name" />
+        <objectdescriptor key="portlet.releases.display.name" />
+        <properties>
+            <property>
+                <key>versionid</key>
+                <name>portlet.releases.field.versionid.title.name</name>
+                <description>portlet.releases.field.versionid.title.description</description>
+                <type>string</type>
+            </property>
+        </properties>
+    </portlet>
+
+    <portlet key="latestreleases" name="Latest Releases portlet" class="com.sourcelabs.jira.plugin.portlet.releases.LatestReleasesPortlet">
+        <description key="portlet.latestreleases.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/releasesportlet/latestreleases.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.releases.latest_portlet" />
+        <label key="portlet.latestreleases.name" />
+        <objectdescriptor key="portlet.latestreleases.display.name" />
+        <properties>
+            <property>
+                <key>size</key>
+                <name>portlet.latestreleases.field.size.title.name</name>
+                <description>portlet.latestreleases.field.size.title.description</description>
+                <type>string</type>
+            </property>
+        </properties>
+    </portlet>
+
+    <project-tabpanel key="releases-projecttab" 
+                      name="Releases Project Tab" 
+                      class="com.sourcelabs.jira.plugin.projecttab.releases.ReleasesProjectTabPanel">
+        <description key="projecttab.releases.description"/>
+        <label key="projecttab.releases.label" />
+        <order>50</order>
+        <resource type="velocity" name="view" location="templates/releases-projecttab.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.projecttab.releases" />
+    </project-tabpanel>
+
+</atlassian-plugin>

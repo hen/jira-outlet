@@ -1,0 +1,6 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='XMLW-1'>Test xmlenc 0.37 works</issue>
+  </affects-issues>
+  <name>2.0</name>
+</version>

@@ -1,0 +1,43 @@
+<item>
+<title>[RRR-75] Customised demo database + reports</title>
+<link>http://issues.osjava.org/jira/browse/RRR-75</link>
+
+                    <description>Need to create a much better demo, showing off the various features of ReportRunner. Needs to have data designed to be there for RRR and not just use JIRA/Roller, which is a security flaw anyway.</description>
+                <environment/>
+            <key id='10360'>RRR-75</key>
+        <summary>Customised demo database + reports</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Mar 2005 15:28:42 -0800 (PST)</created>
+    <updated>Thu, 3 Mar 2005 15:28:42 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+            <subtask id='10361'>RRR-76</subtask>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

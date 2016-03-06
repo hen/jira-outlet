@@ -1,0 +1,12 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='XMLW-9'>PrettyPrinterXMLWriter does not implement all methods</issue>
+    <issue status='Closed' key='XMLW-8'>expected/actual in the incorrect order in XmlWriterTest</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='XMLW-7'>Use an xmlenc version that&apos;s on ibiblio</issue>
+    <issue status='Closed' key='XMLW-6'>Fix or remove java-channel link</issue>
+    <issue status='Closed' key='XMLW-5'>No data entities lead to </issue>
+  </fixes-issues>
+  <name>2.2.1</name>
+</version>

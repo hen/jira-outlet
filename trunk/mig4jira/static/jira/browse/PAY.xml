@@ -1,0 +1,27 @@
+<project>
+  <key>PAY</key>
+  <name>Payload</name>
+  <issues>
+    <issue status='Closed' key='PAY-21'>Not possible to store an empty directory in Payload</issue>
+    <issue status='Closed' key='PAY-20'>Change packages</issue>
+    <issue status='Closed' key='PAY-19'>Create FileRemoverPaylet</issue>
+    <issue status='Closed' key='PAY-18'>Create JarSignerPaylet</issue>
+    <issue status='Closed' key='PAY-17'>Create paylet.jar sucking in PayloadContractor</issue>
+    <issue status='Closed' key='PAY-16'>Create paylet execution in PayloadExtractor</issue>
+    <issue status='Closed' key='PAY-15'>Create interface structure</issue>
+    <issue status='Closed' key='PAY-14'>Paylets</issue>
+    <issue status='Closed' key='PAY-13'>Inteprolating in archives needs to recurse</issue>
+    <issue status='Closed' key='PAY-12'>Interpolate zips/wars/jars etc</issue>
+    <issue status='Closed' key='PAY-11'>Allow more than one .properties file to be passed in</issue>
+    <issue status='Closed' key='PAY-10'>Jarring on Windows puts in backslashes</issue>
+    <issue status='Open' key='PAY-9'>org.osjava.payload.interpolate.conf=sar.properties</issue>
+    <issue status='Open' key='PAY-8'>Create a maven plugin</issue>
+    <issue status='Open' key='PAY-7'>Build an Ant task</issue>
+    <issue status='Open' key='PAY-6'>Optional GUI mode?</issue>
+    <issue status='Closed' key='PAY-5'>Allow interpolated files to be specified</issue>
+    <issue status='Closed' key='PAY-4'>Improve project description/overview</issue>
+    <issue status='Closed' key='PAY-3'>Write a changes page</issue>
+    <issue status='Closed' key='PAY-2'>Work on how-to page</issue>
+    <issue status='Closed' key='PAY-1'>Handle directories</issue>
+  </issues>
+</project>

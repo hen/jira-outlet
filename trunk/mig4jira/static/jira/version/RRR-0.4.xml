@@ -1,0 +1,29 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='RRR-93'>Allow value fields to get assignments from scripting language evaluation.</issue>
+    <issue status='Open' key='RRR-92'>SQL Binding for &lt;columns&gt; tag.</issue>
+    <issue status='Closed' key='RRR-79'>i18n problems - web pages lack encoding info</issue>
+    <issue status='Open' key='RRR-78'>Show group and report comments on current-state panel</issue>
+    <issue status='Closed' key='RRR-77'>Missing chosen-resource on jsp pages</issue>
+    <issue status='Closed' key='RRR-71'>Temporary widget hack</issue>
+    <issue status='Closed' key='RRR-70'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-69'>Test if this is still a problem</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='RRR-79'>i18n problems - web pages lack encoding info</issue>
+    <issue status='Closed' key='RRR-77'>Missing chosen-resource on jsp pages</issue>
+    <issue status='Closed' key='RRR-73'>Improve applet to work in java 1.4</issue>
+    <issue status='Closed' key='RRR-72'>Results need a Header</issue>
+    <issue status='Closed' key='RRR-71'>Temporary widget hack</issue>
+    <issue status='Closed' key='RRR-70'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-69'>Test if this is still a problem</issue>
+    <issue status='Closed' key='RRR-67'>Named sql parameters</issue>
+    <issue status='Closed' key='RRR-64'>Need page when results are empty</issue>
+    <issue status='Closed' key='RRR-56'>Helper tag for creating multiple columns</issue>
+    <issue status='Closed' key='RRR-39'>Stilted language</issue>
+    <issue status='Closed' key='RRR-36'>Use classpath if file not found</issue>
+    <issue status='Closed' key='RRR-35'>Allow multiple parameters</issue>
+    <issue status='Closed' key='RRR-13'>param choices</issue>
+  </fixes-issues>
+  <name>0.4</name>
+</version>

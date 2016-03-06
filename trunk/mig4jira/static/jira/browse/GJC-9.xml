@@ -1,0 +1,43 @@
+<item>
+<title>[GJC-9] Hard-coded to escape field delimiters of &quot; and not the field delimiter</title>
+<link>http://issues.osjava.org/jira/browse/GJC-9</link>
+
+                    <description/>
+                <environment/>
+            <key id='10144'>GJC-9</key>
+        <summary>Hard-coded to escape field delimiters of &quot; and not the field delimiter</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 18 Jan 2004 20:21:30 -0800 (PST)</created>
+    <updated>Sun, 18 Jan 2004 20:25:01 -0800 (PST)</updated>
+
+                        <version>csv-1.0</version>
+            
+                        <fixVersion>csv-1.1</fixVersion>
+            
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

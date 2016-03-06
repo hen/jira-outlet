@@ -1,0 +1,31 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='RRR-35'>Allow multiple parameters</issue>
+    <issue status='Closed' key='RRR-34'>Excel rendering doesn&apos;t understand types</issue>
+    <issue status='Open' key='RRR-33'>Text too dark on html webpage rendering</issue>
+    <issue status='Closed' key='RRR-23'>Renderers need names and labels</issue>
+    <issue status='Open' key='RRR-20'>End times...</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='RRR-30'>Servlet takes DataSourceName as an init parameter</issue>
+    <issue status='Closed' key='RRR-29'>Downloadable renderers need to have a filename</issue>
+    <issue status='Closed' key='RRR-28'>Parsing needs to happen after data entered</issue>
+    <issue status='Closed' key='RRR-27'>SqlReport should set column names if unset</issue>
+    <issue status='Closed' key='RRR-26'>Need default values for columns</issue>
+    <issue status='Closed' key='RRR-25'>Reports should also have names and labels</issue>
+    <issue status='Closed' key='RRR-23'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-21'>Columns need formatting</issue>
+    <issue status='Closed' key='RRR-16'>Writer vs OutputStream</issue>
+    <issue status='Closed' key='RRR-15'>Create a Param object</issue>
+    <issue status='Closed' key='RRR-14'>report needs column names</issue>
+    <issue status='Closed' key='RRR-11'>renderer page shows chosen params</issue>
+    <issue status='Closed' key='RRR-10'>converting</issue>
+    <issue status='Closed' key='RRR-8'>more features for htmltable renderer</issue>
+    <issue status='Closed' key='RRR-6'>time graph</issue>
+    <issue status='Closed' key='RRR-4'>XML Renderer</issue>
+    <issue status='Closed' key='RRR-3'>excel renderer</issue>
+    <issue status='Closed' key='RRR-2'>CSV renderer</issue>
+    <issue status='Closed' key='RRR-1'>Servlet so it can change content-type</issue>
+  </fixes-issues>
+  <name>0.2</name>
+</version>

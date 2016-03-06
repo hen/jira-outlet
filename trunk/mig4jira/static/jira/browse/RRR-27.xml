@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-27] SqlReport should set column names if unset</title>
+<link>http://issues.osjava.org/jira/browse/RRR-27</link>
+
+                    <description>Column names have to hand written into the reports.xml; but SqlReport should be able to guess them if not set from the ResultSetMetaData.</description>
+                <environment/>
+            <key id='10288'>RRR-27</key>
+        <summary>SqlReport should set column names if unset</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 5 Oct 2004 16:23:30 -0700 (PDT)</created>
+    <updated>Mon, 18 Oct 2004 09:17:10 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Reports</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10273' created='Mon, 18 Oct 2004 09:17:10 -0700 (PDT)'>Done.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

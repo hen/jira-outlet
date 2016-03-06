@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-34] Redirect old site over to new one</title>
+<link>http://issues.osjava.org/jira/browse/SJN-34</link>
+
+                    <description>The old genjava site needs some kind of link or redirect to be in place.</description>
+                <environment/>
+            <key id='10104'>SJN-34</key>
+        <summary>Redirect old site over to new one</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 15 Sep 2003 21:17:09 -0700 (PDT)</created>
+    <updated>Mon, 15 Sep 2003 21:19:54 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.7</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10058' created='Mon, 15 Sep 2003 21:19:54 -0700 (PDT)'>Seems there is a link on the page already. Should be enough.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

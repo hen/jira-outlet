@@ -1,0 +1,47 @@
+<item>
+<title>[GJC-21] Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</title>
+<link>http://issues.osjava.org/jira/browse/GJC-21</link>
+
+                    <description>Looping with move and calling get seems to return the next tag, not the tag you wanted.</description>
+                <environment/>
+            <key id='10249'>GJC-21</key>
+        <summary>Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 4 Jul 2004 22:14:56 -0700 (PDT)</created>
+    <updated>Sun, 4 Jul 2004 22:16:25 -0700 (PDT)</updated>
+
+                        <version>scrape-2.0</version>
+            
+                        <fixVersion>scrape-2.0.1</fixVersion>
+            
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10226' created='Sun, 4 Jul 2004 22:16:25 -0700 (PDT)'>Looks like a bug that slipped in during the rewrite to indexes. An idx++, meant when you moved to tag, you in fact went just passed the &amp;lt;.&lt;br/&gt;
+Unit test added, and fixed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

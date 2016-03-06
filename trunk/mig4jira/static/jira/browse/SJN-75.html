@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#SJN-75] Using simple-jndi for testing with Maven 2</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [SJN-75]&#xA0;Using simple-jndi for testing with Maven 2<br/><span class="subText">
+                   Created: Thu, 13 Apr 2006 09:07:37 -0700 (PDT)                       &#xA0;Updated: Sun, 6 Apr 2008 01:33:04 -0700 (PDT)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="SJN.html">Simple-JNDI</a></td></tr><tr><td><b>Component/s:</b></td><td></td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/SJN-0.11.1.html">0.11.1</a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/SJN-0.11.3.html">0.11.3</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Improvement</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/paulspencer.html">Paul Spencer</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3">Maven 2.0.4&lt;br/&gt;
+</td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">I am using Simple-JNDI to define a datasource used during unit testing.  The project used Maven 2 as the build tool.<br/>
+<br/>
+1) Add simple-jndi dependency to pom.xml:<br/>
+&nbsp;&nbsp;&lt;dependency&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;simple-jndi&lt;/groupId&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;simple-jndi&lt;/artifactId&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;version&gt;0.11.1&lt;/version&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;scope&gt;test&lt;/scope&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;exclusions&gt; &lt;!-- See Simple-JNDI Issue <a href="http://issues.osjava.org/jira/browse/SJN-74" title="Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 "><strike>SJN-74</strike></a> --&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;exclusion&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;groupId&gt;javax.sql&lt;/groupId&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;artifactId&gt;jdbc-stdext&lt;/artifactId&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/exclusion&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/exclusions&gt;<br/>
+&nbsp;&nbsp;&lt;/dependency&gt;<br/>
+<br/>
+2) Add you jdbc driver to the dependency with &lt;scope&gt;test&lt;/scope&gt; to pom.xml:<br/>
+<br/>
+3) Tell the JVM to use simple-jndi by creating jndi.properties in the test resource directory.  By default the directory is src/test/resources.<br/>
+jndi.properties contains the following lines.  The properties org.osjava.sj.colon.replace and org.osjava.sj.delimiter are used because the application being tested will run on a tomcat server.<br/>
+&nbsp;&nbsp;java.naming.factory.initial=org.osjava.sj.SimpleContextFactory<br/>
+&nbsp;&nbsp;org.osjava.sj.root=src/test/resources/simple-jndi<br/>
+&nbsp;&nbsp;org.osjava.sj.colon.replace=--<br/>
+&nbsp;&nbsp;org.osjava.sj.delimiter=/<br/>
+<br/>
+4) Create the files to define the JNDI datasource myDataSource.  Please note the directory below is in the directory defined by os.java.js.root.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/java--comp<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/env<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;default.properties<br/>
+<br/>
+default.properties contains the following:<br/>
+&nbsp;&nbsp;myDataSource/type=javax.sql.DataSource<br/>
+&nbsp;&nbsp;myDataSource/driver=&lt;jdbc driver class&gt;<br/>
+&nbsp;&nbsp;myDataSource/url=&lt;jdbc url&gt;<br/>
+&nbsp;&nbsp;myDataSource/user=foo<br/>
+&nbsp;&nbsp;myDataSource/password=bar<br/>
+<br/>
+Please incorporate this into the documentation.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+&nbsp;&nbsp;&nbsp;<br/>
+<br/>
+</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sun, 6 Apr 2008 01:33:04 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">svn ci -m &quot;Adding the Maven2 page from Paul Spencer - <a href="http://issues.osjava.org/jira/browse/SJN-75" title="Using simple-jndi for testing with Maven 2"><strike>SJN-75</strike></a>&quot;
+<br/>
+Sending        manual/Configuring.xml
+<br/>
+Adding         manual/ConfiguringWithMaven2.xml
+<br/>
+Sending        manual/GeneralDesign.xml
+<br/>
+Sending        manual/index.xml
+<br/>
+Transmitting file data ....
+<br/>
+Committed revision 2671.</td></tr></table></body></html>

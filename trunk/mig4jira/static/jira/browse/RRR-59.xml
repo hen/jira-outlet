@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-59] Add boolean widget</title>
+<link>http://issues.osjava.org/jira/browse/RRR-59</link>
+
+                    <description>Add a boolean widget to the param system based on java.lang.Boolean.</description>
+                <environment/>
+            <key id='10339'>RRR-59</key>
+        <summary>Add boolean widget</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 10 Jan 2005 15:27:24 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:40:14 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

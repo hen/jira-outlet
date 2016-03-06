@@ -1,0 +1,49 @@
+<item>
+<title>[RRR-21] Columns need formatting</title>
+<link>http://issues.osjava.org/jira/browse/RRR-21</link>
+
+                    <description>Need to be able to configure formatters for display columns.&lt;br/&gt;
+&lt;br/&gt;
+Should use java.text.Format implementations probably. Number and Date are the obvious ones. </description>
+                <environment/>
+            <key id='10282'>RRR-21</key>
+        <summary>Columns need formatting</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 4 Oct 2004 20:44:09 -0700 (PDT)</created>
+    <updated>Wed, 13 Oct 2004 13:39:57 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10260' created='Wed, 13 Oct 2004 13:39:57 -0700 (PDT)'>structure now implemented</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

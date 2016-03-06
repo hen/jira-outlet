@@ -1,0 +1,46 @@
+<item>
+<title>[RRR-84] Get rid of the &quot;z&quot; and &quot;y&quot; hacks</title>
+<link>http://issues.osjava.org/jira/browse/RRR-84</link>
+
+                    <description>Need to try to get rid of the &amp;quot;z&amp;quot; and &amp;quot;y&amp;quot; hacks. Even if it&apos;s to give them more descriptive names.</description>
+                <environment/>
+            <key id='10395'>RRR-84</key>
+        <summary>Get rid of the &quot;z&quot; and &quot;y&quot; hacks</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10278'>RRR-17</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 2 Aug 2005 20:57:50 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 20:57:50 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

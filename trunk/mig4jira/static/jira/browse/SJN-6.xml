@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-6] Support a .ini backend</title>
+<link>http://issues.osjava.org/jira/browse/SJN-6</link>
+
+                    <description>Windows users like .ini files. simple-jndi should sit on top of this as well.</description>
+                <environment/>
+            <key id='10005'>SJN-6</key>
+        <summary>Support a .ini backend</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 10:18:18 -0700 (PDT)</created>
+    <updated>Sat, 6 Dec 2003 17:32:00 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.7</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10057' created='Mon, 15 Sep 2003 21:16:16 -0700 (PDT)'>Surprisingly easy to implement. Needs testing before closure.</comment>
+                    <comment author='bayard' id='10119' created='Sat, 6 Dec 2003 17:31:59 -0800 (PST)'>Tested. Minor bugs fixed. Ready to go in.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

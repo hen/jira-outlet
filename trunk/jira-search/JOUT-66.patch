@@ -1,0 +1,43 @@
+Index: src/etc/atlassian-plugin.xml
+===================================================================
+--- src/etc/atlassian-plugin.xml	(revision 37864)
++++ src/etc/atlassian-plugin.xml	(working copy)
+@@ -14,8 +14,8 @@
+ <atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.search" name="Search Plugin">
+     <plugin-info>
+         <description>Search Plugin</description>
+-        <version>1.0.2</version>
+-        <application-version min="3.0" max="3.0"/>
++        <version>1.1</version>
++        <application-version min="4.0" max="4.0"/>
+         <vendor name="Henri Yandell" url="http://www.buildguy.com"/>
+     </plugin-info>
+ 
+Index: src/etc/templates/search.vm
+===================================================================
+--- src/etc/templates/search.vm	(revision 37864)
++++ src/etc/templates/search.vm	(working copy)
+@@ -45,8 +45,8 @@
+ <input type="hidden" name="tempMax" value="100"/>
+ <input type="text" name="query" size="30"/>
+ <input type="image" src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_end.png" title="$i18n.getText('portlet.search.words.searchall')"/>
+-<a href="javascript:submitForm('searchJira', 'resolution', ['-1'])" title="$i18n.getText('portlet.search.words.searchopen')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_play.png" border="0"/></a>
+-<a href="javascript:submitForm('searchJira', 'status', ['5', '6'])" title="$i18n.getText('portlet.search.words.searchclosed')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_stop.png" border="0"/></a>
++<a onclick="submitForm('searchJira', 'resolution', ['-1'])" title="$i18n.getText('portlet.search.words.searchopen')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_play.png" border="0"/></a>
++<a onclick="submitForm('searchJira', 'status', ['5', '6'])" title="$i18n.getText('portlet.search.words.searchclosed')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_stop.png" border="0"/></a>
+ </form>
+ 
+ </td></tr></table>
+Index: pom.xml
+===================================================================
+--- pom.xml	(revision 37864)
++++ pom.xml	(working copy)
+@@ -12,7 +12,7 @@
+     <modelVersion>4.0.0</modelVersion>
+     <groupId>com.sourcelabs.jira</groupId>
+     <artifactId>sourcelabs-jira-plugin-portlet-search</artifactId>
+-    <version>1.0.2</version>
++    <version>1.1</version>
+ 
+     <name>Search Plugin for JIRA</name>
+     <packaging>jar</packaging>

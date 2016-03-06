@@ -1,0 +1,6 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='SJN-80'>strange behavior if property file is named  &quot;default.properties&quot;</issue>
+  </affects-issues>
+  <name>0.11.2</name>
+</version>

@@ -1,0 +1,46 @@
+<item>
+<title>[GJC-26] NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</title>
+<link>http://issues.osjava.org/jira/browse/GJC-26</link>
+
+                    <description>Quite simple. &amp;quot;FOO2&amp;quot; and &amp;quot;FOO2A&amp;quot; are considered equal by the NumericStringComparator.</description>
+                <environment/>
+            <key id='10371'>GJC-26</key>
+        <summary>NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 21 Apr 2005 13:14:01 -0700 (PDT)</created>
+    <updated>Thu, 21 Apr 2005 13:14:46 -0700 (PDT)</updated>
+
+                        <version>core-3.0</version>
+            
+                        <fixVersion>core-3.1</fixVersion>
+            
+                        <component>gj-core</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10363' created='Thu, 21 Apr 2005 13:14:46 -0700 (PDT)'>Now fixed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

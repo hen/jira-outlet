@@ -1,0 +1,53 @@
+<item>
+<title>[SJN-48] Can/t use System properties to initialise the JNDI</title>
+<link>http://issues.osjava.org/jira/browse/SJN-48</link>
+
+                    <description>But if I do the same but using the system environment (see below) it doesn&apos;t work: root and delimiter are set to defaults.&lt;br/&gt;
+&lt;br/&gt;
+        System.setProperty(&amp;quot;java.naming.factory.initial&amp;quot;,&amp;quot;org.osjava.jndi.PropertiesFactory&amp;quot;); &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;System.setProperty(&amp;quot;org.osjava.jndi.root&amp;quot;,&amp;quot;&lt;a href=&quot;classpath://config&quot;&gt;classpath://config&lt;/a&gt;&amp;quot;); &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;System.setProperty(&amp;quot;org.osjava.jndi.delimiter&amp;quot;,&amp;quot;/&amp;quot;); &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Context ctxt =  new InitialContext(); &lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10143'>SJN-48</key>
+        <summary>Can/t use System properties to initialise the JNDI</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 16 Jan 2004 08:12:25 -0800 (PST)</created>
+    <updated>Sun, 18 Jan 2004 17:17:40 -0800 (PST)</updated>
+
+                        <version>0.8</version>
+            
+                        <fixVersion>0.8.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10130' created='Sun, 18 Jan 2004 17:17:40 -0800 (PST)'>This was from a comment on the mail list from a user; Gary Howard.&lt;br/&gt;
+Unit tests continue to pass and one of the examples is changed to use the -D method.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

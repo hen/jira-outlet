@@ -1,0 +1,41 @@
+<item>
+<title>[PAY-8] Create a maven plugin</title>
+<link>http://issues.osjava.org/jira/browse/PAY-8</link>
+
+                    <description>I want to run this from a maven goal.</description>
+                <environment/>
+            <key id='10157'>PAY-8</key>
+        <summary>Create a maven plugin</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 4 Feb 2004 18:02:36 -0800 (PST)</created>
+    <updated>Thu, 5 May 2005 14:31:09 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.7</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

@@ -1,0 +1,9 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-13'>Allow Lists in the format</issue>
+    <issue status='Closed' key='SJN-12'>Support XML as the underlying data format</issue>
+    <issue status='Closed' key='SJN-11'>Add Types to the system</issue>
+    <issue status='Closed' key='SJN-10'>Keep the order of the .properties file.</issue>
+  </fixes-issues>
+  <name>0.4</name>
+</version>

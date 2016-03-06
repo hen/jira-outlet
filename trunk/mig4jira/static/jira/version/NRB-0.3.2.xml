@@ -1,0 +1,8 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='NRB-9'>&quot;Disallow: &quot; should indicate that nothing is disallowed</issue>
+    <issue status='Closed' key='NRB-8'>User-Agent name comparison should be case insensitive</issue>
+    <issue status='Closed' key='NRB-6'>Spec bug; check user agents first and then the first wildcard</issue>
+  </fixes-issues>
+  <name>0.3.2</name>
+</version>

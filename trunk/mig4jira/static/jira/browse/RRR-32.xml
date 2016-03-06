@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-32] Default formatter for all columns in a report</title>
+<link>http://issues.osjava.org/jira/browse/RRR-32</link>
+
+                    <description>It&apos;s a pain in the arse to have formatting for every column as you have to specify each column. &lt;br/&gt;
+&lt;br/&gt;
+Much nicer to just set default formatters for the whole row. This could be done in the report tag.</description>
+                <environment/>
+            <key id='10302'>RRR-32</key>
+        <summary>Default formatter for all columns in a report</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 13 Oct 2004 14:06:42 -0700 (PDT)</created>
+    <updated>Tue, 7 Dec 2004 16:46:21 -0800 (PST)</updated>
+
+                
+                
+                        <component>Formatters</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

@@ -1,0 +1,4 @@
+Add table bordering inside the table.
+Add an end date to the vote. Use the rosette for the winner if after the date.
+Make the bar a link to the list of voters
+Security, security, security. Who is allowed to see what?

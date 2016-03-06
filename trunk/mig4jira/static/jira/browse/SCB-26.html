@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#SCB-26] Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [SCB-26]&#xA0;Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2<br/><span class="subText">
+                   Created: Mon, 23 Oct 2006 12:25:36 -0700 (PDT)                       &#xA0;Updated: Mon, 23 Oct 2006 12:25:36 -0700 (PDT)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Open</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="SCB.html">Scraping</a></td></tr><tr><td><b>Component/s:</b></td><td>scraping-engine</td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/SCB-scraping-engine-0.6.html">scraping-engine-0.6</a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/SCB-.html"></a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Improvement</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/alancanon.html">Alan B. Canon</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Unresolved</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">Problem statement: The 0.5 release of scraping-engine depends on HttpClient 2.0.2. A more recent stable version of this dependency, HttpClient 3.0.1, is available from Apache Commons. HttpClient 3.0.1 offers improved functionality which would expand the capabilities of scraping-engine, if the latter could be built using it. However, the HttpClient.startSession() method of HttpClient 2.0.2, which scraping-engine uses in spite of it being a deprecated method, is entirely absent in the HttpClient 3.0.1 version of the API. It is referenced in two classes within scraping-engine, namely HttpFetcher and HttpsFetcher, where it is invoked as a part of those classes own startSession() methods.<br/>
+<br/>
+Suggested fix: reimplement startSession() within HttpFetcher and HttpsFetcher to use methods compatible with HttpClient 3.0.1, including a call to the constructors for org.apache.commons.httpclient.HttpURL  and org.apache.commons.httpclient.HttpsURL. For example, the body of the proposed new implementation of HttpsFetcher.startSession() looks like this:<br/>
+<br/>
+            client.getHostConfiguration().setHost(<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;new HttpsURL(<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cfg.getString(&quot;username&quot;), <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cfg.getString(&quot;password&quot;), <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url.getHost(), <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;port, <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url.getPath(),<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url.getQuery()<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);   <br/>
+<br/>
+Modules affected: <br/>
+<br/>
+src/java/org/osjava/scraping/AbstractHttpFetcher.java<br/>
+src/java/org/osjava/scraping/HttpFetcher.java<br/>
+src/java/org/osjava/scraping/HttpsFetcher.java<br/>
+<br/>
+The benefit of the suggested fix is the possibility to run scraping-engine using either HttpClient 2.0.2 or 3.0.1.<br/>
+<br/>
+A potential pitfall of the above method is that the constructors for HttpURL and HttpsURL throw a subclass of java.io.IOException, namely org.apache.commons.httpclient.URIException. This may cause a compile-time incompatibility with existing custom implementations of Fetcher. However, within the existing API, the only invocation of the AbstractHttpFetcher.startSession() method is found within AbstractHttpFetcher.fetch(), and it already traps IOExceptions. <br/>
+<br/>
+As an alternative to adding the throws clause, the new implementations could catch this exception, issue a logging message, and then consume the exception (as opposed to re-throwing it, although a later exception is almost certain to occur as a consequence.) A hybrid between this method and that described above could be acheived with the addition of a property file setting to conditionally suppress the throwing of URIExceptions from startSession().</td></tr></table></body></html>

@@ -1,0 +1,49 @@
+<item>
+<title>[RRR-40] Show the resource a report is on in reports</title>
+<link>http://issues.osjava.org/jira/browse/RRR-40</link>
+
+                    <description>On the page before a report, it should show the resource(s) used.&lt;br/&gt;
+The report could show it, though many aren&apos;t designed that way.</description>
+                <environment/>
+            <key id='10314'>RRR-40</key>
+        <summary>Show the resource a report is on in reports</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 19 Nov 2004 11:54:40 -0800 (PST)</created>
+    <updated>Mon, 6 Dec 2004 14:25:30 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10293' created='Mon, 6 Dec 2004 14:25:30 -0800 (PST)'>Page before a report now shows the resource chosen.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

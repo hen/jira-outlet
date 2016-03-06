@@ -1,0 +1,46 @@
+<item>
+<title>[SJN-27] Allow values to be accessed over http</title>
+<link>http://issues.osjava.org/jira/browse/SJN-27</link>
+
+                    <description>Instead of file or classpath protocols, implement an http protocol</description>
+                <environment/>
+            <key id='10027'>SJN-27</key>
+        <summary>Allow values to be accessed over http</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:40:01 -0700 (PDT)</created>
+    <updated>Sat, 7 Feb 2004 12:58:36 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.9</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10108' created='Sat, 6 Dec 2003 14:22:22 -0800 (PST)'>Codes in there. Needs testing.</comment>
+                    <comment author='bayard' id='10113' created='Sat, 6 Dec 2003 16:34:10 -0800 (PST)'>Going to just assume the code isn&apos;t getting in the way and leave this until 0.8.</comment>
+                    <comment author='bayard' id='10146' created='Sat, 7 Feb 2004 12:58:36 -0800 (PST)'>Some issues in knowing when a url is a directory and whether it exists, but this is now solved. Using URL.getContent, so possibly it could be done more better performance-wise with a HTTP HEAD request.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

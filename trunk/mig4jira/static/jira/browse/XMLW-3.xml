@@ -1,0 +1,44 @@
+<item>
+<title>[XMLW-3] Redirect Sourceforge site over to OSJava</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-3</link>
+
+                    <description>Go hack sourceforge html to point over here somehow. Redirect blah blah, or maybe they&apos;ll let me set the homepage.</description>
+                <environment/>
+            <key id='10095'>XMLW-3</key>
+        <summary>Redirect Sourceforge site over to OSJava</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 2 Sep 2003 21:42:01 -0700 (PDT)</created>
+    <updated>Mon, 15 Sep 2003 21:29:35 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10059' created='Mon, 15 Sep 2003 21:29:35 -0700 (PDT)'>Redirect put on xmlwriter.sf.net&lt;br/&gt;
+Doesn&apos;t seem to be much I can do on the sf site, though I guess I could change the about. Not going to.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

@@ -1,0 +1,35 @@
+<div class="borderedBox">
+    <h2 class="formtitle">
+      $project.name #if($version) - $version.name #end
+    </h2>
+    <table width="100%" border="1">
+      <tr>
+        <th align="center">$i18n.getText('report.contribution.header.name')</th>
+        <th align="center">$i18n.getText('report.contribution.header.reported')</th>
+        <th align="center">$i18n.getText('report.contribution.header.attachments')</th>
+        <th align="center">$i18n.getText('report.contribution.header.comments')</th>
+      </tr>
+            #foreach ($contribution in $contributions)
+             #if(!$contribution.ableToClose)
+              <tr valign="bottom">
+                <td align="right"><a href="$req.contextPath/secure/ViewProfile.jspa?name=${contribution.authorName}">$contribution.authorFullName</a></td>
+                <td align="center"><a href="$req.contextPath/secure/IssueNavigator.jspa?reset=true&pid=${project.id}#if($version)&fixfor=${version.id}#end&reporterSelect=specificuser&reporter=${contribution.authorName}&sorter/field=issuekey&sorter/order=DESC">$contribution.reportedIssuesCount</a></td>
+                <td align="left">$contribution.attachmentCount#if($contribution.attachmentCount != 0) ( #foreach($issue in $contribution.attachmentIssues)<a href="$req.contextPath/secure/ManageAttachments.jspa?id=${issue.id}">$issue.key</a> #end)#end</td>
+                <td align="left">$contribution.commentCount#if($contribution.commentCount != 0) ( #foreach($issue in $contribution.commentIssues)<a href="$req.contextPath/browse/${issue.key}">$issue.key</a> #end)#end</td>
+              </tr>
+             #end
+            #end
+            <tr valign="bottom">
+               <th align="center">$i18n.getText('report.contribution.footer.total')</th>
+               <th align="center"></td>
+               <th align="center"></th>
+               <th align="center"></th>
+             </tr>
+            <tr valign="bottom">
+               <td align="right">$contributions.authorCount</td>
+               <td align="center">$contributions.reportedIssuesCount</td>
+               <td align="left">$contributions.attachmentCount</td>
+               <td align="left">$contributions.commentCount</td>
+             </tr>
+    </table>
+</div>

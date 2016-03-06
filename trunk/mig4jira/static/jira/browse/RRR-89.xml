@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-89] Create Resource test page</title>
+<link>http://issues.osjava.org/jira/browse/RRR-89</link>
+
+                    <description>Need a page that tests access to a resource.&lt;br/&gt;
+&lt;br/&gt;
+That might be a bit too generic, so the real need is something that can test if a db connection works and provides hints on how to set it up (web.xml, server.xml resource.xml etc).</description>
+                <environment/>
+            <key id='10502'>RRR-89</key>
+        <summary>Create Resource test page</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 9 Sep 2005 08:37:39 -0700 (PDT)</created>
+    <updated>Fri, 9 Sep 2005 08:37:39 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

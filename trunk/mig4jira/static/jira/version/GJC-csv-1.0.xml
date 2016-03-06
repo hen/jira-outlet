@@ -1,0 +1,10 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='GJC-34'>CsvWriter doesn&apos;t gracefully handle null field values</issue>
+    <issue status='Open' key='GJC-33'>CSV outputs with the wrong line endings on Windows</issue>
+    <issue status='Open' key='GJC-31'>Doesn&apos;t quote the field when the field contains a block delimiter</issue>
+    <issue status='Open' key='GJC-24'>Wrong number of fields when last character is fieldDelimiter</issue>
+    <issue status='Open' key='GJC-9'>Hard-coded to escape field delimiters of &quot; and not the field delimiter</issue>
+  </affects-issues>
+  <name>csv-1.0</name>
+</version>

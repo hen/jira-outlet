@@ -1,0 +1,55 @@
+<item>
+<title>[SCB-16] Add support for POST requests</title>
+<link>http://issues.osjava.org/jira/browse/SCB-16</link>
+
+                    <description>Need to be able to post to get content back from the configuration file and not just use gets.</description>
+                <environment/>
+            <key id='10230'>SCB-16</key>
+        <summary>Add support for POST requests</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 21 Jun 2004 14:13:04 -0700 (PDT)</created>
+    <updated>Wed, 23 Jun 2004 13:22:36 -0700 (PDT)</updated>
+
+                        <version>scraping-engine-0.2</version>
+            
+                        <fixVersion>scraping-engine-0.3</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10213' created='Mon, 21 Jun 2004 14:13:50 -0700 (PDT)'>Implemented as:&lt;br/&gt;
+&lt;br/&gt;
+ScraperName.action=POST&lt;br/&gt;
+&lt;br/&gt;
+The post fields are placed on the end of the uri as if they were ordinary GET fields.</comment>
+                    <comment author='bayard' id='10216' created='Wed, 23 Jun 2004 13:22:36 -0700 (PDT)'>Implemented as:&lt;br/&gt;
+&lt;br/&gt;
+Foo.method=POST&lt;br/&gt;
+or&lt;br/&gt;
+Foo.method=GET  (the default)</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

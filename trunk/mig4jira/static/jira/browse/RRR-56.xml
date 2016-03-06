@@ -1,0 +1,46 @@
+<item>
+<title>[RRR-56] Helper tag for creating multiple columns</title>
+<link>http://issues.osjava.org/jira/browse/RRR-56</link>
+
+                    <description>Rather than doing a column at a time, a simple tag called &amp;lt;columns&amp;gt; would be nice with a comma separated list of column names.</description>
+                <environment/>
+            <key id='10336'>RRR-56</key>
+        <summary>Helper tag for creating multiple columns</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 23 Dec 2004 08:44:28 -0800 (PST)</created>
+    <updated>Thu, 23 Dec 2004 13:40:37 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10315' created='Thu, 23 Dec 2004 13:40:37 -0800 (PST)'>Hacked into ReportFactory.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

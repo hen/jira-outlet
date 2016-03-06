@@ -1,0 +1,102 @@
+<item>
+<title>[SJN-75] Using simple-jndi for testing with Maven 2</title>
+<link>http://issues.osjava.org/jira/browse/SJN-75</link>
+
+                    <description>I am using Simple-JNDI to define a datasource used during unit testing.  The project used Maven 2 as the build tool.&lt;br/&gt;
+&lt;br/&gt;
+1) Add simple-jndi dependency to pom.xml:&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;dependency&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;groupId&amp;gt;simple-jndi&amp;lt;/groupId&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;artifactId&amp;gt;simple-jndi&amp;lt;/artifactId&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;version&amp;gt;0.11.1&amp;lt;/version&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;exclusions&amp;gt; &amp;lt;!-- See Simple-JNDI Issue &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-74&quot; title=&quot;Avoiding &amp;quot;Missing javax.sql:jdbc-stdext:jar:2.0&amp;quot;  caused by DBCP 1.1 while using Maven 2 &quot;&gt;&lt;strike&gt;SJN-74&lt;/strike&gt;&lt;/a&gt; --&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;exclusion&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;groupId&amp;gt;javax.sql&amp;lt;/groupId&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;artifactId&amp;gt;jdbc-stdext&amp;lt;/artifactId&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/exclusion&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/exclusions&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/dependency&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+2) Add you jdbc driver to the dependency with &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt; to pom.xml:&lt;br/&gt;
+&lt;br/&gt;
+3) Tell the JVM to use simple-jndi by creating jndi.properties in the test resource directory.  By default the directory is src/test/resources.&lt;br/&gt;
+jndi.properties contains the following lines.  The properties org.osjava.sj.colon.replace and org.osjava.sj.delimiter are used because the application being tested will run on a tomcat server.&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;java.naming.factory.initial=org.osjava.sj.SimpleContextFactory&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;org.osjava.sj.root=src/test/resources/simple-jndi&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;org.osjava.sj.colon.replace=--&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;org.osjava.sj.delimiter=/&lt;br/&gt;
+&lt;br/&gt;
+4) Create the files to define the JNDI datasource myDataSource.  Please note the directory below is in the directory defined by os.java.js.root.&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;/java--comp&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;/env&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;default.properties&lt;br/&gt;
+&lt;br/&gt;
+default.properties contains the following:&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;myDataSource/type=javax.sql.DataSource&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;myDataSource/driver=&amp;lt;jdbc driver class&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;myDataSource/url=&amp;lt;jdbc url&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;myDataSource/user=foo&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;myDataSource/password=bar&lt;br/&gt;
+&lt;br/&gt;
+Please incorporate this into the documentation.&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment>Maven 2.0.4&lt;br/&gt;
+</environment>
+            <key id='10598'>SJN-75</key>
+        <summary>Using simple-jndi for testing with Maven 2</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='paulspencer'>Paul Spencer</reporter>
+            
+    <created>Thu, 13 Apr 2006 09:07:37 -0700 (PDT)</created>
+    <updated>Sun, 6 Apr 2008 01:33:04 -0700 (PDT)</updated>
+
+                        <version>0.11.1</version>
+            
+                        <fixVersion>0.11.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10694' created='Sun, 6 Apr 2008 01:33:04 -0700 (PDT)'>svn ci -m &amp;quot;Adding the Maven2 page from Paul Spencer - &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-75&quot; title=&quot;Using simple-jndi for testing with Maven 2&quot;&gt;&lt;strike&gt;SJN-75&lt;/strike&gt;&lt;/a&gt;&amp;quot;
+&lt;br/&gt;
+Sending        manual/Configuring.xml
+&lt;br/&gt;
+Adding         manual/ConfiguringWithMaven2.xml
+&lt;br/&gt;
+Sending        manual/GeneralDesign.xml
+&lt;br/&gt;
+Sending        manual/index.xml
+&lt;br/&gt;
+Transmitting file data ....
+&lt;br/&gt;
+Committed revision 2671.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

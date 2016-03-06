@@ -1,0 +1,46 @@
+<item>
+<title>[RRR-66] Tomcat did not startup properly</title>
+<link>http://issues.osjava.org/jira/browse/RRR-66</link>
+
+                    <description>Tomcat did not startup without Eric&apos;s renderer. I had to build again with Eric&apos;s stuff &amp;amp; then it worked</description>
+                <environment/>
+            <key id='10346'>RRR-66</key>
+        <summary>Tomcat did not startup properly</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Fri, 14 Jan 2005 13:28:33 -0800 (PST)</created>
+    <updated>Tue, 2 Aug 2005 21:08:49 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10391' created='Tue, 2 Aug 2005 21:08:49 -0700 (PDT)'>ie) Configuration pointed to a class that did not exist, so things blew up.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

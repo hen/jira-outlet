@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-46] Create example system for Converters</title>
+<link>http://issues.osjava.org/jira/browse/SJN-46</link>
+
+                    <description>ie) src/examples/Converting</description>
+                <environment/>
+            <key id='10141'>SJN-46</key>
+        <summary>Create example system for Converters</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 3 Jan 2004 16:13:23 -0800 (PST)</created>
+    <updated>Mon, 22 Aug 2005 22:00:23 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10413' created='Mon, 22 Aug 2005 22:00:23 -0700 (PDT)'>user-guide replaces this</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,63 @@
+<item>
+<title>[TRA-2] Delimiter is shown after last item</title>
+<link>http://issues.osjava.org/jira/browse/TRA-2</link>
+
+                    <description>Delimiter is shown after last item.&lt;br/&gt;
+&lt;br/&gt;
+Fix:&lt;br/&gt;
+&lt;br/&gt;
+ListTag.java&lt;br/&gt;
+&lt;br/&gt;
+   if(itr.hasNext()) { // Edited by Troy McKinnon: 05-Jul-2004 08:19:09 PM PDT&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;buffer.append(this.delimiter);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}</description>
+                <environment>all</environment>
+            <key id='10250'>TRA-2</key>
+        <summary>Delimiter is shown after last item</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_resolved.gif' id='5'>Resolved</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Mon, 5 Jul 2004 20:21:12 -0700 (PDT)</created>
+    <updated>Wed, 22 Sep 2004 19:34:46 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10240' created='Wed, 22 Sep 2004 19:26:23 -0700 (PDT)'>Solution is to add:&lt;br/&gt;
+&lt;br/&gt;
+        if(txt.length() &amp;gt; 0) {&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;txt = txt.substring(0, txt.length() - this.delimiter().length() );&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}   &lt;br/&gt;
+&lt;br/&gt;
+to line 91.&lt;br/&gt;
+&lt;br/&gt;
+However, is this actually a bug or just something which needs to be an optional feature?</comment>
+                    <comment author='bayard' id='10241' created='Wed, 22 Sep 2004 19:34:46 -0700 (PDT)'>Fixed by changing the default behaviour to not end with the delimiter, and adding a showEndDelimiter attribute to the tag to allow the old functionality to be regained.&lt;br/&gt;
+&lt;br/&gt;
+Needs testing.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TRA'>Trail-Taglib</project>
+</item>

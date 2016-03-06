@@ -1,0 +1,35 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='RRR-60'>Calendar widget fails in Firefox</issue>
+    <issue status='Open' key='RRR-57'>Error handling</issue>
+    <issue status='Open' key='RRR-55'>maven plugin for building a reportrunner&apos;d system</issue>
+    <issue status='Open' key='RRR-52'>Logging</issue>
+    <issue status='Open' key='RRR-49'>No way to set defaults other than Strings</issue>
+    <issue status='Open' key='RRR-48'>Create DTDs for various XML files</issue>
+    <issue status='Open' key='RRR-47'>Descriptions for params, columns and resource-params</issue>
+    <issue status='Closed' key='RRR-46'>Bookmark trail needs choose-resources</issue>
+    <issue status='Closed' key='RRR-45'>Cleanup the reportrunner.xml schema</issue>
+    <issue status='Closed' key='RRR-44'>Need to be able to choose resources from a list</issue>
+    <issue status='Closed' key='RRR-40'>Show the resource a report is on in reports</issue>
+    <issue status='Closed' key='RRR-39'>Stilted language</issue>
+    <issue status='Closed' key='RRR-38'>Pages show the name and not the label for things</issue>
+    <issue status='Open' key='RRR-37'>Calendar widget fails in Safari</issue>
+    <issue status='Closed' key='RRR-36'>Use classpath if file not found</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='RRR-46'>Bookmark trail needs choose-resources</issue>
+    <issue status='Closed' key='RRR-45'>Cleanup the reportrunner.xml schema</issue>
+    <issue status='Closed' key='RRR-44'>Need to be able to choose resources from a list</issue>
+    <issue status='Closed' key='RRR-43'>Description for each report and reportgroup</issue>
+    <issue status='Closed' key='RRR-42'>View xml code for each report</issue>
+    <issue status='Closed' key='RRR-41'>Trail of urls to let the user go backwards</issue>
+    <issue status='Closed' key='RRR-40'>Show the resource a report is on in reports</issue>
+    <issue status='Closed' key='RRR-38'>Pages show the name and not the label for things</issue>
+    <issue status='Closed' key='RRR-34'>Excel rendering doesn&apos;t understand types</issue>
+    <issue status='Closed' key='RRR-31'>XML files need to stop being loaded throgh classpath</issue>
+    <issue status='Closed' key='RRR-24'>Same named reports clash</issue>
+    <issue status='Closed' key='RRR-22'>Automatically choose renderer when only one</issue>
+    <issue status='Closed' key='RRR-19'>Default values</issue>
+  </fixes-issues>
+  <name>0.3</name>
+</version>

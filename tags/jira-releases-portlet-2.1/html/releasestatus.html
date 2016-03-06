@@ -1,0 +1,77 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Release Status Plugin for JIRA</title>
+  <style media="screen" type="text/css">
+body {
+    margin: 2em 1em 2em 70px;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+}
+th, td {
+  font-family: sans-serif;
+}
+
+h1,h4 { color: #5a9c00 }
+h1 { font: 170% sans-serif }
+h4 { font: bold 100% sans-serif }
+  </style>  
+</head>
+<body>
+<h1>Release Status Plugin for JIRA</h1>
+<p>Created by <a href="http://www.yandell.org/henri/">Henri Yandell</a> at <a href="http://www.sourcelabs.com/">SourceLabs, Inc.</a>. </p>
+<h4>Legal bit</h4>
+<p>Released under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a> and Copyright 2007 SourceLabs, Inc. </p>
+<h4>About the plugin</h4>
+<p>A plugin that provides three portlets. 
+<ol>
+<li>
+<p>The first is a portlet for the JIRA dashboard that provides a status for a particular version. </p>
+<p>Its expected use case is for highlighting the next release of the major product(s) via a feature-list of: </p>
+<ul>
+<li>Handy stats on the activity in the last week</li>
+<li>Useful stats for due-date management</li>
+<li>Information on how close the project is to release</li>
+<li>Release health - will your last week's velocity see you hitting your release date</li>
+<li>Useful links to the release notes and the version workload</li>
+<li>Current user or all user toggle</li>
+</ul>
+</li>
+<li><p>The second portlet lets you show the last N releases. Its expected to be of use to large JIRAs with many releases. </p></li>
+<li><p>The third is a project panel that makes it easy to see the release history of a project. Its expected to be of use to projects that have had with many releases. </p></li>
+</ol>
+<p>Version 2.1 was released on 26th of March 2007. Its main focus was a beefed up release status portlet with:</p>
+<ul>
+<li>Now supports more than one version, allowing you to create version chains</li>
+<li>The new top bar containing:
+<ul>
+<li>project name</li>
+<li>current-user/all-users toggle</li>
+<li>links to the release notes and the version workload report</li>
+</ul></li>
+</ul>
+<p>Version 2.0 was released on 17th of March 2007. It added the latest releases portlet and the releases project panel. </p>
+<p>Version 1.0 was released on 16th of March 2007. It just contained the release status portlet. </p>
+<h4>Installing &amp; Using</h4>
+<p>Install the plugin by downloading the <a href="http://dist.sourcelabs.org/releasestatus/sourcelabs-jira-plugin-portlet-releases-2.1.jar">plugin jar</a>, place it in your <code>$JIRA/WEB-INF/lib/</code> and giving your JIRA a restart. </p>
+<p>The <code>Releases</code> project tab is automatically added to your browse project pages. Once it's installed you can add them to your dashboard by selecting the <code>Release Status</code> portlet and the <code>Latest Releases</code> portlet. Please follow the instructions from Atlassian for configuring your <a href="http://www.atlassian.com/software/jira/docs/latest/dashboard.html">personal dashboard</a> or the <a href="http://www.atlassian.com/software/jira/docs/latest/default_dashboard.html">default dashboard</a>. </p>
+<p>The source is available for perusing by downloading the <a href="http://dist.sourcelabs.org/releasestatus/jira-releases-portlet-2.1-src.zip">source zip</a> and unpacking. </p>
+<h4>Complaints, bugs, ideas...</h4>
+<p>Please mail these to me at henri-at-sourcelabs.com, or add them as comments to the <a href="http://confluence.atlassian.com/display/JIRAEXT/Release+Status+Plugin">JIRA plugin page</a>. </p>
+<h4>Screenshots</h4>
+<p>To get you salivating, here's the <code>Release Status</code> portlet showing a happy project which is very close to release: </p>
+<img src="images/ReleaseShot1.png"/>
+<p>and here the <code>Release Status</code> portlet shows a project for the current user that is in its early days and still creating new issues: </p> 
+<img src="images/ReleaseShot2.png"/>
+<p>The screenshot for the <code>Latest Releases</code> portlet should be no surprise: </p>
+<img src="images/LatestReleases.png"/>
+<p>and the screenshot for the <code>Releases</code> project panel will hopefully spark interest: </p>
+<img src="images/ReleasesPanel.png"/>
+<p>Lastly, a rather big image. It's the <code>Release Status</code> portlet from above with an explanation as to what some of the icons are for: </p>
+<img src="images/Explanation.png"/>
+<h4>The secret to happiness</h4>
+<p>Obviously you're all wondering what makes happiness. How does one tell the health of a project. What secret bit of wizardry and hours of cpu-intensive magic is this portlet doing???</p>
+<p>Fortunately, here at CBA Industries we decided to take the simple approach to happiness. It's simply: "If the project continues to maintain the velocity of the last 7 days, will it hit its release date?". Nothing fancy, nothing special and something to be taken with a LOT of salt. Amongst its limitations it includes non-work days as if they were normal days and it treats all issues the same regardless of estimate. </p>
+</body>
+</html>

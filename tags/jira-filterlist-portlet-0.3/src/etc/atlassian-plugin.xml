@@ -1,0 +1,91 @@
+<atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.filterlist" name="JIRA Portlet Filter List Plugin">
+    <plugin-info>
+        <description>Portlet FilterList Plugin</description>
+        <version>1.0</version>
+        <application-version min="3.0" max="3.0"/>
+        <vendor name="SourceLabs" url="http://www.sourcelabs.com"/>
+    </plugin-info>
+
+    <portlet key="filterlist" name="Filter list" class="com.sourcelabs.jira.plugin.portlet.filterlist.FilterListPortlet">
+        <description key="portlet.filterlist.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/filterlistportlet/filterlist.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.filterlist.filterlist_portlet" />
+        <label key="portlet.filterlist.name" />
+<!--        <thumbnail>portlets/dashboard/thumbnails/filterlist.png</thumbnail> -->
+<!-- Can't seem to use my own pngs, so using the existing ones -->
+        <thumbnail>portlets/dashboard/thumbnails/savedfilters.gif</thumbnail>
+        <objectdescriptor key="portlet.filterlist.display.name" />
+        <properties>
+            <property>
+                <key>filterlist-title</key>
+                <name>portlet.filterlist.field.filters.title.name</name>
+                <description>portlet.filterlist.field.filters.title.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>filterlist-display</key>
+                <name>portlet.filterlist.field.filters.display.name</name>
+                <description>portlet.filterlist.field.filters.display.description</description>
+                <type>select</type>
+                <default>list</default>
+                <values>
+                    <value>
+                        <key>dropdown</key>
+                        <value>portlet.filterlist.field.filters.display.dropdown</value>
+                    </value>
+                    <value>
+                        <key>list</key>
+                        <value>portlet.filterlist.field.filters.display.list</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>filterlist-includelinks</key>
+                <name>portlet.filterlist.field.filters.links.name</name>
+                <description>portlet.filterlist.field.filters.links.description</description>
+                <type>select</type>
+                <default>true</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.filterlist.field.filters.links.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.filterlist.field.filters.links.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>filterlist-includecounts</key>
+                <name>portlet.filterlist.field.filters.counts.name</name>
+                <description>portlet.filterlist.field.filters.counts.description</description>
+                <type>select</type>
+                <default>true</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.filterlist.field.filters.counts.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.filterlist.field.filters.counts.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>filterlist-regexp</key>
+                <name>portlet.filterlist.field.filters.regexp.name</name>
+                <description>portlet.filterlist.field.filters.regexp.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>filterlist-ids</key>
+                <name>portlet.filterlist.field.filters.ids.name</name>
+                <description>portlet.filterlist.field.filters.ids.description</description>
+                <type>text</type>
+            </property>
+        </properties>
+    </portlet>
+
+</atlassian-plugin>

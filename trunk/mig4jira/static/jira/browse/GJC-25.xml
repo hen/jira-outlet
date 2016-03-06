@@ -1,0 +1,48 @@
+<item>
+<title>[GJC-25] Character entities don&apos;t get escaped</title>
+<link>http://issues.osjava.org/jira/browse/GJC-25</link>
+
+                    <description>Oops.&lt;br/&gt;
+&lt;br/&gt;
+&amp;amp;gt; and &amp;amp;lt; don&apos;t get turned into their correct characters when you get the values from the XMLNode.</description>
+                <environment/>
+            <key id='10306'>GJC-25</key>
+        <summary>Character entities don&apos;t get escaped</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_blocker.gif' id='1'>Blocker</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 10 Nov 2004 14:30:04 -0800 (PST)</created>
+    <updated>Wed, 10 Nov 2004 15:07:03 -0800 (PST)</updated>
+
+                        <version>xml-1.0</version>
+            
+                        <fixVersion>xml-1.1</fixVersion>
+            
+                        <component>gj-xml</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10276' created='Wed, 10 Nov 2004 15:07:03 -0800 (PST)'>Fixed for both tag&apos;s values and an attribute&apos;s values. Unit test added.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

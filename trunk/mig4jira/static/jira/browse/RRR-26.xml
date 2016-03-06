@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-26] Need default values for columns</title>
+<link>http://issues.osjava.org/jira/browse/RRR-26</link>
+
+                    <description>When rendering a column, there should be a default value to show if the column is null.</description>
+                <environment/>
+            <key id='10287'>RRR-26</key>
+        <summary>Need default values for columns</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 5 Oct 2004 10:14:16 -0700 (PDT)</created>
+    <updated>Wed, 13 Oct 2004 13:51:59 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

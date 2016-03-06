@@ -1,0 +1,45 @@
+<item>
+<title>[PAY-3] Write a changes page</title>
+<link>http://issues.osjava.org/jira/browse/PAY-3</link>
+
+                    <description>Start work on a changes page, ie) xdocs/changes for the changes report.</description>
+                <environment/>
+            <key id='10152'>PAY-3</key>
+        <summary>Write a changes page</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 3 Feb 2004 22:57:53 -0800 (PST)</created>
+    <updated>Wed, 4 Feb 2004 09:08:24 -0800 (PST)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10140' created='Tue, 3 Feb 2004 22:58:13 -0800 (PST)'>Also the accompanying news page that usually does little more than link to it.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

@@ -1,0 +1,61 @@
+<item>
+<title>[RRR-70] Renderers need names and labels</title>
+<link>http://issues.osjava.org/jira/browse/RRR-70</link>
+
+                    <description>There needs to be a decoupling between the rednerer a report says it has, and the renderer class used.&lt;br/&gt;
+&lt;br/&gt;
+ie) the report needs to specify an id for the renderer (so it can put it in the url).&lt;br/&gt;
+It also needs to specify a label so it looks pretty or different than the standard.&lt;br/&gt;
+&lt;br/&gt;
+While we&apos;re at it, it should have a description.</description>
+                <environment/>
+            <key id='10354'>RRR-70</key>
+        <summary>Renderers need names and labels</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Feb 2005 13:13:37 -0800 (PST)</created>
+    <updated>Mon, 7 Feb 2005 10:35:26 -0800 (PST)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10342' created='Mon, 7 Feb 2005 10:35:26 -0800 (PST)'>Taken care of. Important to clone the renderer else they get on each others toes.&lt;br/&gt;
+Not cloning for the &amp;lt;renderers&amp;gt; tag, as it does not customise them in anyway.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                    <customfield id='customfield_10000' key='com.atlassian.jira.plugin.system.customfieldtypes:select'>
+                    <customfieldname>Estimate</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue><![CDATA[EZ - L]]></customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                        </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

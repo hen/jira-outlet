@@ -1,0 +1,11 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='PAY-13'>Inteprolating in archives needs to recurse</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='PAY-12'>Interpolate zips/wars/jars etc</issue>
+    <issue status='Closed' key='PAY-11'>Allow more than one .properties file to be passed in</issue>
+    <issue status='Closed' key='PAY-10'>Jarring on Windows puts in backslashes</issue>
+  </fixes-issues>
+  <name>0.3</name>
+</version>

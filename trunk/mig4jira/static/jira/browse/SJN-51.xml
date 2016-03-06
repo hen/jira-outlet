@@ -1,0 +1,81 @@
+<item>
+<title>[SJN-51] Fix hierarchies in configuration files</title>
+<link>http://issues.osjava.org/jira/browse/SJN-51</link>
+
+                    <description>Given:&lt;br/&gt;
+&lt;br/&gt;
+one.Foo.name=bar&lt;br/&gt;
+one.Foo.value=1&lt;br/&gt;
+one.Foo.name=test&lt;br/&gt;
+one.Foo.value=2&lt;br/&gt;
+&lt;br/&gt;
+it should create a List in one.Foo which contains name and value for each element.&lt;br/&gt;
+&lt;br/&gt;
+Currently it creates one.Foo.name=bar,test and one.Foo.value=1,2.&lt;br/&gt;
+&lt;br/&gt;
+XML and .ini should be handled the same way. XML is very obvious:&lt;br/&gt;
+&lt;br/&gt;
+&amp;lt;one&amp;gt;&amp;lt;Foo&amp;gt;&amp;lt;name&amp;gt;bar&amp;lt;/name&amp;gt;&amp;lt;value&amp;gt;1&amp;lt;/value&amp;gt;&amp;lt;/Foo&amp;gt;&lt;br/&gt;
+&amp;lt;Foo&amp;gt;&amp;lt;name&amp;gt;test&amp;lt;/name&amp;gt;&amp;lt;value&amp;gt;2&amp;lt;/value&amp;gt;&amp;lt;/Foo&amp;gt;&amp;lt;/one&amp;gt;</description>
+                <environment/>
+            <key id='10181'>SJN-51</key>
+        <summary>Fix hierarchies in configuration files</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 28 Apr 2004 20:23:56 -0700 (PDT)</created>
+    <updated>Wed, 6 Jun 2007 08:45:15 -0700 (PDT)</updated>
+
+                        <version>0.9.1</version>
+            
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10176' created='Tue, 4 May 2004 12:26:23 -0700 (PDT)'>Genjava-Core&apos;s FQMap might be of use here. It&apos;s basically a hierarchy map of maps based on a delimiter. Pretty much all simple-jndi&apos;s underlying system is.&lt;br/&gt;
+&lt;br/&gt;
+It needs to masquerade as a Properties file somehow to allow the PropertiesContext to have no clue that anything is going on. Also needs to extend AbstractProperties, as that is how PropertiesContext will know to return a Context object on a lookup.</comment>
+                    <comment author='bayard' id='10177' created='Tue, 4 May 2004 20:13:25 -0700 (PDT)'>Big rewrite here. FQMap modified as HierarchicalMap and all the Properties classes changed to Parser classes.</comment>
+                    <comment author='bayard' id='10179' created='Tue, 4 May 2004 21:41:10 -0700 (PDT)'>Tests all nearly pass except for one to do with the &apos;type&apos; special variable.&lt;br/&gt;
+&lt;br/&gt;
+This is because the code ends up with a HierarchicalMap as a node which contains key=value, where value is a List. The type variable ends up in the List.&lt;br/&gt;
+&lt;br/&gt;
+Instead, the value in the HierarchicalMap should always be a Value object, and if a type is found it is set as Value.setType and not as a child of the value&apos;s key. Could optimise and only have a Value object when type is found.&lt;br/&gt;
+&lt;br/&gt;
+This is all work that is needed in the put of HierarchicalMap. Tempting to move the convert code into the get of HierarchicalMap and out of PropertiesContext. Slims that class down and puts like with like.</comment>
+                    <comment author='bayard' id='10182' created='Wed, 5 May 2004 22:06:27 -0700 (PDT)'>Conversion code is out of PropertiesContext and into HMap as planned, but after a failed attempt to create the ConvertValue wrapper system suggested previously, I simply put a bit of magic in the get() method to hide that there is something underneath.&lt;br/&gt;
+&lt;br/&gt;
+This will not be enough in the long run as there are other ways to obtain values.&lt;br/&gt;
+&lt;br/&gt;
+However, it should also be impossible for a user to obtain a HMap, they should always be behind a Context, so not all of those methods will need to be implemented.&lt;br/&gt;
+&lt;br/&gt;
+More testing needed, but current unit tests are all happy.</comment>
+                    <comment author='bayard' id='10183' created='Wed, 5 May 2004 22:07:04 -0700 (PDT)'>Probably much left to do, but unit tests all pass now and the underlying system is quite possibly much clearer now.</comment>
+                    <comment author='bayard' id='10185' created='Thu, 6 May 2004 23:17:22 -0700 (PDT)'>Despite passing the tests, I suspect that this completely doesn&apos;t work yet, though all the code so far is important in laying the groundwork for a working system.&lt;br/&gt;
+&lt;br/&gt;
+Need to come up with unit tests to confirm this suspicion, then fix the odds and ends that are not quite right. </comment>
+                    <comment author='bayard' id='10364' created='Thu, 21 Apr 2005 23:26:43 -0700 (PDT)'>Doing a complete rewrite instead.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

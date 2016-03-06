@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#SJN-56] If JNDI name begins with java:/ and if using a PropertiesContext, search will fail</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [SJN-56]&#xA0;If JNDI name begins with java:/ and if using a PropertiesContext, search will fail<br/><span class="subText">
+                   Created: Wed, 20 Oct 2004 12:23:40 -0700 (PDT)                       &#xA0;Updated: Sun, 6 Apr 2008 01:13:09 -0700 (PDT)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="SJN.html">Simple-JNDI</a></td></tr><tr><td><b>Component/s:</b></td><td></td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/SJN-0.9.1.html">0.9.1</a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/SJN-.html"></a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Bug</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/-1.html">None</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Obsolete</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">When a JNDI name begins with &quot;java:/&quot; rather than &quot;java:&quot;, JNDI will not find the corresponding properties file.  There is a simple fix, appended here:<br/>
+<br/>
+<br/>
+<br/>
+Index: c:/greening/dev/eclipse/simple-jndi/src/java/org/osjava/jndi/PropertiesContext.java<br/>
+===================================================================<br/>
+--- c:/greening/dev/eclipse/simple-jndi/src/java/org/osjava/jndi/PropertiesContext.java	(revision 1286)<br/>
++++ c:/greening/dev/eclipse/simple-jndi/src/java/org/osjava/jndi/PropertiesContext.java	(working copy)<br/>
+@@ -210,17 +210,14 @@<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* java:/ is impossible to deal with on a Windows box.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Complete utter pain. Solution is to remove the :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br/>
+-    private String handleJavaStandard(String key) {<br/>
++    private String handleJNDIPrefix(String key) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key != null) {<br/>
+-            if(key.equals(&quot;java:&quot;)) {<br/>
+-                return &quot;java&quot;;<br/>
+-            }<br/>
+-            if(key.equals(&quot;java:/&quot;)) {<br/>
+-                return &quot;java/&quot;;<br/>
+-            }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(key.startsWith(&quot;java:/&quot;)) {<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return &quot;java/&quot;+key.substring(&quot;java:/&quot;.length());<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
++            if(key.startsWith(&quot;java:&quot;)) {<br/>
++                return &quot;java/&quot;+key.substring(&quot;java:&quot;.length());<br/>
++            }<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return key;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+@@ -424,7 +421,7 @@<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return getSpecial(name);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
+&nbsp;<br/>
+-        name = handleJavaStandard(name);<br/>
++        name = handleJNDIPrefix(name);<br/>
+&nbsp;<br/>
+         // name is a delimited notation, each element is either a <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// directory, file or part of a key.<br/>
+<br/>
+<br/>
+</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/greening.html">greening</a><font size="-2"> [ <font color="#336699">Wed, 20 Oct 2004 12:25:36 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Uh obviously the submitter/patcher was me (if you look at the file names).</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Tue, 23 Aug 2005 19:38:01 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Not applicable anymore, but could be when we move back to a lookup strategy that looks for a file when it's asked for.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sun, 6 Apr 2008 01:13:09 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Closing as simple-jndi never looks for files on demand. Instead you use the PropertiesLoader or SimpleContext and it loads into memory only at the initial opening.</td></tr></table></body></html>

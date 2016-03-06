@@ -1,0 +1,53 @@
+<item>
+<title>[XMLW-8] expected/actual in the incorrect order in XmlWriterTest</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-8</link>
+
+                    <description/>
+                <environment/>
+            <key id='10740'>XMLW-8</key>
+        <summary>expected/actual in the incorrect order in XmlWriterTest</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='-1'>Unassigned</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Dec 2007 04:48:04 -0800 (PST)</created>
+    <updated>Wed, 5 Dec 2007 04:48:26 -0800 (PST)</updated>
+
+                        <version>2.2.1</version>
+            
+                        <fixVersion>2.2.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10640' created='Wed, 5 Dec 2007 04:48:25 -0800 (PST)'>r2609 | flamefew | 2007-12-05 01:09:33 -0800 (Wed, 05 Dec 2007) | 1 line
+&lt;br/&gt;
+Changed paths:
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;M /trunk/xmlwriter/src/test/com/generationjava/io/xml/XmlWriterTest.java
+&lt;br/&gt;
+
+&lt;br/&gt;
+Fixing the order of the various tests so the expected result is first and the actual result second. Thanks to Dmitriy Volk for pointing this out and supplying a patch</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

@@ -1,0 +1,138 @@
+#if ($searchRequest)
+<div id="randomfilter-$portletId" class="randomfilter">
+<script type="text/javascript">
+
+    function createRequestObject${portletId}()
+    {
+        var ro;
+        try
+        {
+                    // Opera 8.0+, Firefox, Safari
+                    ro = new XMLHttpRequest();
+            }
+        catch (e)
+        {
+                    // Internet Explorer Browsers
+                    try
+            {
+                            ro = new ActiveXObject("Msxml2.XMLHTTP");
+                    }
+            catch (e)
+            {
+                            try
+                {
+                                    ro = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                catch (e)
+                {
+                                    // Unable to create a request object
+                                    return false;
+                            }
+                    }
+            }
+        return ro;
+    }
+
+
+    function getPortlet${portletId}(filterid, start, portletId, numofentries, showdescription)
+    {
+        var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.randomfilter:randomfilter&filterid="+filterid+"%3A"+portletId+"&numofentries="+numofentries+"%3A"+start+"&showdescription="+showdescription;
+        var elementId = "randomfilter-" + portletId;
+        var elem = document.getElementById(elementId);
+
+        var httpReq = createRequestObject${portletId}();
+        httpReq.open('get', reqUrl, true);
+        httpReq.onreadystatechange = function() {
+            if (httpReq.readyState == 4)
+            {
+                var response = httpReq.responseText;
+                elem.innerHTML = response;
+            }
+        }
+        httpReq.send(null);
+    }
+</script>
+    <table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+    <table border="0" cellpadding="3" cellspacing="1" width="100%">
+        <tr class=rowHeader>
+            <td class="colHeaderLink" colspan="3">
+            $searchTypeName: <b><a href="$linkToSearch">$searchName</a></b>
+            <small>&nbsp;
+                ($i18n.getText("portlet.assignedissues.overflow", "$displayedIssueCount", "$totalNumIssues"))
+            </small>
+            #if ($description) ## This is a hack, just for search filters, and not for 'assigned to me', or 'in progress'
+                <br>
+                <font size="1">$description</font>
+            #end
+            </td>
+            <td align="right">
+              #if ($previousStart)
+               <a href="javascript:getPortlet${portletId}('$filterid', '$previousStart', '$portletId', '$numofentries', '$showdescription')"><img src="$requestContext.baseUrl/images/icons/arrow_up_blue.gif"/></a>
+              #else
+               <img src="$requestContext.baseUrl/images/icons/arrow_up_faded.gif"/>
+              #end
+              #if ($nextStart)
+               <a href="javascript:getPortlet${portletId}('$filterid', '$nextStart', '$portletId', '$numofentries', '$showdescription')"><img src="$requestContext.baseUrl/images/icons/arrow_down_blue.gif"/></a>
+              #else
+               <img src="$requestContext.baseUrl/images/icons/arrow_down_faded.gif"/>
+              #end
+            </td>
+        </tr>
+    #if ($indexing)
+        #if ($issues)
+            #foreach ($issue in $issues)
+                #if ($issue)                    #parse('templates/plugins/jira/portlets/issuesummary.vm')
+                #else                    #set($brokenindex=true)
+                #end
+            #end
+        #else
+            <tr bgcolor="#FFFFFF">
+                <td width="100%"  colspan=4>
+                    $noIssuesText
+                </td>
+            </tr>
+        #end
+        #if ($brokenindex)
+            <tr><td bgcolor="ffaaaa" colspan=4>
+            Search indexes missing or corrupt&mdash;some issues may not shown<br>&nbsp;<br>
+            #if ($admin)
+                Please <a href="$req.contextPath/secure/admin/jira/IndexAdmin.jspa">reindex</a> the data.
+            #else
+                Please contact your administrator to reindex the data.
+            #end
+        #end
+        </td></tr>
+    #else
+        <tr><td bgcolor=ffffff>
+            #configureIndexing($req.contextPath)
+        </td></tr>
+    #end
+    </table>
+    </td></tr></table>
+</div>
+#else
+    <table class=tableBorder border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+    <table border="0" cellpadding="3" cellspacing="1" width="100%"><tr class=rowHeader><td>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr class=rowHeader>
+            <td class="colHeaderLink" colspan="2">
+            <font color="ff0000">
+                ## Cannot edit/delete the portlets that are within the default portal config
+                #if (!$portletConfig.isUsingDefaultPortalConfig($user))
+                    <font size="1" color="000000">&nbsp;
+                        (<a href="$req.contextPath/secure/SavePortlet!default.jspa?portletConfigId=$portletConfig.id" title="$i18n.getText('portlet.edit.title')">$i18n.getText('portlet.edit')</a> |
+                        <a href="$req.contextPath/secure/DeletePortlet!delete.jspa?portletConfigId=$portletConfig.id" title="$i18n.getText('portlet.delete.title')">$i18n.getText('portlet.delete')</a>)
+                    </font>
+                #end
+            </font>
+            </td>
+    </tr>
+    </td></tr></table>
+    <tr bgcolor="ffffff">
+        <td colspan=2>
+            $descriptor.getText("portlet.filters.invalid")
+        </td>
+    </tr>
+    </table>
+    </td></tr></table>
+#end

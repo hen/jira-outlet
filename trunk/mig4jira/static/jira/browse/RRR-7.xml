@@ -1,0 +1,43 @@
+<item>
+<title>[RRR-7] user chooses columns to show</title>
+<link>http://issues.osjava.org/jira/browse/RRR-7</link>
+
+                    <description>user has ability to choose the columns of the report to show, prior to running report.</description>
+                <environment/>
+            <key id='10268'>RRR-7</key>
+        <summary>user chooses columns to show</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:37:27 -0700 (PDT)</created>
+    <updated>Mon, 6 Dec 2004 14:23:05 -0800 (PST)</updated>
+
+                
+                
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

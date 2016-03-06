@@ -1,0 +1,12 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='SJN-57'>NotContextException error in GenericContext.createSubContext</issue>
+    <issue status='Closed' key='SJN-54'>If a resource directory config/java and file config/java.properties both exist, indeterminate result</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-52'>Do conversion of values on parse and not on lookup?</issue>
+    <issue status='Closed' key='SJN-32'>Not possible to mix delimiters</issue>
+    <issue status='Closed' key='SJN-26'>Implement list methods</issue>
+  </fixes-issues>
+  <name>0.10</name>
+</version>

@@ -1,0 +1,43 @@
+<item>
+<title>[TRA-1] Does not work under 2.3</title>
+<link>http://issues.osjava.org/jira/browse/TRA-1</link>
+
+                    <description>To get it to work, you need to remove the description and display-info xml tags from the TLD, and recompile because the JSP 1.1 to 2.0 spec is not binary compatible and the code gets bound to a class in 2.0 that does not exist in 1.1.&lt;br/&gt;
+&lt;br/&gt;
+A possible solution is to compile against the 1.1 jar, and throw the less important parts of the TLD out (or leave commented out rather).</description>
+                <environment>Servlet 2.3 environment such as Tomcat 4.x</environment>
+            <key id='10226'>TRA-1</key>
+        <summary>Does not work under 2.3</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jun 2004 21:54:22 -0700 (PDT)</created>
+    <updated>Thu, 17 Jun 2004 21:54:22 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TRA'>Trail-Taglib</project>
+</item>

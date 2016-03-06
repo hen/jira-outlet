@@ -1,0 +1,52 @@
+<item>
+<title>[RRR-6] time graph</title>
+<link>http://issues.osjava.org/jira/browse/RRR-6</link>
+
+                    <description>time based graph&lt;br/&gt;
+&lt;br/&gt;
+column 1 is time&lt;br/&gt;
+column 2+ are lines on the graph&lt;br/&gt;
+&lt;br/&gt;
+use jfreechart</description>
+                <environment/>
+            <key id='10267'>RRR-6</key>
+        <summary>time graph</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:36:53 -0700 (PDT)</created>
+    <updated>Thu, 7 Oct 2004 15:18:59 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10257' created='Thu, 7 Oct 2004 15:18:59 -0700 (PDT)'>Many tweaks will be needed, but a basic time chart renderer now exists.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

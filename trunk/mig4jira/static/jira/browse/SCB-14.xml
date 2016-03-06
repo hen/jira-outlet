@@ -1,0 +1,356 @@
+<item>
+<title>[SCB-14] Create .bat files for the example</title>
+<link>http://issues.osjava.org/jira/browse/SCB-14</link>
+
+                    <description>When using the example on a Windows box, you need .bat files to run/test/compile.</description>
+                <environment>Windows</environment>
+            <key id='10221'>SCB-14</key>
+        <summary>Create .bat files for the example</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 15 Jun 2004 22:39:09 -0700 (PDT)</created>
+    <updated>Sat, 3 Feb 2007 10:10:41 -0800 (PST)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.3</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10212' created='Sat, 19 Jun 2004 20:35:20 -0700 (PDT)'>Now added. Additionally changed name of runc to build as it makes more sense.</comment>
+                    <comment author='cisco77' id='10540' created='Wed, 17 Jan 2007 13:06:49 -0800 (PST)'>&lt;a href=&quot;http://miniurl.pl/21191&quot;&gt;http://miniurl.pl/21191&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21192&quot;&gt;http://miniurl.pl/21192&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21194&quot;&gt;http://miniurl.pl/21194&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21195&quot;&gt;http://miniurl.pl/21195&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21196&quot;&gt;http://miniurl.pl/21196&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21197&quot;&gt;http://miniurl.pl/21197&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21198&quot;&gt;http://miniurl.pl/21198&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21199&quot;&gt;http://miniurl.pl/21199&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21200&quot;&gt;http://miniurl.pl/21200&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21201&quot;&gt;http://miniurl.pl/21201&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21202&quot;&gt;http://miniurl.pl/21202&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21203&quot;&gt;http://miniurl.pl/21203&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21204&quot;&gt;http://miniurl.pl/21204&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21205&quot;&gt;http://miniurl.pl/21205&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21206&quot;&gt;http://miniurl.pl/21206&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21207&quot;&gt;http://miniurl.pl/21207&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21208&quot;&gt;http://miniurl.pl/21208&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21209&quot;&gt;http://miniurl.pl/21209&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21210&quot;&gt;http://miniurl.pl/21210&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21211&quot;&gt;http://miniurl.pl/21211&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21212&quot;&gt;http://miniurl.pl/21212&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21213&quot;&gt;http://miniurl.pl/21213&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21214&quot;&gt;http://miniurl.pl/21214&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21215&quot;&gt;http://miniurl.pl/21215&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21216&quot;&gt;http://miniurl.pl/21216&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21217&quot;&gt;http://miniurl.pl/21217&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21218&quot;&gt;http://miniurl.pl/21218&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21219&quot;&gt;http://miniurl.pl/21219&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21220&quot;&gt;http://miniurl.pl/21220&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21221&quot;&gt;http://miniurl.pl/21221&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21222&quot;&gt;http://miniurl.pl/21222&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21223&quot;&gt;http://miniurl.pl/21223&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21224&quot;&gt;http://miniurl.pl/21224&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21225&quot;&gt;http://miniurl.pl/21225&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21226&quot;&gt;http://miniurl.pl/21226&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21227&quot;&gt;http://miniurl.pl/21227&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21228&quot;&gt;http://miniurl.pl/21228&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21229&quot;&gt;http://miniurl.pl/21229&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21230&quot;&gt;http://miniurl.pl/21230&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21231&quot;&gt;http://miniurl.pl/21231&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21232&quot;&gt;http://miniurl.pl/21232&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21233&quot;&gt;http://miniurl.pl/21233&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21234&quot;&gt;http://miniurl.pl/21234&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21235&quot;&gt;http://miniurl.pl/21235&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21236&quot;&gt;http://miniurl.pl/21236&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21237&quot;&gt;http://miniurl.pl/21237&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21238&quot;&gt;http://miniurl.pl/21238&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21239&quot;&gt;http://miniurl.pl/21239&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21240&quot;&gt;http://miniurl.pl/21240&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21241&quot;&gt;http://miniurl.pl/21241&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21242&quot;&gt;http://miniurl.pl/21242&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21243&quot;&gt;http://miniurl.pl/21243&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21244&quot;&gt;http://miniurl.pl/21244&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21245&quot;&gt;http://miniurl.pl/21245&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21246&quot;&gt;http://miniurl.pl/21246&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21248&quot;&gt;http://miniurl.pl/21248&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21249&quot;&gt;http://miniurl.pl/21249&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21250&quot;&gt;http://miniurl.pl/21250&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21251&quot;&gt;http://miniurl.pl/21251&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21252&quot;&gt;http://miniurl.pl/21252&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21253&quot;&gt;http://miniurl.pl/21253&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21254&quot;&gt;http://miniurl.pl/21254&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21255&quot;&gt;http://miniurl.pl/21255&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21257&quot;&gt;http://miniurl.pl/21257&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21258&quot;&gt;http://miniurl.pl/21258&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21259&quot;&gt;http://miniurl.pl/21259&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21260&quot;&gt;http://miniurl.pl/21260&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21261&quot;&gt;http://miniurl.pl/21261&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21262&quot;&gt;http://miniurl.pl/21262&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21263&quot;&gt;http://miniurl.pl/21263&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21264&quot;&gt;http://miniurl.pl/21264&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21265&quot;&gt;http://miniurl.pl/21265&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21266&quot;&gt;http://miniurl.pl/21266&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21267&quot;&gt;http://miniurl.pl/21267&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21268&quot;&gt;http://miniurl.pl/21268&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21269&quot;&gt;http://miniurl.pl/21269&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21270&quot;&gt;http://miniurl.pl/21270&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21271&quot;&gt;http://miniurl.pl/21271&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21272&quot;&gt;http://miniurl.pl/21272&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21273&quot;&gt;http://miniurl.pl/21273&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21274&quot;&gt;http://miniurl.pl/21274&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21275&quot;&gt;http://miniurl.pl/21275&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21276&quot;&gt;http://miniurl.pl/21276&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21277&quot;&gt;http://miniurl.pl/21277&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21278&quot;&gt;http://miniurl.pl/21278&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21279&quot;&gt;http://miniurl.pl/21279&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21280&quot;&gt;http://miniurl.pl/21280&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21281&quot;&gt;http://miniurl.pl/21281&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21282&quot;&gt;http://miniurl.pl/21282&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21283&quot;&gt;http://miniurl.pl/21283&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21284&quot;&gt;http://miniurl.pl/21284&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21285&quot;&gt;http://miniurl.pl/21285&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21286&quot;&gt;http://miniurl.pl/21286&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21288&quot;&gt;http://miniurl.pl/21288&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21289&quot;&gt;http://miniurl.pl/21289&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21290&quot;&gt;http://miniurl.pl/21290&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21291&quot;&gt;http://miniurl.pl/21291&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21292&quot;&gt;http://miniurl.pl/21292&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21293&quot;&gt;http://miniurl.pl/21293&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21294&quot;&gt;http://miniurl.pl/21294&lt;/a&gt;  &lt;br/&gt;
+</comment>
+                    <comment author='ciscoff' id='10555' created='Sat, 3 Feb 2007 10:10:41 -0800 (PST)'>&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img47.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img47.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img24.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img24.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img65.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img65.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img46.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img46.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img0.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img0.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img69.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img69.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img67.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img67.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img23.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img23.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img51.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img51.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img15.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img15.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img5.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img5.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img8.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img8.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img11.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img11.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img12.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img12.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img54.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img54.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img39.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img39.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img40.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img40.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img25.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img25.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img56.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img56.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img21.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img21.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img58.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img58.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img57.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img57.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img86.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img86.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img91.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img91.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img94.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img94.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img66.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img66.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img48.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img48.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img95.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img95.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img96.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img96.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img20.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img20.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img38.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img38.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img6.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img6.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img34.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img34.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img19.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img19.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img35.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img35.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img55.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img55.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img9.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img9.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img87.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img87.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img89.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img89.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img92.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img92.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img77.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img77.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img13.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img13.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img2.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img2.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img88.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img88.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img43.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img43.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img90.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img90.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img93.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img93.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img37.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img37.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img16.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img16.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img73.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img73.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img44.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img44.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img27.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img27.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img82.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img82.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img49.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img49.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img62.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img62.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img20.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img20.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img238.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img238.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img22.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img22.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img222.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img222.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img229.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img229.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img242.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img242.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img27.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img27.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img228.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img228.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img245.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img245.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img25.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img25.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img21.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img21.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img244.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img244.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img212.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img212.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img213.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img213.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img218.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img218.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img215.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img215.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img210.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img210.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img217.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img217.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img220.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img220.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img232.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img232.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img26.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img26.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img219.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img219.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img221.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img221.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img224.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img224.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img225.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img225.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img211.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img211.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img246.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img246.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img227.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img227.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img23.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img23.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img226.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img226.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img249.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img249.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img24.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img24.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img231.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img231.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img233.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img233.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img234.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img234.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img236.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img236.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img29.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img29.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img214.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img214.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img28.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img28.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img240.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img240.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img241.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img241.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img239.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img239.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img253.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img253.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img243.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img243.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img216.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img216.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img250.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img250.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img248.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img248.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img223.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img223.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img251.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img251.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img252.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img252.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img235.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img235.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img230.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img230.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img237.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img237.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img247.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img247.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img99.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img99.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img14.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img14.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img76.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img76.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img97.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img97.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img7.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img7.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img10.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img10.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img72.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img72.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img79.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img79.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img36.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img36.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img74.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img74.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img98.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img98.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img83.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img83.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img31.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img31.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img53.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img53.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img81.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img81.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img17.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img17.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img30.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img30.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img3.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img3.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img60.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img60.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img29.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img29.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img61.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img61.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img59.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img59.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img22.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img22.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img63.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img63.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img84.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img84.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img32.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img32.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img52.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img52.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img80.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img80.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img71.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img71.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img45.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img45.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img70.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img70.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img68.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img68.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img50.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img50.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img4.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img4.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img75.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img75.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img78.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img78.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img85.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img85.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img28.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img28.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img42.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img42.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img33.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img33.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img26.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img26.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img1.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img1.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img18.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img18.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img64.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img64.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.allsportinggoods.com/images/gif/img41.html&quot;&gt;http://www.allsportinggoods.com/images/gif/img41.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6231&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6231&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6230&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6230&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6229&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6229&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6228&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6228&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6227&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6227&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6226&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6226&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6225&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6225&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6224&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6224&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6223&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6223&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6222&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6222&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6221&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6221&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6220&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6220&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6219&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6219&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6218&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6218&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6217&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6217&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6216&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6216&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6215&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6215&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6214&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6214&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6213&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6213&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6212&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6212&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6211&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6211&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6209&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6209&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6208&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6208&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6207&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6207&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6206&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6206&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6205&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6205&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6204&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6204&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6203&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6203&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6202&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6202&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6201&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6201&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6200&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6200&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6199&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6199&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6198&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6198&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6197&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6197&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6196&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6196&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6195&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6195&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6194&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6194&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6193&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6193&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6192&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6192&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6191&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6191&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6190&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6190&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6189&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6189&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6188&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6188&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6187&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6187&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6186&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6186&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6184&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6184&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6183&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6183&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6182&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6182&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6181&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6181&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6180&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6180&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6179&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6179&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;e_id=6178&quot;&gt;http://cisco21.bloggingmylife.com/entry.php?u=cisco21&amp;amp;e_id=6178&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

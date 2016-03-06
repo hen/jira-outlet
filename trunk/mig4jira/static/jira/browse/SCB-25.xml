@@ -1,0 +1,65 @@
+<item>
+<title>[SCB-25] support for fetching non - HTML/Text files content-type: application/vnd.ms-word</title>
+<link>http://issues.osjava.org/jira/browse/SCB-25</link>
+
+                    <description>support for fetching non - HTML/Text files &lt;br/&gt;
+i was scraping a web page and on that page i found a link when i click on that link through the browser i got a dialog box that asks for whether i  m intersted in downloading or opening that file................&lt;br/&gt;
+and when i try to fetch the same link i got following exception with a POST method :-&lt;br/&gt;
+java.lang.RuntimeException: org.osjava.scraping.FetchingException:&lt;br/&gt;
+---------------------TRACE-----------------------&lt;br/&gt;
+&amp;nbsp;Not going to fetch a non-text file from &lt;a href=&quot;http://www.abc.com/abc.WebApp/servlet/common.DocServeServlet&quot;&gt;http://www.abc.com/abc.WebApp/servlet/common.DocServeServlet&lt;/a&gt;. Type is: content-type: application/msword&lt;br/&gt;
+&lt;br/&gt;
+	at scraper.fetch.ConnectionUtilities.main(ConnectionUtilities.java:158)&lt;br/&gt;
+Caused by: org.osjava.scraping.FetchingException: Not going to fetch a non-text file from  &lt;a href=&quot;http://www.abc.com/abc.WebApp/servlet/common.DocServeServlet&quot;&gt;http://www.abc.com/abc.WebApp/servlet/common.DocServeServlet&lt;/a&gt;. Type is: content-type: application/msword&lt;br/&gt;
+&lt;br/&gt;
+	at org.osjava.scraping.AbstractHttpFetcher.fetch(AbstractHttpFetcher.java:157)&lt;br/&gt;
+	at scraper.fetch.ConnectionUtilities.scrapPage(ConnectionUtilities.java:80)&lt;br/&gt;
+	at scraper.fetch.ConnectionUtilities.main(ConnectionUtilities.java:155)&lt;br/&gt;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------&lt;br/&gt;
+and when i fetch the same link with GET method i got following trace:-&lt;br/&gt;
+&lt;br/&gt;
+java.lang.RuntimeException: org.osjava.scraping.FetchingException: Unable to fetch from &lt;a href=&quot;http://www.timesjobs.com/timesJobWebApp/servlet/common.DocServeServlet?adId=43745975&amp;name=vivek&quot;&gt;http://www.timesjobs.com/timesJobWebApp/servlet/common.DocServeServlet?adId=43745975&amp;amp;name=vivek&lt;/a&gt; tiwari&amp;amp;resumePath=&amp;quot;  due to error code 400&lt;br/&gt;
+	at scraper.fetch.ConnectionUtilities.main(ConnectionUtilities.java:158)&lt;br/&gt;
+Caused by: org.osjava.scraping.FetchingException: Unable to fetch from &lt;a href=&quot;http://www.timesjobs.com/timesJobWebApp/servlet/common.DocServeServlet?adId=43745975&amp;name=vivek&quot;&gt;http://www.timesjobs.com/timesJobWebApp/servlet/common.DocServeServlet?adId=43745975&amp;amp;name=vivek&lt;/a&gt; tiwari&amp;amp;resumePath=&amp;quot;  due to error code 400&lt;br/&gt;
+	at org.osjava.scraping.AbstractHttpFetcher.fetch(AbstractHttpFetcher.java:144)&lt;br/&gt;
+	at scraper.fetch.ConnectionUtilities.scrapPage(ConnectionUtilities.java:80)&lt;br/&gt;
+	at scraper.fetch.ConnectionUtilities.main(ConnectionUtilities.java:155)&lt;br/&gt;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------&lt;br/&gt;
+please tell me how can i fetch this page..............&lt;br/&gt;
+reply me at &lt;a href=&apos;mailto:ravis22@gmail.com&apos;&gt;ravis22@gmail.com&lt;/a&gt;</description>
+                <environment/>
+            <key id='10621'>SCB-25</key>
+        <summary>support for fetching non - HTML/Text files content-type: application/vnd.ms-word</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='ravikant'>ravi kant</reporter>
+            
+    <created>Fri, 28 Jul 2006 21:39:32 -0700 (PDT)</created>
+    <updated>Fri, 28 Jul 2006 21:39:32 -0700 (PDT)</updated>
+
+                
+                
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

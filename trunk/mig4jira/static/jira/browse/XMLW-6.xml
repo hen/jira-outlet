@@ -1,0 +1,42 @@
+<item>
+<title>[XMLW-6] Fix or remove java-channel link</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-6</link>
+
+                    <description/>
+                <environment/>
+            <key id='10681'>XMLW-6</key>
+        <summary>Fix or remove java-channel link</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 29 Mar 2007 10:48:39 -0700 (PDT)</created>
+    <updated>Sat, 7 Apr 2007 22:27:55 -0700 (PDT)</updated>
+
+                        <version>2.2</version>
+            
+                        <fixVersion>2.2.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

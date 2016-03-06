@@ -1,0 +1,6 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='NRB-3'>isUrlAllowed gets confused by ending /</issue>
+  </fixes-issues>
+  <name>0.1.1</name>
+</version>

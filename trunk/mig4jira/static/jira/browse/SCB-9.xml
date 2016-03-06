@@ -1,0 +1,248 @@
+<item>
+<title>[SCB-9] When running the scraping engine, allow the scraper to be chosen</title>
+<link>http://issues.osjava.org/jira/browse/SCB-9</link>
+
+                    <description>When running the scraping engine, allow the scraper to be chosen. Possibly via a -s flag or something. So testing doesn&apos;t have to keep repeating things.&lt;br/&gt;
+&lt;br/&gt;
+Would also be nice to be able to say &apos;now&apos;, even if cron is turned on. So -n or something.</description>
+                <environment/>
+            <key id='10130'>SCB-9</key>
+        <summary>When running the scraping engine, allow the scraper to be chosen</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 12 Dec 2003 11:13:32 -0800 (PST)</created>
+    <updated>Wed, 1 Nov 2006 21:44:51 -0800 (PST)</updated>
+
+                
+                
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='xstranger' id='10526' created='Wed, 1 Nov 2006 21:44:51 -0800 (PST)'>&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c1.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c1.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c10.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c10.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c100.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c100.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c11.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c11.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c12.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c12.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c13.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c13.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c14.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c14.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c15.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c15.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c16.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c16.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c17.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c17.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c18.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c18.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c19.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c19.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c2.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c2.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c20.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c20.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c21.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c21.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c22.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c22.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c23.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c23.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c24.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c24.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c25.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c25.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c26.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c26.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c27.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c27.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c28.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c28.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c29.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c29.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c3.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c3.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c30.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c30.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c31.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c31.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c32.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c32.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c33.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c33.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c34.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c34.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c35.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c35.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c36.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c36.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c37.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c37.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c38.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c38.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c39.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c39.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c4.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c4.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c40.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c40.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c41.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c41.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c42.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c42.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c43.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c43.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c44.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c44.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c45.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c45.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c46.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c46.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c47.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c47.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c48.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c48.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c49.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c49.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c5.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c5.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c50.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c50.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c51.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c51.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c52.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c52.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c53.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c53.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c54.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c54.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c55.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c55.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c56.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c56.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c57.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c57.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c58.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c58.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c59.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c59.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c6.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c6.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c60.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c60.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c61.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c61.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c62.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c62.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c63.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c63.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c64.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c64.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c65.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c65.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c66.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c66.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c67.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c67.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c68.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c68.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c69.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c69.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c7.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c7.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c70.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c70.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c71.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c71.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c72.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c72.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c73.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c73.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c74.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c74.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c75.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c75.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c76.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c76.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c77.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c77.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c78.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c78.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c79.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c79.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c8.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c8.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c80.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c80.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c81.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c81.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c82.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c82.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c83.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c83.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c84.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c84.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c85.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c85.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c86.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c86.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c87.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c87.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c88.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c88.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/xstr1/celebrity/c9.html&quot;&gt;http://www.deadzoom.com/users/xstr1/celebrity/c9.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c100.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c100.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c90.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c90.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c91.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c91.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c92.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c92.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c93.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c93.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c94.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c94.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c95.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c95.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c96.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c96.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c97.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c97.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c98.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c98.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/cool/c99.html&quot;&gt;http://www.deadzoom.com/users/deluxe/cool/c99.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d1.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d1.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d10.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d10.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d100.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d100.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d11.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d11.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d12.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d12.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d13.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d13.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d14.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d14.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d15.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d15.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d16.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d16.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d17.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d17.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d18.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d18.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d19.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d19.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d2.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d2.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d20.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d20.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d21.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d21.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d22.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d22.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d23.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d23.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d24.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d24.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d25.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d25.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d26.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d26.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d27.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d27.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d28.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d28.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d29.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d29.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d3.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d3.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d30.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d30.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d31.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d31.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d32.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d32.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d33.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d33.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d34.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d34.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d35.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d35.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d36.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d36.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d37.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d37.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d38.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d38.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d39.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d39.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d4.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d4.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d40.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d40.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d41.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d41.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d42.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d42.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d43.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d43.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d44.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d44.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d45.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d45.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d46.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d46.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d47.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d47.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d48.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d48.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d49.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d49.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d5.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d5.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d50.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d50.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d51.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d51.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d52.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d52.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d53.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d53.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d54.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d54.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d55.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d55.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d56.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d56.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d57.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d57.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d58.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d58.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d59.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d59.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d6.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d6.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d60.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d60.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d61.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d61.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d62.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d62.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d63.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d63.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d64.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d64.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d65.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d65.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d66.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d66.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d67.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d67.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d68.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d68.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d69.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d69.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d7.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d7.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d70.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d70.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d71.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d71.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d72.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d72.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d73.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d73.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d74.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d74.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d75.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d75.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d76.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d76.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d77.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d77.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d78.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d78.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d79.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d79.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d8.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d8.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d80.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d80.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d81.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d81.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d82.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d82.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d83.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d83.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d84.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d84.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d85.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d85.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d86.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d86.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d87.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d87.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d88.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d88.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d89.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d89.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d9.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d9.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d90.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d90.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d91.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d91.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d92.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d92.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d93.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d93.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d94.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d94.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d95.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d95.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d96.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d96.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d97.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d97.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d98.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d98.html&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://www.deadzoom.com/users/deluxe/dust/d99.html&quot;&gt;http://www.deadzoom.com/users/deluxe/dust/d99.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

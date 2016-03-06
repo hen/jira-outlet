@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-33] Text too dark on html webpage rendering</title>
+<link>http://issues.osjava.org/jira/browse/RRR-33</link>
+
+                    <description>When marking a row in the html table, it needs to flip the text to white if you choose a dark colour.</description>
+                <environment/>
+            <key id='10303'>RRR-33</key>
+        <summary>Text too dark on html webpage rendering</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 18 Oct 2004 09:51:08 -0700 (PDT)</created>
+    <updated>Mon, 6 Dec 2004 14:24:37 -0800 (PST)</updated>
+
+                        <version>0.2</version>
+            
+                
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

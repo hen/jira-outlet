@@ -1,0 +1,56 @@
+<item>
+<title>[TRA-3] tld link is broken.</title>
+<link>http://issues.osjava.org/jira/browse/TRA-3</link>
+
+                    <description>The &apos;How To&apos; instructions list the following tld reference:&lt;br/&gt;
+&lt;br/&gt;
+&amp;lt;%@ taglib prefix=&amp;quot;trail&amp;quot; uri=&amp;quot;&lt;a href=&quot;http://www.osjava.org/taglibs/trail-1.0&quot;&gt;http://www.osjava.org/taglibs/trail-1.0&lt;/a&gt;&amp;quot; %&amp;gt; &lt;br/&gt;
+&lt;br/&gt;
+I have been unable to find this uri.  This link appears to be invalid.  Can you please provide an updated link for the tld?  Or should a tld be included in the distribution?&lt;br/&gt;
+&lt;br/&gt;
+Thanks,&lt;br/&gt;
+Mark</description>
+                <environment>Websphere Portal Server 5.0.2</environment>
+            <key id='10260'>TRA-3</key>
+        <summary>tld link is broken.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Thu, 16 Sep 2004 12:59:52 -0700 (PDT)</created>
+    <updated>Wed, 22 Sep 2004 19:41:46 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10242' created='Wed, 22 Sep 2004 19:41:46 -0700 (PDT)'>The distribution jar contains a tld file, though there isn&apos;t one in the distribution.&lt;br/&gt;
+&lt;br/&gt;
+Solutions....&lt;br/&gt;
+&lt;br/&gt;
+See about adding the tld to the dist as well, outside the jar.&lt;br/&gt;
+Upload the tld&apos;s to the site for use there.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TRA'>Trail-Taglib</project>
+</item>

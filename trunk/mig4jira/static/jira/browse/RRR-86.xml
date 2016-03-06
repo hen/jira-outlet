@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-86] CallableSqlReport</title>
+<link>http://issues.osjava.org/jira/browse/RRR-86</link>
+
+                    <description>Support stored procedures via a CallableSqlReport.&lt;br/&gt;
+&lt;br/&gt;
+These are implicitly stored procedures that return a single ResultSet.</description>
+                <environment/>
+            <key id='10397'>RRR-86</key>
+        <summary>CallableSqlReport</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 2 Aug 2005 21:12:05 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 21:12:05 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Reports</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

@@ -1,0 +1,16 @@
+<project>
+  <key>NRB</key>
+  <name>Norbert</name>
+  <issues>
+    <issue status='Closed' key='NRB-10'>If a 3xx response code; follow links</issue>
+    <issue status='Closed' key='NRB-9'>&quot;Disallow: &quot; should indicate that nothing is disallowed</issue>
+    <issue status='Closed' key='NRB-8'>User-Agent name comparison should be case insensitive</issue>
+    <issue status='Open' key='NRB-7'>A 403 or 401 should be considered a false and not an error</issue>
+    <issue status='Closed' key='NRB-6'>Spec bug; check user agents first and then the first wildcard</issue>
+    <issue status='Closed' key='NRB-5'>User-Agent setting doesn&apos;t work</issue>
+    <issue status='Closed' key='NRB-4'>Doesn&apos;t send User-Agent in the request</issue>
+    <issue status='Closed' key='NRB-3'>isUrlAllowed gets confused by ending /</issue>
+    <issue status='Closed' key='NRB-2'>Switch to Log4j</issue>
+    <issue status='Closed' key='NRB-1'>Unit Tests are hardcoded</issue>
+  </issues>
+</project>

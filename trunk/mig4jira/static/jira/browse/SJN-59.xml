@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-59] Move from gj-xml to DOM</title>
+<link>http://issues.osjava.org/jira/browse/SJN-59</link>
+
+                    <description>XmlProperties should use DOM instead of gj-xml.</description>
+                <environment/>
+            <key id='10490'>SJN-59</key>
+        <summary>Move from gj-xml to DOM</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='eric'>Eric Alexander</assignee>
+            
+                        <reporter username='eric'>Eric Alexander</reporter>
+            
+    <created>Mon, 22 Aug 2005 14:32:55 -0700 (PDT)</created>
+    <updated>Thu, 29 Sep 2005 11:47:54 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10440' created='Thu, 29 Sep 2005 11:47:54 -0700 (PDT)'>Done</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

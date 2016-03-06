@@ -1,0 +1,7 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='XMLW-9'>PrettyPrinterXMLWriter does not implement all methods</issue>
+    <issue status='Closed' key='XMLW-8'>expected/actual in the incorrect order in XmlWriterTest</issue>
+  </fixes-issues>
+  <name>2.2.2</name>
+</version>

@@ -1,0 +1,44 @@
+<item>
+<title>[TRA-5] Wrong implementation of hashCode in BreadCrumb</title>
+<link>http://issues.osjava.org/jira/browse/TRA-5</link>
+
+                    <description>While the equals method ignores the parameters within the URL, the hashCode function doesn&apos;t. &lt;br/&gt;
+This means that for two URLs with the same address but different parameters, equals will return true, but hashCode will return different values, which contradicts the definition of these methods (See Joshua Bloch&apos;s Effective Java). Function hashCode should ignore the parameters as well.&lt;br/&gt;
+&lt;br/&gt;
+I&apos;m planning to make some additions to this taglib, and would like to talk to the original author. If you hear this, please write to me to &lt;a href=&apos;mailto:XXXXX@gmail.com&apos;&gt;XXXXX@gmail.com&lt;/a&gt; (replace XXXXX with the user name in JIRA - this is used to avoid spam robots.</description>
+                <environment>All</environment>
+            <key id='10531'>TRA-5</key>
+        <summary>Wrong implementation of hashCode in BreadCrumb</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='barakori'>Barak Ori</reporter>
+            
+    <created>Tue, 22 Nov 2005 06:45:40 -0800 (PST)</created>
+    <updated>Tue, 22 Nov 2005 06:45:40 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TRA'>Trail-Taglib</project>
+</item>

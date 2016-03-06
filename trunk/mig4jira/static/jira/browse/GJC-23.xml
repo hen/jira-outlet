@@ -1,0 +1,42 @@
+<item>
+<title>[GJC-23] No newline after first tag in a toString</title>
+<link>http://issues.osjava.org/jira/browse/GJC-23</link>
+
+                    <description>In the toString, it doesn&apos;t put a newline at the end on the opening tag.</description>
+                <environment/>
+            <key id='10252'>GJC-23</key>
+        <summary>No newline after first tag in a toString</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='7'>Obsolete</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 12 Jul 2004 14:32:08 -0700 (PDT)</created>
+    <updated>Sat, 8 Mar 2008 02:33:57 -0800 (PST)</updated>
+
+                        <version>xml-1.0</version>
+            
+                
+                        <component>gj-xml</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

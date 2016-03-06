@@ -1,0 +1,49 @@
+<item>
+<title>[GJC-1] Remove deprecated functions</title>
+<link>http://issues.osjava.org/jira/browse/GJC-1</link>
+
+                    <description>Neeed to remove parts which are in Commons Codec or in Commons Lang 2.0. These mean removing:&lt;br/&gt;
+&lt;br/&gt;
+com.generationjava.test [JUnit]&lt;br/&gt;
+com.generationjava.lang.StringW [most of this] </description>
+                <environment/>
+            <key id='10051'>GJC-1</key>
+        <summary>Remove deprecated functions</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 13 Aug 2003 07:19:29 -0700 (PDT)</created>
+    <updated>Sat, 6 Dec 2003 13:43:59 -0800 (PST)</updated>
+
+                
+                        <fixVersion>core-3.0</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10048' created='Sat, 6 Sep 2003 20:00:24 -0700 (PDT)'>Also remove the Metaphone class as it&apos;s in Commons Codec 1.1</comment>
+                    <comment author='bayard' id='10056' created='Sun, 14 Sep 2003 20:55:35 -0700 (PDT)'>This is done.</comment>
+                    <comment author='bayard' id='10105' created='Sat, 6 Dec 2003 13:43:59 -0800 (PST)'>I&apos;d reopened to edit the fix-version.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

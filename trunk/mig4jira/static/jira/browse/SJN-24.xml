@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-24] Switch to using Names and not Strings?</title>
+<link>http://issues.osjava.org/jira/browse/SJN-24</link>
+
+                    <description>Might be easier to use Name objects instead of Strings as the keys. &lt;br/&gt;
+Strings would then delegate to Names, which is the opposite of the current situation.</description>
+                <environment/>
+            <key id='10024'>SJN-24</key>
+        <summary>Switch to using Names and not Strings?</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:31:11 -0700 (PDT)</created>
+    <updated>Thu, 29 Sep 2005 11:48:07 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10287' created='Sun, 28 Nov 2004 06:48:32 -0800 (PST)'>Fixed by r1457</comment>
+                    <comment author='bayard' id='10443' created='Thu, 29 Sep 2005 11:48:07 -0700 (PDT)'>Done</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

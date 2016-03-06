@@ -1,0 +1,53 @@
+<item>
+<title>[RRR-52] Logging</title>
+<link>http://issues.osjava.org/jira/browse/RRR-52</link>
+
+                    <description>Usage logging including time taken to run report...</description>
+                <environment/>
+            <key id='10332'>RRR-52</key>
+        <summary>Logging</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Tue, 21 Dec 2004 14:14:11 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:54:58 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10314' created='Wed, 22 Dec 2004 11:48:39 -0800 (PST)'>ReportRunnerServlet writes to a log file, rrr.log.&lt;br/&gt;
+Then there&apos;s a rrr.xml report file that is added to the reportrunner.xml. It uses rrr.log as a resource.&lt;br/&gt;
+&lt;br/&gt;
+Custom report that turns the rrr.log into a Report object. </comment>
+                    <comment author='bayard' id='10316' created='Thu, 23 Dec 2004 14:06:24 -0800 (PST)'>The rrr.log file is made nicely. Needs to have a header.&lt;br/&gt;
+CsvReport is written, though the resource finding part is yet to be figured out.</comment>
+                    <comment author='bayard' id='10320' created='Wed, 29 Dec 2004 10:06:11 -0800 (PST)'>LogQL. Maybe use the perl log.rules scripts I wrote as a design. Regexp should be of use here. Where clause, ordering, grouping is the tricky one.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

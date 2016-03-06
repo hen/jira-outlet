@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-93] Allow value fields to get assignments from scripting language evaluation.</title>
+<link>http://issues.osjava.org/jira/browse/RRR-93</link>
+
+                    <description/>
+                <environment/>
+            <key id='10534'>RRR-93</key>
+        <summary>Allow value fields to get assignments from scripting language evaluation.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='mhill'>Mike Hill</reporter>
+            
+    <created>Tue, 20 Dec 2005 15:37:23 -0800 (PST)</created>
+    <updated>Tue, 20 Dec 2005 15:37:23 -0800 (PST)</updated>
+
+                        <version>0.4</version>
+            
+                
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

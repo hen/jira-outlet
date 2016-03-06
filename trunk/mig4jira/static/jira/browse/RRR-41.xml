@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-41] Trail of urls to let the user go backwards</title>
+<link>http://issues.osjava.org/jira/browse/RRR-41</link>
+
+                    <description>Need to have a breadcrumbs of sorts so someone can go back to the front, or back a step. </description>
+                <environment/>
+            <key id='10315'>RRR-41</key>
+        <summary>Trail of urls to let the user go backwards</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 19 Nov 2004 14:44:43 -0800 (PST)</created>
+    <updated>Fri, 19 Nov 2004 15:16:04 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10283' created='Fri, 19 Nov 2004 15:16:04 -0800 (PST)'>Added.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

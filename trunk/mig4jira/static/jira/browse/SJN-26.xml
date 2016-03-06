@@ -1,0 +1,47 @@
+<item>
+<title>[SJN-26] Implement list methods</title>
+<link>http://issues.osjava.org/jira/browse/SJN-26</link>
+
+                    <description>Implement list methods so you can see the values in a particular directory/properties file.</description>
+                <environment/>
+            <key id='10026'>SJN-26</key>
+        <summary>Implement list methods</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:32:29 -0700 (PDT)</created>
+    <updated>Thu, 29 Sep 2005 11:48:05 -0700 (PDT)</updated>
+
+                        <version>0.9.1</version>
+            
+                        <fixVersion>0.10</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10174' created='Tue, 4 May 2004 12:02:28 -0700 (PDT)'>This may magically start working when #&lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-51&quot; title=&quot;Fix hierarchies in configuration files&quot;&gt;&lt;strike&gt;SJN-51&lt;/strike&gt;&lt;/a&gt; is resolved as the code is there, it just lacks nodes to work on.</comment>
+                    <comment author='tigran' id='10288' created='Sun, 28 Nov 2004 06:51:15 -0800 (PST)'>Unless I&apos;m misunderstanding the issue (quite possible) this is fixed.</comment>
+                    <comment author='bayard' id='10442' created='Thu, 29 Sep 2005 11:48:05 -0700 (PDT)'>Done</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

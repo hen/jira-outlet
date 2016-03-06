@@ -1,0 +1,47 @@
+<item>
+<title>[TGT-3] Rename getAbort() to isAborting()</title>
+<link>http://issues.osjava.org/jira/browse/TGT-3</link>
+
+                    <description>Rename getAbort() to isAborting() because it is a boolean return value just checking status.  &lt;br/&gt;
+NOTE: this is a compat buster, but fixes what I consider to be a previous error</description>
+                <environment>All</environment>
+            <key id='10102'>TGT-3</key>
+        <summary>Rename getAbort() to isAborting()</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_trivial.gif' id='5'>Trivial</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='tigran'>Robert M. Zigweid</reporter>
+            
+    <created>Sun, 14 Sep 2003 09:01:57 -0700 (PDT)</created>
+    <updated>Sun, 14 Sep 2003 09:02:58 -0700 (PDT)</updated>
+
+                        <version>1.1</version>
+            
+                        <fixVersion>2.0</fixVersion>
+            
+                        <component>Threading</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10054' created='Sun, 14 Sep 2003 09:02:58 -0700 (PDT)'>Fixed</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TGT'>OSJava Threads</project>
+</item>

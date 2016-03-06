@@ -1,0 +1,54 @@
+<item>
+<title>[RRR-16] Writer vs OutputStream</title>
+<link>http://issues.osjava.org/jira/browse/RRR-16</link>
+
+                    <description>When rendering, should it be to an OutputStream or to a Writer?&lt;br/&gt;
+&lt;br/&gt;
+Excel and images will need an OutputStream. Is there any reason to keep a Writer for the others? They can always use an OutputStreamWriter to get around things.&lt;br/&gt;
+&lt;br/&gt;
+So seems to me....the system should switch to being OutputStream based and not Writer based.</description>
+                <environment/>
+            <key id='10277'>RRR-16</key>
+        <summary>Writer vs OutputStream</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 3 Oct 2004 09:19:06 -0700 (PDT)</created>
+    <updated>Thu, 7 Oct 2004 12:54:19 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10249' created='Sun, 3 Oct 2004 09:26:12 -0700 (PDT)'>Currently both are supported, with an automatic version for OutputStream that promotes it to a Writer.&lt;br/&gt;
+&lt;br/&gt;
+Possibly an AbstractBinaryRenderer class should exist to stop people using the Writer from the other one. Shame you can&apos;t make a method abstract that a super class already defines.</comment>
+                    <comment author='bayard' id='10256' created='Thu, 7 Oct 2004 12:54:19 -0700 (PDT)'>This&apos;ll do for now.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

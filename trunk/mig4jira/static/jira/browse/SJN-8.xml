@@ -1,0 +1,41 @@
+<item>
+<title>[SJN-8] Default for root should be the classpath</title>
+<link>http://issues.osjava.org/jira/browse/SJN-8</link>
+
+                    <description>If there is no root specified in jndi.properties, then simple-jndi should look in the root of the classpath.</description>
+                <environment/>
+            <key id='10008'>SJN-8</key>
+        <summary>Default for root should be the classpath</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:46:27 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:46:33 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

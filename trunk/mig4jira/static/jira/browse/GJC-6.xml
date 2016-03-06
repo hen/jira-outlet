@@ -1,0 +1,45 @@
+<item>
+<title>[GJC-6] XMLProperties: Comments and other invisible tags are added</title>
+<link>http://issues.osjava.org/jira/browse/GJC-6</link>
+
+                    <description/>
+                <environment/>
+            <key id='10128'>GJC-6</key>
+        <summary>XMLProperties: Comments and other invisible tags are added</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Dec 2003 17:09:05 -0800 (PST)</created>
+    <updated>Sat, 6 Dec 2003 17:09:24 -0800 (PST)</updated>
+
+                        <version>core-2.2</version>
+            
+                        <fixVersion>xml-1.0</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10116' created='Sat, 6 Dec 2003 17:09:24 -0800 (PST)'>Fixed by using !isTag</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

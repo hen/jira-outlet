@@ -1,0 +1,5 @@
+Let's you do CSV exports from JIRA by adding a CSV view to the Issue Navigator.
+
+Digging around, turns out this is requested already:
+
+http://jira.atlassian.com/browse/JRA-8580

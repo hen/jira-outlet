@@ -1,0 +1,10 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='GJC-30'>moveTo doesn&apos;t support the . or [] notiations</issue>
+    <issue status='Open' key='GJC-29'>Allow users to move backwards</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-21'>Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</issue>
+  </fixes-issues>
+  <name>scrape-2.0.1</name>
+</version>

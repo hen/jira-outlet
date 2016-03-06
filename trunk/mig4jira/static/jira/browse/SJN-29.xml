@@ -1,0 +1,48 @@
+<item>
+<title>[SJN-29] Allow Maps to be specified?</title>
+<link>http://issues.osjava.org/jira/browse/SJN-29</link>
+
+                    <description>It might be fun if Maps could be specified.</description>
+                <environment/>
+            <key id='10029'>SJN-29</key>
+        <summary>Allow Maps to be specified?</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:43:16 -0700 (PDT)</created>
+    <updated>Mon, 29 Aug 2005 18:08:11 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10286' created='Sun, 28 Nov 2004 06:44:03 -0800 (PST)'>Maps specified for what?  The table data?  More information requested here.</comment>
+                    <comment author='bayard' id='10414' created='Mon, 22 Aug 2005 22:01:55 -0700 (PDT)'>In the .properties file I believe.&lt;br/&gt;
+&lt;br/&gt;
+Probably doable via a MapConverter implementation.</comment>
+                    <comment author='bayard' id='10424' created='Mon, 29 Aug 2005 18:08:11 -0700 (PDT)'>org.osjava.sj.loader.convert.MapConverter</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

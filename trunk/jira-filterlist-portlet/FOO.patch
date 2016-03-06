@@ -1,0 +1,242 @@
+Index: src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java
+===================================================================
+--- src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java	(revision 23170)
++++ src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java	(revision 23171)
+@@ -23,13 +23,11 @@
+ import com.atlassian.jira.issue.search.SearchRequest;
+ import com.atlassian.jira.portal.PortletConfiguration;
+ import com.atlassian.jira.portal.PortletImpl;
+-import com.atlassian.jira.issue.search.SearchRequestManager;
++import com.atlassian.jira.bc.filter.SearchRequestService;
+ import com.atlassian.jira.issue.search.SearchException;
+ import com.atlassian.jira.security.JiraAuthenticationContext;
+ import com.atlassian.jira.security.PermissionManager;
+ import com.opensymphony.user.User;
+-import org.ofbiz.core.entity.GenericValue;
+-import org.ofbiz.core.entity.GenericEntityException;
+ 
+ import java.util.*;
+ 
+@@ -44,17 +42,17 @@
+     private final ConstantsManager constantsManager;
+     private final SearchProvider searchProvider;
+     private final ApplicationProperties applicationProperties;
+-    private final SearchRequestManager searchRequestManager;
++    private final SearchRequestService searchRequestService;
+ 
+     public FilterListPortlet(JiraAuthenticationContext authenticationContext, PermissionManager permissionManager, 
+                           ConstantsManager constantsManager, SearchProvider searchProvider, 
+-                          ApplicationProperties applicationProperties, SearchRequestManager searchRequestManager)  {
++                          ApplicationProperties applicationProperties, SearchRequestService searchRequestService)  {
+         super(authenticationContext);
+         this.permissionManager = permissionManager;
+         this.constantsManager = constantsManager;
+         this.searchProvider = searchProvider;
+         this.applicationProperties = applicationProperties;
+-        this.searchRequestManager = searchRequestManager;
++        this.searchRequestService = searchRequestService;
+     }
+ 
+     // Pass the data required for the portlet display to the view template
+@@ -84,16 +82,16 @@
+             String includeLinks = portletConfiguration.getProperty("filterlist-includelinks");
+             params.put("includeLinks", new Boolean("true".equals(includeLinks)) );
+ 
+-            String filterPrivate = portletConfiguration.getProperty("filterlist-includeprivate");
+-            String filterGroups  = portletConfiguration.getProperty("filterlist-includegroups");
+-            String filterGlobals = portletConfiguration.getProperty("filterlist-includeglobals");
++            String filterUserOwned = portletConfiguration.getProperty("filterlist-include-users");
++            String filterOtherOwned  = portletConfiguration.getProperty("filterlist-include-others");
+ 
+             String includeCounts = portletConfiguration.getProperty("filterlist-includecounts");
+             params.put("includeCounts", new Boolean("true".equals(includeCounts)) );
+ 
+             if(loggedIn) {
+                 // find ALL filters to start with. 
+-                List filters = this.searchRequestManager.getVisibleRequests( this.authenticationContext.getUser() );
++                User user = this.authenticationContext.getUser();
++                Collection filters = this.searchRequestService.getFavouriteFilters( user );
+ 
+                 if(filterIds != null && filters != null && filterIds.length != 0) {
+                   if( !(filterIds.length == 1 && filterIds[0].equals("")) ) {
+@@ -114,35 +112,26 @@
+                   }
+                 }
+ 
+-                boolean excludePrivate = "false".equals(filterPrivate);
+-                boolean excludeGroups  = "false".equals(filterGroups);
+-                boolean excludeGlobals = "false".equals(filterGlobals);
++                boolean excludeUserOwned = "false".equals(filterUserOwned);
++                boolean excludeOtherOwned  = "false".equals(filterOtherOwned);
+ 
+-                if(excludePrivate || excludeGroups || excludeGlobals) {
++                if(excludeUserOwned || excludeOtherOwned) {
+ 
+                     Iterator iterator = filters.iterator();
+                     while(iterator.hasNext()) {
+-                        GenericValue request = ((SearchRequest) iterator.next()).getSearchFilterGV();
+-                        String name = request.getString("name");
+-                        String user = request.getString("user");
+-                        String group = request.getString("group");
++                        SearchRequest request = (SearchRequest) iterator.next();
++                        String owner = request.getOwnerUserName();
+ 
+-                        // What about user!=null&group!=null??? Not possible?
+-                        if(excludeGlobals) {
+-                            if(user == null && group == null) {
++                        if(excludeOtherOwned) {
++                            if(!owner.equals(user.getName())) {
+                                 iterator.remove();
+                             }
+                         }
+-                        if(excludeGroups) {
+-                            if(group != null) {
++                        if(excludeUserOwned) {
++                            if(owner.equals(user.getName())) {
+                                 iterator.remove();
+                             }
+                         }
+-                        if(excludePrivate) {
+-                            if(user != null) {
+-                                iterator.remove();
+-                            }
+-                        }
+                     }
+                 }
+ 
+@@ -161,8 +150,6 @@
+                 }
+                 params.put("chosenFilters", filters);
+             }
+-        } catch(GenericEntityException gee) {
+-            gee.printStackTrace();
+         } catch(ObjectConfigurationException oce) {
+             oce.printStackTrace();
+         }
+Index: src/etc/atlassian-plugin.xml
+===================================================================
+--- src/etc/atlassian-plugin.xml	(revision 23170)
++++ src/etc/atlassian-plugin.xml	(revision 23171)
+@@ -17,7 +17,7 @@
+     <plugin-info>
+         <description>Filter List Plugin</description>
+         <version>1.1.2</version>
+-        <application-version min="3.0" max="3.0"/>
++        <application-version min="3.13" max="3.13"/>
+         <vendor name="SourceLabs" url="http://www.sourcelabs.com"/>
+     </plugin-info>
+ 
+@@ -75,57 +75,40 @@
+                 </values>
+             </property>
+             <property>
+-                <key>filterlist-includeprivate</key>
+-                <name>portlet.filterlist.field.filters.private.name</name>
+-                <description>portlet.filterlist.field.filters.private.description</description>
++                <key>filterlist-include-users</key>
++                <name>portlet.filterlist.field.filters.users.name</name>
++                <description>portlet.filterlist.field.filters.users.description</description>
+                 <type>select</type>
+                 <default>true</default>
+                 <values>
+                     <value>
+                         <key>true</key>
+-                        <value>portlet.filterlist.field.filters.private.true</value>
++                        <value>portlet.filterlist.field.filters.users.true</value>
+                     </value>
+                     <value>
+                         <key>false</key>
+-                        <value>portlet.filterlist.field.filters.private.false</value>
++                        <value>portlet.filterlist.field.filters.users.false</value>
+                     </value>
+                 </values>
+             </property>
+             <property>
+-                <key>filterlist-includegroups</key>
+-                <name>portlet.filterlist.field.filters.groups.name</name>
+-                <description>portlet.filterlist.field.filters.groups.description</description>
++                <key>filterlist-include-others</key>
++                <name>portlet.filterlist.field.filters.others.name</name>
++                <description>portlet.filterlist.field.filters.others.description</description>
+                 <type>select</type>
+                 <default>true</default>
+                 <values>
+                     <value>
+                         <key>true</key>
+-                        <value>portlet.filterlist.field.filters.groups.true</value>
++                        <value>portlet.filterlist.field.filters.others.true</value>
+                     </value>
+                     <value>
+                         <key>false</key>
+-                        <value>portlet.filterlist.field.filters.groups.false</value>
++                        <value>portlet.filterlist.field.filters.others.false</value>
+                     </value>
+                 </values>
+             </property>
+             <property>
+-                <key>filterlist-includeglobals</key>
+-                <name>portlet.filterlist.field.filters.globals.name</name>
+-                <description>portlet.filterlist.field.filters.globals.description</description>
+-                <type>select</type>
+-                <default>true</default>
+-                <values>
+-                    <value>
+-                        <key>true</key>
+-                        <value>portlet.filterlist.field.filters.globals.true</value>
+-                    </value>
+-                    <value>
+-                        <key>false</key>
+-                        <value>portlet.filterlist.field.filters.globals.false</value>
+-                    </value>
+-                </values>
+-            </property>
+-            <property>
+                 <key>filterlist-includecounts</key>
+                 <name>portlet.filterlist.field.filters.counts.name</name>
+                 <description>portlet.filterlist.field.filters.counts.description</description>
+Index: src/etc/com/sourcelabs/jira/plugin/portlets/filterlist/filterlist_portlet.properties
+===================================================================
+--- src/etc/com/sourcelabs/jira/plugin/portlets/filterlist/filterlist_portlet.properties	(revision 23170)
++++ src/etc/com/sourcelabs/jira/plugin/portlets/filterlist/filterlist_portlet.properties	(revision 23171)
+@@ -25,15 +25,11 @@
+ portlet.filterlist.field.filters.regexp.name = Filter list filter
+ portlet.filterlist.field.filters.regexp.description = A regular expression to filter the list of filters
+ portlet.filterlist.error.regex = Bad regex: {0}
+-portlet.filterlist.field.filters.private.name = Include Private Filters
+-portlet.filterlist.field.filters.private.description = Whether to include private filters owned by the logged in user
+-portlet.filterlist.field.filters.private.true = Yes
+-portlet.filterlist.field.filters.private.false = No
+-portlet.filterlist.field.filters.groups.name = Include Group Shared Filters
+-portlet.filterlist.field.filters.groups.description = Whether to include filters shared to groups the logged in user belongs to
+-portlet.filterlist.field.filters.groups.true = Yes
+-portlet.filterlist.field.filters.groups.false = No
+-portlet.filterlist.field.filters.globals.name = Include Global Filters
+-portlet.filterlist.field.filters.globals.description = Whether to include filters shared globally
+-portlet.filterlist.field.filters.globals.true = Yes
+-portlet.filterlist.field.filters.globals.false = No
++portlet.filterlist.field.filters.users.name = Include User's Filters
++portlet.filterlist.field.filters.users.description = Whether to include filters owned by the logged in user
++portlet.filterlist.field.filters.users.true = Yes
++portlet.filterlist.field.filters.users.false = No
++portlet.filterlist.field.filters.others.name = Include Other's Filters
++portlet.filterlist.field.filters.others.description = Whether to include filters owned by other users
++portlet.filterlist.field.filters.others.true = Yes
++portlet.filterlist.field.filters.others.false = No
+Index: src/etc/com/sourcelabs/jira/plugin/portlets/filterlist/filterlist_portlet_de.properties
+===================================================================
+--- src/etc/com/sourcelabs/jira/plugin/portlets/filterlist/filterlist_portlet_de.properties	(revision 23170)
++++ src/etc/com/sourcelabs/jira/plugin/portlets/filterlist/filterlist_portlet_de.properties	(revision 23171)
+@@ -24,3 +24,13 @@
+ portlet.filterlist.field.filters.counts.false = Nein
+ portlet.filterlist.field.filters.regexp.name = Einschränkung auf Filter
+ portlet.filterlist.field.filters.regexp.description = Regular Expression um eine Liste von Filtern zu filtern
++
++# Needs translating
++portlet.filterlist.field.filters.users.name = Include User's Filters
++portlet.filterlist.field.filters.users.description = Whether to include filters owned by the logged in user
++portlet.filterlist.field.filters.users.true = Ja
++portlet.filterlist.field.filters.users.false = Nein
++portlet.filterlist.field.filters.others.name = Include Other's Filters
++portlet.filterlist.field.filters.others.description = Whether to include filters owned by other users
++portlet.filterlist.field.filters.others.true = Ja
++portlet.filterlist.field.filters.others.false = Nein

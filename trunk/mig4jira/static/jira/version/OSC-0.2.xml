@@ -1,0 +1,13 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='OSC-7'>Support stored procedures</issue>
+    <issue status='Open' key='OSC-5'>FileStore needs to output csv</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='OSC-7'>Support stored procedures</issue>
+    <issue status='Closed' key='OSC-6'>NullStore should not print to console</issue>
+    <issue status='Closed' key='OSC-4'>Need to use log4j when FactoryUtils can&apos;t find an object</issue>
+    <issue status='Closed' key='OSC-1'>Rename PrinterStore to ConsoleStore</issue>
+  </fixes-issues>
+  <name>0.2</name>
+</version>

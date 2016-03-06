@@ -1,0 +1,18 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='SJN-39'>XML does not work well if at all in the 0.6 release.</issue>
+    <issue status='Closed' key='SJN-37'>Need to improve how site archiving is done</issue>
+    <issue status='Closed' key='SJN-36'>Remove &apos;Development Process&apos; link</issue>
+    <issue status='Closed' key='SJN-35'>Lies about how to access CVS on the website</issue>
+    <issue status='Closed' key='SJN-34'>Redirect old site over to new one</issue>
+    <issue status='Closed' key='SJN-33'>Unable to have DataSource files with more than 2 elements</issue>
+    <issue status='Closed' key='SJN-32'>Not possible to mix delimiters</issue>
+    <issue status='Closed' key='SJN-31'>Switch to Log4J</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-21'>Allow the standard simple-jndi properties to be modifiable</issue>
+    <issue status='Closed' key='SJN-4'>Write maven.xml to copy config into target/test-classes</issue>
+    <issue status='Closed' key='SJN-1'>Simple-JNDI parameters can be read through simple-jndi interface.</issue>
+  </fixes-issues>
+  <name>0.6</name>
+</version>

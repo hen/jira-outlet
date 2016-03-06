@@ -1,0 +1,51 @@
+<item>
+<title>[RRR-43] Description for each report and reportgroup</title>
+<link>http://issues.osjava.org/jira/browse/RRR-43</link>
+
+                    <description>Some way to add a longer description for each report/reportgroup.</description>
+                <environment/>
+            <key id='10317'>RRR-43</key>
+        <summary>Description for each report and reportgroup</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Nov 2004 14:27:48 -0800 (PST)</created>
+    <updated>Tue, 7 Dec 2004 16:45:09 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10284' created='Mon, 22 Nov 2004 14:31:35 -0800 (PST)'>Also for each param entry, possible also column. Basically I envision the description as a domain-level help system.</comment>
+                    <comment author='bayard' id='10291' created='Mon, 6 Dec 2004 14:21:40 -0800 (PST)'>Now there for ReportGroup and Reports.&lt;br/&gt;
+&lt;br/&gt;
+Still needed for Columns and Params.</comment>
+                    <comment author='bayard' id='10296' created='Tue, 7 Dec 2004 16:45:09 -0800 (PST)'>Creating a new issue for the params/columns parts.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

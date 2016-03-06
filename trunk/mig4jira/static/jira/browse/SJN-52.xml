@@ -1,0 +1,48 @@
+<item>
+<title>[SJN-52] Do conversion of values on parse and not on lookup?</title>
+<link>http://issues.osjava.org/jira/browse/SJN-52</link>
+
+                    <description>Currently the conversion occurs when a value is looked up and not when it is initially read in. It makes more sense to convert when you read in, though this slows down loading time.&lt;br/&gt;
+&lt;br/&gt;
+It would make th erest of the systme nicer as special variables like &apos;type&apos; do not have to be able to fit into the system. Optionally, every HierarcahialMap needs to have a Value for when values are set directlry on it. ie) Our nodes may be leafs too.</description>
+                <environment/>
+            <key id='10190'>SJN-52</key>
+        <summary>Do conversion of values on parse and not on lookup?</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 4 May 2004 21:26:29 -0700 (PDT)</created>
+    <updated>Wed, 30 May 2007 22:49:03 -0700 (PDT)</updated>
+
+                        <version>0.9.1</version>
+            
+                        <fixVersion>0.10</fixVersion>
+            
+                        <component>Converter</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10178' created='Tue, 4 May 2004 21:38:15 -0700 (PDT)'>Nope, bad idea. Instead will hold onto the type information in a value rather than doing lots of upfront conversion. Node&apos;s cannot be leafs too, this breaks JNDI.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

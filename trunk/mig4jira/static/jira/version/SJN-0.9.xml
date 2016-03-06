@@ -1,0 +1,12 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='SJN-49'>Unable to load a DS in jdbc/FooDS.properties</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-47'>Release and discuss the example Config class</issue>
+    <issue status='Closed' key='SJN-44'>Remove &apos;org.osjava.jndi.datasource&apos; code</issue>
+    <issue status='Closed' key='SJN-30'>Static memory</issue>
+    <issue status='Closed' key='SJN-27'>Allow values to be accessed over http</issue>
+  </fixes-issues>
+  <name>0.9</name>
+</version>

@@ -1,0 +1,65 @@
+<item>
+<title>[RRR-67] Named sql parameters</title>
+<link>http://issues.osjava.org/jira/browse/RRR-67</link>
+
+                    <description>Have another sql report, or an attribute or some such which allows for named parameters in sql and not just plain ? marks.&lt;br/&gt;
+&lt;br/&gt;
+This allows other parameters to not fuck up the sql report.&lt;br/&gt;
+&lt;br/&gt;
+It&apos;ll need trickery. Find indexes of all occurences of the named param, then go through and replace the named parameter for a ? or ?,?,? etc while maintaining the values array.&lt;br/&gt;
+&lt;br/&gt;
+Let&apos;s us lose the ?? hack too.</description>
+                <environment/>
+            <key id='10350'>RRR-67</key>
+        <summary>Named sql parameters</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 19 Jan 2005 14:50:41 -0800 (PST)</created>
+    <updated>Mon, 7 Feb 2005 12:08:14 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10339' created='Thu, 3 Feb 2005 22:45:33 -0800 (PST)'>Any subclasses of SqlReport will be affected by this change as execute becomes a final method in SqlReport. Instead you have to implement executeSql(DataSource).&lt;br/&gt;
+&lt;br/&gt;
+The advantage of this is that variants are handled for you.</comment>
+                    <comment author='bayard' id='10340' created='Thu, 3 Feb 2005 22:48:17 -0800 (PST)'>SqlReport split in half.&lt;br/&gt;
+&lt;br/&gt;
+Named parameters need implementation. Tempting to just handle them myself as it&apos;s not really that difficult. Another option would be to use jdbi.codehaus.org, though that adds another dependency.</comment>
+                    <comment author='bayard' id='10343' created='Mon, 7 Feb 2005 12:08:14 -0800 (PST)'>Implemented. I continue to use dbutils underneath, all that happens is that on top I convert the named parameter bits into question marks.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                    <customfield id='customfield_10000' key='com.atlassian.jira.plugin.system.customfieldtypes:select'>
+                    <customfieldname>Estimate</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue><![CDATA[HD - M]]></customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                        </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

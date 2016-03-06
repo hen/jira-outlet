@@ -1,0 +1,12 @@
+<user>
+  <login>mhill</login>
+  <name>Mike Hill</name>
+  <reported>
+    <issue status='Closed' key='SJN-69'>Does not load DataSource correctly when the name comes from the filename of the .properties/.xml file.</issue>
+    <issue status='Open' key='RRR-93'>Allow value fields to get assignments from scripting language evaluation.</issue>
+    <issue status='Open' key='RRR-92'>SQL Binding for &lt;columns&gt; tag.</issue>
+  </reported>
+  <assigned>
+    <issue status='Open' key='RRR-90'>Run ReportRunner outside of the servlet</issue>
+  </assigned>
+</user>

@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-64] Test the SPACE concept</title>
+<link>http://issues.osjava.org/jira/browse/SJN-64</link>
+
+                    <description>Test the SPACE concept, which should solve the java: problems people had</description>
+                <environment/>
+            <key id='10495'>SJN-64</key>
+        <summary>Test the SPACE concept</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:56:10 -0700 (PDT)</created>
+    <updated>Sun, 18 Mar 2007 17:45:55 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10420' created='Tue, 23 Aug 2005 19:48:10 -0700 (PDT)'>Tested with &lt;a href=&quot;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/EncTest.java?rev=1914&amp;view=log&quot;&gt;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/EncTest.java?rev=1914&amp;amp;view=log&lt;/a&gt;</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,93 @@
+<!-- Use macros to simplify this -->
+
+## COPIED FROM releasestatus.vm
+## This can go away when 3.10 is sufficiently in the past. It won't work in 3.7.3, I know that.
+## They changed the versionReleaseDate API. 
+#macro(myVersionReleaseDate $versionManager $version $)
+#if ($version.releaseDate)
+    #if ($version.isArchived() == true)
+        <span class="grey" title="$i18n.getText("version.releasedate")">$outlookdate.formatDMY($version.releaseDate)</span>
+    #elseif ($versionManager.isVersionOverDue($version) == true && $version.isReleased() == false)
+        <span class="warning" title="$i18n.getText("version.releasedate.past")">$outlookdate.formatDMY($version.releaseDate)</span>
+    #else
+        <span title="$i18n.getText("version.releasedate")">$outlookdate.formatDMY($version.releaseDate)</span>
+    #end
+#end
+#end
+
+
+#if ($latestVersions && $latestVersions.size() > 0)
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">$i18n.getText("portlet.releases.words.latest")</td>
+    </tr>
+            #foreach ($version in $latestVersions)
+                #set ($releaseURL = "$req.contextPath/secure/ReleaseNote.jspa?projectId=$version.project.id&styleName=Html&version=$version.id")
+                #set ($versionURL = "$req.contextPath/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id")
+                #set ($projectURL = "$req.contextPath/browse/$version.project.key")
+                <tr #if ($velocityCount % 2 == 1) class="rowNormal" #else class="rowAlternate" #end >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%" >
+                        <a title="$textutils.htmlEncode($version.getString('description'))" href="$versionURL">$textutils.htmlEncode($version.getString('name'))</a>
+                    </td>
+                    <td width="45%"><a title="$textutils.htmlEncode($version.project.description)" href="$projectURL">$textutils.htmlEncode($version.project.name)</a></td>
+                    <td width="10%"><a title="$i18n.getText('portlet.releases.releasenotes.description')" href="$releaseURL">#myVersionReleaseDate($versionManager $version)</a></td>
+                    </tr></table></td>
+                </tr>
+            #end
+</table>
+</td></tr>
+</table>
+#end
+
+#if ($futureVersions && $futureVersions.size() > 0)
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">$i18n.getText("portlet.releases.words.future")</td>
+    </tr>
+            #foreach ($version in $futureVersions)
+                #set ($releaseURL = "$req.contextPath/secure/ReleaseNote.jspa?projectId=$version.project.id&styleName=Html&version=$version.id")
+                #set ($versionURL = "$req.contextPath/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id")
+                #set ($projectURL = "$req.contextPath/browse/$version.project.key")
+                <tr #if ($velocityCount % 2 == 1) class="rowNormal" #else class="rowAlternate" #end >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%" >
+                        <a title="$textutils.htmlEncode($version.getString('description'))" href="$versionURL">$textutils.htmlEncode($version.getString('name'))</a>
+                    </td>
+                    <td width="45%"><a title="$textutils.htmlEncode($version.project.description)" href="$projectURL">$textutils.htmlEncode($version.project.name)</a></td>
+                    <td width="10%"><a title="$i18n.getText('portlet.releases.releasenotes.description')" href="$releaseURL">#myVersionReleaseDate($versionManager $version)</a></td>
+                    </tr></table></td>
+                </tr>
+            #end
+</table>
+</td></tr>
+</table>
+#end
+
+#if ($overdueVersions && $overdueVersions.size() > 0)
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">$i18n.getText("portlet.releases.words.overdue")</td>
+    </tr>
+            #foreach ($version in $overdueVersions)
+                #set ($releaseURL = "$req.contextPath/secure/ReleaseNote.jspa?projectId=$version.project.id&styleName=Html&version=$version.id")
+                #set ($versionURL = "$req.contextPath/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id")
+                #set ($projectURL = "$req.contextPath/browse/$version.project.key")
+                <tr #if ($velocityCount % 2 == 1) class="rowNormal" #else class="rowAlternate" #end >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="45%" >
+                        <a title="$textutils.htmlEncode($version.getString('description'))" href="$versionURL">$textutils.htmlEncode($version.getString('name'))</a>
+                    </td>
+                    <td width="45%"><a title="$textutils.htmlEncode($version.project.description)" href="$projectURL">$textutils.htmlEncode($version.project.name)</a></td>
+                    <td width="10%"><a title="$i18n.getText('portlet.releases.releasenotes.description')" href="$releaseURL">#myVersionReleaseDate($versionManager $version)</a></td>
+                    </tr></table></td>
+                </tr>
+            #end
+</table>
+</td></tr>
+</table>
+#end
+

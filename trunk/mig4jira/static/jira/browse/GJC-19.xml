@@ -1,0 +1,46 @@
+<item>
+<title>[GJC-19] Target is always the first argument in HtmlW/XmlW. </title>
+<link>http://issues.osjava.org/jira/browse/GJC-19</link>
+
+                    <description>This is a big binary incompatibility. The two String arguments to various methods will be rotated to make more sense. There were a few inconsistencies before, so this should unify the order of all arguments too.</description>
+                <environment/>
+            <key id='10229'>GJC-19</key>
+        <summary>Target is always the first argument in HtmlW/XmlW. </summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 18 Jun 2004 14:21:07 -0700 (PDT)</created>
+    <updated>Fri, 18 Jun 2004 14:27:22 -0700 (PDT)</updated>
+
+                        <version>scrape-1.0</version>
+            
+                        <fixVersion>scrape-2.0</fixVersion>
+            
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10205' created='Fri, 18 Jun 2004 14:27:22 -0700 (PDT)'>Committed. Tests pass etc.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

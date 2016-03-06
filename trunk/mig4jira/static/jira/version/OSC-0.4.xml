@@ -1,0 +1,8 @@
+<version>
+  <fixes-issues>
+    <issue status='Open' key='OSC-5'>FileStore needs to output csv</issue>
+    <issue status='Open' key='OSC-3'>Replace Store needed</issue>
+    <issue status='Open' key='OSC-2'>More features for the FileStore</issue>
+  </fixes-issues>
+  <name>0.4</name>
+</version>

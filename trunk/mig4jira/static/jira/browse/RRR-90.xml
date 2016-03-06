@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-90] Run ReportRunner outside of the servlet</title>
+<link>http://issues.osjava.org/jira/browse/RRR-90</link>
+
+                    <description>Be able to run reportrunner in Swing or command-line.</description>
+                <environment/>
+            <key id='10504'>RRR-90</key>
+        <summary>Run ReportRunner outside of the servlet</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='mhill'>Mike Hill</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 12 Sep 2005 12:35:16 -0700 (PDT)</created>
+    <updated>Mon, 12 Sep 2005 12:35:16 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

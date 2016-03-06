@@ -1,0 +1,48 @@
+<item>
+<title>[SCB-7] Add a FileStore concept so that scraped data may be saved</title>
+<link>http://issues.osjava.org/jira/browse/SCB-7</link>
+
+                    <description>FileStore would be able to handle InputStream, File, URL, byte[].</description>
+                <environment/>
+            <key id='10120'>SCB-7</key>
+        <summary>Add a FileStore concept so that scraped data may be saved</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 15 Nov 2003 16:34:22 -0800 (PST)</created>
+    <updated>Fri, 12 Dec 2003 11:14:23 -0800 (PST)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.1</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10090' created='Sat, 15 Nov 2003 16:35:42 -0800 (PST)'>File, URL, OutputStream all handled so far.&lt;br/&gt;
+&lt;br/&gt;
+Still need to do byte[] and to have the ability to save more than one file if it&apos;s a URL or File.</comment>
+                    <comment author='bayard' id='10120' created='Fri, 12 Dec 2003 11:14:23 -0800 (PST)'>Done. What&apos;s left will go in a new issue.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

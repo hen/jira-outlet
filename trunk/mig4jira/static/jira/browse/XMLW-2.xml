@@ -1,0 +1,41 @@
+<item>
+<title>[XMLW-2] Need to re-run Pete&apos;s benchmarks</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-2</link>
+
+                    <description>Pete&apos;s benchmarks are out of date. Also they don&apos;t include xmlenc. Need to get these updated, and the code added to osjava cvs.</description>
+                <environment/>
+            <key id='10094'>XMLW-2</key>
+        <summary>Need to re-run Pete&apos;s benchmarks</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 2 Sep 2003 21:40:40 -0700 (PDT)</created>
+    <updated>Tue, 2 Sep 2003 21:40:40 -0700 (PDT)</updated>
+
+                        <version>2.1</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

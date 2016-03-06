@@ -1,0 +1,41 @@
+<item>
+<title>[SJN-10] Keep the order of the .properties file.</title>
+<link>http://issues.osjava.org/jira/browse/SJN-10</link>
+
+                    <description>Use OrderedProperties class to maintain the order of the .properties file when read in. This is important when List functionality is added.</description>
+                <environment/>
+            <key id='10010'>SJN-10</key>
+        <summary>Keep the order of the .properties file.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:48:47 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:48:59 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

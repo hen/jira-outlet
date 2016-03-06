@@ -1,0 +1,44 @@
+<item>
+<title>[TRA-6] Add properties file to specify default values for attributes</title>
+<link>http://issues.osjava.org/jira/browse/TRA-6</link>
+
+                    <description>I assume in most applications, the delimiter in the trail should be the same on all pages. If it&apos;s not &apos;-&amp;gt;&apos;, it has to be specified in each and every page. Instead, it would be better to have a configuration file (e.g. trails-tag.properties) that provides the default delimiter. For example, I like &amp;amp;raquo; so I can put that in the configuration file, and only pages that require a different delimiter (can&apos;t think of any in my application) would use the overriding attribute of the list tag.&lt;br/&gt;
+&lt;br/&gt;
+The same is true for other attributes like showFinalDelimiter and type. &lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10532'>TRA-6</key>
+        <summary>Add properties file to specify default values for attributes</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='barakori'>Barak Ori</reporter>
+            
+    <created>Thu, 24 Nov 2005 03:09:45 -0800 (PST)</created>
+    <updated>Thu, 24 Nov 2005 03:09:45 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TRA'>Trail-Taglib</project>
+</item>

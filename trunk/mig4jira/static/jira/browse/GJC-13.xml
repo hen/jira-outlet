@@ -1,0 +1,45 @@
+<item>
+<title>[GJC-13] Pull io.find out into its own gj-find jar</title>
+<link>http://issues.osjava.org/jira/browse/GJC-13</link>
+
+                    <description>ClassIndex depends on it, which is a pain as that&apos;s not a very important class. io.find has no dependencies and will be nice and tight all on its own. ExtensionFileFilter should die, along with the hidden NameFilter and PathFilter to be replaced by Name and Path Filters that use Wildcards. </description>
+                <environment/>
+            <key id='10167'>GJC-13</key>
+        <summary>Pull io.find out into its own gj-find jar</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 16 Apr 2004 22:28:08 -0700 (PDT)</created>
+    <updated>Wed, 28 Apr 2004 21:02:13 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>core-3.1</fixVersion>
+            
+                        <component>gj-core</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10153' created='Wed, 28 Apr 2004 21:02:13 -0700 (PDT)'>find code taken out of gj-core and into gj-find.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

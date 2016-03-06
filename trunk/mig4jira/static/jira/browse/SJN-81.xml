@@ -1,0 +1,75 @@
+<item>
+<title>[SJN-81] Allow DBCP parameters to be passed in</title>
+<link>http://issues.osjava.org/jira/browse/SJN-81</link>
+
+                    <description>It was asked on the list:
+&lt;br/&gt;
+
+&lt;br/&gt;
+&amp;quot;The documentation says that simple-jndi uses DBCP to provide DataSource pooling. My question which may be the same as the thread before this is, &amp;quot;How can you set typical DBCP parameters when you set pooling=true?&amp;quot; For example, I&apos;d like to set validationQuery as well as MaxActive etc.&amp;quot;</description>
+                <environment/>
+            <key id='10761'>SJN-81</key>
+        <summary>Allow DBCP parameters to be passed in</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='-1'>Unassigned</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 22 Mar 2008 14:18:48 -0700 (PDT)</created>
+    <updated>Sat, 22 Mar 2008 14:44:17 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11.3</fixVersion>
+            
+                        <component>Converter</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10685' created='Sat, 22 Mar 2008 14:19:37 -0700 (PDT)'>svn ci -m &amp;quot;Improving so three DBCP parameters are supported as per &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-81&quot; title=&quot;Allow DBCP parameters to be passed in&quot;&gt;&lt;strike&gt;SJN-81&lt;/strike&gt;&lt;/a&gt;&amp;quot;
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/loader/PoolSetup.java
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/loader/SJDataSource.java
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/loader/convert/DataSourceConverter.java
+&lt;br/&gt;
+Sending        simple-jndi/src/test/config/pooltest/OneDS.properties
+&lt;br/&gt;
+Sending        simple-jndi/src/test/config/pooltest/TwoDS.properties
+&lt;br/&gt;
+Sending        simple-jndi/src/test/org/osjava/sj/loader/JndiLoaderTest.java
+&lt;br/&gt;
+Sending        simple-jndi/xdocs/manual/DataSources.xml
+&lt;br/&gt;
+Transmitting file data .......
+&lt;br/&gt;
+Committed revision 2659.</comment>
+                    <comment author='bayard' id='10686' created='Sat, 22 Mar 2008 14:21:37 -0700 (PDT)'>Doesn&apos;t do MaxActive yet.</comment>
+                    <comment author='bayard' id='10687' created='Sat, 22 Mar 2008 14:43:32 -0700 (PDT)'>svn ci -m &amp;quot;Adding support for the GenericObjectPool parameters as per &lt;a href=&quot;http://issues.osjava.org/jira/browse/SJN-81&quot; title=&quot;Allow DBCP parameters to be passed in&quot;&gt;&lt;strike&gt;SJN-81&lt;/strike&gt;&lt;/a&gt;&amp;quot;
+&lt;br/&gt;
+Sending        simple-jndi/src/java/org/osjava/sj/loader/PoolSetup.java
+&lt;br/&gt;
+Transmitting file data .
+&lt;br/&gt;
+Committed revision 2660.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

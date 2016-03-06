@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#JDF-1] Listing untrue differences between xmlwriter 2.1 and 2.2</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [JDF-1]&#xA0;Listing untrue differences between xmlwriter 2.1 and 2.2<br/><span class="subText">
+                   Created: Mon, 13 Feb 2006 09:21:38 -0800 (PST)                       &#xA0;Updated: Wed, 6 Jun 2007 08:43:18 -0700 (PDT)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Resolved</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="JDF.html">JarDiff</a></td></tr><tr><td><b>Component/s:</b></td><td></td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/JDF-.html"></a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/JDF-.html"></a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Bug</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/antony.html">Antony Riley</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Won't Fix</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">The diff report has lots of diffs for AbstractXmlWriter; a class that doesn't seem to have changed: <a href="http://dist.osjava.org/releases/multidoc-jnr/xmlwriter/diff-report-2.2_2.1.html">http://dist.osjava.org/releases/multidoc-jnr/xmlwriter/diff-report-2.2_2.1.html</a><br/>
+<br/>
+Based on jars:<br/>
+<br/>
+<a href="http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.1.jar">http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.1.jar</a><br/>
+<br/>
+and<br/>
+<br/>
+<a href="http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.2.jar">http://dist.osjava.org/maven/xmlwriter/jars/xmlwriter-2.2.jar</a></td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/antony.html">antony</a><font size="-2"> [ <font color="#336699">Mon, 13 Feb 2006 09:30:54 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">This is due to a compiler bug.<br/>
+<br/>
+Whatever compiler was used to compile xmlwriter 2.1 did not mark the methods it inserted as synthetic in AbstractXmlWriter.<br/>
+<br/>
+If the compiler doesn't insert the correct information at compile time, there is no way this can be reconstructed by jardiff.</td></tr></table></body></html>

@@ -1,0 +1,9 @@
+<user>
+  <login>barakori</login>
+  <name>Barak Ori</name>
+  <reported>
+    <issue status='Open' key='TRA-6'>Add properties file to specify default values for attributes</issue>
+    <issue status='Open' key='TRA-5'>Wrong implementation of hashCode in BreadCrumb</issue>
+    <issue status='Open' key='TRA-4'>Wrong attribute value for the list tag</issue>
+  </reported>
+</user>

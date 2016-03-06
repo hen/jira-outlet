@@ -1,0 +1,46 @@
+<item>
+<title>[SJN-65] Test COLON_REPLACE concept</title>
+<link>http://issues.osjava.org/jira/browse/SJN-65</link>
+
+                    <description>Test COLON_REPLACE concept, which should also solve the java: problems</description>
+                <environment/>
+            <key id='10496'>SJN-65</key>
+        <summary>Test COLON_REPLACE concept</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:56:25 -0700 (PDT)</created>
+    <updated>Tue, 23 Aug 2005 19:36:41 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10417' created='Tue, 23 Aug 2005 19:36:41 -0700 (PDT)'>Yup. Only useful for people who request &apos;java:/foo&apos; and not &apos;java:foo&apos;.&lt;br/&gt;
+&lt;br/&gt;
+Crap.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

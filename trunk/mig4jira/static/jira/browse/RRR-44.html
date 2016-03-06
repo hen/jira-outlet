@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#RRR-44] Need to be able to choose resources from a list</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [RRR-44]&#xA0;Need to be able to choose resources from a list<br/><span class="subText">
+                   Created: Mon, 6 Dec 2004 14:32:26 -0800 (PST)                       &#xA0;Updated: Tue, 7 Dec 2004 16:42:01 -0800 (PST)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="RRR.html">ReportRunner</a></td></tr><tr><td><b>Component/s:</b></td><td>Web Wizard</td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/RRR-0.3.html">0.3</a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/RRR-0.3.html">0.3</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Improvement</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">Rather than just having a report run on only one resource, it should be able to run against a list of options. Currently thinking that the resource attribute of a report would look something like:<br/>
+<br/>
+resource=&quot;JiraDS or ConfluenceDS&quot;.<br/>
+<br/>
+This won't scope well when people want to run a report that uses two resources though. <br/>
+<br/>
+***<br/>
+<br/>
+It's a param! Doh :) Though it has to be answered before the param page can, so maybe a new tag: &lt;resource-param name=&quot;SqlReportDS&quot; options=&quot;JiraDS,ConfluenceDS,RollerDS&quot;/&gt;<br/>
+<br/>
+This scopes nicely and can even replace the resource attribute of the report tag:<br/>
+<br/>
+&lt;resource-param name=&quot;SqlReportDS&quot; value=&quot;JiraDS&quot;/&gt; would replace resource=&quot;JiraDS&quot; in report tag.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Mon, 6 Dec 2004 18:02:22 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Half coded, and now needs recoding.<br/>
+<br/>
+The &lt;resource-param&gt; should be a part of a ReportGroup, not a Report.<br/>
+<br/>
+The Resource should use reflection to be set on the report. So SqlReport should have setSqlReportDS() as a method.<br/>
+<br/>
+The report xml may need nothing resource-wise...ponder.<br/>
+<br/>
+The jsp choice should happen in the same place as currently, ie) after the report is chosen.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Tue, 7 Dec 2004 16:42:01 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">This is implemented. Bit of cleanup to do, but I'll make that a new issue. The use tag needs to die in the reportrunner.xml and should just be a resource-param without options.</td></tr></table></body></html>

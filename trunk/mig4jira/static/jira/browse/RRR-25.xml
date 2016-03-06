@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-25] Reports should also have names and labels</title>
+<link>http://issues.osjava.org/jira/browse/RRR-25</link>
+
+                    <description>Probably going to be desirable to have a name and a label for a report as well as a renderer.</description>
+                <environment/>
+            <key id='10286'>RRR-25</key>
+        <summary>Reports should also have names and labels</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 5 Oct 2004 08:07:08 -0700 (PDT)</created>
+    <updated>Tue, 5 Oct 2004 09:07:27 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

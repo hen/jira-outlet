@@ -1,0 +1,42 @@
+<item>
+<title>[GJC-30] moveTo doesn&apos;t support the . or [] notiations</title>
+<link>http://issues.osjava.org/jira/browse/GJC-30</link>
+
+                    <description>should be able to moveTo(&amp;quot;td.a[href]&amp;quot;, &amp;quot;&lt;a href=&quot;http://www.osjava.org&quot;&gt;http://www.osjava.org&lt;/a&gt;&amp;quot;);</description>
+                <environment/>
+            <key id='10522'>GJC-30</key>
+        <summary>moveTo doesn&apos;t support the . or [] notiations</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 10 Nov 2005 14:54:23 -0800 (PST)</created>
+    <updated>Thu, 10 Nov 2005 14:54:23 -0800 (PST)</updated>
+
+                        <version>scrape-2.0.1</version>
+            
+                
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

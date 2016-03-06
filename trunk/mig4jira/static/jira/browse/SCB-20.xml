@@ -1,0 +1,43 @@
+<item>
+<title>[SCB-20] Sub-fetching should pass referrer of last page</title>
+<link>http://issues.osjava.org/jira/browse/SCB-20</link>
+
+                    <description>When using a page to get anotehr page, it shoudl set the referrer correctly.</description>
+                <environment/>
+            <key id='10246'>SCB-20</key>
+        <summary>Sub-fetching should pass referrer of last page</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 29 Jun 2004 12:12:21 -0700 (PDT)</created>
+    <updated>Sat, 24 May 2008 04:34:04 -0700 (PDT)</updated>
+
+                        <version>scraping-engine-0.3</version>
+            
+                        <fixVersion>scraping-engine-0.6</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

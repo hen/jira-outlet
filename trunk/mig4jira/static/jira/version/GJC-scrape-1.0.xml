@@ -1,0 +1,13 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='GJC-19'>Target is always the first argument in HtmlW/XmlW. </issue>
+    <issue status='Closed' key='GJC-18'>Add a scrape(String tag) method </issue>
+    <issue status='Closed' key='GJC-17'>Performance Bottleneck: extensive use of  toLowerCase in com.generationjava.web.HtmlW.getIndexOpeningTag</issue>
+    <issue status='Open' key='GJC-10'>Recode XmlW/HtmlW to be two different childish parsers</issue>
+    <issue status='Closed' key='GJC-7'>moveToTagWith called twice will find the first one again</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-2'>HtmlScraper needs to be case insensitive</issue>
+  </fixes-issues>
+  <name>scrape-1.0</name>
+</version>

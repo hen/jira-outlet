@@ -1,0 +1,46 @@
+<item>
+<title>[GJC-28] Create a generic HTML Table scraper</title>
+<link>http://issues.osjava.org/jira/browse/GJC-28</link>
+
+                    <description>It&apos;s job will be to find the first table tag and suck the entire table in. &lt;br/&gt;
+&lt;br/&gt;
+Possibly it should do this by creating a Table object, as currently hiding in genjava code somewhere. This Table object would be created from the HTML, and there would be a way to make a TabularResult from a Table object.</description>
+                <environment/>
+            <key id='10220'>GJC-28</key>
+        <summary>Create a generic HTML Table scraper</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 15 Jun 2004 22:38:24 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 21:27:06 -0700 (PDT)</updated>
+
+                
+                
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10377' created='Tue, 7 Jun 2005 11:29:34 -0700 (PDT)'>Submitted by Mike Hill. Will be in the next gj-scrape.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

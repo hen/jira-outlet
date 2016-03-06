@@ -1,0 +1,17 @@
+I hearby release all my rights to this static JIRA dumper into the public domain.
+
+Note the look and feel is derived from Atlassian's JIRA print CSS.
+
+It's nice to hear if you use it, but don't sweat it if you can't tell me.
+
+Files:
+
+data.sh
+index-html.xsl
+issue-html.xsl
+project-html.xsl
+run.sh
+split-xml.rb
+style.sh
+user-html.xsl
+version-html.xsl

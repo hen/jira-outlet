@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-77] Missing chosen-resource on jsp pages</title>
+<link>http://issues.osjava.org/jira/browse/RRR-77</link>
+
+                    <description>The choose-variants and enter-information pages do not show the currently chosen resource.</description>
+                <environment/>
+            <key id='10362'>RRR-77</key>
+        <summary>Missing chosen-resource on jsp pages</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Mar 2005 20:27:03 -0800 (PST)</created>
+    <updated>Sun, 10 Apr 2005 19:13:28 -0700 (PDT)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10352' created='Thu, 17 Mar 2005 20:57:26 -0800 (PST)'>Done</comment>
+                    <comment author='bayard' id='10360' created='Sun, 10 Apr 2005 19:13:27 -0700 (PDT)'>Fixed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

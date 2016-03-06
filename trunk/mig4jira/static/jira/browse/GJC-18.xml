@@ -1,0 +1,46 @@
+<item>
+<title>[GJC-18] Add a scrape(String tag) method </title>
+<link>http://issues.osjava.org/jira/browse/GJC-18</link>
+
+                    <description>Add a scrape(String tag) method creates a scraper on a piece of subtext.</description>
+                <environment/>
+            <key id='10228'>GJC-18</key>
+        <summary>Add a scrape(String tag) method </summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 18 Jun 2004 13:45:38 -0700 (PDT)</created>
+    <updated>Fri, 18 Jun 2004 14:43:25 -0700 (PDT)</updated>
+
+                        <version>scrape-1.0</version>
+            
+                        <fixVersion>scrape-2.0</fixVersion>
+            
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10206' created='Fri, 18 Jun 2004 14:43:25 -0700 (PDT)'>scrapeTag(String) added.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

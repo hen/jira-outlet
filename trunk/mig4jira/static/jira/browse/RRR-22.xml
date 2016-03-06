@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-22] Automatically choose renderer when only one</title>
+<link>http://issues.osjava.org/jira/browse/RRR-22</link>
+
+                    <description>If only one renderer available for a report, automatically redirect to the report runner.</description>
+                <environment/>
+            <key id='10283'>RRR-22</key>
+        <summary>Automatically choose renderer when only one</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 4 Oct 2004 20:46:33 -0700 (PDT)</created>
+    <updated>Fri, 19 Nov 2004 13:57:31 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10281' created='Fri, 19 Nov 2004 13:57:31 -0800 (PST)'>Naaah.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

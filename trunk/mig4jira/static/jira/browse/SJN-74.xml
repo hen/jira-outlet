@@ -1,0 +1,64 @@
+<item>
+<title>[SJN-74] Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 </title>
+<link>http://issues.osjava.org/jira/browse/SJN-74</link>
+
+                    <description>Simple-jndi has a dependency on Jakarta Commons DBCP version 1.1.  DBCP has a dependency on jdbc-stdext: version 2.0.  Their are a few way to resolve this. One way is to excluded the dependency in the projects pom.xml&lt;br/&gt;
+&lt;br/&gt;
+		&amp;lt;dependency&amp;gt;&lt;br/&gt;
+			&amp;lt;groupId&amp;gt;simple-jndi&amp;lt;/groupId&amp;gt;&lt;br/&gt;
+			&amp;lt;artifactId&amp;gt;simple-jndi&amp;lt;/artifactId&amp;gt;&lt;br/&gt;
+			&amp;lt;version&amp;gt;0.11.1&amp;lt;/version&amp;gt;&lt;br/&gt;
+			&amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;&lt;br/&gt;
+			&amp;lt;exclusions&amp;gt;&lt;br/&gt;
+				&amp;lt;exclusion&amp;gt;&lt;br/&gt;
+					&amp;lt;groupId&amp;gt;javax.sql&amp;lt;/groupId&amp;gt;&lt;br/&gt;
+					&amp;lt;artifactId&amp;gt;jdbc-stdext&amp;lt;/artifactId&amp;gt;&lt;br/&gt;
+				&amp;lt;/exclusion&amp;gt;&lt;br/&gt;
+			&amp;lt;/exclusions&amp;gt;&lt;br/&gt;
+		&amp;lt;/dependency&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+Please incorporate this into the documentation.&lt;br/&gt;
+&lt;br/&gt;
+Another way is for simple-jndi to upgrade to DBCP version 1.2.1</description>
+                <environment>Java 1.4_2_01&lt;br/&gt;
+Maven 2.0.4&lt;br/&gt;
+Windows XP</environment>
+            <key id='10597'>SJN-74</key>
+        <summary>Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 </summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='paulspencer'>Paul Spencer</reporter>
+            
+    <created>Thu, 13 Apr 2006 08:38:55 -0700 (PDT)</created>
+    <updated>Sat, 8 Mar 2008 02:42:18 -0800 (PST)</updated>
+
+                        <version>0.11.1</version>
+            
+                        <fixVersion>0.11.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10680' created='Sat, 8 Mar 2008 02:42:18 -0800 (PST)'>Upgraded to DBCP 1.2.2</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

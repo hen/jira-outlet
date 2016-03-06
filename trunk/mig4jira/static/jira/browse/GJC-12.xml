@@ -1,0 +1,44 @@
+<item>
+<title>[GJC-12] Link components on front page</title>
+<link>http://issues.osjava.org/jira/browse/GJC-12</link>
+
+                    <description>Front page&apos;s list of components does not link down to the sub-sites.</description>
+                <environment/>
+            <key id='10159'>GJC-12</key>
+        <summary>Link components on front page</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 8 Feb 2004 11:27:33 -0800 (PST)</created>
+    <updated>Wed, 28 Apr 2004 21:07:20 -0700 (PDT)</updated>
+
+                
+                
+                        <component>site</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10155' created='Wed, 28 Apr 2004 21:07:20 -0700 (PDT)'>This has now been committed to subversion.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

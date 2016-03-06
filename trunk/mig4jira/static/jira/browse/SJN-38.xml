@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-38] Inline all dependencies and see how it feels</title>
+<link>http://issues.osjava.org/jira/browse/SJN-38</link>
+
+                    <description>Grumbles at having lots of dependencies. Going to try and inline everything and see just how painful it is to manage. Quite painful I suspect.</description>
+                <environment/>
+            <key id='10114'>SJN-38</key>
+        <summary>Inline all dependencies and see how it feels</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 28 Sep 2003 20:58:27 -0700 (PDT)</created>
+    <updated>Sat, 13 Dec 2003 18:31:20 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.8</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10095' created='Fri, 21 Nov 2003 02:54:35 -0800 (PST)'>moving away from 0.7 release</comment>
+                    <comment author='bayard' id='10121' created='Sat, 13 Dec 2003 18:31:20 -0800 (PST)'>I won&apos;t be removing all dependencies, though 0.8 changes the dependencies around so that all are optional and dependent on the feature. The single simple-jndi jar should be enough to get most functionality, so the spirit of this issue is complete.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,49 @@
+<item>
+<title>[SJN-53] simple-jndi-0.5.pom is 0 sized in repo</title>
+<link>http://issues.osjava.org/jira/browse/SJN-53</link>
+
+                    <description>simple-jndi-0.5.pom is 0 sized in repo</description>
+                <environment/>
+            <key id='10242'>SJN-53</key>
+        <summary>simple-jndi-0.5.pom is 0 sized in repo</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 28 Jun 2004 12:39:30 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 14:09:26 -0700 (PDT)</updated>
+
+                        <version>0.9.1</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10220' created='Mon, 28 Jun 2004 18:02:18 -0700 (PDT)'>Removed from repo.&lt;br/&gt;
+&lt;br/&gt;
+Bit of an odd issue, there is no simple-jndi 0.5 release, but I do have a 0.4 pom. Sadly the dates don&apos;t match up.&lt;br/&gt;
+&lt;br/&gt;
+Very tempting to just remove evidence of 0.4 and 0.5 and sweep the issue under the carpet of forgetfulness.</comment>
+                    <comment author='bayard' id='10388' created='Tue, 2 Aug 2005 14:09:26 -0700 (PDT)'>Ignoring. There&apos;s no 0.5 branch available to replace it with and the immediate problem is fixed. </comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

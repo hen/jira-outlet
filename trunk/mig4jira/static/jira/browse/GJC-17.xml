@@ -1,0 +1,71 @@
+<item>
+<title>[GJC-17] Performance Bottleneck: extensive use of  toLowerCase in com.generationjava.web.HtmlW.getIndexOpeningTag</title>
+<link>http://issues.osjava.org/jira/browse/GJC-17</link>
+
+                    <description>Bottleneck in calling toLowerCase while getting tags, specifically in the com.generationjava.web.HtmlW class.</description>
+                <environment/>
+            <key id='10227'>GJC-17</key>
+        <summary>Performance Bottleneck: extensive use of  toLowerCase in com.generationjava.web.HtmlW.getIndexOpeningTag</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Fri, 18 Jun 2004 12:55:12 -0700 (PDT)</created>
+    <updated>Sat, 19 Jun 2004 11:16:20 -0700 (PDT)</updated>
+
+                        <version>scrape-1.0</version>
+            
+                        <fixVersion>scrape-2.0</fixVersion>
+            
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10203' created='Fri, 18 Jun 2004 13:47:18 -0700 (PDT)'>Going to go with the easy issue of adding a:&lt;br/&gt;
+&lt;br/&gt;
+tagsToLowerCase method onto HtmlW.&lt;br/&gt;
+&lt;br/&gt;
+HtmlScraper would then tagsToLowerCase on its scraping target.</comment>
+                    <comment author='bayard' id='10204' created='Fri, 18 Jun 2004 14:02:42 -0700 (PDT)'>Changed my mind. HtmlScraper will maintain a lower-cased version, jump to XmlW for optimal performance when possible and juggle things.&lt;br/&gt;
+&lt;br/&gt;
+Would be nice to get rid of the data variable in HtmlScraper and have it merely remember an index on the main page text. This will create quite a few method calls to substring, so that may hurt performance.</comment>
+                    <comment author='bayard' id='10207' created='Fri, 18 Jun 2004 15:21:24 -0700 (PDT)'>This is done. Will test in the originator&apos;s application (work colleague) to see if the modifications have created the necessary dramatic speed improvement.</comment>
+                    <comment author='bayard' id='10211' created='Sat, 19 Jun 2004 11:16:20 -0700 (PDT)'>First index is the number of tr tags, second is the number of td tags in them. Speed is massively improved.&lt;br/&gt;
+&lt;br/&gt;
+1.0&lt;br/&gt;
+==&lt;br/&gt;
+[1,1] 0:00:00.049&lt;br/&gt;
+[10,2] 0:00:00.201&lt;br/&gt;
+[100,5] 0:00:01.349&lt;br/&gt;
+[100,10] 0:00:03.522&lt;br/&gt;
+[250,5] 0:00:05.840&lt;br/&gt;
+&lt;br/&gt;
+2.0&lt;br/&gt;
+==&lt;br/&gt;
+[1,1] 0:00:00.048&lt;br/&gt;
+[10,2] 0:00:00.016&lt;br/&gt;
+[100,5] 0:00:00.148&lt;br/&gt;
+[100,10] 0:00:00.104&lt;br/&gt;
+[250,5] 0:00:00.027</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

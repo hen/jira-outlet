@@ -1,0 +1,49 @@
+<item>
+<title>[GJC-7] moveToTagWith called twice will find the first one again</title>
+<link>http://issues.osjava.org/jira/browse/GJC-7</link>
+
+                    <description>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scraper.moveToTagWith(&amp;quot;ALT&amp;quot;, &amp;quot;Today&apos;s Strip&amp;quot;);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;scraper.moveToTagWith(&amp;quot;ALT&amp;quot;, &amp;quot;Today&apos;s Strip&amp;quot;);&lt;br/&gt;
+&lt;br/&gt;
+does not correctly move to the second &apos;ALT=&amp;quot;Today&apos;s Strip&amp;quot;&apos; but finds the first one again.</description>
+                <environment/>
+            <key id='10129'>GJC-7</key>
+        <summary>moveToTagWith called twice will find the first one again</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 10 Dec 2003 13:57:33 -0800 (PST)</created>
+    <updated>Fri, 18 Jun 2004 15:46:49 -0700 (PDT)</updated>
+
+                        <version>scrape-1.0</version>
+            
+                        <fixVersion>scrape-2.0</fixVersion>
+            
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10210' created='Fri, 18 Jun 2004 15:46:49 -0700 (PDT)'>This should now be fixed. If the answer it gets is the same position, then it attempts to bump itself on to the next tag and starts again. If it fails to find anything, it returns back to the original position and returns false.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

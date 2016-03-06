@@ -1,0 +1,146 @@
+<item>
+<title>[SCB-24] Ability to specify the Fetcher to use</title>
+<link>http://issues.osjava.org/jira/browse/SCB-24</link>
+
+                    <description>Plugin ability for fetchers.</description>
+                <environment/>
+            <key id='10402'>SCB-24</key>
+        <summary>Ability to specify the Fetcher to use</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Aug 2005 18:24:42 -0700 (PDT)</created>
+    <updated>Wed, 17 Jan 2007 13:07:18 -0800 (PST)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.4</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10395' created='Tue, 9 Aug 2005 21:21:44 -0700 (PDT)'>FooScraper.fetcher=com.some.class.that.implements.Fetcher</comment>
+                    <comment author='cisco77' id='10541' created='Wed, 17 Jan 2007 13:07:18 -0800 (PST)'>&lt;a href=&quot;http://miniurl.pl/21191&quot;&gt;http://miniurl.pl/21191&lt;/a&gt;&lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21192&quot;&gt;http://miniurl.pl/21192&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21194&quot;&gt;http://miniurl.pl/21194&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21195&quot;&gt;http://miniurl.pl/21195&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21196&quot;&gt;http://miniurl.pl/21196&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21197&quot;&gt;http://miniurl.pl/21197&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21198&quot;&gt;http://miniurl.pl/21198&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21199&quot;&gt;http://miniurl.pl/21199&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21200&quot;&gt;http://miniurl.pl/21200&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21201&quot;&gt;http://miniurl.pl/21201&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21202&quot;&gt;http://miniurl.pl/21202&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21203&quot;&gt;http://miniurl.pl/21203&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21204&quot;&gt;http://miniurl.pl/21204&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21205&quot;&gt;http://miniurl.pl/21205&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21206&quot;&gt;http://miniurl.pl/21206&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21207&quot;&gt;http://miniurl.pl/21207&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21208&quot;&gt;http://miniurl.pl/21208&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21209&quot;&gt;http://miniurl.pl/21209&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21210&quot;&gt;http://miniurl.pl/21210&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21211&quot;&gt;http://miniurl.pl/21211&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21212&quot;&gt;http://miniurl.pl/21212&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21213&quot;&gt;http://miniurl.pl/21213&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21214&quot;&gt;http://miniurl.pl/21214&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21215&quot;&gt;http://miniurl.pl/21215&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21216&quot;&gt;http://miniurl.pl/21216&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21217&quot;&gt;http://miniurl.pl/21217&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21218&quot;&gt;http://miniurl.pl/21218&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21219&quot;&gt;http://miniurl.pl/21219&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21220&quot;&gt;http://miniurl.pl/21220&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21221&quot;&gt;http://miniurl.pl/21221&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21222&quot;&gt;http://miniurl.pl/21222&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21223&quot;&gt;http://miniurl.pl/21223&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21224&quot;&gt;http://miniurl.pl/21224&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21225&quot;&gt;http://miniurl.pl/21225&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21226&quot;&gt;http://miniurl.pl/21226&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21227&quot;&gt;http://miniurl.pl/21227&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21228&quot;&gt;http://miniurl.pl/21228&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21229&quot;&gt;http://miniurl.pl/21229&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21230&quot;&gt;http://miniurl.pl/21230&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21231&quot;&gt;http://miniurl.pl/21231&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21232&quot;&gt;http://miniurl.pl/21232&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21233&quot;&gt;http://miniurl.pl/21233&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21234&quot;&gt;http://miniurl.pl/21234&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21235&quot;&gt;http://miniurl.pl/21235&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21236&quot;&gt;http://miniurl.pl/21236&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21237&quot;&gt;http://miniurl.pl/21237&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21238&quot;&gt;http://miniurl.pl/21238&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21239&quot;&gt;http://miniurl.pl/21239&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21240&quot;&gt;http://miniurl.pl/21240&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21241&quot;&gt;http://miniurl.pl/21241&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21242&quot;&gt;http://miniurl.pl/21242&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21243&quot;&gt;http://miniurl.pl/21243&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21244&quot;&gt;http://miniurl.pl/21244&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21245&quot;&gt;http://miniurl.pl/21245&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21246&quot;&gt;http://miniurl.pl/21246&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21248&quot;&gt;http://miniurl.pl/21248&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21249&quot;&gt;http://miniurl.pl/21249&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21250&quot;&gt;http://miniurl.pl/21250&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21251&quot;&gt;http://miniurl.pl/21251&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21252&quot;&gt;http://miniurl.pl/21252&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21253&quot;&gt;http://miniurl.pl/21253&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21254&quot;&gt;http://miniurl.pl/21254&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21255&quot;&gt;http://miniurl.pl/21255&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21257&quot;&gt;http://miniurl.pl/21257&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21258&quot;&gt;http://miniurl.pl/21258&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21259&quot;&gt;http://miniurl.pl/21259&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21260&quot;&gt;http://miniurl.pl/21260&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21261&quot;&gt;http://miniurl.pl/21261&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21262&quot;&gt;http://miniurl.pl/21262&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21263&quot;&gt;http://miniurl.pl/21263&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21264&quot;&gt;http://miniurl.pl/21264&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21265&quot;&gt;http://miniurl.pl/21265&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21266&quot;&gt;http://miniurl.pl/21266&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21267&quot;&gt;http://miniurl.pl/21267&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21268&quot;&gt;http://miniurl.pl/21268&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21269&quot;&gt;http://miniurl.pl/21269&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21270&quot;&gt;http://miniurl.pl/21270&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21271&quot;&gt;http://miniurl.pl/21271&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21272&quot;&gt;http://miniurl.pl/21272&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21273&quot;&gt;http://miniurl.pl/21273&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21274&quot;&gt;http://miniurl.pl/21274&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21275&quot;&gt;http://miniurl.pl/21275&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21276&quot;&gt;http://miniurl.pl/21276&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21277&quot;&gt;http://miniurl.pl/21277&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21278&quot;&gt;http://miniurl.pl/21278&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21279&quot;&gt;http://miniurl.pl/21279&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21280&quot;&gt;http://miniurl.pl/21280&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21281&quot;&gt;http://miniurl.pl/21281&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21282&quot;&gt;http://miniurl.pl/21282&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21283&quot;&gt;http://miniurl.pl/21283&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21284&quot;&gt;http://miniurl.pl/21284&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21285&quot;&gt;http://miniurl.pl/21285&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21286&quot;&gt;http://miniurl.pl/21286&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21288&quot;&gt;http://miniurl.pl/21288&lt;/a&gt; &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21289&quot;&gt;http://miniurl.pl/21289&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21290&quot;&gt;http://miniurl.pl/21290&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21291&quot;&gt;http://miniurl.pl/21291&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21292&quot;&gt;http://miniurl.pl/21292&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21293&quot;&gt;http://miniurl.pl/21293&lt;/a&gt;  &lt;br/&gt;
+&lt;a href=&quot;http://miniurl.pl/21294&quot;&gt;http://miniurl.pl/21294&lt;/a&gt;  &lt;br/&gt;
+</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

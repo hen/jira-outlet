@@ -1,0 +1,48 @@
+<item>
+<title>[GJC-33] CSV outputs with the wrong line endings on Windows</title>
+<link>http://issues.osjava.org/jira/browse/GJC-33</link>
+
+                    <description>When outputting a CSV file on Windows, the resulting file has Unix-style (\n) line endings instead of Windows-style (\r\n) line endings.&lt;br/&gt;
+&lt;br/&gt;
+In addition, CsvWriter.setBlockDelimiter() doesn&apos;t permit sending in a multi-character string, to override this behaviour.&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10610'>GJC-33</key>
+        <summary>CSV outputs with the wrong line endings on Windows</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='trejkaz'>Trejkaz</reporter>
+            
+    <created>Tue, 6 Jun 2006 17:36:50 -0700 (PDT)</created>
+    <updated>Tue, 26 Feb 2008 03:14:46 -0800 (PST)</updated>
+
+                        <version>csv-1.0</version>
+            
+                
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10671' created='Tue, 26 Feb 2008 03:14:46 -0800 (PST)'>Not as easy as it should be - the parser in CsvReader is char-based [ie: reads one char at a time] and would need work to get it to spot the \r\n when reading. Easy enough to change CsvWriter to output, but without a matching CsvReader I&apos;m hesitant to do that.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

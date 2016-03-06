@@ -1,0 +1,15 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='SJN-18'>NumberConverter needs to know what type was desired</issue>
+    <issue status='Closed' key='SJN-3'>Unable to use simple-jndi on Windows with standard java naming</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-20'>simple-jndi sees System.getProperty first</issue>
+    <issue status='Closed' key='SJN-19'>Allow users to bind variables</issue>
+    <issue status='Closed' key='SJN-17'>Implement Number converter</issue>
+    <issue status='Closed' key='SJN-16'>Implement BooleanConverter</issue>
+    <issue status='Closed' key='SJN-15'>URLConverter</issue>
+    <issue status='Closed' key='SJN-14'>Implement basic converter system</issue>
+  </fixes-issues>
+  <name>0.5</name>
+</version>

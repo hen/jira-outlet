@@ -1,0 +1,53 @@
+<item>
+<title>[NRB-3] isUrlAllowed gets confused by ending /</title>
+<link>http://issues.osjava.org/jira/browse/NRB-3</link>
+
+                    <description>Tesd Mielczarek has found a bug:&lt;br/&gt;
+&lt;br/&gt;
+java.lang.IllegalArgumentException: Illegal to use a&lt;br/&gt;
+different url, &lt;a href=&quot;http://cnnfn.multexinvestor.com,&quot;&gt;http://cnnfn.multexinvestor.com,&lt;/a&gt;  for this robots.txt:&lt;br/&gt;
+&lt;a href=&quot;http://cnnfn.multexinvestor.com/&quot;&gt;http://cnnfn.multexinvestor.com/&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+in isUrlAllowed.&lt;br/&gt;
+&lt;br/&gt;
+His suggested fix is to switch the code checking this from String based to URL based. Sounds good to me, but first step is to get a unit test that breaks.</description>
+                <environment/>
+            <key id='10115'>NRB-3</key>
+        <summary>isUrlAllowed gets confused by ending /</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 25 Oct 2003 17:22:11 -0700 (PDT)</created>
+    <updated>Sat, 25 Oct 2003 17:51:06 -0700 (PDT)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.1.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10077' created='Sat, 25 Oct 2003 17:51:06 -0700 (PDT)'>Test added to prove 0.1 has the bug, and fix applied to the source code.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

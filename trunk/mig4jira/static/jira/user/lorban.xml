@@ -1,0 +1,7 @@
+<user>
+  <login>lorban</login>
+  <name>Ludovic Orban</name>
+  <reported>
+    <issue status='Closed' key='SJN-77'>InitialContext.close() improperly throws exception when using JNDI Memory implementation separately</issue>
+  </reported>
+</user>

@@ -1,0 +1,48 @@
+<item>
+<title>[SJN-55] Add support for javax.naming.event</title>
+<link>http://issues.osjava.org/jira/browse/SJN-55</link>
+
+                    <description>Can support for package javax.naming.event be added? This package defines the means for a JNDI provider to alert listeners of JNDI changes, as well as defining the means for JNDI users to subscribe/unsubscribe to JNDI events.&lt;br/&gt;
+&lt;br/&gt;
+See &lt;a href=&quot;http://java.sun.com/j2se/1.3/docs/api/javax/naming/event/package-summary.html&quot;&gt;http://java.sun.com/j2se/1.3/docs/api/javax/naming/event/package-summary.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment>all</environment>
+            <key id='10261'>SJN-55</key>
+        <summary>Add support for javax.naming.event</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Tue, 21 Sep 2004 11:19:14 -0700 (PDT)</created>
+    <updated>Mon, 22 Aug 2005 14:52:06 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10244' created='Wed, 22 Sep 2004 19:46:03 -0700 (PDT)'>Seems cool. Will add it to the list.</comment>
+                    <comment author='bayard' id='10409' created='Mon, 22 Aug 2005 14:52:06 -0700 (PDT)'>Figure you can ponder this one Robert :)</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

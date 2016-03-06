@@ -1,0 +1,8 @@
+<user>
+  <login>paulspencer</login>
+  <name>Paul Spencer</name>
+  <reported>
+    <issue status='Closed' key='SJN-75'>Using simple-jndi for testing with Maven 2</issue>
+    <issue status='Closed' key='SJN-74'>Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 </issue>
+  </reported>
+</user>

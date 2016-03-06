@@ -1,0 +1,8 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='SJN-9'>Add classpath protocol</issue>
+    <issue status='Closed' key='SJN-8'>Default for root should be the classpath</issue>
+    <issue status='Closed' key='SJN-7'>Allow delimiter in search values to be configurable.</issue>
+  </fixes-issues>
+  <name>0.3</name>
+</version>

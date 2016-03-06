@@ -1,0 +1,45 @@
+<item>
+<title>[SCB-21] Ability to scrape ftp:// urls</title>
+<link>http://issues.osjava.org/jira/browse/SCB-21</link>
+
+                    <description>Need a plugin to fetch from ftp locations.</description>
+                <environment/>
+            <key id='10399'>SCB-21</key>
+        <summary>Ability to scrape ftp:// urls</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Aug 2005 18:21:26 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 20:41:07 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.4</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10394' created='Tue, 9 Aug 2005 20:38:19 -0700 (PDT)'>Not had a chance to test the username/passwd part, but anonymous ftping works.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

@@ -1,0 +1,52 @@
+<item>
+<title>[SJN-45] XML variant cannot handle multiple properties to make a List</title>
+<link>http://issues.osjava.org/jira/browse/SJN-45</link>
+
+                    <description>&amp;lt;shopping payment=&amp;quot;cash&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;item&amp;gt;orange&amp;lt;/item&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;item&amp;gt;apple&amp;lt;/item&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;item&amp;gt;ice cream&amp;lt;/item&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;item&amp;gt;potatoes&amp;lt;/item&amp;gt;&lt;br/&gt;
+&amp;lt;/shopping&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+only returns &apos;potatoes&apos; when asked for shopping/item.</description>
+                <environment/>
+            <key id='10140'>SJN-45</key>
+        <summary>XML variant cannot handle multiple properties to make a List</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 3 Jan 2004 15:59:26 -0800 (PST)</created>
+    <updated>Sat, 3 Jan 2004 16:08:58 -0800 (PST)</updated>
+
+                        <version>0.7</version>
+            
+                        <fixVersion>0.8</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10129' created='Sat, 3 Jan 2004 16:08:57 -0800 (PST)'>Fixed by making XmlProperties dependent on the same code the other two use, ie) adding AbstractProperties.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

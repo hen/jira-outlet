@@ -1,0 +1,45 @@
+<item>
+<title>[OSC-6] NullStore should not print to console</title>
+<link>http://issues.osjava.org/jira/browse/OSC-6</link>
+
+                    <description>Make NullStore a proper Null patterned object.</description>
+                <environment/>
+            <key id='10391'>OSC-6</key>
+        <summary>NullStore should not print to console</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 1 Aug 2005 13:45:16 -0700 (PDT)</created>
+    <updated>Mon, 1 Aug 2005 15:41:45 -0700 (PDT)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10382' created='Mon, 1 Aug 2005 15:41:45 -0700 (PDT)'>Committed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

@@ -1,0 +1,45 @@
+<item>
+<title>[OSC-1] Rename PrinterStore to ConsoleStore</title>
+<link>http://issues.osjava.org/jira/browse/OSC-1</link>
+
+                    <description/>
+                <environment/>
+            <key id='10132'>OSC-1</key>
+        <summary>Rename PrinterStore to ConsoleStore</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 12 Dec 2003 11:19:46 -0800 (PST)</created>
+    <updated>Thu, 29 Apr 2004 19:28:39 -0700 (PDT)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10165' created='Thu, 29 Apr 2004 19:28:37 -0700 (PDT)'>Done. Various .properties files will need updating.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

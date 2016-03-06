@@ -1,0 +1,70 @@
+<item>
+<title>[RRR-73] Improve applet to work in java 1.4</title>
+<link>http://issues.osjava.org/jira/browse/RRR-73</link>
+
+                    <description>The applet for jfreecharting currently only works in 1.5 due to crappiness on my part.</description>
+                <environment/>
+            <key id='10357'>RRR-73</key>
+        <summary>Improve applet to work in java 1.4</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Feb 2005 14:37:54 -0800 (PST)</created>
+    <updated>Mon, 14 Feb 2005 09:17:30 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10346' created='Fri, 11 Feb 2005 17:49:02 -0800 (PST)'>Figured it out!!#!$%!&lt;br/&gt;
+&lt;br/&gt;
+It&apos;s a bug in the JVM(?). You can&apos;t deserialize a java.util.Timezone in an Applet under 1.4. It breaks permissions to talk to sun.util.Calendar. Odd that you can deserialize a java.util.Calendar.&lt;br/&gt;
+&lt;br/&gt;
+Solutions?&lt;br/&gt;
+&lt;br/&gt;
+* Upgrade to 1.5&lt;br/&gt;
+* Sign applet&lt;br/&gt;
+* Modify 1.4 security model&lt;br/&gt;
+* Change JFreeChart</comment>
+                    <comment author='bayard' id='10347' created='Mon, 14 Feb 2005 09:15:34 -0800 (PST)'>Security change is to add:&lt;br/&gt;
+&lt;br/&gt;
+    // HACK for ReportRunner under JDK 1.4.x&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;permission java.lang.RuntimePermission &amp;quot;accessClassInPackage.sun.util.calendar&amp;quot;;&lt;br/&gt;
+&lt;br/&gt;
+to the JAVA_HOME/lib/security/java.policy</comment>
+                    <comment author='bayard' id='10348' created='Mon, 14 Feb 2005 09:17:30 -0800 (PST)'>As fixed as it&apos;s going to get.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                    <customfield id='customfield_10000' key='com.atlassian.jira.plugin.system.customfieldtypes:select'>
+                    <customfieldname>Estimate</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue><![CDATA[EZ - M]]></customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                        </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

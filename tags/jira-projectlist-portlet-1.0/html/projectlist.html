@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Project List Plugin for JIRA</title>
+  <style media="screen" type="text/css">
+body {
+    margin: 2em 1em 2em 70px;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+}
+th, td {
+  font-family: sans-serif;
+}
+
+h1,h4 { color: #5a9c00 }
+h1 { font: 170% sans-serif }
+h4 { font: bold 100% sans-serif }
+  </style>  
+</head>
+<body>
+<h1>Project List Plugin for JIRA</h1>
+<p>Created by <a href="http://www.yandell.org/henri/">Henri Yandell</a> at <a href="http://www.sourcelabs.com/">SourceLabs, Inc.</a>. </p>
+<img src="images/ProjectList1.png"/>
+<h4>Legal bit</h4>
+<p>Released under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a> and Copyright 2007 SourceLabs, Inc. </p>
+<p>This project uses the excellent <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com Silk icons</a>. </p>
+<h4>About the plugin</h4>
+<p>A portlet for the JIRA dashboard that provides a concise way to list a set of projects. </p>
+<p>Its expected use case is for saving real estate on big JIRA installations - specifically public ones such as the <a href="http://issues.apache.org/jira/">Apache JIRA</a> and the <a href="http://jira.codehaus.org/">Codehaus JIRA</a>. </p>
+<p>It provides the following functionality: </p>
+<ul>
+<li>Display the projects in a HTML &lt;select&gt;</li>
+<li>Filter the HTML &lt;select&gt; by category</li>
+<li>Hidden tabular display that lets you drill down into the categories and projects</li>
+<li>Further filter the list of projects down via a regular expression or a list of project keys</li>
+</ul>
+<p>Version 1.0 was released on the 5th of April 2007. </p>
+<h4>Installing &amp; Using</h4>
+<p>Install the plugin by downloading the <a href="http://dist.sourcelabs.org/projectlist/sourcelabs-jira-plugin-portlet-projectlist-1.0.jar">plugin jar</a>, place it in your <code>$JIRA/WEB-INF/lib/</code> and giving your JIRA a restart. </p>
+<p>Once it's installed you can add it to your dashboard by selecting the <code>Selected Filter List</code> portlet. Please follow the instructions from Atlassian for configuring your <a href="http://www.atlassian.com/software/jira/docs/latest/dashboard.html">personal dashboard</a> or the <a href="http://www.atlassian.com/software/jira/docs/latest/default_dashboard.html">default dashboard</a>. </p>
+<p>The source is available for perusing by downloading the <a href="http://dist.sourcelabs.org/projectlist/jira-projectlist-portlet-1.0-src.zip">source zip</a> and unpacking. </p>
+<h4>Complaints, bugs, ideas...</h4>
+<p>Please mail these to me at henri-at-sourcelabs.com, or add them as comments to the <a href="http://confluence.atlassian.com/display/JIRAEXT/Project+List+Plugin">JIRA plugin page</a>. </p>
+<h4>Screenshots</h4>
+<p>Initially, the portlet will look something like this when a user hits a page: </p>
+<img src="images/ProjectList4.png"/>
+<p>By clicking on the <code>[show &gt;&gt;]<code> link, they can open up the tabular view and get something that looks like this: </p>
+<img src="images/ProjectList2.png"/>
+<p>On a private JIRA - ie) one which does not allow anonymous users to see projects, the portlet will currently look as follows: </p>
+<img src="images/ProjectList3.png"/>
+</body>
+</html>

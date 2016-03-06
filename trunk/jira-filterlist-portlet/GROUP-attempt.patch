@@ -1,0 +1,112 @@
+Index: src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java
+===================================================================
+--- src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java	(revision 23281)
++++ src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java	(working copy)
+@@ -23,38 +23,41 @@
+ import com.atlassian.jira.issue.search.SearchRequest;
+ import com.atlassian.jira.portal.PortletConfiguration;
+ import com.atlassian.jira.portal.PortletImpl;
+-import com.atlassian.jira.issue.search.SearchRequestManager;
++import com.atlassian.jira.bc.filter.SearchRequestService;
+ import com.atlassian.jira.issue.search.SearchException;
+ import com.atlassian.jira.security.JiraAuthenticationContext;
+ import com.atlassian.jira.security.PermissionManager;
++import com.atlassian.jira.sharing.SharePermission;
+ import com.opensymphony.user.User;
+-import org.ofbiz.core.entity.GenericValue;
+-import org.ofbiz.core.entity.GenericEntityException;
+ 
+ import java.util.*;
+ 
++import org.apache.log4j.Logger;
++
+ /**
+  * This portlet displays a hardcoded list of filters in a drop-down.
+  */
+ public class FilterListPortlet extends PortletImpl
+ {
+ 
++    private final Logger logger = Logger.getLogger(FilterListPortlet.class);
++
+     // References to managers required for this portlet
+     private final PermissionManager permissionManager;
+     private final ConstantsManager constantsManager;
+     private final SearchProvider searchProvider;
+     private final ApplicationProperties applicationProperties;
+-    private final SearchRequestManager searchRequestManager;
++    private final SearchRequestService searchRequestService;
+ 
+     public FilterListPortlet(JiraAuthenticationContext authenticationContext, PermissionManager permissionManager, 
+                           ConstantsManager constantsManager, SearchProvider searchProvider, 
+-                          ApplicationProperties applicationProperties, SearchRequestManager searchRequestManager)  {
++                          ApplicationProperties applicationProperties, SearchRequestService searchRequestService)  {
+         super(authenticationContext);
+         this.permissionManager = permissionManager;
+         this.constantsManager = constantsManager;
+         this.searchProvider = searchProvider;
+         this.applicationProperties = applicationProperties;
+-        this.searchRequestManager = searchRequestManager;
++        this.searchRequestService = searchRequestService;
+     }
+ 
+     // Pass the data required for the portlet display to the view template
+@@ -92,8 +95,8 @@
+             params.put("includeCounts", new Boolean("true".equals(includeCounts)) );
+ 
+             if(loggedIn) {
+-                // find ALL filters to start with. 
+-                List filters = this.searchRequestManager.getVisibleRequests( this.authenticationContext.getUser() );
++                User user = this.authenticationContext.getUser();
++                Collection filters = this.searchRequestService.getFavouriteFilters( user );
+ 
+                 if(filterIds != null && filters != null && filterIds.length != 0) {
+                   if( !(filterIds.length == 1 && filterIds[0].equals("")) ) {
+@@ -122,24 +125,26 @@
+ 
+                     Iterator iterator = filters.iterator();
+                     while(iterator.hasNext()) {
+-                        GenericValue request = ((SearchRequest) iterator.next()).getSearchFilterGV();
+-                        String name = request.getString("name");
+-                        String user = request.getString("user");
+-                        String group = request.getString("group");
++                        SearchRequest request = (SearchRequest) iterator.next();
++                        System.err.println("PERMS: " + request.getPermissions());
++                        Set perms = request.getPermissions().getPermissionSet();
+ 
+-                        // What about user!=null&group!=null??? Not possible?
+-                        if(excludeGlobals) {
+-                            if(user == null && group == null) {
++                        if(perms.size() > 1) {
++                            logger.warn("Expected only one permission, found: " + perms.size() + " - " + perms);
++                            continue;
++                        }
++                        
++                        if(perms.size() == 0) {
++                            if(excludePrivate) {
+                                 iterator.remove();
+                             }
+-                        }
+-                        if(excludeGroups) {
+-                            if(group != null) {
++                        } else {
++                            SharePermission perm = (SharePermission) perms.iterator().next();
++                            System.err.println(perm.getType().toString());
++                            if(excludeGlobals && perm.getType().toString().equals("global") ) {
+                                 iterator.remove();
+                             }
+-                        }
+-                        if(excludePrivate) {
+-                            if(user != null) {
++                            if(excludeGroups && perm.getType().toString().equals("group") ) {
+                                 iterator.remove();
+                             }
+                         }
+@@ -161,8 +166,6 @@
+                 }
+                 params.put("chosenFilters", filters);
+             }
+-        } catch(GenericEntityException gee) {
+-            gee.printStackTrace();
+         } catch(ObjectConfigurationException oce) {
+             oce.printStackTrace();
+         }

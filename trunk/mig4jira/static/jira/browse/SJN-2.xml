@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-2] Can org.osjava.jndi.datasource be obtained as shown in the Examples?</title>
+<link>http://issues.osjava.org/jira/browse/SJN-2</link>
+
+                    <description/>
+                <environment/>
+            <key id='10001'>SJN-2</key>
+        <summary>Can org.osjava.jndi.datasource be obtained as shown in the Examples?</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 10:10:49 -0700 (PDT)</created>
+    <updated>Fri, 6 Feb 2004 12:05:05 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10000' created='Thu, 17 Jul 2003 10:11:16 -0700 (PDT)'>It appears so. Need to write a unit test.</comment>
+                    <comment author='bayard' id='10098' created='Fri, 21 Nov 2003 02:59:40 -0800 (PST)'>Needs to be in the next version as a part of the move to improve quality of docs.</comment>
+                    <comment author='bayard' id='10144' created='Fri, 6 Feb 2004 12:05:05 -0800 (PST)'>This feature was deprecated in 0.8, and is gone in 0.9.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

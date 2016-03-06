@@ -1,0 +1,58 @@
+<item>
+<title>[GJC-2] HtmlScraper needs to be case insensitive</title>
+<link>http://issues.osjava.org/jira/browse/GJC-2</link>
+
+                    <description>Need to make HtmlScraper case insensitive.&lt;br/&gt;
+&lt;br/&gt;
+The solution for this ought to be to create two strings, one with a lowercased version and one with an uppercase version?&lt;br/&gt;
+&lt;br/&gt;
+When looking at tags, always look at lowercase one, when returning a section or looking at values, use the normal one. Writing some unit tests ought to help a lot here.</description>
+                <environment/>
+            <key id='10097'>GJC-2</key>
+        <summary>HtmlScraper needs to be case insensitive</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Sep 2003 19:59:39 -0700 (PDT)</created>
+    <updated>Sun, 14 Sep 2003 20:54:53 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scrape-1.0</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10055' created='Sun, 14 Sep 2003 20:54:53 -0700 (PDT)'>Case insensitivity seems to work now :) Unit tested and all. The basics anyway.</comment>
+                </comments>
+    
+    <issuelinks>
+                <issuelinktype id='10000'>
+            <name>Depends on</name>
+                                        <inwardlinks description='is depended on by'>
+                            <issuelink>
+            <issuekey id='10103'>GJC-3</issuekey>
+        </issuelink>
+                    </inwardlinks>
+                    </issuelinktype>
+            </issuelinks>
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

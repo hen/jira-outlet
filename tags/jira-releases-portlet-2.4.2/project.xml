@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+    <pomVersion>3</pomVersion>
+
+    <extend>atlassian-jira-${jiraversion}.pom</extend>
+    <groupId>com.sourcelabs.jira</groupId>
+    <artifactId>sourcelabs-jira-plugin-portlet-releases</artifactId>
+    <name>Releases Plugin for JIRA</name>
+    <currentVersion>2.4.2</currentVersion>
+    <package>com.sourcelabs.jira.plugin.portlet.releases</package>
+    <description>Release information plugins for the JIRA front page.</description>
+  <repository>
+    <connection>scm:svn:https://svn.sourcelabs.org/repos/source/plugins-for-jira/jira-releases-portlet/trunk</connection>
+  </repository>
+  <issueTrackingUrl>https://jira.sourcelabs.org/jira/browse/RSP</issueTrackingUrl>
+
+  <dependencies>
+    <dependency>
+      <id>atlassian-jira</id>
+      <version>${jiraversion}</version>
+    </dependency>
+  </dependencies>
+
+    <build>
+        <sourceDirectory>src/java</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/etc/</directory>
+                <include>atlassian-plugin.xml</include>
+                <include>**/*.vm</include>
+            </resource>
+        </resources>
+        <unitTestSourceDirectory>test/java</unitTestSourceDirectory>
+        <unitTest>
+            <includes>
+                <include>**/*Test.java</include>
+                <include>**/Test*.java</include>
+            </includes>
+            <excludes>
+                <exclude>**/Abstract*.java</exclude>
+            </excludes>
+            <resources>
+                <resource>
+                    <directory>test/etc</directory>
+                </resource>
+            </resources>
+        </unitTest>
+    </build>
+</project>

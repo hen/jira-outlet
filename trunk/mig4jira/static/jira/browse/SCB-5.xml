@@ -1,0 +1,45 @@
+<item>
+<title>[SCB-5] Add the PrinterStore, a store that prints out</title>
+<link>http://issues.osjava.org/jira/browse/SCB-5</link>
+
+                    <description>One question is how to know which stream to print to. It could just be a simple-jndi configuration again.</description>
+                <environment/>
+            <key id='10098'>SCB-5</key>
+        <summary>Add the PrinterStore, a store that prints out</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 6 Sep 2003 20:03:21 -0700 (PDT)</created>
+    <updated>Sat, 6 Sep 2003 20:17:51 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.1</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10050' created='Sat, 6 Sep 2003 20:17:51 -0700 (PDT)'>It&apos;s in there.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

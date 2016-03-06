@@ -1,0 +1,42 @@
+<item>
+<title>[OSC-2] More features for the FileStore</title>
+<link>http://issues.osjava.org/jira/browse/OSC-2</link>
+
+                    <description>Still need to do byte[] and to have the ability to save more than one file if it&apos;s a URL or File. </description>
+                <environment/>
+            <key id='10131'>OSC-2</key>
+        <summary>More features for the FileStore</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 12 Dec 2003 11:15:32 -0800 (PST)</created>
+    <updated>Sun, 8 Apr 2007 23:53:39 -0700 (PDT)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

@@ -1,0 +1,13 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='PAY-21'>Not possible to store an empty directory in Payload</issue>
+    <issue status='Closed' key='PAY-20'>Change packages</issue>
+    <issue status='Closed' key='PAY-19'>Create FileRemoverPaylet</issue>
+    <issue status='Closed' key='PAY-18'>Create JarSignerPaylet</issue>
+    <issue status='Closed' key='PAY-17'>Create paylet.jar sucking in PayloadContractor</issue>
+    <issue status='Closed' key='PAY-16'>Create paylet execution in PayloadExtractor</issue>
+    <issue status='Closed' key='PAY-15'>Create interface structure</issue>
+    <issue status='Closed' key='PAY-14'>Paylets</issue>
+  </fixes-issues>
+  <name>0.5</name>
+</version>

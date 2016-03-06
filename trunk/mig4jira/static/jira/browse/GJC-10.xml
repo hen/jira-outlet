@@ -1,0 +1,47 @@
+<item>
+<title>[GJC-10] Recode XmlW/HtmlW to be two different childish parsers</title>
+<link>http://issues.osjava.org/jira/browse/GJC-10</link>
+
+                    <description>XmlW and HtmlW are pretty much the same except that HtmlW is case insensitive and has more in the way of escaping. These should probably be split so you can have HtmlW escaping with case sensitive parsing, not that it is really parsing, just lots of indexOf trickery.&lt;br/&gt;
+&lt;br/&gt;
+Also need to check which of the removeXml methods are correct. XmlW&apos;s has an extra continue statement and is probably the more correct. </description>
+                <environment/>
+            <key id='10145'>GJC-10</key>
+        <summary>Recode XmlW/HtmlW to be two different childish parsers</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 21 Jan 2004 00:06:55 -0800 (PST)</created>
+    <updated>Fri, 18 Jun 2004 15:22:41 -0700 (PDT)</updated>
+
+                        <version>scrape-1.0</version>
+            
+                
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10208' created='Fri, 18 Jun 2004 15:22:41 -0700 (PDT)'>Assuming the continue XmlW variant is correct, so killed HtmlW&apos;s remove method. Rest of this is being left for a later release.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

@@ -1,0 +1,43 @@
+<item>
+<title>[TGT-6] Implement an object factory</title>
+<link>http://issues.osjava.org/jira/browse/TGT-6</link>
+
+                    <description>Implement a ThreadFactory.  This appears to be the &apos;way things are done&apos; with JNDI rather than the set/create methods that currently exist in the ThreadContext.</description>
+                <environment/>
+            <key id='10326'>TGT-6</key>
+        <summary>Implement an object factory</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='tigran'>Robert M. Zigweid</reporter>
+            
+    <created>Thu, 16 Dec 2004 18:18:49 -0800 (PST)</created>
+    <updated>Thu, 16 Dec 2004 18:18:49 -0800 (PST)</updated>
+
+                        <version>1.1</version>
+            
+                        <fixVersion>2.1</fixVersion>
+            
+                        <component>Threading</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TGT'>OSJava Threads</project>
+</item>

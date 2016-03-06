@@ -1,0 +1,44 @@
+<item>
+<title>[XMLW-4] Need to link old sf site to the new one, so people can see old docs</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-4</link>
+
+                    <description>The current site needs to link over to the old sf site as the v1.0 site. &lt;br/&gt;
+Could be useful etc. Just need to modify maven and regenerate.</description>
+                <environment/>
+            <key id='10105'>XMLW-4</key>
+        <summary>Need to link old sf site to the new one, so people can see old docs</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 15 Sep 2003 21:30:23 -0700 (PDT)</created>
+    <updated>Wed, 17 Dec 2003 07:37:26 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10124' created='Wed, 17 Dec 2003 07:37:26 -0800 (PST)'>Actually, not going to do.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

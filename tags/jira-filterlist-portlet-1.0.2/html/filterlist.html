@@ -1,0 +1,76 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Filter List Plugin for JIRA</title>
+  <style media="screen" type="text/css">
+body {
+    margin: 2em 1em 2em 70px;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+}
+th, td {
+  font-family: sans-serif;
+}
+
+h1,h4 { color: #5a9c00 }
+h1 { font: 170% sans-serif }
+h4 { font: bold 100% sans-serif }
+  </style>  
+</head>
+<body>
+<h1>Filter List Plugin for JIRA</h1>
+<p>Created by <a href="http://www.yandell.org/henri/">Henri Yandell</a> at <a href="http://www.sourcelabs.com/">SourceLabs, Inc.</a>. </p>
+<img src="images/filterdropdown2.png"/>
+<h4>Legal bit</h4>
+<p>Released under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a> and Copyright 2007 SourceLabs, Inc. </p>
+<p>This project uses the excellent <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com Silk icons</a>. </p>
+<h4>About the plugin</h4>
+<p>This is a simple portlet for the JIRA dashboard that replaces the "Saved Filters" portlet. </p>
+<p>Its expected use case is for saving screen real-estate, and for sharing a selected set of filters amongst all users. </p>
+<p>It adds the following new functionality: </p>
+<ul>
+<li>Define the Filters you want to view, rather than having to view all filters</li>
+<li>Display filters in a HTML &lt;select&gt; or a HTML &lt;table&gt;</li>
+<li>Optionally display filter counts and/or filter management links</li>
+<li>Further filter the list of filters down via a regular expression</li>
+</ul>
+<p>Version 1.0.2 was released on 28th of March 2007. It contained:</p>
+<ul>
+<li>A bugfix for clicking on the Go link when nothing is selected</li>
+<li>i18n of the Create New/Manage Filter links</li>
+<li>Switch to a famfamfam icon for the Go button</li>
+</ul>
+<p>Version 1.0.1 was released on 21st of March 2007. It contained a bugfix for the create-new/manage links when the web context is not <code>/jira</code>. </p>
+<p>Version 1.0 was released on 16th of March 2007. </p>
+<h4>Installing &amp; Using</h4>
+<p>Install the plugin by downloading the <a href="http://dist.sourcelabs.org/filterlist/sourcelabs-jira-plugin-portlet-filterlist-1.0.2.jar">plugin jar</a>, place it in your <code>$JIRA/WEB-INF/lib/</code> and giving your JIRA a restart. </p>
+<p>Once it's installed you can add it to your dashboard by selecting the <code>Selected Filter List</code> portlet. Please follow the instructions from Atlassian for configuring your <a href="http://www.atlassian.com/software/jira/docs/latest/dashboard.html">personal dashboard</a> or the <a href="http://www.atlassian.com/software/jira/docs/latest/default_dashboard.html">default dashboard</a>. </p>
+<p>The source is available for perusing by downloading the <a href="http://dist.sourcelabs.org/filterlist/jira-filterlist-portlet-1.0.2-src.zip">source zip</a> and unpacking. </p>
+<h4>Complaints, bugs, ideas...</h4>
+<p>Please mail these to me at henri-at-sourcelabs.com, or add them as comments to the <a href="http://confluence.atlassian.com/display/JIRAEXT/Filter+List+Plugin">JIRA plugin page</a>. </p>
+<h4>Screenshots</h4>
+<p>Here's a HTML &lt;table&gt; with just four filters selected: </p>
+<img src="images/filterlist.png"/>
+<p>Here's a screenshot of the HTML &lt;select&gt; at work: </p>
+<img src="images/filterdropdown2.png"/>
+<p>And here's the configuration page, so you can be wowed by the feature list: </p>
+<img src="images/filterconfig.png"/>
+<h4>Previously Asked Questions</h4>
+<dl>
+<dt>* What's a Regexp?</dt>
+<dd>
+<p>A regexp, or regular expression, is a syntax for doing pattern matching. It's hugely powerful (and surprisingly easier to hook up than wildcards or getting simple text searching to feel right). If you find yourselves getting into them, I highly recommend <a href="http://regex.info/">Jeffrey Friedl's</a> definitive work on the topic. I do recognize however that the most common uses will be wildcard-like or simple-text like, so here are a few examples:</p>
+<ul>
+<li>simple text search for the word Triage - .*Triage.*</li>
+<li>simple text search for starting with the word Triage - Triage.*</li>
+<li>simple text search for starting with the word Triage or triage - [tT]riage.*</li>
+</ul>
+<br/>
+</dd>
+<dt>* Where do I get filter ids?</dt>
+<dd>
+<p>The easiest way is to click on the Manage Filters link and mouseover the links to the filters. The <code>requestId</code> parameter in the url is the id you want. I know it would be better to just have a list of filter names so people can choose from those, but that would mean a lot of work to then allow the ordering to be defined. </p>
+</dd>
+</body>
+</html>

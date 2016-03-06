@@ -1,0 +1,43 @@
+<item>
+<title>[SJN-28] Confirm that .jars and .zips in the classpath work okay with the lookup</title>
+<link>http://issues.osjava.org/jira/browse/SJN-28</link>
+
+                    <description>Just in case there&apos;s some kind of problem</description>
+                <environment/>
+            <key id='10028'>SJN-28</key>
+        <summary>Confirm that .jars and .zips in the classpath work okay with the lookup</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:40:57 -0700 (PDT)</created>
+    <updated>Tue, 4 May 2004 12:03:35 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10175' created='Tue, 4 May 2004 12:03:35 -0700 (PDT)'>I like bumping this one back. It&apos;s a rainy day task.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

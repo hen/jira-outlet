@@ -1,0 +1,49 @@
+<item>
+<title>[RRR-24] Same named reports clash</title>
+<link>http://issues.osjava.org/jira/browse/RRR-24</link>
+
+                    <description>If two reports have the same name, then only one hits the front page. ie) the name is being used as a key.&lt;br/&gt;
+&lt;br/&gt;
+This may not be fixable, may just be the way it works.</description>
+                <environment/>
+            <key id='10285'>RRR-24</key>
+        <summary>Same named reports clash</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 5 Oct 2004 08:05:37 -0700 (PDT)</created>
+    <updated>Fri, 19 Nov 2004 13:58:29 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10282' created='Fri, 19 Nov 2004 13:58:29 -0800 (PST)'>S&apos;the point of a bloody id. Even if I call it &apos;name&apos;. Sod &apos;em.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

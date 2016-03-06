@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-91] Remove gj-xml dependency</title>
+<link>http://issues.osjava.org/jira/browse/RRR-91</link>
+
+                    <description>Switch ReportFactory from gj-xml to DOM</description>
+                <environment/>
+            <key id='10505'>RRR-91</key>
+        <summary>Remove gj-xml dependency</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='eric'>Eric Alexander</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 12 Sep 2005 13:02:18 -0700 (PDT)</created>
+    <updated>Mon, 12 Sep 2005 13:02:18 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

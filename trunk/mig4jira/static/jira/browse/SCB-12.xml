@@ -1,0 +1,46 @@
+<item>
+<title>[SCB-12] Move the example UrlScraper into the main distro so everyone may use it</title>
+<link>http://issues.osjava.org/jira/browse/SCB-12</link>
+
+                    <description>Move the example UrlScraper into the main distro so everyone may use it</description>
+                <environment/>
+            <key id='10212'>SCB-12</key>
+        <summary>Move the example UrlScraper into the main distro so everyone may use it</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Jun 2004 11:16:24 -0700 (PDT)</created>
+    <updated>Thu, 3 Jun 2004 11:20:37 -0700 (PDT)</updated>
+
+                        <version>scraping-engine-0.2</version>
+            
+                        <fixVersion>scraping-engine-0.3</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10197' created='Thu, 3 Jun 2004 11:20:37 -0700 (PDT)'>Tis there.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

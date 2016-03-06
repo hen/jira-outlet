@@ -1,0 +1,41 @@
+<item>
+<title>[SJN-12] Support XML as the underlying data format</title>
+<link>http://issues.osjava.org/jira/browse/SJN-12</link>
+
+                    <description>Now supported using the GenJava XMLNode parser.</description>
+                <environment/>
+            <key id='10012'>SJN-12</key>
+        <summary>Support XML as the underlying data format</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:50:31 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:50:38 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

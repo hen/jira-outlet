@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-45] Cleanup the reportrunner.xml schema</title>
+<link>http://issues.osjava.org/jira/browse/RRR-45</link>
+
+                    <description>The use tag needs to die in the reportrunner.xml and should just be a resource-param without options.</description>
+                <environment/>
+            <key id='10321'>RRR-45</key>
+        <summary>Cleanup the reportrunner.xml schema</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 7 Dec 2004 16:42:40 -0800 (PST)</created>
+    <updated>Thu, 16 Dec 2004 16:41:28 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10301' created='Thu, 16 Dec 2004 16:41:28 -0800 (PST)'>The xml is fixed up, though underneath the resource-params are modeled differently depending on whether they have a value attribute or not.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

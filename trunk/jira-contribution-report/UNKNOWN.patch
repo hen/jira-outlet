@@ -1,0 +1,84 @@
+Index: src/java/com/atlassian/jira/plugin/report/contribution/ContributionReport.java
+===================================================================
+--- src/java/com/atlassian/jira/plugin/report/contribution/ContributionReport.java	(revision 36633)
++++ src/java/com/atlassian/jira/plugin/report/contribution/ContributionReport.java	(working copy)
+@@ -46,6 +46,8 @@
+ import org.apache.log4j.Logger;
+ import org.ofbiz.core.entity.EntityOperator;
+ 
++import org.apache.commons.lang.StringUtils;
++
+ import java.util.*;
+ 
+ public class ContributionReport extends AbstractReport {
+@@ -76,7 +78,7 @@
+         // Retrieve the project parameter
+         Long projectId = ParameterUtils.getLongParam(params, "selectedProjectId");
+         // Retrieve the version id
+-        Long versionId = ParameterUtils.getLongParam(params, "versionId");
++        List versionIds = ParameterUtils.makeListLong(ParameterUtils.getListParam(params, "versionId"));
+         // What type of issues to show
+         String issueStatus = ParameterUtils.getStringParam(params, "issueStatus");
+ 
+@@ -86,14 +88,23 @@
+             return descriptor.getHtml("view", new HashMap());  // can I send an error instead??
+         }
+ 
+-        Version version = this.versionManager.getVersion(versionId);
++        String versionStr = null;
+ 
+         // Retrieve list of issues for this project/version
+         SearchRequest sr = new SearchRequest(remoteUser);
+         sr.addParameter(new ProjectParameter(project.getId()));
+-        if(version != null) {
+-            ArrayList list = new ArrayList(1);
+-            list.add(version);
++        if(versionIds != null) {
++            ArrayList list = new ArrayList(versionIds.size());
++            String[] names = new String[versionIds.size()];
++            Iterator itr = versionIds.iterator();
++            while(itr.hasNext()) {
++                Long versionId = (Long) itr.next();
++                Version version = this.versionManager.getVersion(versionId);
++                if(version != null) {
++                    list.add(version);
++                }
++            }
++            versionStr = StringUtils.join(names, ", ");
+             sr.addParameter(new FixForParameter(list));
+         }
+         // TODO: Move onto PagerFilters and off of this deprecated API
+@@ -202,7 +213,7 @@
+         // Pass the issues to the velocity template
+         Map velocityParams = new HashMap();
+         velocityParams.put("project", project);
+-        velocityParams.put("version", version);
++        velocityParams.put("versionText", versionStr);
+         velocityParams.put("contributions", contributionList);
+ 
+         if("open".equals(issueStatus)) {
+Index: src/etc/atlassian-plugin.xml
+===================================================================
+--- src/etc/atlassian-plugin.xml	(revision 36633)
++++ src/etc/atlassian-plugin.xml	(working copy)
+@@ -31,7 +31,7 @@
+                 <key>versionId</key>
+                 <name>report.contribution.versionid.name</name>
+                 <description>report.contribution.versionid.description</description>
+-                <type>select</type>
++                <type>multiselect</type>
+                 <values class="com.sourcelabs.jira.plugin.report.contribution.ContributionVersionValuesGenerator"/>
+             </property>
+             <property>
+Index: src/etc/templates/contribution-report.vm
+===================================================================
+--- src/etc/templates/contribution-report.vm	(revision 36633)
++++ src/etc/templates/contribution-report.vm	(working copy)
+@@ -1,6 +1,6 @@
+ <div class="borderedBox">
+     <h2 class="formtitle">
+-      $!project.name #if($version) - $version.name #end
++      $!project.name #if($versionText) - $versionText #end
+     </h2>
+     <table width="100%" border="1">
+       <tr>

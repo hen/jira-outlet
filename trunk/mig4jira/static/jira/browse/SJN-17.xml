@@ -1,0 +1,42 @@
+<item>
+<title>[SJN-17] Implement Number converter</title>
+<link>http://issues.osjava.org/jira/browse/SJN-17</link>
+
+                    <description>Turns a String into a Number if of type java.lang.Number.</description>
+                <environment/>
+            <key id='10017'>SJN-17</key>
+        <summary>Implement Number converter</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:56:33 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:56:46 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                        <component>Converter</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,11 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='TGT-7'>Unit tests</issue>
+    <issue status='Open' key='TGT-6'>Implement an object factory</issue>
+    <issue status='Closed' key='TGT-5'>ThreadManager, AbstractExtendedRunnable, ExtendedThread and ExtendedThreadGroup should be uncloneable</issue>
+    <issue status='Closed' key='TGT-4'>Add methods to allow properly created threads to the ThreadManager.</issue>
+    <issue status='Closed' key='TGT-3'>Rename getAbort() to isAborting()</issue>
+    <issue status='Open' key='TGT-1'>Add Thread Pooling</issue>
+  </affects-issues>
+  <name>1.1</name>
+</version>

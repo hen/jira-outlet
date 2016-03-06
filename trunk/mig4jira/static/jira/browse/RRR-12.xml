@@ -1,0 +1,74 @@
+<item>
+<title>[RRR-12] widget system</title>
+<link>http://issues.osjava.org/jira/browse/RRR-12</link>
+
+                    <description>hook a widget system up to the types used in converting&lt;br/&gt;
+&lt;br/&gt;
+calendar widget is an immediate.&lt;br/&gt;
+possibly a js validated number widget too</description>
+                <environment/>
+            <key id='10273'>RRR-12</key>
+        <summary>widget system</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:40:49 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 21:10:07 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10247' created='Sun, 3 Oct 2004 09:04:02 -0700 (PDT)'>Going to go ahead and use &lt;a href=&quot;http://www.dynarch.com/projects/calendar/,&quot;&gt;http://www.dynarch.com/projects/calendar/,&lt;/a&gt; though it is LGPL which sucks muchly and may need something else.&lt;br/&gt;
+&lt;br/&gt;
+Little slow. Seems to be all inlinable as a single widget, but that may not work well in other browsers than Firefox.&lt;br/&gt;
+&lt;br/&gt;
+Does not seem to work in Safari.</comment>
+                    <comment author='bayard' id='10251' created='Mon, 4 Oct 2004 09:26:03 -0700 (PDT)'>&lt;a href=&quot;http://www.softcomplex.com/products/tigra_calendar/&quot;&gt;http://www.softcomplex.com/products/tigra_calendar/&lt;/a&gt; (commercial, but sweet feature-set)&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.totallysmartit.com/examples/calendar/simple.asp&quot;&gt;http://www.totallysmartit.com/examples/calendar/simple.asp&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.phpguru.org/static/dyncalendar.html&quot;&gt;http://www.phpguru.org/static/dyncalendar.html&lt;/a&gt; (allegedly BSD)&lt;br/&gt;
+&lt;br/&gt;
+tempting to take a BSD one, and start adapting it to have the feature-set of the Tigra one.</comment>
+                    <comment author='bayard' id='10335' created='Thu, 3 Feb 2005 13:02:43 -0800 (PST)'>Velocity will allow for a nice plugin system I believe.</comment>
+                    <comment author='bayard' id='10337' created='Thu, 3 Feb 2005 13:03:23 -0800 (PST)'>Fixing this would allow for comma separated inputs in a textfield for an Integer[] rather than having to use a drop-down.</comment>
+                    <comment author='bayard' id='10392' created='Tue, 2 Aug 2005 21:10:07 -0700 (PDT)'>Pseudo-fixed the comma-separated inputs by pretending a widget system existed and hardcoding that one widget.</comment>
+                </comments>
+    
+    <issuelinks>
+                <issuelinktype id='10000'>
+            <name>Depends on</name>
+                            <outwardlinks description='depends on'>
+                            <issuelink>
+            <issuekey id='10278'>RRR-17</issuekey>
+        </issuelink>
+                    </outwardlinks>
+                                </issuelinktype>
+            </issuelinks>
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

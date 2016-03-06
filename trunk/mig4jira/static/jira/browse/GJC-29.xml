@@ -1,0 +1,42 @@
+<item>
+<title>[GJC-29] Allow users to move backwards</title>
+<link>http://issues.osjava.org/jira/browse/GJC-29</link>
+
+                    <description>Allow a moveBackTo, moveBack, moveBack(int -1) etc type of methods. Using lastIndexOf.</description>
+                <environment/>
+            <key id='10521'>GJC-29</key>
+        <summary>Allow users to move backwards</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 10 Nov 2005 14:53:03 -0800 (PST)</created>
+    <updated>Thu, 10 Nov 2005 14:53:03 -0800 (PST)</updated>
+
+                        <version>scrape-2.0.1</version>
+            
+                
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

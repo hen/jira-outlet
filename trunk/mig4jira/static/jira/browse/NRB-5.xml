@@ -1,0 +1,57 @@
+<item>
+<title>[NRB-5] User-Agent setting doesn&apos;t work</title>
+<link>http://issues.osjava.org/jira/browse/NRB-5</link>
+
+                    <description>Tim Patton writes:&lt;br/&gt;
+&lt;br/&gt;
+&amp;quot;I downloaded norbert recently and noticed it does not send the user-agent correctly even when it has been set.  I&apos;ve included a fix for this problem below.  I think the problem was that httpUrlConn was never being used once it was created. &amp;quot;&lt;br/&gt;
+&lt;br/&gt;
+(snipped code)</description>
+                <environment/>
+            <key id='10508'>NRB-5</key>
+        <summary>User-Agent setting doesn&apos;t work</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 26 Sep 2005 12:09:28 -0700 (PDT)</created>
+    <updated>Mon, 26 Sep 2005 12:27:55 -0700 (PDT)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.3.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10434' created='Mon, 26 Sep 2005 12:27:55 -0700 (PDT)'>Fix submitted:&lt;br/&gt;
+&lt;br/&gt;
+URLConnection urlConn = url.openConnection();&lt;br/&gt;
+if(urlConn instanceof HttpURLConnection) {&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(userAgent != null) {&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;((HttpURLConnection)urlConn).addRequestProperty(&amp;quot;User-Agent&amp;quot;, userAgent);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br/&gt;
+}&lt;br/&gt;
+</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

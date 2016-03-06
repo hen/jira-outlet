@@ -1,0 +1,87 @@
+<item>
+<title>[SJN-56] If JNDI name begins with java:/ and if using a PropertiesContext, search will fail</title>
+<link>http://issues.osjava.org/jira/browse/SJN-56</link>
+
+                    <description>When a JNDI name begins with &amp;quot;java:/&amp;quot; rather than &amp;quot;java:&amp;quot;, JNDI will not find the corresponding properties file.  There is a simple fix, appended here:&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+Index: c:/greening/dev/eclipse/simple-jndi/src/java/org/osjava/jndi/PropertiesContext.java&lt;br/&gt;
+===================================================================&lt;br/&gt;
+--- c:/greening/dev/eclipse/simple-jndi/src/java/org/osjava/jndi/PropertiesContext.java	(revision 1286)&lt;br/&gt;
++++ c:/greening/dev/eclipse/simple-jndi/src/java/org/osjava/jndi/PropertiesContext.java	(working copy)&lt;br/&gt;
+@@ -210,17 +210,14 @@&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;* java:/ is impossible to deal with on a Windows box.&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;* Complete utter pain. Solution is to remove the :&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;*/&lt;br/&gt;
+-    private String handleJavaStandard(String key) {&lt;br/&gt;
++    private String handleJNDIPrefix(String key) {&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(key != null) {&lt;br/&gt;
+-            if(key.equals(&amp;quot;java:&amp;quot;)) {&lt;br/&gt;
+-                return &amp;quot;java&amp;quot;;&lt;br/&gt;
+-            }&lt;br/&gt;
+-            if(key.equals(&amp;quot;java:/&amp;quot;)) {&lt;br/&gt;
+-                return &amp;quot;java/&amp;quot;;&lt;br/&gt;
+-            }&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;if(key.startsWith(&amp;quot;java:/&amp;quot;)) {&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return &amp;quot;java/&amp;quot;+key.substring(&amp;quot;java:/&amp;quot;.length());&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br/&gt;
++            if(key.startsWith(&amp;quot;java:&amp;quot;)) {&lt;br/&gt;
++                return &amp;quot;java/&amp;quot;+key.substring(&amp;quot;java:&amp;quot;.length());&lt;br/&gt;
++            }&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return key;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br/&gt;
+@@ -424,7 +421,7 @@&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;return getSpecial(name);&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;}&lt;br/&gt;
+&amp;nbsp;&lt;br/&gt;
+-        name = handleJavaStandard(name);&lt;br/&gt;
++        name = handleJNDIPrefix(name);&lt;br/&gt;
+&amp;nbsp;&lt;br/&gt;
+         // name is a delimited notation, each element is either a &lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;// directory, file or part of a key.&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10304'>SJN-56</key>
+        <summary>If JNDI name begins with java:/ and if using a PropertiesContext, search will fail</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='7'>Obsolete</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Wed, 20 Oct 2004 12:23:40 -0700 (PDT)</created>
+    <updated>Sun, 6 Apr 2008 01:13:09 -0700 (PDT)</updated>
+
+                        <version>0.9.1</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='greening' id='10275' created='Wed, 20 Oct 2004 12:25:36 -0700 (PDT)'>Uh obviously the submitter/patcher was me (if you look at the file names).</comment>
+                    <comment author='bayard' id='10418' created='Tue, 23 Aug 2005 19:38:01 -0700 (PDT)'>Not applicable anymore, but could be when we move back to a lookup strategy that looks for a file when it&apos;s asked for.</comment>
+                    <comment author='bayard' id='10692' created='Sun, 6 Apr 2008 01:13:09 -0700 (PDT)'>Closing as simple-jndi never looks for files on demand. Instead you use the PropertiesLoader or SimpleContext and it loads into memory only at the initial opening.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

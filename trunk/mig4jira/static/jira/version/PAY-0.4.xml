@@ -1,0 +1,9 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='PAY-21'>Not possible to store an empty directory in Payload</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='PAY-13'>Inteprolating in archives needs to recurse</issue>
+  </fixes-issues>
+  <name>0.4</name>
+</version>

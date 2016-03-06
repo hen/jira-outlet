@@ -1,0 +1,55 @@
+<item>
+<title>[PAY-12] Interpolate zips/wars/jars etc</title>
+<link>http://issues.osjava.org/jira/browse/PAY-12</link>
+
+                    <description>Also need to do interpolation on configuration files that are inside zips/wars etc.&lt;br/&gt;
+&lt;br/&gt;
+Two ways to handle this, either during unpacking or after the files are in the filesytem.</description>
+                <environment/>
+            <key id='10370'>PAY-12</key>
+        <summary>Interpolate zips/wars/jars etc</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 14 Apr 2005 19:50:06 -0700 (PDT)</created>
+    <updated>Mon, 18 Apr 2005 09:16:59 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10362' created='Mon, 18 Apr 2005 09:16:59 -0700 (PDT)'>Done.&lt;br/&gt;
+&lt;br/&gt;
+It handles it as it unpacks the archive file.&lt;br/&gt;
+&lt;br/&gt;
+The property &amp;quot;org.osjava.payload.archive.endsWith&amp;quot; is used to specify that this file is an archive that should be checked inside for interpolation.&lt;br/&gt;
+&lt;br/&gt;
+By default, nothing is set up to be an archive.&lt;br/&gt;
+&lt;br/&gt;
+The output has been changed too. Whereas it used to output a &apos;.&apos;, now it outputs a &apos;.&apos; for a basic file, a &apos;$&apos; for a file which has been interpolated and &apos;#&apos; for a zip file in which files have been interpolated.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

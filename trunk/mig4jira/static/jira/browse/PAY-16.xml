@@ -1,0 +1,47 @@
+<item>
+<title>[PAY-16] Create paylet execution in PayloadExtractor</title>
+<link>http://issues.osjava.org/jira/browse/PAY-16</link>
+
+                    <description/>
+                <environment/>
+            <key id='10375'>PAY-16</key>
+        <summary>Create paylet execution in PayloadExtractor</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10373'>PAY-14</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 17:59:31 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:50:10 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10366' created='Thu, 5 May 2005 19:18:16 -0700 (PDT)'>Appears in the payload.properties as:&lt;br/&gt;
+&lt;br/&gt;
+org.osjava.payload.paylet=com.example.ExamplePaylet arg1 arg2 arg3</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

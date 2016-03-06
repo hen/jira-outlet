@@ -1,0 +1,42 @@
+<user>
+  <login>tigran</login>
+  <name>Robert M. Zigweid</name>
+  <commented>
+    <issue status='Closed' key='TGT-5'>ThreadManager, AbstractExtendedRunnable, ExtendedThread and ExtendedThreadGroup should be uncloneable</issue>
+    <issue status='Closed' key='TGT-4'>Add methods to allow properly created threads to the ThreadManager.</issue>
+    <issue status='Closed' key='TGT-3'>Rename getAbort() to isAborting()</issue>
+    <issue status='Closed' key='TGT-2'>Refactor from org.tigransoft to org.osjava</issue>
+    <issue status='Open' key='TGT-1'>Add Thread Pooling</issue>
+    <issue status='Closed' key='SJN-58'>Unable to create subcontexts</issue>
+    <issue status='Closed' key='SJN-57'>NotContextException error in GenericContext.createSubContext</issue>
+    <issue status='Closed' key='SJN-32'>Not possible to mix delimiters</issue>
+    <issue status='Closed' key='SJN-29'>Allow Maps to be specified?</issue>
+    <issue status='Closed' key='SJN-24'>Switch to using Names and not Strings?</issue>
+  </commented>
+  <reported>
+    <issue status='Open' key='TGT-7'>Unit tests</issue>
+    <issue status='Open' key='TGT-6'>Implement an object factory</issue>
+    <issue status='Closed' key='TGT-5'>ThreadManager, AbstractExtendedRunnable, ExtendedThread and ExtendedThreadGroup should be uncloneable</issue>
+    <issue status='Closed' key='TGT-4'>Add methods to allow properly created threads to the ThreadManager.</issue>
+    <issue status='Closed' key='TGT-3'>Rename getAbort() to isAborting()</issue>
+    <issue status='Closed' key='TGT-2'>Refactor from org.tigransoft to org.osjava</issue>
+    <issue status='Open' key='TGT-1'>Add Thread Pooling</issue>
+    <issue status='Closed' key='SJN-57'>NotContextException error in GenericContext.createSubContext</issue>
+  </reported>
+  <assigned>
+    <issue status='Open' key='TGT-7'>Unit tests</issue>
+    <issue status='Open' key='TGT-6'>Implement an object factory</issue>
+    <issue status='Closed' key='TGT-5'>ThreadManager, AbstractExtendedRunnable, ExtendedThread and ExtendedThreadGroup should be uncloneable</issue>
+    <issue status='Closed' key='TGT-4'>Add methods to allow properly created threads to the ThreadManager.</issue>
+    <issue status='Closed' key='TGT-3'>Rename getAbort() to isAborting()</issue>
+    <issue status='Closed' key='TGT-2'>Refactor from org.tigransoft to org.osjava</issue>
+    <issue status='Open' key='TGT-1'>Add Thread Pooling</issue>
+    <issue status='Closed' key='SJN-68'>Subcontexts not shared when org.osjava.sj.jndi.shared=true</issue>
+    <issue status='Closed' key='SJN-58'>Unable to create subcontexts</issue>
+    <issue status='Closed' key='SJN-57'>NotContextException error in GenericContext.createSubContext</issue>
+    <issue status='Open' key='SJN-55'>Add support for javax.naming.event</issue>
+    <issue status='Closed' key='SJN-32'>Not possible to mix delimiters</issue>
+    <issue status='Closed' key='SJN-24'>Switch to using Names and not Strings?</issue>
+    <issue status='Open' key='SJN-23'>Implement DirContext</issue>
+  </assigned>
+</user>

@@ -1,0 +1,137 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <title>Release Status Plugin for JIRA</title>
+  <style media="screen" type="text/css">
+body {
+    margin: 2em 1em 2em 70px;
+    font-family: sans-serif;
+    color: black;
+    background: white;
+}
+th, td {
+  font-family: sans-serif;
+}
+
+h1,h4 { color: #5a9c00 }
+h1 { font: 170% sans-serif }
+h4 { font: bold 100% sans-serif }
+  </style>  
+</head>
+<body>
+<table width="100%"><tr><td>
+<h1>Release Status Plugin for JIRA</h1>
+<p>Originally created by <a href="http://www.yandell.org/henri/">Henri Yandell</a> at <a href="http://www.sourcelabs.com/">SourceLabs, Inc.</a></p>
+<p>Download: <a href="http://dist.sourcelabs.org/releasestatus/sourcelabs-jira-plugin-portlet-releases-2.4.2.jar">plugin jar</a>, peruse <a href="http://dist.sourcelabs.org/releasestatus/jira-releases-portlet-2.4.2-src.zip">source zip</a> or check out <a href="https://svn.sourcelabs.org/repos/source/plugins-for-jira/jira-releases-portlet/trunk">svn</a>. </p>
+</td><td align="right">
+<img src="images/ReleaseShot2.png"/>
+</td></tr></table>
+<h4>Legal bit</h4>
+<p>Released under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</a> and Copyright 2007-2008 Henri Yandell/SourceLabs, Inc. </p>
+<p>This project uses the excellent <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com Silk icons</a>. </p>
+<h4>About the plugin</h4>
+<p>A plugin that provides three portlets. 
+<ol>
+<li>
+<p>The first is a portlet for the JIRA dashboard that provides a status for a particular version. </p>
+<p>Its expected use case is for highlighting the next release of the major product(s) via a feature-list of: </p>
+<ul>
+<li>Handy stats on the activity in the last week</li>
+<li>Useful stats for due-date management</li>
+<li>Information on how close the project is to release</li>
+<li>Release health - will your last week's velocity see you hitting your release date</li>
+<li>Useful links to the release notes and the version workload</li>
+<li>Current user, all users or adaptive toggle - adaptive means that between 50% and 95% it's current user, otherwise it's all users</li>
+</ul>
+</li>
+<li><p>The second portlet lets you show the last N releases. Its expected to be of use to large JIRAs with many releases. </p></li>
+<li><p>The third is a project panel that makes it easy to see the release history of a project. Its expected to be of use to projects that have had with many releases. </p></li>
+</ol>
+<h4>Release History</h4>
+<p>Version 2.4.2 was released on 30th of January 2008. There was one bugfix:</p>
+<ul>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-71">RSP-71</a> - Nothing shows when a project has only 1 version</li>
+</li>
+</ul>
+<p>Version 2.4.1 was released on 28th of September 2007. There were two bugfixes, the second of which was an improvement over its fix in 2.4:</p>
+<ul>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-68">RSP-68</a> - Fails to run under 3.11</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-63">RSP-63</a> - No Version Description Text Causes $version.description is not a valid reference Exception</li>
+</li>
+</ul>
+<p>Version 2.4 was released on 4th of August 2007. There were four improvements and three bugfixes:</p>
+<ul>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-56">RSP-56</a> - Show a tick or a cross if at 100% or if the release date has been missed</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-57">RSP-57</a> - Need way to click on progress bar when it's small</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-58">RSP-58</a> - 'smart' default for currentuser/all</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-60">RSP-60</a> - Random project Release Status</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-61">RSP-61</a> - Right arrow is not vertically aligned to top when there's no emoticon</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-62">RSP-62</a> - Velocity Error with isVersionOverDue in Jira 3.10</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-63">RSP-63</a> - No Version Description Text Causes $version.description is not a valid reference Exception</li>
+</ul>
+<p>Version 2.3.1 was released on 28th of July 2007. There were two bugfixes:</p>
+<ul>
+<li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-55">RSP-55</a> - Release Status Portlet generates exceptions under Jira 3.10</li>
+<li><a href="https://jira.sourcelabs.org/jira/browse/RSP-7">RSP-7</a> - Releases project tab links to unresolved issues, not all issues</li>
+</ul>
+<p>Version 2.3 was released on 19th of April 2007. There were four bugfixes:</p>
+<ul>
+<li><code>Latest Releases</code> portlet was not showing more than one release for the same day</li>
+<li><code>Release Status</code> portlet links were not changing under current user mode</li>
+<li>The <code>Release Status</code> portlet now ignores archived versions that are not released when deciding on a default version for a project</li>
+<li>The direct link for the <code>Release Status</code> portlet was failing with an NPE when the portlet was showing just the one version</li>
+</ul>
+<p>Version 2.2 was released on 13th of April 2007. It provided various bugfixes and small feature enhancements, including:</p>
+<ul>
+<li>The <code>Release Status</code> portlet allows a project to be specified to show the status of all releases in that JIRA project</li>
+<li>Tooltips are now escaped in case descriptions contain HTML</li>
+<li>The <code>Latest Releases</code> portlet allows Future Releases and/or Overdue Releases to be shown</li>
+<li>User's permissions to see projects is better heeded by both the <code>Release Status</code> portlet and the <code>Latest Releases</code> portlet</li>
+<li>The <code>Release Status</code> portlet shows the total number of issues in a project</li>
+<li>The number of issues In Progress is shown</li>
+<li>Anonymous viewing is better</li>
+</ul>
+<p>Version 2.1 was released on 27th of March 2007. Its main focus was a beefed up release status portlet with:</p>
+<ul>
+<li>Now supports more than one version, allowing you to create version chains</li>
+<li>The new top bar containing:
+<ul>
+<li>project name</li>
+<li>current-user/all-users toggle</li>
+<li>links to the release notes and the version workload report</li>
+</ul></li>
+</ul>
+<p>Version 2.0 was released on 17th of March 2007. It added the latest releases portlet and the releases project panel. </p>
+<p>Version 1.0 was released on 16th of March 2007. It just contained the release status portlet. </p>
+<h4>Installing &amp; Using</h4>
+<p>Install the plugin by downloading the <a href="http://dist.sourcelabs.org/releasestatus/sourcelabs-jira-plugin-portlet-releases-2.4.2.jar">plugin jar</a>, place it in your <code>$JIRA/WEB-INF/lib/</code> and giving your JIRA a restart. </p>
+<p>Once it's installed you can add the to your dashboard by selecting the <code>Release Status</code> portlet and the <code>Latest Releases</code> portlet. The <code>Releases</code> project tab is automatically added to your browse project pages. Please follow the instructions from Atlassian for configuring your <a href="http://www.atlassian.com/software/jira/docs/latest/dashboard.html">personal dashboard</a> or the <a href="http://www.atlassian.com/software/jira/docs/latest/default_dashboard.html">default dashboard</a>. </p>
+<p>The source is available for perusing by downloading the <a href="http://dist.sourcelabs.org/releasestatus/jira-releases-portlet-2.4.2-src.zip">source zip</a> and unpacking. </p>
+<h4>Complaints, bugs, ideas...</h4>
+<p>Please mail these to me at bayard-at-generationjava.com, or add them as comments to the <a href="http://confluence.atlassian.com/display/JIRAEXT/Release+Status+Plugin">JIRA plugin page</a>. </p>
+<h4>Screenshots</h4>
+<p>To get you salivating, here's the <code>Release Status</code> portlet showing a happy project which is very close to release: </p>
+<img src="images/ReleaseShot1.png"/>
+<p>and here the <code>Release Status</code> portlet shows a project for the current user that is in its early days and still creating new issues: </p> 
+<img src="images/ReleaseShot2.png"/>
+<p>The screenshot for the <code>Latest Releases</code> portlet should be no surprise: </p>
+<img src="images/LatestReleases.png"/>
+<p>and the screenshot for the <code>Releases</code> project panel will hopefully spark interest: </p>
+<img src="images/ReleasesPanel.png"/>
+<p>Lastly, a rather big image. It's the <code>Release Status</code> portlet from above with an explanation as to what some of the icons are for: </p>
+<img src="images/Explanation.png"/>
+<h4>Previously Asked Questions</h4>
+<dl>
+<dt>* What's happiness? (or... The secret to happiness)</dt>
+<dd>
+<p>Obviously you're all wondering what makes happiness. How does one tell the health of a project. What secret bit of wizardry and hours of cpu-intensive magic is this portlet doing???</p>
+<p>Fortunately, here at CBA Industries we decided to take the simple approach to happiness. It's simply: "If the project continues to maintain the velocity of the last 7 days, will it hit its release date?". Nothing fancy, nothing special and something to be taken with a LOT of salt. Amongst its limitations it includes non-work days as if they were normal days and it treats all issues the same regardless of estimate. </p>
+</dd>
+<dt>* How do I see the open issues?</dt>
+<dd><p>Most of the items in the release portlet are clickable. To see the current open issues, click on the green part of the progress bar. To see the closed issues, click on the red part. To see all the issues in a version, click on the version name. </p></dd>
+<dt>* How do I configure a list of versions?</dt>
+<dd><p>Versions are added via a comma-separated list of ids on the portlet configuration page. Version ids can be found by mousing over a version link pretty much anywhere in JIRA (it will be called <code>fixFor</code> or <code>version</code> in the URL). You will see the link in the status bar at the bottom of your browser (you may need to turn on the Status bar). </p></dd>
+</dl>
+</body>
+</html>

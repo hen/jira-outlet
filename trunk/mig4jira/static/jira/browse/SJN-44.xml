@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-44] Remove &apos;org.osjava.jndi.datasource&apos; code</title>
+<link>http://issues.osjava.org/jira/browse/SJN-44</link>
+
+                    <description>Time for this to go.</description>
+                <environment/>
+            <key id='10138'>SJN-44</key>
+        <summary>Remove &apos;org.osjava.jndi.datasource&apos; code</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 2 Jan 2004 23:52:36 -0800 (PST)</created>
+    <updated>Mon, 2 Feb 2004 01:34:55 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.9</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10132' created='Mon, 2 Feb 2004 01:34:55 -0800 (PST)'>Gone from code, I believe it&apos;s gone from the documentation too, except where applicable [changes/FAQ].</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

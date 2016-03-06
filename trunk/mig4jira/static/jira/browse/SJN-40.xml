@@ -1,0 +1,43 @@
+<item>
+<title>[SJN-40] Test with p6spy.</title>
+<link>http://issues.osjava.org/jira/browse/SJN-40</link>
+
+                    <description>Would be nice to test p6spy with simple-jndi. See how well the two of them work together.</description>
+                <environment/>
+            <key id='10122'>SJN-40</key>
+        <summary>Test with p6spy.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 25 Nov 2003 14:01:36 -0800 (PST)</created>
+    <updated>Wed, 28 Apr 2004 20:29:46 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10151' created='Wed, 28 Apr 2004 20:29:46 -0700 (PDT)'>Always pushing this one back it seems.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

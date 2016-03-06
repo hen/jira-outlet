@@ -1,0 +1,53 @@
+<item>
+<title>[RRR-34] Excel rendering doesn&apos;t understand types</title>
+<link>http://issues.osjava.org/jira/browse/RRR-34</link>
+
+                    <description>The Excel file created is all String types. The renderer needs to understand how to set different types in the Excel code; or the ExcelWriter class does to be more precise.</description>
+                <environment/>
+            <key id='10307'>RRR-34</key>
+        <summary>Excel rendering doesn&apos;t understand types</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 10 Nov 2004 15:08:04 -0800 (PST)</created>
+    <updated>Fri, 10 Dec 2004 06:55:51 -0800 (PST)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10297' created='Fri, 10 Dec 2004 06:23:00 -0800 (PST)'>Easy one I think.&lt;br/&gt;
+&lt;br/&gt;
+Remove the String typing in the ExcelWriter.</comment>
+                    <comment author='bayard' id='10298' created='Fri, 10 Dec 2004 06:55:51 -0800 (PST)'>Untested, but code is implemented to attempt to do type things.&lt;br/&gt;
+&lt;br/&gt;
+Need to talk to Gant about Dates in POI.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

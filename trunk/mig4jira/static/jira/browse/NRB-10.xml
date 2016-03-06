@@ -1,0 +1,44 @@
+<item>
+<title>[NRB-10] If a 3xx response code; follow links</title>
+<link>http://issues.osjava.org/jira/browse/NRB-10</link>
+
+                    <description>I imagine the 3xx response codes become errors and are not followed correctly. Depends on how good the JDK stuff is. One solution is to move to HttpClient.</description>
+                <environment/>
+            <key id='10515'>NRB-10</key>
+        <summary>If a 3xx response code; follow links</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Oct 2005 10:35:28 -0700 (PDT)</created>
+    <updated>Wed, 5 Oct 2005 10:45:19 -0700 (PDT)</updated>
+
+                        <version>0.3.1</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10454' created='Wed, 5 Oct 2005 10:45:19 -0700 (PDT)'>JVM does this automatically apparantly.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

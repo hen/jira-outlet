@@ -1,0 +1,28 @@
+<project>
+  <key>SCB</key>
+  <name>Scraping</name>
+  <issues>
+    <issue status='Open' key='SCB-26'>Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</issue>
+    <issue status='Open' key='SCB-25'>support for fetching non - HTML/Text files content-type: application/vnd.ms-word</issue>
+    <issue status='Closed' key='SCB-24'>Ability to specify the Fetcher to use</issue>
+    <issue status='Open' key='SCB-23'>Create a tutorial entry on how to scrape from RSS</issue>
+    <issue status='Open' key='SCB-22'>Ability to scrape pop:// urls</issue>
+    <issue status='Closed' key='SCB-21'>Ability to scrape ftp:// urls</issue>
+    <issue status='Open' key='SCB-20'>Sub-fetching should pass referrer of last page</issue>
+    <issue status='Open' key='SCB-19'>Set a referer for initial scrape</issue>
+    <issue status='Closed' key='SCB-18'>Add userAgent configuration</issue>
+    <issue status='Closed' key='SCB-17'>Support Cookies</issue>
+    <issue status='Closed' key='SCB-16'>Add support for POST requests</issue>
+    <issue status='Open' key='SCB-15'>Create a default csv-parser</issue>
+    <issue status='Closed' key='SCB-14'>Create .bat files for the example</issue>
+    <issue status='Closed' key='SCB-12'>Move the example UrlScraper into the main distro so everyone may use it</issue>
+    <issue status='Open' key='SCB-9'>When running the scraping engine, allow the scraper to be chosen</issue>
+    <issue status='Closed' key='SCB-8'>Examples zip download</issue>
+    <issue status='Closed' key='SCB-7'>Add a FileStore concept so that scraped data may be saved</issue>
+    <issue status='Open' key='SCB-6'>Have linkhunter know about mime types</issue>
+    <issue status='Closed' key='SCB-5'>Add the PrinterStore, a store that prints out</issue>
+    <issue status='Open' key='SCB-4'>Field validation</issue>
+    <issue status='Closed' key='SCB-3'>Needs to respect robots.txt before being unleashed fully</issue>
+    <issue status='Closed' key='SCB-2'>Infinite loops on africainsight.org</issue>
+  </issues>
+</project>

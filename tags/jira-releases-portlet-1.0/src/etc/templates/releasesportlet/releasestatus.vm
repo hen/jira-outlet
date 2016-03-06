@@ -1,0 +1,64 @@
+#if ($loggedin)
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">
+  <table width="100%">
+  <tr>
+  <td>
+  #versionStatus($version 24)
+  <a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&resolution=-1&fixfor=$version.id" title="$version.description"><b><u>$version.name</u></b></a></font>
+  #if ($version.releaseDate)
+  (<font size="1"> #versionReleaseDate($action $version)
+   </font>)
+  #end
+  </td>
+  <td>
+  <table height=6 width=180 valign=middle align=right cellspacing=0 cellpadding=0 border=0>
+      <tr height=6>
+          <td width="80" valign="middle" align="right"><span class="subText">$action.getText("common.words.progress"):&nbsp;</span></td>
+          <td>
+          #percentageGraph ($pgm $version.project $version)
+          </td>
+      </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+  </tr>
+  <tr bgcolor="#ffffff">
+  <td>
+  <table width="100%">
+   <tr>
+    <td width="40%">
+
+  <table width="100%">
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&status=5&status=6&updated:previous=-1w&sorter/field=updated&sorter/order=DESC&fixfor=$version.id" title='$i18n.getText("portlet.releases.words.resolvedRecently.description")'>$i18n.getText("portlet.releases.words.resolvedRecently")</a>:</td><td align="right">$resolvedCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&created:previous=-1w&sorter/field=created&sorter/order=DESC&fixfor=$version.id" title='$i18n.getText("portlet.releases.words.addedRecently.description")'>$i18n.getText("portlet.releases.words.addedRecently")</a>:</td><td align="right">$addedCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&updated:previous=-1w&sorter/field=updated&sorter/order=DESC&fixfor=$version.id" title='$i18n.getText("portlet.releases.words.updatedRecently.description")'>$i18n.getText("portlet.releases.words.updatedRecently")</a>:</td><td align="right">$updatedCount</td></tr>
+  </table>
+
+</td><td width="40%">
+  <table width="100%">
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&resolution=-1&fixfor=$version.id&duedate%3Anext=0&sorter/field=updated&sorter/order=DESC" title='$i18n.getText("portlet.releases.words.overdue.description")'>$i18n.getText("portlet.releases.words.overdue")</a>:</td><td align="right">$overdueCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&resolution=-1&fixfor=$version.id&duedate%3Aprevious=0&duedate%3Anext=1w&sorter/field=updated&sorter/order=DESC" title='$i18n.getText("portlet.releases.words.dueSoon.description")'>$i18n.getText("portlet.releases.words.dueSoon")</a>:</td><td align="right">$dueSoonCount</td></tr>
+  <tr>
+  #if ($version.releaseDate)
+  #set ($msg = $i18n.getText($happinessMessage))
+  #set ($img = $i18n.getText("${happinessMessage}.img"))
+  <td>$i18n.getText("portlet.releases.words.smiley", $msg)</td>
+  <td align="right"><img src="${requestContext.baseUrl}${img}" title="${formula}"/></td>
+  #end
+  </tr>
+  </table>
+  </td><td align="right">
+  <h1>$percentage%</h1>
+
+    </td>
+   </tr>
+  </table>
+</table>
+</table>
+
+#end

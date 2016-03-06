@@ -1,0 +1,44 @@
+<item>
+<title>[NRB-2] Switch to Log4j</title>
+<link>http://issues.osjava.org/jira/browse/NRB-2</link>
+
+                    <description>Currently using System.err.</description>
+                <environment/>
+            <key id='10065'>NRB-2</key>
+        <summary>Switch to Log4j</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 22 Aug 2003 09:47:08 -0700 (PDT)</created>
+    <updated>Sat, 25 Oct 2003 17:29:41 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10076' created='Sat, 25 Oct 2003 17:29:41 -0700 (PDT)'>This was fixed by the time of the 0.1 release.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

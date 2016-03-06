@@ -1,0 +1,66 @@
+<item>
+<title>[SJN-54] If a resource directory config/java and file config/java.properties both exist, indeterminate result</title>
+<link>http://issues.osjava.org/jira/browse/SJN-54</link>
+
+                    <description>If you have a file&lt;br/&gt;
+&lt;br/&gt;
+  config/&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;java.properties&lt;br/&gt;
+&lt;br/&gt;
+Where java.properties defines a sub-JNDI object such as java.thongDS&lt;br/&gt;
+&lt;br/&gt;
+and a file&lt;br/&gt;
+&lt;br/&gt;
+  config/&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;java/&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;thingDS.properties&lt;br/&gt;
+&lt;br/&gt;
+Simple-JNDI will never see the config/java.properties file.  &lt;br/&gt;
+&lt;br/&gt;
+This could be fixed by documenting it or checking for the existance of the java.properties file and spewing a warning.&lt;br/&gt;
+&lt;br/&gt;
+Or it could be fixed so both could coexist well.</description>
+                <environment/>
+            <key id='10253'>SJN-54</key>
+        <summary>If a resource directory config/java and file config/java.properties both exist, indeterminate result</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='greening'>Dan Greening</reporter>
+            
+    <created>Sun, 18 Jul 2004 12:30:26 -0700 (PDT)</created>
+    <updated>Sun, 6 Apr 2008 01:14:09 -0700 (PDT)</updated>
+
+                        <version>0.10</version>
+            
+                        <fixVersion>0.11.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10245' created='Wed, 22 Sep 2004 19:47:03 -0700 (PDT)'>Documentation seems the easy way to go.&lt;br/&gt;
+&lt;br/&gt;
+Ideally, it should use both except when there is a complete key clash, in which case one should win and be documented that way.</comment>
+                    <comment author='bayard' id='10415' created='Mon, 22 Aug 2005 22:02:53 -0700 (PDT)'>New system will currently throw a Naming bind-exception when it tries to put the same value into the context twice.</comment>
+                    <comment author='bayard' id='10693' created='Sun, 6 Apr 2008 01:14:09 -0700 (PDT)'>Considering the exception to be a fix for this bug.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

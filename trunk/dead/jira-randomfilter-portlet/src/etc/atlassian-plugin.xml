@@ -1,0 +1,67 @@
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.randomfilter" name="Random Filter Plugin">
+    <plugin-info>
+        <description>Random filter plugin</description>
+        <version>0.1</version>
+        <application-version min="3.0" max="3.0"/>
+        <vendor name="Henri Yandell" url="http://www.buildguy.com"/>
+    </plugin-info>
+
+    <portlet key="randomfilter" name="Random Filter portlet" class="com.sourcelabs.jira.plugin.portlet.randomfilter.RandomFilterPortlet">
+        <description key="portlet.randomfilter.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/randomfilter.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.randomfilter" />
+        <label key="portlet.randomfilter.name" />
+        <objectdescriptor key="portlet.randomfilter.display.name" />
+        <resource type="download" name="icons/" location="templates/images/"/>
+
+        <properties>
+            <property>
+                <key>filterid</key>
+                <name>portlet.searchrequest.field.filterid.name</name>
+                <description>portlet.searchrequest.field.filterid.description</description>
+                <type>select</type>
+                <i18n>false</i18n>
+                <values class="com.atlassian.jira.portal.SearchRequestValuesGenerator"/>
+            </property>
+            <property>
+                <key>numofentries</key>
+                <name>portlet.searchrequest.field.numofentries.name</name>
+                <description>portlet.searchrequest.field.numofentries.description</description>
+                <type>long</type>
+                <default>5</default>
+            </property>
+            <property>
+                <key>showdescription</key>
+                <name>portlet.searchrequest.field.showdescription.name</name>
+                <description>portlet.searchrequest.field.showdescription.description</description>
+                <type>select</type>
+                <default>false</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.searchrequest.field.showdescription.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.searchrequest.field.showdescription.false</value>
+                    </value>
+                </values>
+            </property>
+        </properties>
+
+    </portlet>
+
+</atlassian-plugin>

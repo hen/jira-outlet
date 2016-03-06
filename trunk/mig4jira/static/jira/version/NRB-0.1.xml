@@ -1,0 +1,9 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='NRB-3'>isUrlAllowed gets confused by ending /</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='NRB-2'>Switch to Log4j</issue>
+  </fixes-issues>
+  <name>0.1</name>
+</version>

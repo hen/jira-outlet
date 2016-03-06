@@ -1,0 +1,59 @@
+<item>
+<title>[RRR-35] Allow multiple parameters</title>
+<link>http://issues.osjava.org/jira/browse/RRR-35</link>
+
+                    <description>There is no input way to handle an SQL:   foo IN (?,?,?,?,?)&lt;br/&gt;
+&lt;br/&gt;
+Of course, this isn&apos;t exactly simple in the world of SQL. It might need a change to the SQL parameter system; ie:  foo IN (??). Something that lets the code modify the SQL so that the setting works.&lt;br/&gt;
+&lt;br/&gt;
+Of course, it could try to set it as an Array. Hell, maybe that actually works :)</description>
+                <environment/>
+            <key id='10308'>RRR-35</key>
+        <summary>Allow multiple parameters</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 10 Nov 2004 15:15:27 -0800 (PST)</created>
+    <updated>Wed, 12 Jan 2005 13:41:03 -0800 (PST)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10319' created='Wed, 29 Dec 2004 10:04:50 -0800 (PST)'>I think this is doable nicely.&lt;br/&gt;
+&lt;br/&gt;
+A param has a type of String[], or Date[] etc. This has to choose a particular widget, easy if there&apos;s a binding. Otherwise a textfield with comma separated perhaps.&lt;br/&gt;
+&lt;br/&gt;
+If a param is an array, it finds the relevant ? mark in the SQL and expends it to ?,?,? etc. Then loops as usual.&lt;br/&gt;
+&lt;br/&gt;
+A worry if ? is in the SQL and is not intended to be a parameter placeholder, but solve that later.</comment>
+                    <comment author='bayard' id='10322' created='Wed, 12 Jan 2005 13:41:03 -0800 (PST)'>Done. foo IN (??) and set the type to be an array, ie) java.lang.Integer[]</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

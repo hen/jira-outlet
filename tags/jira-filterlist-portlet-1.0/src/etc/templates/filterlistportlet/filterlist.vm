@@ -1,0 +1,60 @@
+#if ($loggedin)
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">$filterTitle&nbsp;
+        #if ($includeLinks)
+        <font size="1">
+        (<a href="/jira/secure/IssueNavigator.jspa?createNew=true&mode=show">Create New</a>
+        |
+        <a href="/jira/secure/ManageFilters.jspa">Manage Filters</a>)</font>
+        #end
+        </td>
+    </tr>
+    #if ($chosenFilters && $chosenFilters.size() > 0)
+        #if ($displayAsList)
+            #foreach ($filter in $chosenFilters)
+                #set ($filterURL = "$req.contextPath/secure/IssueNavigator.jspa?mode=hide&requestId=$filter.getLong('id')")
+                <tr #if ($velocityCount % 2 == 1) class="rowNormal" #else class="rowAlternate" #end >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="100%" >
+                        <a title="$textutils.htmlEncode($filter.getString('name'))#if($filter.getString('description') && $filter.getString('description') != '') - $textutils.htmlEncode($filter.getString('description'))#end" href="$filterURL">$textutils.htmlEncode($filter.getString('name'))</a>
+                    </td>
+                    <td>
+                    #if ($indexing)
+                      #if ($includeCounts)
+                        <a href="$filterURL">$portlet.getCountsForFilter($filter)</a>
+                      #end
+                    #end
+                    </td>
+                    </tr></table></td>
+                </tr>
+            #end
+        #else
+            <tr class="rowNormal">
+                <td><form action="$req.contextPath/secure/IssueNavigator.jspa?mode=hide" name="dropdown-$portletId"><select name="requestId" onChange="dropdown=document.forms['dropdown-$portletId'].requestId; reqId=dropdown.options[dropdown.selectedIndex].value; if(reqId && reqId != '') location.href = '$req.contextPath/secure/IssueNavigator.jspa?mode=hide&requestId=' + reqId;">
+                <option value="">$i18n.getText('portlet.filterportlet.selecttext')</option>
+                #foreach ($filter in $chosenFilters)
+                    <option value="$filter.getLong('id')">$textutils.htmlEncode($filter.getString('name'))
+                      #if ($indexing)
+                        #if ($includeCounts)
+                          [$portlet.getCountsForFilter($filter)]
+                        #end
+                      #end
+                    </option>
+                #end
+                </select><input type="submit" value="Go" src="$req.contextPath/templates/filterlistportlet/control_play.png"/></form></td>
+            </tr>
+        #end
+    #else
+         <tr bgcolor="#FFFFFF">
+            <td width="100%" colspan="2">
+                $i18n.getText('portlet.filterportlet.nofilters'). <a href="$req.contextPath/secure/IssueNavigator.jspa?mode=show&createNew=true">$i18n.getText('portlet.filterportlet.createnewfilter')</a>.
+            </td>
+        </tr>
+    #end
+
+</table>
+</table>
+#end

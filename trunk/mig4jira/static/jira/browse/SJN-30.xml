@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-30] Static memory</title>
+<link>http://issues.osjava.org/jira/browse/SJN-30</link>
+
+                    <description>It would be nice is the PropertiesContext had a variant which shared static memory. This would make it feel as though you were talking to a server.</description>
+                <environment/>
+            <key id='10030'>SJN-30</key>
+        <summary>Static memory</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:44:14 -0700 (PDT)</created>
+    <updated>Fri, 6 Feb 2004 11:58:50 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.9</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10143' created='Fri, 6 Feb 2004 11:58:50 -0800 (PST)'>Passes its unit test! Which is minimal, so might be untested problems still.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

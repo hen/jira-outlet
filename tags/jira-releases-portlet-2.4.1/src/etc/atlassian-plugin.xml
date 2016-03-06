@@ -1,0 +1,194 @@
+<!--
+   Copyright 2007 SourceLabs, Inc.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.releases" name="Releases Plugin">
+    <plugin-info>
+        <description>Portlet Releases Plugin</description>
+        <version>2.3</version>
+        <application-version min="3.0" max="3.0"/>
+        <vendor name="SourceLabs" url="http://www.sourcelabs.com"/>
+    </plugin-info>
+
+    <portlet key="releases" name="Release Status portlet" class="com.sourcelabs.jira.plugin.portlet.releases.ReleaseStatusPortlet">
+        <description key="portlet.releases.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/releasesportlet/releasestatus.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.releases.releases_portlet" />
+        <label key="portlet.releases.name" />
+        <objectdescriptor key="portlet.releases.display.name" />
+        <resource type="download" name="report.png" location="templates/images/report.png">
+            <param name="content-type" value="image/png"/>
+        </resource>
+        <resource type="download" name="time.png" location="templates/images/time.png">
+            <param name="content-type" value="image/png"/>
+        </resource>
+        <resource type="download" name="user_go.png" location="templates/images/user_go.png">
+            <param name="content-type" value="image/png"/>
+        </resource>
+        <resource type="download" name="group_go.png" location="templates/images/group_go.png">
+            <param name="content-type" value="image/png"/>
+        </resource>
+
+        <properties>
+            <property>
+                <key>randomproject</key>
+                <name>portlet.releases.field.randomproject.name</name>
+                <description>portlet.releases.field.randomproject.description</description>
+                <type>select</type>
+                <default>false</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.releases.field.randomproject.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.releases.field.randomproject.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>projectid</key>
+                <name>portlet.releases.field.project.name</name>
+                <description>portlet.releases.field.project.description</description>
+                <type>select</type>
+                <default>-1</default>
+                <values class="com.sourcelabs.jira.plugin.ProjectListGenerator"/>
+            </property>
+            <property>
+                <key>versionid</key>
+                <name>portlet.releases.field.versionid.name</name>
+                <description>portlet.releases.field.versionid.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>versionlist</key>
+                <name>portlet.releases.field.versionlist.name</name>
+                <description>portlet.releases.field.versionlist.description</description>
+                <type>text</type>
+            </property>
+            <property>
+                <key>defaultUserType</key>
+                <name>portlet.releases.field.usertype.name</name>
+                <description>portlet.releases.field.usertype.description</description>
+                <type>select</type>
+                <default>all</default>
+                <values>
+                    <value>
+                        <key>all</key>
+                        <value>portlet.releases.field.usertype.all</value>
+                    </value>
+                    <value>
+                        <key>current</key>
+                        <value>portlet.releases.field.usertype.current</value>
+                    </value>
+                    <value>
+                        <key>adaptive</key>
+                        <value>portlet.releases.field.usertype.adaptive</value>
+                    </value>
+                </values>
+            </property>
+        </properties>
+    </portlet>
+
+    <portlet key="latestreleases" name="Release Table portlet" class="com.sourcelabs.jira.plugin.portlet.releases.LatestReleasesPortlet">
+        <description key="portlet.releases.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/releasesportlet/latestreleases.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.releases.latest_portlet" />
+        <label key="portlet.releases.name" />
+        <objectdescriptor key="portlet.releases.display.name" />
+        <properties>
+            <property>
+                <key>latest</key>
+                <name>portlet.releases.field.latest.name</name>
+                <description>portlet.releases.field.latest.description</description>
+                <type>select</type>
+                <default>true</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.releases.field.latest.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.releases.field.latest.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>latestSize</key>
+                <name>portlet.releases.field.size.name</name>
+                <description>portlet.releases.field.size.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>future</key>
+                <name>portlet.releases.field.future.name</name>
+                <description>portlet.releases.field.future.description</description>
+                <type>select</type>
+                <default>false</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.releases.field.future.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.releases.field.future.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>futureSize</key>
+                <name>portlet.releases.field.size.name</name>
+                <description>portlet.releases.field.size.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>overdue</key>
+                <name>portlet.releases.field.overdue.name</name>
+                <description>portlet.releases.field.overdue.description</description>
+                <type>select</type>
+                <default>false</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.releases.field.overdue.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.releases.field.overdue.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>overdueSize</key>
+                <name>portlet.releases.field.size.name</name>
+                <description>portlet.releases.field.size.description</description>
+                <type>string</type>
+            </property>
+        </properties>
+    </portlet>
+
+    <project-tabpanel key="releases-projecttab" 
+                      name="Releases Project Tab" 
+                      class="com.sourcelabs.jira.plugin.projecttab.releases.ReleasesProjectTabPanel">
+        <description key="projecttab.releases.description"/>
+        <label key="projecttab.releases.label" />
+        <order>50</order>
+        <resource type="velocity" name="view" location="templates/releases-projecttab.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.projecttab.releases" />
+    </project-tabpanel>
+
+</atlassian-plugin>

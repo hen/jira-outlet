@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-19] Allow users to bind variables</title>
+<link>http://issues.osjava.org/jira/browse/SJN-19</link>
+
+                    <description>Users can modify the Context&apos;s namespace manually. </description>
+                <environment/>
+            <key id='10019'>SJN-19</key>
+        <summary>Allow users to bind variables</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:58:53 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:59:05 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10002' created='Thu, 17 Jul 2003 11:59:05 -0700 (PDT)'>This is only per instance however. Not perfect.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,47 @@
+<item>
+<title>[NRB-9] &quot;Disallow: &quot; should indicate that nothing is disallowed</title>
+<link>http://issues.osjava.org/jira/browse/NRB-9</link>
+
+                    <description>It&apos;s not fully spelled out in the RFC (thus my choice to just ignore Disallow: lines); but the spec and the FAQ explain it better.&lt;br/&gt;
+&lt;br/&gt;
+Still no idea what to do with &amp;quot;Allow: &amp;quot;</description>
+                <environment/>
+            <key id='10514'>NRB-9</key>
+        <summary>&quot;Disallow: &quot; should indicate that nothing is disallowed</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Oct 2005 09:57:47 -0700 (PDT)</created>
+    <updated>Wed, 5 Oct 2005 10:02:21 -0700 (PDT)</updated>
+
+                        <version>0.3.1</version>
+            
+                        <fixVersion>0.3.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10451' created='Wed, 5 Oct 2005 10:02:21 -0700 (PDT)'>Fixed, returns Boolean.TRUE now instead of null.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

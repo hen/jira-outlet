@@ -1,0 +1,64 @@
+#set ($project = $action.project)
+#macro (esc $text)$textutils.htmlEncode($text)#end
+<table width="100%" class="projectPanel">
+<tr>
+	<td width="50%" class="header">
+	    #if ($fieldVisibility.isFieldHiddenInAllSchemes($project.getLong("id"), "fixVersions", null) == false)
+            <h3 class="formtitle">$i18n.getText("projecttab.releases.past.title")</h3>
+        #else
+            &nbsp;
+	    #end
+	</td>
+	<td width="50%" class="header">
+	    #if ($fieldVisibility.isFieldHiddenInAllSchemes($project.getLong("id"), "fixVersions", null) == false)
+            <h3 class="formtitle">$i18n.getText("projecttab.releases.future.title")</h3>
+        #else
+            &nbsp;
+	    #end
+	</td>
+</tr>
+<tr>
+	<td width="50%" valign="top">
+	    #if ($fieldVisibility.isFieldHiddenInAllSchemes($project.getLong("id"), "fixVersions", null) == false)
+            <table cellpadding="2" cellspacing="0" border="0" width="90%">
+            #foreach ($version in $action.versionManager.getVersionsReleasedDesc($project, true))
+                    <tr>
+                        <td valign="top">
+                        #versionStatus ($version 16) &nbsp;
+                        <a title="#esc($version.getString('name'))#if($version.getString('description') && $version.getString('description') != '') - #esc($version.getString('description')) #end" href="$req.contextPath/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=DESC&sorter/field=priority&pid=$project.getLong('id')&fixfor=$version.id">$version.name</a></td>
+                        <td valign="top" align="right" width="40%">
+                    <font size="1">#if ($version.releaseDate)
+                        #versionReleaseDate($action $version)
+                    #end
+                    <a href="$req.contextPath/secure/ReleaseNote.jspa?projectId=$project.getLong("id")&styleName=Html&version=$version.id">$action.getText("common.concepts.releasenotes")</a></font>
+                    </td>
+                    </tr>
+            #end
+            </table>
+        #else
+            &nbsp;
+        #end
+	</td>
+	<td width="50%" valign="top">
+	    #if ($fieldVisibility.isFieldHiddenInAllSchemes($project.getLong("id"), "fixVersions", null) == false)
+            <table cellpadding="2" cellspacing="0" border="0" width="90%">
+            #foreach ($version in $action.versionManager.getVersionsUnreleased($project, false))
+                    <tr>
+                        <td valign="top">
+                        #versionStatus ($version 16) &nbsp;
+                        <a title="#esc($version.getString('name'))#if($version.getString('description') && $version.getString('description') != '') - #esc($version.getString('description')) #end" href="$req.contextPath/secure/IssueNavigator.jspa?reset=true&mode=hide&sorter/order=DESC&sorter/field=priority&pid=$project.getLong('id')&fixfor=$version.id">$version.name</a></td>
+                        <td valign="top" align="right" width="40%">
+                    <font size="1">#if ($version.releaseDate)
+                        #versionReleaseDate($action $version)
+                    #end
+                    <a href="$req.contextPath/secure/ReleaseNote.jspa?projectId=$project.getLong("id")&styleName=Html&version=$version.id">$action.getText("common.concepts.releasenotes")</a></font>
+                    </td>
+                    </tr>
+            #end
+            </table>
+        #else
+            &nbsp;
+        #end
+	</td>
+</tr>
+</table>

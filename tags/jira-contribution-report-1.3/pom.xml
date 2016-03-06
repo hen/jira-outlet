@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.sourcelabs.jira</groupId>
+        <artifactId>jira-outlet-parent</artifactId>
+        <version>1-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sourcelabs.jira</groupId>
+    <artifactId>sourcelabs-jira-report-contribution</artifactId>
+    <version>1.3</version>
+
+    <name>Contributor Report for JIRA</name>
+    <packaging>jar</packaging>
+
+    <description>
+      Used to indicate the non-editable user involvement on a release. 
+      Mostly this is targetted towards open source projects. 
+    </description>
+    <url>http://confluence.atlassian.com/display/JIRAEXT/Contribution+Report</url>
+
+    <scm>
+        <connection>scm:svn:https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-contribution-report</connection>
+        <developerConnection>scm:svn:https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-contribution-report</developerConnection>
+        <url>https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-contribution-report</url>
+    </scm>
+
+</project>

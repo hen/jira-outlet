@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-20] End times...</title>
+<link>http://issues.osjava.org/jira/browse/RRR-20</link>
+
+                    <description>Given a report that selects from a start date to an end date, it is natural to assume the start time is 00:00 and the end time is 23:59.</description>
+                <environment/>
+            <key id='10281'>RRR-20</key>
+        <summary>End times...</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 4 Oct 2004 09:33:23 -0700 (PDT)</created>
+    <updated>Tue, 7 Dec 2004 16:44:39 -0800 (PST)</updated>
+
+                        <version>0.2</version>
+            
+                
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

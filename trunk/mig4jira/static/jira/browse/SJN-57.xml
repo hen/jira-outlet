@@ -1,0 +1,63 @@
+<item>
+<title>[SJN-57] NotContextException error in GenericContext.createSubContext</title>
+<link>http://issues.osjava.org/jira/browse/SJN-57</link>
+
+                    <description>Posting for Henri because he MAILED IT instead of posted it ;)&lt;br/&gt;
+&lt;br/&gt;
+Found a bug with GenericContext. If I try to do: createSubcontext(&amp;quot;path&amp;quot;) it falls over with a NotContextException, because it&apos;s looking for the context at some point in its list of contexts and it&apos;s not there yet (I guess):&lt;br/&gt;
+&lt;br/&gt;
+Creating: path&lt;br/&gt;
+javax.naming.NotContextException&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jndi.AbstractContext.getNameParser(AbstractContext.java:634)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jndi.AbstractContext.getNameParser(AbstractContext.java:641)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jndi.GenericContext.createSubcontext(GenericContext.java:160)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.jndi.AbstractContext.createSubcontext(AbstractContext.java:605)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.sj.loader.JndiLoader.load(JndiLoader.java:112)&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:73)&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+Hen</description>
+                <environment/>
+            <key id='10359'>SJN-57</key>
+        <summary>NotContextException error in GenericContext.createSubContext</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='tigran'>Robert M. Zigweid</reporter>
+            
+    <created>Mon, 14 Feb 2005 18:30:28 -0800 (PST)</created>
+    <updated>Tue, 15 Feb 2005 01:34:21 -0800 (PST)</updated>
+
+                        <version>0.10</version>
+            
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10349' created='Mon, 14 Feb 2005 18:31:21 -0800 (PST)'>Should have been assigned to me, oops.</comment>
+                    <comment author='tigran' id='10350' created='Tue, 15 Feb 2005 01:34:13 -0800 (PST)'>I could not directly reproduce this error.   I did find something related that was broken in GenericContext.createSubContext() however, that was fixed.  There is now a test case for this issue.&lt;br/&gt;
+&lt;br/&gt;
+Resolved r1569&lt;br/&gt;
+</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

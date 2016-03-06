@@ -1,0 +1,41 @@
+<item>
+<title>[PAY-7] Build an Ant task</title>
+<link>http://issues.osjava.org/jira/browse/PAY-7</link>
+
+                    <description>Might involve changing the code to be more than just a series of static methods, almost definitely will. So quite involved.</description>
+                <environment/>
+            <key id='10156'>PAY-7</key>
+        <summary>Build an Ant task</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 4 Feb 2004 18:02:04 -0800 (PST)</created>
+    <updated>Wed, 9 Apr 2008 02:01:30 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.7</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

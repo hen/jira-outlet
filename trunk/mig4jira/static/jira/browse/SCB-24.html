@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#SCB-24] Ability to specify the Fetcher to use</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [SCB-24]&#xA0;Ability to specify the Fetcher to use<br/><span class="subText">
+                   Created: Sat, 6 Aug 2005 18:24:42 -0700 (PDT)                       &#xA0;Updated: Wed, 17 Jan 2007 13:07:18 -0800 (PST)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="SCB.html">Scraping</a></td></tr><tr><td><b>Component/s:</b></td><td>scraping-engine</td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/SCB-.html"></a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/SCB-scraping-engine-0.4.html">scraping-engine-0.4</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Improvement</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">Plugin ability for fetchers.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Tue, 9 Aug 2005 21:21:44 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">FooScraper.fetcher=com.some.class.that.implements.Fetcher</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/cisco77.html">cisco77</a><font size="-2"> [ <font color="#336699">Wed, 17 Jan 2007 13:07:18 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff"><a href="http://miniurl.pl/21191">http://miniurl.pl/21191</a><br/>
+<a href="http://miniurl.pl/21192">http://miniurl.pl/21192</a> <br/>
+<a href="http://miniurl.pl/21194">http://miniurl.pl/21194</a> <br/>
+<a href="http://miniurl.pl/21195">http://miniurl.pl/21195</a> <br/>
+<a href="http://miniurl.pl/21196">http://miniurl.pl/21196</a> <br/>
+<a href="http://miniurl.pl/21197">http://miniurl.pl/21197</a> <br/>
+<a href="http://miniurl.pl/21198">http://miniurl.pl/21198</a> <br/>
+<a href="http://miniurl.pl/21199">http://miniurl.pl/21199</a> <br/>
+<a href="http://miniurl.pl/21200">http://miniurl.pl/21200</a> <br/>
+<a href="http://miniurl.pl/21201">http://miniurl.pl/21201</a> <br/>
+<a href="http://miniurl.pl/21202">http://miniurl.pl/21202</a> <br/>
+<a href="http://miniurl.pl/21203">http://miniurl.pl/21203</a> <br/>
+<a href="http://miniurl.pl/21204">http://miniurl.pl/21204</a> <br/>
+<a href="http://miniurl.pl/21205">http://miniurl.pl/21205</a> <br/>
+<a href="http://miniurl.pl/21206">http://miniurl.pl/21206</a> <br/>
+<a href="http://miniurl.pl/21207">http://miniurl.pl/21207</a> <br/>
+<a href="http://miniurl.pl/21208">http://miniurl.pl/21208</a> <br/>
+<a href="http://miniurl.pl/21209">http://miniurl.pl/21209</a> <br/>
+<a href="http://miniurl.pl/21210">http://miniurl.pl/21210</a> <br/>
+<a href="http://miniurl.pl/21211">http://miniurl.pl/21211</a> <br/>
+<a href="http://miniurl.pl/21212">http://miniurl.pl/21212</a> <br/>
+<a href="http://miniurl.pl/21213">http://miniurl.pl/21213</a> <br/>
+<a href="http://miniurl.pl/21214">http://miniurl.pl/21214</a> <br/>
+<a href="http://miniurl.pl/21215">http://miniurl.pl/21215</a> <br/>
+<a href="http://miniurl.pl/21216">http://miniurl.pl/21216</a> <br/>
+<a href="http://miniurl.pl/21217">http://miniurl.pl/21217</a> <br/>
+<a href="http://miniurl.pl/21218">http://miniurl.pl/21218</a> <br/>
+<a href="http://miniurl.pl/21219">http://miniurl.pl/21219</a> <br/>
+<a href="http://miniurl.pl/21220">http://miniurl.pl/21220</a> <br/>
+<a href="http://miniurl.pl/21221">http://miniurl.pl/21221</a> <br/>
+<a href="http://miniurl.pl/21222">http://miniurl.pl/21222</a> <br/>
+<a href="http://miniurl.pl/21223">http://miniurl.pl/21223</a> <br/>
+<a href="http://miniurl.pl/21224">http://miniurl.pl/21224</a> <br/>
+<a href="http://miniurl.pl/21225">http://miniurl.pl/21225</a> <br/>
+<a href="http://miniurl.pl/21226">http://miniurl.pl/21226</a> <br/>
+<a href="http://miniurl.pl/21227">http://miniurl.pl/21227</a> <br/>
+<a href="http://miniurl.pl/21228">http://miniurl.pl/21228</a> <br/>
+<a href="http://miniurl.pl/21229">http://miniurl.pl/21229</a> <br/>
+<a href="http://miniurl.pl/21230">http://miniurl.pl/21230</a> <br/>
+<a href="http://miniurl.pl/21231">http://miniurl.pl/21231</a> <br/>
+<a href="http://miniurl.pl/21232">http://miniurl.pl/21232</a>  <br/>
+<a href="http://miniurl.pl/21233">http://miniurl.pl/21233</a> <br/>
+<a href="http://miniurl.pl/21234">http://miniurl.pl/21234</a> <br/>
+<a href="http://miniurl.pl/21235">http://miniurl.pl/21235</a> <br/>
+<a href="http://miniurl.pl/21236">http://miniurl.pl/21236</a>  <br/>
+<a href="http://miniurl.pl/21237">http://miniurl.pl/21237</a>  <br/>
+<a href="http://miniurl.pl/21238">http://miniurl.pl/21238</a>  <br/>
+<a href="http://miniurl.pl/21239">http://miniurl.pl/21239</a> <br/>
+<a href="http://miniurl.pl/21240">http://miniurl.pl/21240</a>  <br/>
+<a href="http://miniurl.pl/21241">http://miniurl.pl/21241</a>  <br/>
+<a href="http://miniurl.pl/21242">http://miniurl.pl/21242</a>  <br/>
+<a href="http://miniurl.pl/21243">http://miniurl.pl/21243</a>  <br/>
+<a href="http://miniurl.pl/21244">http://miniurl.pl/21244</a>  <br/>
+<a href="http://miniurl.pl/21245">http://miniurl.pl/21245</a>  <br/>
+<a href="http://miniurl.pl/21246">http://miniurl.pl/21246</a>  <br/>
+<a href="http://miniurl.pl/21248">http://miniurl.pl/21248</a>  <br/>
+<a href="http://miniurl.pl/21249">http://miniurl.pl/21249</a> <br/>
+<a href="http://miniurl.pl/21250">http://miniurl.pl/21250</a>  <br/>
+<a href="http://miniurl.pl/21251">http://miniurl.pl/21251</a>  <br/>
+<a href="http://miniurl.pl/21252">http://miniurl.pl/21252</a> <br/>
+<a href="http://miniurl.pl/21253">http://miniurl.pl/21253</a>  <br/>
+<a href="http://miniurl.pl/21254">http://miniurl.pl/21254</a>  <br/>
+<a href="http://miniurl.pl/21255">http://miniurl.pl/21255</a> <br/>
+<a href="http://miniurl.pl/21257">http://miniurl.pl/21257</a> <br/>
+<a href="http://miniurl.pl/21258">http://miniurl.pl/21258</a> <br/>
+<a href="http://miniurl.pl/21259">http://miniurl.pl/21259</a> <br/>
+<a href="http://miniurl.pl/21260">http://miniurl.pl/21260</a> <br/>
+<a href="http://miniurl.pl/21261">http://miniurl.pl/21261</a> <br/>
+<a href="http://miniurl.pl/21262">http://miniurl.pl/21262</a> <br/>
+<a href="http://miniurl.pl/21263">http://miniurl.pl/21263</a> <br/>
+<a href="http://miniurl.pl/21264">http://miniurl.pl/21264</a> <br/>
+<a href="http://miniurl.pl/21265">http://miniurl.pl/21265</a> <br/>
+<a href="http://miniurl.pl/21266">http://miniurl.pl/21266</a> <br/>
+<a href="http://miniurl.pl/21267">http://miniurl.pl/21267</a> <br/>
+<a href="http://miniurl.pl/21268">http://miniurl.pl/21268</a> <br/>
+<a href="http://miniurl.pl/21269">http://miniurl.pl/21269</a> <br/>
+<a href="http://miniurl.pl/21270">http://miniurl.pl/21270</a> <br/>
+<a href="http://miniurl.pl/21271">http://miniurl.pl/21271</a> <br/>
+<a href="http://miniurl.pl/21272">http://miniurl.pl/21272</a> <br/>
+<a href="http://miniurl.pl/21273">http://miniurl.pl/21273</a> <br/>
+<a href="http://miniurl.pl/21274">http://miniurl.pl/21274</a> <br/>
+<a href="http://miniurl.pl/21275">http://miniurl.pl/21275</a> <br/>
+<a href="http://miniurl.pl/21276">http://miniurl.pl/21276</a> <br/>
+<a href="http://miniurl.pl/21277">http://miniurl.pl/21277</a> <br/>
+<a href="http://miniurl.pl/21278">http://miniurl.pl/21278</a> <br/>
+<a href="http://miniurl.pl/21279">http://miniurl.pl/21279</a>  <br/>
+<a href="http://miniurl.pl/21280">http://miniurl.pl/21280</a> <br/>
+<a href="http://miniurl.pl/21281">http://miniurl.pl/21281</a> <br/>
+<a href="http://miniurl.pl/21282">http://miniurl.pl/21282</a> <br/>
+<a href="http://miniurl.pl/21283">http://miniurl.pl/21283</a> <br/>
+<a href="http://miniurl.pl/21284">http://miniurl.pl/21284</a> <br/>
+<a href="http://miniurl.pl/21285">http://miniurl.pl/21285</a> <br/>
+<a href="http://miniurl.pl/21286">http://miniurl.pl/21286</a>  <br/>
+<a href="http://miniurl.pl/21288">http://miniurl.pl/21288</a> <br/>
+<a href="http://miniurl.pl/21289">http://miniurl.pl/21289</a>  <br/>
+<a href="http://miniurl.pl/21290">http://miniurl.pl/21290</a>  <br/>
+<a href="http://miniurl.pl/21291">http://miniurl.pl/21291</a>  <br/>
+<a href="http://miniurl.pl/21292">http://miniurl.pl/21292</a>  <br/>
+<a href="http://miniurl.pl/21293">http://miniurl.pl/21293</a>  <br/>
+<a href="http://miniurl.pl/21294">http://miniurl.pl/21294</a>  <br/>
+</td></tr></table></body></html>

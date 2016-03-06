@@ -1,0 +1,40 @@
+Index: src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java
+===================================================================
+--- src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java	(revision 36509)
++++ src/java/com/sourcelabs/jira/plugin/portlet/filterlist/FilterListPortlet.java	(working copy)
+@@ -42,8 +42,8 @@
+     private final ApplicationProperties applicationProperties;
+     private final SearchRequestService searchRequestService;
+ 
+-    public FilterListPortlet(JiraAuthenticationContext authenticationContext, PermissionManager permissionManager, 
+-                          ConstantsManager constantsManager, SearchProvider searchProvider, 
++    public FilterListPortlet(JiraAuthenticationContext authenticationContext, PermissionManager permissionManager,
++                          ConstantsManager constantsManager, SearchProvider searchProvider,
+                           ApplicationProperties applicationProperties, SearchRequestService searchRequestService)  {
+         super(authenticationContext);
+         this.permissionManager = permissionManager;
+@@ -80,14 +80,11 @@
+             String includeLinks = portletConfiguration.getProperty("filterlist-includelinks");
+             params.put("includeLinks", new Boolean("true".equals(includeLinks)) );
+ 
+-            String filterUserOwned = portletConfiguration.getProperty("filterlist-include-users");
+-            String filterOtherOwned  = portletConfiguration.getProperty("filterlist-include-others");
+-
+             String includeCounts = portletConfiguration.getProperty("filterlist-includecounts");
+             params.put("includeCounts", new Boolean("true".equals(includeCounts)) );
+ 
+             if(loggedIn) {
+-                // find ALL filters to start with. 
++                // find ALL filters to start with.
+                 User user = this.authenticationContext.getUser();
+                 Collection filters = this.searchRequestService.getFavouriteFilters( user );
+ 
+@@ -133,7 +130,7 @@
+ 
+     public long getCountsForFilter(SearchRequest sr) throws SearchException {
+         User user = this.authenticationContext.getUser();
+-        return this.searchProvider.searchCount( sr, user );
++        return this.searchProvider.searchCount( sr.getQuery(), user );
+     }
+ 
+ }

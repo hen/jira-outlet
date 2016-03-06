@@ -1,0 +1,45 @@
+<item>
+<title>[PAY-17] Create paylet.jar sucking in PayloadContractor</title>
+<link>http://issues.osjava.org/jira/browse/PAY-17</link>
+
+                    <description/>
+                <environment/>
+            <key id='10376'>PAY-17</key>
+        <summary>Create paylet.jar sucking in PayloadContractor</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10373'>PAY-14</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 18:00:33 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:50:06 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10370' created='Mon, 16 May 2005 10:47:46 -0700 (PDT)'>Supply a .jar via a -x flag to contraction.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

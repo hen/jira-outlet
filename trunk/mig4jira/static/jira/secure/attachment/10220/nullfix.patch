@@ -1,0 +1,21 @@
+--- gj-csv-1.0/src/java/com/generationjava/io/CsvWriter.java	2003-12-09 00:48:46.000000000 +1100
++++ gj-csv-1.0-fixed/src/java/com/generationjava/io/CsvWriter.java	2007-01-18 15:25:16.484375000 +1100
+@@ -66,12 +66,14 @@
+             written = false;
+         }
+ 
+-        int idx = field.indexOf(field_delim);
+-        if(idx != -1) {
+-            field = "\""+replace(field,"\"","\"\"")+"\"";
++        if (field != null) {
++            if(field.indexOf(field_delim) != -1 || field.indexOf(block_delim) != -1 || field.indexOf('"') != -1) {
++                field = "\""+replace(field,"\"","\"\"")+"\"";
++            }
++
++            writer.write(field);
+         }
+ 
+-        writer.write(field);
+         written = true;
+     }
+ 

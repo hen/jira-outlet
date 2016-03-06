@@ -1,0 +1,51 @@
+<item>
+<title>[SJN-3] Unable to use simple-jndi on Windows with standard java naming</title>
+<link>http://issues.osjava.org/jira/browse/SJN-3</link>
+
+                    <description>You cannot lookup java:/SomeDS as : is an illegal character on the MS Windows platform.</description>
+                <environment>Windows</environment>
+            <key id='10002'>SJN-3</key>
+        <summary>Unable to use simple-jndi on Windows with standard java naming</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 10:12:43 -0700 (PDT)</created>
+    <updated>Tue, 23 Aug 2005 19:54:52 -0700 (PDT)</updated>
+
+                        <version>0.5</version>
+            
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10001' created='Thu, 17 Jul 2003 10:13:49 -0700 (PDT)'>CVS HEAD now strips out the : from java:/ to just leave it with java/ [which has an implied delimiter of /]. &lt;br/&gt;
+&lt;br/&gt;
+This may not be the solution for 0.6. Possibly a more generic escaping concept will be considered.</comment>
+                    <comment author='bayard' id='10421' created='Tue, 23 Aug 2005 19:54:52 -0700 (PDT)'>Two ways to do this in the new version.&lt;br/&gt;
+&lt;br/&gt;
+Either use SPACE to set a header to all your requests ie:  SPACE=java:comp,&lt;br/&gt;
+or use COLON_REPLACE to set a different set of characters to be used as colons, ie: colon.replace=java--.properties.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

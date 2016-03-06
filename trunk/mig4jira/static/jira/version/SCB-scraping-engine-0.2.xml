@@ -1,0 +1,10 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='SCB-16'>Add support for POST requests</issue>
+    <issue status='Closed' key='SCB-12'>Move the example UrlScraper into the main distro so everyone may use it</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='SCB-8'>Examples zip download</issue>
+  </fixes-issues>
+  <name>scraping-engine-0.2</name>
+</version>

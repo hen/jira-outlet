@@ -1,0 +1,3 @@
+Add to JIRA once ready:
+
+A Version info RSS. So you can subscribe to JIRA to find out when releases are made etc.

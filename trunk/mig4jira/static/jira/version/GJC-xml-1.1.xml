@@ -1,0 +1,7 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-25'>Character entities don&apos;t get escaped</issue>
+    <issue status='Closed' key='GJC-22'>enumerateNode cannot handle single-nodes</issue>
+  </fixes-issues>
+  <name>xml-1.1</name>
+</version>

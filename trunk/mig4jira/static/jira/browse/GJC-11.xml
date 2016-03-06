@@ -1,0 +1,44 @@
+<item>
+<title>[GJC-11] Split the front page up</title>
+<link>http://issues.osjava.org/jira/browse/GJC-11</link>
+
+                    <description>The front page lists all components under the one list, but some of them are definitely deprecated or not fully released. These should go lower down in a separate table. Maybe also have a sandbox area.</description>
+                <environment/>
+            <key id='10158'>GJC-11</key>
+        <summary>Split the front page up</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 8 Feb 2004 11:26:57 -0800 (PST)</created>
+    <updated>Wed, 28 Apr 2004 21:03:13 -0700 (PDT)</updated>
+
+                
+                
+                        <component>site</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10154' created='Wed, 28 Apr 2004 21:03:13 -0700 (PDT)'>This is done. A set lower down which are not in active development.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

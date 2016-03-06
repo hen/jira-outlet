@@ -1,0 +1,9 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='SCB-24'>Ability to specify the Fetcher to use</issue>
+    <issue status='Closed' key='SCB-21'>Ability to scrape ftp:// urls</issue>
+    <issue status='Closed' key='SCB-18'>Add userAgent configuration</issue>
+    <issue status='Closed' key='SCB-17'>Support Cookies</issue>
+  </fixes-issues>
+  <name>scraping-engine-0.4</name>
+</version>

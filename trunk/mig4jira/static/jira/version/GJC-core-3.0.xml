@@ -1,0 +1,9 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='GJC-26'>NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-1'>Remove deprecated functions</issue>
+  </fixes-issues>
+  <name>core-3.0</name>
+</version>

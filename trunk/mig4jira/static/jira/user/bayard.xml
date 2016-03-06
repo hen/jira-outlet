@@ -1,0 +1,697 @@
+<user>
+  <login>bayard</login>
+  <name>Henri Yandell</name>
+  <commented>
+    <issue status='Closed' key='XMLW-9'>PrettyPrinterXMLWriter does not implement all methods</issue>
+    <issue status='Closed' key='XMLW-8'>expected/actual in the incorrect order in XmlWriterTest</issue>
+    <issue status='Closed' key='XMLW-7'>Use an xmlenc version that&apos;s on ibiblio</issue>
+    <issue status='Closed' key='XMLW-5'>No data entities lead to </issue>
+    <issue status='Closed' key='XMLW-4'>Need to link old sf site to the new one, so people can see old docs</issue>
+    <issue status='Closed' key='XMLW-3'>Redirect Sourceforge site over to OSJava</issue>
+    <issue status='Closed' key='XMLW-1'>Test xmlenc 0.37 works</issue>
+    <issue status='Open' key='TRA-3'>tld link is broken.</issue>
+    <issue status='Resolved' key='TRA-2'>Delimiter is shown after last item</issue>
+    <issue status='Closed' key='SJN-81'>Allow DBCP parameters to be passed in</issue>
+    <issue status='Open' key='SJN-80'>strange behavior if property file is named  &quot;default.properties&quot;</issue>
+    <issue status='Closed' key='SJN-79'>lookup return null instead throiwiung exceptions</issue>
+    <issue status='Closed' key='SJN-75'>Using simple-jndi for testing with Maven 2</issue>
+    <issue status='Closed' key='SJN-74'>Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 </issue>
+    <issue status='Closed' key='SJN-71'>Documentation for simple-jndi property-names are inconsistent and incorrect</issue>
+    <issue status='Closed' key='SJN-70'>AbstractContext: Can&apos;t unbind a subcontext</issue>
+    <issue status='Closed' key='SJN-69'>Does not load DataSource correctly when the name comes from the filename of the .properties/.xml file.</issue>
+    <issue status='Closed' key='SJN-68'>Subcontexts not shared when org.osjava.sj.jndi.shared=true</issue>
+    <issue status='Closed' key='SJN-65'>Test COLON_REPLACE concept</issue>
+    <issue status='Closed' key='SJN-64'>Test the SPACE concept</issue>
+    <issue status='Closed' key='SJN-63'>Test System properties</issue>
+    <issue status='Closed' key='SJN-62'>Create unit test containing java: subcontext</issue>
+    <issue status='Closed' key='SJN-60'>Create user-guide</issue>
+    <issue status='Closed' key='SJN-59'>Move from gj-xml to DOM</issue>
+    <issue status='Open' key='SJN-55'>Add support for javax.naming.event</issue>
+    <issue status='Closed' key='SJN-54'>If a resource directory config/java and file config/java.properties both exist, indeterminate result</issue>
+    <issue status='Closed' key='SJN-53'>simple-jndi-0.5.pom is 0 sized in repo</issue>
+    <issue status='Closed' key='SJN-52'>Do conversion of values on parse and not on lookup?</issue>
+    <issue status='Closed' key='SJN-51'>Fix hierarchies in configuration files</issue>
+    <issue status='Open' key='SJN-50'>Enable JTA transactions to work through the DataSource</issue>
+    <issue status='Closed' key='SJN-49'>Unable to load a DS in jdbc/FooDS.properties</issue>
+    <issue status='Closed' key='SJN-48'>Can/t use System properties to initialise the JNDI</issue>
+    <issue status='Closed' key='SJN-47'>Release and discuss the example Config class</issue>
+    <issue status='Closed' key='SJN-46'>Create example system for Converters</issue>
+    <issue status='Closed' key='SJN-45'>XML variant cannot handle multiple properties to make a List</issue>
+    <issue status='Closed' key='SJN-44'>Remove &apos;org.osjava.jndi.datasource&apos; code</issue>
+    <issue status='Closed' key='SJN-43'>.ini files do not lod blockless values correctly</issue>
+    <issue status='Closed' key='SJN-42'>Seems to accept anything as a DS id in java.properties</issue>
+    <issue status='Closed' key='SJN-41'>Add examples download</issue>
+    <issue status='Open' key='SJN-40'>Test with p6spy.</issue>
+    <issue status='Closed' key='SJN-39'>XML does not work well if at all in the 0.6 release.</issue>
+    <issue status='Closed' key='SJN-38'>Inline all dependencies and see how it feels</issue>
+    <issue status='Closed' key='SJN-37'>Need to improve how site archiving is done</issue>
+    <issue status='Closed' key='SJN-36'>Remove &apos;Development Process&apos; link</issue>
+    <issue status='Closed' key='SJN-35'>Lies about how to access CVS on the website</issue>
+    <issue status='Closed' key='SJN-34'>Redirect old site over to new one</issue>
+    <issue status='Closed' key='SJN-33'>Unable to have DataSource files with more than 2 elements</issue>
+    <issue status='Closed' key='SJN-31'>Switch to Log4J</issue>
+    <issue status='Closed' key='SJN-30'>Static memory</issue>
+    <issue status='Open' key='SJN-28'>Confirm that .jars and .zips in the classpath work okay with the lookup</issue>
+    <issue status='Closed' key='SJN-27'>Allow values to be accessed over http</issue>
+    <issue status='Closed' key='SJN-26'>Implement list methods</issue>
+    <issue status='Open' key='SJN-23'>Implement DirContext</issue>
+    <issue status='Closed' key='SJN-22'>Pluggable converters</issue>
+    <issue status='Closed' key='SJN-21'>Allow the standard simple-jndi properties to be modifiable</issue>
+    <issue status='Closed' key='SJN-19'>Allow users to bind variables</issue>
+    <issue status='Closed' key='SJN-18'>NumberConverter needs to know what type was desired</issue>
+    <issue status='Closed' key='SJN-6'>Support a .ini backend</issue>
+    <issue status='Closed' key='SJN-5'>Implement DataSource creation as a part of the type converting system</issue>
+    <issue status='Closed' key='SJN-4'>Write maven.xml to copy config into target/test-classes</issue>
+    <issue status='Closed' key='SJN-3'>Unable to use simple-jndi on Windows with standard java naming</issue>
+    <issue status='Closed' key='SJN-2'>Can org.osjava.jndi.datasource be obtained as shown in the Examples?</issue>
+    <issue status='Closed' key='SCB-24'>Ability to specify the Fetcher to use</issue>
+    <issue status='Closed' key='SCB-21'>Ability to scrape ftp:// urls</issue>
+    <issue status='Open' key='SCB-19'>Set a referer for initial scrape</issue>
+    <issue status='Closed' key='SCB-18'>Add userAgent configuration</issue>
+    <issue status='Closed' key='SCB-17'>Support Cookies</issue>
+    <issue status='Closed' key='SCB-16'>Add support for POST requests</issue>
+    <issue status='Closed' key='SCB-14'>Create .bat files for the example</issue>
+    <issue status='Closed' key='SCB-12'>Move the example UrlScraper into the main distro so everyone may use it</issue>
+    <issue status='Closed' key='SCB-8'>Examples zip download</issue>
+    <issue status='Closed' key='SCB-7'>Add a FileStore concept so that scraped data may be saved</issue>
+    <issue status='Open' key='SCB-6'>Have linkhunter know about mime types</issue>
+    <issue status='Closed' key='SCB-5'>Add the PrinterStore, a store that prints out</issue>
+    <issue status='Closed' key='SCB-3'>Needs to respect robots.txt before being unleashed fully</issue>
+    <issue status='Closed' key='SCB-2'>Infinite loops on africainsight.org</issue>
+    <issue status='Closed' key='RRR-79'>i18n problems - web pages lack encoding info</issue>
+    <issue status='Open' key='RRR-78'>Show group and report comments on current-state panel</issue>
+    <issue status='Closed' key='RRR-77'>Missing chosen-resource on jsp pages</issue>
+    <issue status='Closed' key='RRR-73'>Improve applet to work in java 1.4</issue>
+    <issue status='Closed' key='RRR-72'>Results need a Header</issue>
+    <issue status='Closed' key='RRR-71'>Temporary widget hack</issue>
+    <issue status='Closed' key='RRR-70'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-69'>Test if this is still a problem</issue>
+    <issue status='Closed' key='RRR-67'>Named sql parameters</issue>
+    <issue status='Open' key='RRR-66'>Tomcat did not startup properly</issue>
+    <issue status='Closed' key='RRR-64'>Need page when results are empty</issue>
+    <issue status='Open' key='RRR-62'>&apos;Enter Information&apos; needs to clear previous value in URL.</issue>
+    <issue status='Open' key='RRR-60'>Calendar widget fails in Firefox</issue>
+    <issue status='Open' key='RRR-57'>Error handling</issue>
+    <issue status='Closed' key='RRR-56'>Helper tag for creating multiple columns</issue>
+    <issue status='Open' key='RRR-55'>maven plugin for building a reportrunner&apos;d system</issue>
+    <issue status='Open' key='RRR-52'>Logging</issue>
+    <issue status='Closed' key='RRR-50'>Description on param tag</issue>
+    <issue status='Open' key='RRR-48'>Create DTDs for various XML files</issue>
+    <issue status='Closed' key='RRR-46'>Bookmark trail needs choose-resources</issue>
+    <issue status='Closed' key='RRR-45'>Cleanup the reportrunner.xml schema</issue>
+    <issue status='Closed' key='RRR-44'>Need to be able to choose resources from a list</issue>
+    <issue status='Closed' key='RRR-43'>Description for each report and reportgroup</issue>
+    <issue status='Closed' key='RRR-42'>View xml code for each report</issue>
+    <issue status='Closed' key='RRR-41'>Trail of urls to let the user go backwards</issue>
+    <issue status='Closed' key='RRR-40'>Show the resource a report is on in reports</issue>
+    <issue status='Closed' key='RRR-39'>Stilted language</issue>
+    <issue status='Open' key='RRR-37'>Calendar widget fails in Safari</issue>
+    <issue status='Closed' key='RRR-36'>Use classpath if file not found</issue>
+    <issue status='Closed' key='RRR-35'>Allow multiple parameters</issue>
+    <issue status='Closed' key='RRR-34'>Excel rendering doesn&apos;t understand types</issue>
+    <issue status='Closed' key='RRR-31'>XML files need to stop being loaded throgh classpath</issue>
+    <issue status='Closed' key='RRR-30'>Servlet takes DataSourceName as an init parameter</issue>
+    <issue status='Closed' key='RRR-29'>Downloadable renderers need to have a filename</issue>
+    <issue status='Closed' key='RRR-27'>SqlReport should set column names if unset</issue>
+    <issue status='Closed' key='RRR-24'>Same named reports clash</issue>
+    <issue status='Closed' key='RRR-22'>Automatically choose renderer when only one</issue>
+    <issue status='Closed' key='RRR-21'>Columns need formatting</issue>
+    <issue status='Closed' key='RRR-19'>Default values</issue>
+    <issue status='In Progress' key='RRR-17'>Use Velocity instead of JSP</issue>
+    <issue status='Closed' key='RRR-16'>Writer vs OutputStream</issue>
+    <issue status='Closed' key='RRR-15'>Create a Param object</issue>
+    <issue status='Closed' key='RRR-13'>param choices</issue>
+    <issue status='Open' key='RRR-12'>widget system</issue>
+    <issue status='Closed' key='RRR-10'>converting</issue>
+    <issue status='Closed' key='RRR-8'>more features for htmltable renderer</issue>
+    <issue status='Closed' key='RRR-6'>time graph</issue>
+    <issue status='Closed' key='RRR-3'>excel renderer</issue>
+    <issue status='Closed' key='RRR-2'>CSV renderer</issue>
+    <issue status='Closed' key='RRR-1'>Servlet so it can change content-type</issue>
+    <issue status='Closed' key='PAY-20'>Change packages</issue>
+    <issue status='Closed' key='PAY-19'>Create FileRemoverPaylet</issue>
+    <issue status='Closed' key='PAY-18'>Create JarSignerPaylet</issue>
+    <issue status='Closed' key='PAY-17'>Create paylet.jar sucking in PayloadContractor</issue>
+    <issue status='Closed' key='PAY-16'>Create paylet execution in PayloadExtractor</issue>
+    <issue status='Closed' key='PAY-15'>Create interface structure</issue>
+    <issue status='Closed' key='PAY-14'>Paylets</issue>
+    <issue status='Closed' key='PAY-13'>Inteprolating in archives needs to recurse</issue>
+    <issue status='Closed' key='PAY-12'>Interpolate zips/wars/jars etc</issue>
+    <issue status='Closed' key='PAY-11'>Allow more than one .properties file to be passed in</issue>
+    <issue status='Closed' key='PAY-10'>Jarring on Windows puts in backslashes</issue>
+    <issue status='Open' key='PAY-9'>org.osjava.payload.interpolate.conf=sar.properties</issue>
+    <issue status='Closed' key='PAY-5'>Allow interpolated files to be specified</issue>
+    <issue status='Closed' key='PAY-3'>Write a changes page</issue>
+    <issue status='Closed' key='OSC-7'>Support stored procedures</issue>
+    <issue status='Closed' key='OSC-6'>NullStore should not print to console</issue>
+    <issue status='Closed' key='OSC-4'>Need to use log4j when FactoryUtils can&apos;t find an object</issue>
+    <issue status='Closed' key='OSC-1'>Rename PrinterStore to ConsoleStore</issue>
+    <issue status='Closed' key='NRB-10'>If a 3xx response code; follow links</issue>
+    <issue status='Closed' key='NRB-9'>&quot;Disallow: &quot; should indicate that nothing is disallowed</issue>
+    <issue status='Closed' key='NRB-8'>User-Agent name comparison should be case insensitive</issue>
+    <issue status='Open' key='NRB-7'>A 403 or 401 should be considered a false and not an error</issue>
+    <issue status='Closed' key='NRB-6'>Spec bug; check user agents first and then the first wildcard</issue>
+    <issue status='Closed' key='NRB-5'>User-Agent setting doesn&apos;t work</issue>
+    <issue status='Closed' key='NRB-4'>Doesn&apos;t send User-Agent in the request</issue>
+    <issue status='Closed' key='NRB-3'>isUrlAllowed gets confused by ending /</issue>
+    <issue status='Closed' key='NRB-2'>Switch to Log4j</issue>
+    <issue status='Closed' key='NRB-1'>Unit Tests are hardcoded</issue>
+    <issue status='Open' key='JDF-2'>Support serialVersionID</issue>
+    <issue status='Open' key='GJC-33'>CSV outputs with the wrong line endings on Windows</issue>
+    <issue status='Open' key='GJC-28'>Create a generic HTML Table scraper</issue>
+    <issue status='Closed' key='GJC-26'>NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</issue>
+    <issue status='Closed' key='GJC-25'>Character entities don&apos;t get escaped</issue>
+    <issue status='Open' key='GJC-24'>Wrong number of fields when last character is fieldDelimiter</issue>
+    <issue status='Closed' key='GJC-22'>enumerateNode cannot handle single-nodes</issue>
+    <issue status='Closed' key='GJC-21'>Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</issue>
+    <issue status='Closed' key='GJC-20'>Improve CsvWriter API</issue>
+    <issue status='Closed' key='GJC-19'>Target is always the first argument in HtmlW/XmlW. </issue>
+    <issue status='Closed' key='GJC-18'>Add a scrape(String tag) method </issue>
+    <issue status='Closed' key='GJC-17'>Performance Bottleneck: extensive use of  toLowerCase in com.generationjava.web.HtmlW.getIndexOpeningTag</issue>
+    <issue status='Open' key='GJC-16'>Easy Iterate method</issue>
+    <issue status='Closed' key='GJC-13'>Pull io.find out into its own gj-find jar</issue>
+    <issue status='Closed' key='GJC-12'>Link components on front page</issue>
+    <issue status='Closed' key='GJC-11'>Split the front page up</issue>
+    <issue status='Open' key='GJC-10'>Recode XmlW/HtmlW to be two different childish parsers</issue>
+    <issue status='Closed' key='GJC-7'>moveToTagWith called twice will find the first one again</issue>
+    <issue status='Closed' key='GJC-6'>XMLProperties: Comments and other invisible tags are added</issue>
+    <issue status='Closed' key='GJC-5'>XMLProperties does not add root&apos;s attributes as properties</issue>
+    <issue status='Closed' key='GJC-4'>Create genjava-xmlparser and genjava-props</issue>
+    <issue status='Closed' key='GJC-3'>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</issue>
+    <issue status='Closed' key='GJC-2'>HtmlScraper needs to be case insensitive</issue>
+    <issue status='Closed' key='GJC-1'>Remove deprecated functions</issue>
+  </commented>
+  <reported>
+    <issue status='Closed' key='XMLW-9'>PrettyPrinterXMLWriter does not implement all methods</issue>
+    <issue status='Closed' key='XMLW-8'>expected/actual in the incorrect order in XmlWriterTest</issue>
+    <issue status='Closed' key='XMLW-7'>Use an xmlenc version that&apos;s on ibiblio</issue>
+    <issue status='Closed' key='XMLW-6'>Fix or remove java-channel link</issue>
+    <issue status='Closed' key='XMLW-5'>No data entities lead to </issue>
+    <issue status='Closed' key='XMLW-4'>Need to link old sf site to the new one, so people can see old docs</issue>
+    <issue status='Closed' key='XMLW-3'>Redirect Sourceforge site over to OSJava</issue>
+    <issue status='Open' key='XMLW-2'>Need to re-run Pete&apos;s benchmarks</issue>
+    <issue status='Closed' key='XMLW-1'>Test xmlenc 0.37 works</issue>
+    <issue status='Open' key='TRA-1'>Does not work under 2.3</issue>
+    <issue status='Closed' key='SJN-81'>Allow DBCP parameters to be passed in</issue>
+    <issue status='Open' key='SJN-72'>FooDS.properties seems to fail</issue>
+    <issue status='Closed' key='SJN-70'>AbstractContext: Can&apos;t unbind a subcontext</issue>
+    <issue status='Closed' key='SJN-68'>Subcontexts not shared when org.osjava.sj.jndi.shared=true</issue>
+    <issue status='Open' key='SJN-67'>Pluggable lookup system + http lookup</issue>
+    <issue status='Open' key='SJN-66'>Write classpath lookup</issue>
+    <issue status='Closed' key='SJN-65'>Test COLON_REPLACE concept</issue>
+    <issue status='Closed' key='SJN-64'>Test the SPACE concept</issue>
+    <issue status='Closed' key='SJN-63'>Test System properties</issue>
+    <issue status='Closed' key='SJN-62'>Create unit test containing java: subcontext</issue>
+    <issue status='Open' key='SJN-61'>Submit to Sun</issue>
+    <issue status='Closed' key='SJN-60'>Create user-guide</issue>
+    <issue status='Closed' key='SJN-58'>Unable to create subcontexts</issue>
+    <issue status='Closed' key='SJN-53'>simple-jndi-0.5.pom is 0 sized in repo</issue>
+    <issue status='Closed' key='SJN-52'>Do conversion of values on parse and not on lookup?</issue>
+    <issue status='Closed' key='SJN-51'>Fix hierarchies in configuration files</issue>
+    <issue status='Open' key='SJN-50'>Enable JTA transactions to work through the DataSource</issue>
+    <issue status='Closed' key='SJN-49'>Unable to load a DS in jdbc/FooDS.properties</issue>
+    <issue status='Closed' key='SJN-48'>Can/t use System properties to initialise the JNDI</issue>
+    <issue status='Closed' key='SJN-47'>Release and discuss the example Config class</issue>
+    <issue status='Closed' key='SJN-46'>Create example system for Converters</issue>
+    <issue status='Closed' key='SJN-45'>XML variant cannot handle multiple properties to make a List</issue>
+    <issue status='Closed' key='SJN-44'>Remove &apos;org.osjava.jndi.datasource&apos; code</issue>
+    <issue status='Closed' key='SJN-43'>.ini files do not lod blockless values correctly</issue>
+    <issue status='Closed' key='SJN-42'>Seems to accept anything as a DS id in java.properties</issue>
+    <issue status='Closed' key='SJN-41'>Add examples download</issue>
+    <issue status='Open' key='SJN-40'>Test with p6spy.</issue>
+    <issue status='Closed' key='SJN-39'>XML does not work well if at all in the 0.6 release.</issue>
+    <issue status='Closed' key='SJN-38'>Inline all dependencies and see how it feels</issue>
+    <issue status='Closed' key='SJN-37'>Need to improve how site archiving is done</issue>
+    <issue status='Closed' key='SJN-36'>Remove &apos;Development Process&apos; link</issue>
+    <issue status='Closed' key='SJN-35'>Lies about how to access CVS on the website</issue>
+    <issue status='Closed' key='SJN-34'>Redirect old site over to new one</issue>
+    <issue status='Closed' key='SJN-33'>Unable to have DataSource files with more than 2 elements</issue>
+    <issue status='Closed' key='SJN-32'>Not possible to mix delimiters</issue>
+    <issue status='Closed' key='SJN-31'>Switch to Log4J</issue>
+    <issue status='Closed' key='SJN-30'>Static memory</issue>
+    <issue status='Closed' key='SJN-29'>Allow Maps to be specified?</issue>
+    <issue status='Open' key='SJN-28'>Confirm that .jars and .zips in the classpath work okay with the lookup</issue>
+    <issue status='Closed' key='SJN-27'>Allow values to be accessed over http</issue>
+    <issue status='Closed' key='SJN-26'>Implement list methods</issue>
+    <issue status='Open' key='SJN-25'>Implement binding persistence</issue>
+    <issue status='Closed' key='SJN-24'>Switch to using Names and not Strings?</issue>
+    <issue status='Open' key='SJN-23'>Implement DirContext</issue>
+    <issue status='Closed' key='SJN-22'>Pluggable converters</issue>
+    <issue status='Closed' key='SJN-21'>Allow the standard simple-jndi properties to be modifiable</issue>
+    <issue status='Closed' key='SJN-20'>simple-jndi sees System.getProperty first</issue>
+    <issue status='Closed' key='SJN-19'>Allow users to bind variables</issue>
+    <issue status='Closed' key='SJN-18'>NumberConverter needs to know what type was desired</issue>
+    <issue status='Closed' key='SJN-17'>Implement Number converter</issue>
+    <issue status='Closed' key='SJN-16'>Implement BooleanConverter</issue>
+    <issue status='Closed' key='SJN-15'>URLConverter</issue>
+    <issue status='Closed' key='SJN-14'>Implement basic converter system</issue>
+    <issue status='Closed' key='SJN-13'>Allow Lists in the format</issue>
+    <issue status='Closed' key='SJN-12'>Support XML as the underlying data format</issue>
+    <issue status='Closed' key='SJN-11'>Add Types to the system</issue>
+    <issue status='Closed' key='SJN-10'>Keep the order of the .properties file.</issue>
+    <issue status='Closed' key='SJN-9'>Add classpath protocol</issue>
+    <issue status='Closed' key='SJN-8'>Default for root should be the classpath</issue>
+    <issue status='Closed' key='SJN-7'>Allow delimiter in search values to be configurable.</issue>
+    <issue status='Closed' key='SJN-6'>Support a .ini backend</issue>
+    <issue status='Closed' key='SJN-5'>Implement DataSource creation as a part of the type converting system</issue>
+    <issue status='Closed' key='SJN-4'>Write maven.xml to copy config into target/test-classes</issue>
+    <issue status='Closed' key='SJN-3'>Unable to use simple-jndi on Windows with standard java naming</issue>
+    <issue status='Closed' key='SJN-2'>Can org.osjava.jndi.datasource be obtained as shown in the Examples?</issue>
+    <issue status='Closed' key='SJN-1'>Simple-JNDI parameters can be read through simple-jndi interface.</issue>
+    <issue status='Closed' key='SCB-24'>Ability to specify the Fetcher to use</issue>
+    <issue status='Open' key='SCB-23'>Create a tutorial entry on how to scrape from RSS</issue>
+    <issue status='Open' key='SCB-22'>Ability to scrape pop:// urls</issue>
+    <issue status='Closed' key='SCB-21'>Ability to scrape ftp:// urls</issue>
+    <issue status='Open' key='SCB-20'>Sub-fetching should pass referrer of last page</issue>
+    <issue status='Open' key='SCB-19'>Set a referer for initial scrape</issue>
+    <issue status='Closed' key='SCB-18'>Add userAgent configuration</issue>
+    <issue status='Closed' key='SCB-17'>Support Cookies</issue>
+    <issue status='Closed' key='SCB-16'>Add support for POST requests</issue>
+    <issue status='Open' key='SCB-15'>Create a default csv-parser</issue>
+    <issue status='Closed' key='SCB-14'>Create .bat files for the example</issue>
+    <issue status='Closed' key='SCB-12'>Move the example UrlScraper into the main distro so everyone may use it</issue>
+    <issue status='Open' key='SCB-9'>When running the scraping engine, allow the scraper to be chosen</issue>
+    <issue status='Closed' key='SCB-8'>Examples zip download</issue>
+    <issue status='Closed' key='SCB-7'>Add a FileStore concept so that scraped data may be saved</issue>
+    <issue status='Open' key='SCB-6'>Have linkhunter know about mime types</issue>
+    <issue status='Closed' key='SCB-5'>Add the PrinterStore, a store that prints out</issue>
+    <issue status='Open' key='SCB-4'>Field validation</issue>
+    <issue status='Closed' key='SCB-3'>Needs to respect robots.txt before being unleashed fully</issue>
+    <issue status='Closed' key='SCB-2'>Infinite loops on africainsight.org</issue>
+    <issue status='Open' key='RRR-91'>Remove gj-xml dependency</issue>
+    <issue status='Open' key='RRR-90'>Run ReportRunner outside of the servlet</issue>
+    <issue status='Open' key='RRR-89'>Create Resource test page</issue>
+    <issue status='Open' key='RRR-88'>webwizard&apos;s xmlview servlet needs to escape &lt; and &gt;</issue>
+    <issue status='Open' key='RRR-87'>Make breadcrumb code generic</issue>
+    <issue status='Open' key='RRR-86'>CallableSqlReport</issue>
+    <issue status='Open' key='RRR-85'>Put the velocity.properties into the code?</issue>
+    <issue status='Open' key='RRR-84'>Get rid of the &quot;z&quot; and &quot;y&quot; hacks</issue>
+    <issue status='Open' key='RRR-83'>Need to delete the unneeded servlets when the time comes</issue>
+    <issue status='Open' key='RRR-82'>Need to implement the exception pages in velocity.</issue>
+    <issue status='Closed' key='RRR-79'>i18n problems - web pages lack encoding info</issue>
+    <issue status='Open' key='RRR-78'>Show group and report comments on current-state panel</issue>
+    <issue status='Closed' key='RRR-77'>Missing chosen-resource on jsp pages</issue>
+    <issue status='Open' key='RRR-76'>Plan reports for the following feature list</issue>
+    <issue status='Open' key='RRR-75'>Customised demo database + reports</issue>
+    <issue status='Open' key='RRR-74'>Add a type of report that merely links to a different url</issue>
+    <issue status='Closed' key='RRR-73'>Improve applet to work in java 1.4</issue>
+    <issue status='Closed' key='RRR-72'>Results need a Header</issue>
+    <issue status='Closed' key='RRR-71'>Temporary widget hack</issue>
+    <issue status='Closed' key='RRR-70'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-69'>Test if this is still a problem</issue>
+    <issue status='Open' key='RRR-68'>Renderers need parameters</issue>
+    <issue status='Closed' key='RRR-67'>Named sql parameters</issue>
+    <issue status='Open' key='RRR-65'>Exception/page when group not found</issue>
+    <issue status='Closed' key='RRR-64'>Need page when results are empty</issue>
+    <issue status='Open' key='RRR-63'>Add a taglib</issue>
+    <issue status='Open' key='RRR-61'>Reprot to show system config xml files</issue>
+    <issue status='Open' key='RRR-60'>Calendar widget fails in Firefox</issue>
+    <issue status='Open' key='RRR-59'>Add boolean widget</issue>
+    <issue status='Open' key='RRR-58'>Author understanding</issue>
+    <issue status='Open' key='RRR-57'>Error handling</issue>
+    <issue status='Closed' key='RRR-56'>Helper tag for creating multiple columns</issue>
+    <issue status='Open' key='RRR-55'>maven plugin for building a reportrunner&apos;d system</issue>
+    <issue status='Open' key='RRR-49'>No way to set defaults other than Strings</issue>
+    <issue status='Open' key='RRR-48'>Create DTDs for various XML files</issue>
+    <issue status='Open' key='RRR-47'>Descriptions for params, columns and resource-params</issue>
+    <issue status='Closed' key='RRR-46'>Bookmark trail needs choose-resources</issue>
+    <issue status='Closed' key='RRR-45'>Cleanup the reportrunner.xml schema</issue>
+    <issue status='Closed' key='RRR-44'>Need to be able to choose resources from a list</issue>
+    <issue status='Closed' key='RRR-43'>Description for each report and reportgroup</issue>
+    <issue status='Closed' key='RRR-42'>View xml code for each report</issue>
+    <issue status='Closed' key='RRR-41'>Trail of urls to let the user go backwards</issue>
+    <issue status='Closed' key='RRR-40'>Show the resource a report is on in reports</issue>
+    <issue status='Closed' key='RRR-39'>Stilted language</issue>
+    <issue status='Closed' key='RRR-38'>Pages show the name and not the label for things</issue>
+    <issue status='Open' key='RRR-37'>Calendar widget fails in Safari</issue>
+    <issue status='Closed' key='RRR-36'>Use classpath if file not found</issue>
+    <issue status='Closed' key='RRR-35'>Allow multiple parameters</issue>
+    <issue status='Closed' key='RRR-34'>Excel rendering doesn&apos;t understand types</issue>
+    <issue status='Open' key='RRR-33'>Text too dark on html webpage rendering</issue>
+    <issue status='Open' key='RRR-32'>Default formatter for all columns in a report</issue>
+    <issue status='Closed' key='RRR-31'>XML files need to stop being loaded throgh classpath</issue>
+    <issue status='Closed' key='RRR-30'>Servlet takes DataSourceName as an init parameter</issue>
+    <issue status='Closed' key='RRR-29'>Downloadable renderers need to have a filename</issue>
+    <issue status='Closed' key='RRR-28'>Parsing needs to happen after data entered</issue>
+    <issue status='Closed' key='RRR-27'>SqlReport should set column names if unset</issue>
+    <issue status='Closed' key='RRR-26'>Need default values for columns</issue>
+    <issue status='Closed' key='RRR-25'>Reports should also have names and labels</issue>
+    <issue status='Closed' key='RRR-24'>Same named reports clash</issue>
+    <issue status='Closed' key='RRR-22'>Automatically choose renderer when only one</issue>
+    <issue status='Closed' key='RRR-21'>Columns need formatting</issue>
+    <issue status='Open' key='RRR-20'>End times...</issue>
+    <issue status='Closed' key='RRR-19'>Default values</issue>
+    <issue status='Open' key='RRR-18'>Implement ReportRunner in ReportRunner</issue>
+    <issue status='In Progress' key='RRR-17'>Use Velocity instead of JSP</issue>
+    <issue status='Closed' key='RRR-16'>Writer vs OutputStream</issue>
+    <issue status='Closed' key='RRR-15'>Create a Param object</issue>
+    <issue status='Closed' key='RRR-14'>report needs column names</issue>
+    <issue status='Closed' key='RRR-13'>param choices</issue>
+    <issue status='Open' key='RRR-12'>widget system</issue>
+    <issue status='Closed' key='RRR-11'>renderer page shows chosen params</issue>
+    <issue status='Closed' key='RRR-10'>converting</issue>
+    <issue status='Open' key='RRR-9'>composite renderer</issue>
+    <issue status='Closed' key='RRR-8'>more features for htmltable renderer</issue>
+    <issue status='Open' key='RRR-7'>user chooses columns to show</issue>
+    <issue status='Closed' key='RRR-6'>time graph</issue>
+    <issue status='Open' key='RRR-5'>PDF</issue>
+    <issue status='Closed' key='RRR-4'>XML Renderer</issue>
+    <issue status='Closed' key='RRR-3'>excel renderer</issue>
+    <issue status='Closed' key='RRR-2'>CSV renderer</issue>
+    <issue status='Closed' key='RRR-1'>Servlet so it can change content-type</issue>
+    <issue status='Closed' key='PAY-21'>Not possible to store an empty directory in Payload</issue>
+    <issue status='Closed' key='PAY-20'>Change packages</issue>
+    <issue status='Closed' key='PAY-19'>Create FileRemoverPaylet</issue>
+    <issue status='Closed' key='PAY-18'>Create JarSignerPaylet</issue>
+    <issue status='Closed' key='PAY-17'>Create paylet.jar sucking in PayloadContractor</issue>
+    <issue status='Closed' key='PAY-16'>Create paylet execution in PayloadExtractor</issue>
+    <issue status='Closed' key='PAY-15'>Create interface structure</issue>
+    <issue status='Closed' key='PAY-14'>Paylets</issue>
+    <issue status='Closed' key='PAY-13'>Inteprolating in archives needs to recurse</issue>
+    <issue status='Closed' key='PAY-12'>Interpolate zips/wars/jars etc</issue>
+    <issue status='Closed' key='PAY-11'>Allow more than one .properties file to be passed in</issue>
+    <issue status='Closed' key='PAY-10'>Jarring on Windows puts in backslashes</issue>
+    <issue status='Open' key='PAY-9'>org.osjava.payload.interpolate.conf=sar.properties</issue>
+    <issue status='Open' key='PAY-8'>Create a maven plugin</issue>
+    <issue status='Open' key='PAY-7'>Build an Ant task</issue>
+    <issue status='Open' key='PAY-6'>Optional GUI mode?</issue>
+    <issue status='Closed' key='PAY-5'>Allow interpolated files to be specified</issue>
+    <issue status='Closed' key='PAY-4'>Improve project description/overview</issue>
+    <issue status='Closed' key='PAY-3'>Write a changes page</issue>
+    <issue status='Closed' key='PAY-2'>Work on how-to page</issue>
+    <issue status='Closed' key='PAY-1'>Handle directories</issue>
+    <issue status='Closed' key='OSC-7'>Support stored procedures</issue>
+    <issue status='Closed' key='OSC-6'>NullStore should not print to console</issue>
+    <issue status='Open' key='OSC-5'>FileStore needs to output csv</issue>
+    <issue status='Closed' key='OSC-4'>Need to use log4j when FactoryUtils can&apos;t find an object</issue>
+    <issue status='Open' key='OSC-3'>Replace Store needed</issue>
+    <issue status='Open' key='OSC-2'>More features for the FileStore</issue>
+    <issue status='Closed' key='OSC-1'>Rename PrinterStore to ConsoleStore</issue>
+    <issue status='Closed' key='NRB-10'>If a 3xx response code; follow links</issue>
+    <issue status='Closed' key='NRB-9'>&quot;Disallow: &quot; should indicate that nothing is disallowed</issue>
+    <issue status='Closed' key='NRB-8'>User-Agent name comparison should be case insensitive</issue>
+    <issue status='Open' key='NRB-7'>A 403 or 401 should be considered a false and not an error</issue>
+    <issue status='Closed' key='NRB-6'>Spec bug; check user agents first and then the first wildcard</issue>
+    <issue status='Closed' key='NRB-5'>User-Agent setting doesn&apos;t work</issue>
+    <issue status='Closed' key='NRB-4'>Doesn&apos;t send User-Agent in the request</issue>
+    <issue status='Closed' key='NRB-3'>isUrlAllowed gets confused by ending /</issue>
+    <issue status='Closed' key='NRB-2'>Switch to Log4j</issue>
+    <issue status='Closed' key='NRB-1'>Unit Tests are hardcoded</issue>
+    <issue status='Open' key='JDF-4'>Oddity in commons-discovery 0.2 to 0.4 comparison (there was no 0.3)</issue>
+    <issue status='Open' key='JDF-3'>Inheritence confusion on Jardiff&apos;s part</issue>
+    <issue status='Open' key='JDF-2'>Support serialVersionID</issue>
+    <issue status='Resolved' key='JDF-1'>Listing untrue differences between xmlwriter 2.1 and 2.2</issue>
+    <issue status='Open' key='GJC-30'>moveTo doesn&apos;t support the . or [] notiations</issue>
+    <issue status='Open' key='GJC-29'>Allow users to move backwards</issue>
+    <issue status='Open' key='GJC-28'>Create a generic HTML Table scraper</issue>
+    <issue status='Closed' key='GJC-27'>Simple DataSource implementation</issue>
+    <issue status='Closed' key='GJC-26'>NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</issue>
+    <issue status='Closed' key='GJC-25'>Character entities don&apos;t get escaped</issue>
+    <issue status='Closed' key='GJC-23'>No newline after first tag in a toString</issue>
+    <issue status='Closed' key='GJC-22'>enumerateNode cannot handle single-nodes</issue>
+    <issue status='Closed' key='GJC-21'>Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</issue>
+    <issue status='Closed' key='GJC-20'>Improve CsvWriter API</issue>
+    <issue status='Closed' key='GJC-19'>Target is always the first argument in HtmlW/XmlW. </issue>
+    <issue status='Closed' key='GJC-18'>Add a scrape(String tag) method </issue>
+    <issue status='Open' key='GJC-16'>Easy Iterate method</issue>
+    <issue status='Open' key='GJC-15'>Reconsider the END_OF_LINE variable</issue>
+    <issue status='Open' key='GJC-14'>Unit test and Javadoc</issue>
+    <issue status='Closed' key='GJC-13'>Pull io.find out into its own gj-find jar</issue>
+    <issue status='Closed' key='GJC-12'>Link components on front page</issue>
+    <issue status='Closed' key='GJC-11'>Split the front page up</issue>
+    <issue status='Open' key='GJC-10'>Recode XmlW/HtmlW to be two different childish parsers</issue>
+    <issue status='Open' key='GJC-9'>Hard-coded to escape field delimiters of &quot; and not the field delimiter</issue>
+    <issue status='Closed' key='GJC-7'>moveToTagWith called twice will find the first one again</issue>
+    <issue status='Closed' key='GJC-6'>XMLProperties: Comments and other invisible tags are added</issue>
+    <issue status='Closed' key='GJC-5'>XMLProperties does not add root&apos;s attributes as properties</issue>
+    <issue status='Closed' key='GJC-4'>Create genjava-xmlparser and genjava-props</issue>
+    <issue status='Closed' key='GJC-3'>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</issue>
+    <issue status='Closed' key='GJC-2'>HtmlScraper needs to be case insensitive</issue>
+    <issue status='Closed' key='GJC-1'>Remove deprecated functions</issue>
+  </reported>
+  <assigned>
+    <issue status='Closed' key='XMLW-7'>Use an xmlenc version that&apos;s on ibiblio</issue>
+    <issue status='Closed' key='XMLW-6'>Fix or remove java-channel link</issue>
+    <issue status='Closed' key='XMLW-5'>No data entities lead to </issue>
+    <issue status='Closed' key='XMLW-4'>Need to link old sf site to the new one, so people can see old docs</issue>
+    <issue status='Closed' key='XMLW-3'>Redirect Sourceforge site over to OSJava</issue>
+    <issue status='Open' key='XMLW-2'>Need to re-run Pete&apos;s benchmarks</issue>
+    <issue status='Closed' key='XMLW-1'>Test xmlenc 0.37 works</issue>
+    <issue status='Open' key='TRA-6'>Add properties file to specify default values for attributes</issue>
+    <issue status='Open' key='TRA-5'>Wrong implementation of hashCode in BreadCrumb</issue>
+    <issue status='Open' key='TRA-4'>Wrong attribute value for the list tag</issue>
+    <issue status='Open' key='TRA-3'>tld link is broken.</issue>
+    <issue status='Resolved' key='TRA-2'>Delimiter is shown after last item</issue>
+    <issue status='Open' key='TRA-1'>Does not work under 2.3</issue>
+    <issue status='Closed' key='SJN-77'>InitialContext.close() improperly throws exception when using JNDI Memory implementation separately</issue>
+    <issue status='Closed' key='SJN-75'>Using simple-jndi for testing with Maven 2</issue>
+    <issue status='Closed' key='SJN-74'>Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 </issue>
+    <issue status='Closed' key='SJN-73'>Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException</issue>
+    <issue status='Open' key='SJN-72'>FooDS.properties seems to fail</issue>
+    <issue status='Closed' key='SJN-71'>Documentation for simple-jndi property-names are inconsistent and incorrect</issue>
+    <issue status='Closed' key='SJN-70'>AbstractContext: Can&apos;t unbind a subcontext</issue>
+    <issue status='Closed' key='SJN-69'>Does not load DataSource correctly when the name comes from the filename of the .properties/.xml file.</issue>
+    <issue status='Open' key='SJN-67'>Pluggable lookup system + http lookup</issue>
+    <issue status='Open' key='SJN-66'>Write classpath lookup</issue>
+    <issue status='Closed' key='SJN-65'>Test COLON_REPLACE concept</issue>
+    <issue status='Closed' key='SJN-64'>Test the SPACE concept</issue>
+    <issue status='Closed' key='SJN-63'>Test System properties</issue>
+    <issue status='Closed' key='SJN-62'>Create unit test containing java: subcontext</issue>
+    <issue status='Open' key='SJN-61'>Submit to Sun</issue>
+    <issue status='Closed' key='SJN-60'>Create user-guide</issue>
+    <issue status='Closed' key='SJN-56'>If JNDI name begins with java:/ and if using a PropertiesContext, search will fail</issue>
+    <issue status='Closed' key='SJN-54'>If a resource directory config/java and file config/java.properties both exist, indeterminate result</issue>
+    <issue status='Closed' key='SJN-53'>simple-jndi-0.5.pom is 0 sized in repo</issue>
+    <issue status='Closed' key='SJN-52'>Do conversion of values on parse and not on lookup?</issue>
+    <issue status='Closed' key='SJN-51'>Fix hierarchies in configuration files</issue>
+    <issue status='Open' key='SJN-50'>Enable JTA transactions to work through the DataSource</issue>
+    <issue status='Closed' key='SJN-49'>Unable to load a DS in jdbc/FooDS.properties</issue>
+    <issue status='Closed' key='SJN-48'>Can/t use System properties to initialise the JNDI</issue>
+    <issue status='Closed' key='SJN-47'>Release and discuss the example Config class</issue>
+    <issue status='Closed' key='SJN-46'>Create example system for Converters</issue>
+    <issue status='Closed' key='SJN-45'>XML variant cannot handle multiple properties to make a List</issue>
+    <issue status='Closed' key='SJN-44'>Remove &apos;org.osjava.jndi.datasource&apos; code</issue>
+    <issue status='Closed' key='SJN-43'>.ini files do not lod blockless values correctly</issue>
+    <issue status='Closed' key='SJN-42'>Seems to accept anything as a DS id in java.properties</issue>
+    <issue status='Closed' key='SJN-41'>Add examples download</issue>
+    <issue status='Open' key='SJN-40'>Test with p6spy.</issue>
+    <issue status='Closed' key='SJN-39'>XML does not work well if at all in the 0.6 release.</issue>
+    <issue status='Closed' key='SJN-38'>Inline all dependencies and see how it feels</issue>
+    <issue status='Closed' key='SJN-37'>Need to improve how site archiving is done</issue>
+    <issue status='Closed' key='SJN-36'>Remove &apos;Development Process&apos; link</issue>
+    <issue status='Closed' key='SJN-35'>Lies about how to access CVS on the website</issue>
+    <issue status='Closed' key='SJN-34'>Redirect old site over to new one</issue>
+    <issue status='Closed' key='SJN-33'>Unable to have DataSource files with more than 2 elements</issue>
+    <issue status='Closed' key='SJN-31'>Switch to Log4J</issue>
+    <issue status='Closed' key='SJN-30'>Static memory</issue>
+    <issue status='Closed' key='SJN-29'>Allow Maps to be specified?</issue>
+    <issue status='Open' key='SJN-28'>Confirm that .jars and .zips in the classpath work okay with the lookup</issue>
+    <issue status='Closed' key='SJN-27'>Allow values to be accessed over http</issue>
+    <issue status='Closed' key='SJN-26'>Implement list methods</issue>
+    <issue status='Open' key='SJN-25'>Implement binding persistence</issue>
+    <issue status='Closed' key='SJN-22'>Pluggable converters</issue>
+    <issue status='Closed' key='SJN-21'>Allow the standard simple-jndi properties to be modifiable</issue>
+    <issue status='Closed' key='SJN-20'>simple-jndi sees System.getProperty first</issue>
+    <issue status='Closed' key='SJN-19'>Allow users to bind variables</issue>
+    <issue status='Closed' key='SJN-18'>NumberConverter needs to know what type was desired</issue>
+    <issue status='Closed' key='SJN-17'>Implement Number converter</issue>
+    <issue status='Closed' key='SJN-16'>Implement BooleanConverter</issue>
+    <issue status='Closed' key='SJN-15'>URLConverter</issue>
+    <issue status='Closed' key='SJN-14'>Implement basic converter system</issue>
+    <issue status='Closed' key='SJN-13'>Allow Lists in the format</issue>
+    <issue status='Closed' key='SJN-12'>Support XML as the underlying data format</issue>
+    <issue status='Closed' key='SJN-11'>Add Types to the system</issue>
+    <issue status='Closed' key='SJN-10'>Keep the order of the .properties file.</issue>
+    <issue status='Closed' key='SJN-9'>Add classpath protocol</issue>
+    <issue status='Closed' key='SJN-8'>Default for root should be the classpath</issue>
+    <issue status='Closed' key='SJN-7'>Allow delimiter in search values to be configurable.</issue>
+    <issue status='Closed' key='SJN-6'>Support a .ini backend</issue>
+    <issue status='Closed' key='SJN-5'>Implement DataSource creation as a part of the type converting system</issue>
+    <issue status='Closed' key='SJN-4'>Write maven.xml to copy config into target/test-classes</issue>
+    <issue status='Closed' key='SJN-3'>Unable to use simple-jndi on Windows with standard java naming</issue>
+    <issue status='Closed' key='SJN-2'>Can org.osjava.jndi.datasource be obtained as shown in the Examples?</issue>
+    <issue status='Closed' key='SJN-1'>Simple-JNDI parameters can be read through simple-jndi interface.</issue>
+    <issue status='Open' key='SCB-26'>Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</issue>
+    <issue status='Open' key='SCB-25'>support for fetching non - HTML/Text files content-type: application/vnd.ms-word</issue>
+    <issue status='Closed' key='SCB-24'>Ability to specify the Fetcher to use</issue>
+    <issue status='Open' key='SCB-23'>Create a tutorial entry on how to scrape from RSS</issue>
+    <issue status='Open' key='SCB-22'>Ability to scrape pop:// urls</issue>
+    <issue status='Closed' key='SCB-21'>Ability to scrape ftp:// urls</issue>
+    <issue status='Open' key='SCB-20'>Sub-fetching should pass referrer of last page</issue>
+    <issue status='Open' key='SCB-19'>Set a referer for initial scrape</issue>
+    <issue status='Closed' key='SCB-18'>Add userAgent configuration</issue>
+    <issue status='Closed' key='SCB-17'>Support Cookies</issue>
+    <issue status='Closed' key='SCB-16'>Add support for POST requests</issue>
+    <issue status='Open' key='SCB-15'>Create a default csv-parser</issue>
+    <issue status='Closed' key='SCB-14'>Create .bat files for the example</issue>
+    <issue status='Closed' key='SCB-12'>Move the example UrlScraper into the main distro so everyone may use it</issue>
+    <issue status='Open' key='SCB-9'>When running the scraping engine, allow the scraper to be chosen</issue>
+    <issue status='Closed' key='SCB-8'>Examples zip download</issue>
+    <issue status='Closed' key='SCB-7'>Add a FileStore concept so that scraped data may be saved</issue>
+    <issue status='Open' key='SCB-6'>Have linkhunter know about mime types</issue>
+    <issue status='Closed' key='SCB-5'>Add the PrinterStore, a store that prints out</issue>
+    <issue status='Open' key='SCB-4'>Field validation</issue>
+    <issue status='Closed' key='SCB-3'>Needs to respect robots.txt before being unleashed fully</issue>
+    <issue status='Closed' key='SCB-2'>Infinite loops on africainsight.org</issue>
+    <issue status='Open' key='RRR-93'>Allow value fields to get assignments from scripting language evaluation.</issue>
+    <issue status='Open' key='RRR-92'>SQL Binding for &lt;columns&gt; tag.</issue>
+    <issue status='Open' key='RRR-89'>Create Resource test page</issue>
+    <issue status='Open' key='RRR-87'>Make breadcrumb code generic</issue>
+    <issue status='Open' key='RRR-86'>CallableSqlReport</issue>
+    <issue status='Open' key='RRR-85'>Put the velocity.properties into the code?</issue>
+    <issue status='Open' key='RRR-84'>Get rid of the &quot;z&quot; and &quot;y&quot; hacks</issue>
+    <issue status='Open' key='RRR-83'>Need to delete the unneeded servlets when the time comes</issue>
+    <issue status='Open' key='RRR-82'>Need to implement the exception pages in velocity.</issue>
+    <issue status='Open' key='RRR-81'>weird empty param</issue>
+    <issue status='Open' key='RRR-80'>create param.toURL() and variant.toUrl()</issue>
+    <issue status='Closed' key='RRR-79'>i18n problems - web pages lack encoding info</issue>
+    <issue status='Open' key='RRR-78'>Show group and report comments on current-state panel</issue>
+    <issue status='Closed' key='RRR-77'>Missing chosen-resource on jsp pages</issue>
+    <issue status='Open' key='RRR-76'>Plan reports for the following feature list</issue>
+    <issue status='Open' key='RRR-75'>Customised demo database + reports</issue>
+    <issue status='Open' key='RRR-74'>Add a type of report that merely links to a different url</issue>
+    <issue status='Closed' key='RRR-73'>Improve applet to work in java 1.4</issue>
+    <issue status='Closed' key='RRR-72'>Results need a Header</issue>
+    <issue status='Closed' key='RRR-71'>Temporary widget hack</issue>
+    <issue status='Closed' key='RRR-70'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-69'>Test if this is still a problem</issue>
+    <issue status='Open' key='RRR-68'>Renderers need parameters</issue>
+    <issue status='Closed' key='RRR-67'>Named sql parameters</issue>
+    <issue status='Open' key='RRR-66'>Tomcat did not startup properly</issue>
+    <issue status='Open' key='RRR-65'>Exception/page when group not found</issue>
+    <issue status='Closed' key='RRR-64'>Need page when results are empty</issue>
+    <issue status='Open' key='RRR-63'>Add a taglib</issue>
+    <issue status='Open' key='RRR-62'>&apos;Enter Information&apos; needs to clear previous value in URL.</issue>
+    <issue status='Open' key='RRR-61'>Reprot to show system config xml files</issue>
+    <issue status='Open' key='RRR-60'>Calendar widget fails in Firefox</issue>
+    <issue status='Open' key='RRR-59'>Add boolean widget</issue>
+    <issue status='Open' key='RRR-58'>Author understanding</issue>
+    <issue status='Open' key='RRR-57'>Error handling</issue>
+    <issue status='Closed' key='RRR-56'>Helper tag for creating multiple columns</issue>
+    <issue status='Open' key='RRR-55'>maven plugin for building a reportrunner&apos;d system</issue>
+    <issue status='Open' key='RRR-54'>Filter system</issue>
+    <issue status='Open' key='RRR-53'>User Authentication</issue>
+    <issue status='Open' key='RRR-52'>Logging</issue>
+    <issue status='Open' key='RRR-51'>Search system</issue>
+    <issue status='Closed' key='RRR-50'>Description on param tag</issue>
+    <issue status='Open' key='RRR-49'>No way to set defaults other than Strings</issue>
+    <issue status='Open' key='RRR-48'>Create DTDs for various XML files</issue>
+    <issue status='Open' key='RRR-47'>Descriptions for params, columns and resource-params</issue>
+    <issue status='Closed' key='RRR-46'>Bookmark trail needs choose-resources</issue>
+    <issue status='Closed' key='RRR-45'>Cleanup the reportrunner.xml schema</issue>
+    <issue status='Closed' key='RRR-44'>Need to be able to choose resources from a list</issue>
+    <issue status='Closed' key='RRR-43'>Description for each report and reportgroup</issue>
+    <issue status='Closed' key='RRR-42'>View xml code for each report</issue>
+    <issue status='Closed' key='RRR-41'>Trail of urls to let the user go backwards</issue>
+    <issue status='Closed' key='RRR-40'>Show the resource a report is on in reports</issue>
+    <issue status='Closed' key='RRR-39'>Stilted language</issue>
+    <issue status='Closed' key='RRR-38'>Pages show the name and not the label for things</issue>
+    <issue status='Open' key='RRR-37'>Calendar widget fails in Safari</issue>
+    <issue status='Closed' key='RRR-36'>Use classpath if file not found</issue>
+    <issue status='Closed' key='RRR-35'>Allow multiple parameters</issue>
+    <issue status='Closed' key='RRR-34'>Excel rendering doesn&apos;t understand types</issue>
+    <issue status='Open' key='RRR-33'>Text too dark on html webpage rendering</issue>
+    <issue status='Open' key='RRR-32'>Default formatter for all columns in a report</issue>
+    <issue status='Closed' key='RRR-31'>XML files need to stop being loaded throgh classpath</issue>
+    <issue status='Closed' key='RRR-30'>Servlet takes DataSourceName as an init parameter</issue>
+    <issue status='Closed' key='RRR-29'>Downloadable renderers need to have a filename</issue>
+    <issue status='Closed' key='RRR-28'>Parsing needs to happen after data entered</issue>
+    <issue status='Closed' key='RRR-27'>SqlReport should set column names if unset</issue>
+    <issue status='Closed' key='RRR-26'>Need default values for columns</issue>
+    <issue status='Closed' key='RRR-25'>Reports should also have names and labels</issue>
+    <issue status='Closed' key='RRR-24'>Same named reports clash</issue>
+    <issue status='Closed' key='RRR-23'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-22'>Automatically choose renderer when only one</issue>
+    <issue status='Closed' key='RRR-21'>Columns need formatting</issue>
+    <issue status='Open' key='RRR-20'>End times...</issue>
+    <issue status='Closed' key='RRR-19'>Default values</issue>
+    <issue status='Open' key='RRR-18'>Implement ReportRunner in ReportRunner</issue>
+    <issue status='In Progress' key='RRR-17'>Use Velocity instead of JSP</issue>
+    <issue status='Closed' key='RRR-16'>Writer vs OutputStream</issue>
+    <issue status='Closed' key='RRR-15'>Create a Param object</issue>
+    <issue status='Closed' key='RRR-14'>report needs column names</issue>
+    <issue status='Closed' key='RRR-13'>param choices</issue>
+    <issue status='Open' key='RRR-12'>widget system</issue>
+    <issue status='Closed' key='RRR-11'>renderer page shows chosen params</issue>
+    <issue status='Closed' key='RRR-10'>converting</issue>
+    <issue status='Open' key='RRR-9'>composite renderer</issue>
+    <issue status='Closed' key='RRR-8'>more features for htmltable renderer</issue>
+    <issue status='Open' key='RRR-7'>user chooses columns to show</issue>
+    <issue status='Closed' key='RRR-6'>time graph</issue>
+    <issue status='Open' key='RRR-5'>PDF</issue>
+    <issue status='Closed' key='RRR-4'>XML Renderer</issue>
+    <issue status='Closed' key='RRR-3'>excel renderer</issue>
+    <issue status='Closed' key='RRR-2'>CSV renderer</issue>
+    <issue status='Closed' key='RRR-1'>Servlet so it can change content-type</issue>
+    <issue status='Closed' key='PAY-21'>Not possible to store an empty directory in Payload</issue>
+    <issue status='Closed' key='PAY-20'>Change packages</issue>
+    <issue status='Closed' key='PAY-19'>Create FileRemoverPaylet</issue>
+    <issue status='Closed' key='PAY-18'>Create JarSignerPaylet</issue>
+    <issue status='Closed' key='PAY-17'>Create paylet.jar sucking in PayloadContractor</issue>
+    <issue status='Closed' key='PAY-16'>Create paylet execution in PayloadExtractor</issue>
+    <issue status='Closed' key='PAY-15'>Create interface structure</issue>
+    <issue status='Closed' key='PAY-14'>Paylets</issue>
+    <issue status='Closed' key='PAY-13'>Inteprolating in archives needs to recurse</issue>
+    <issue status='Closed' key='PAY-12'>Interpolate zips/wars/jars etc</issue>
+    <issue status='Closed' key='PAY-11'>Allow more than one .properties file to be passed in</issue>
+    <issue status='Closed' key='PAY-10'>Jarring on Windows puts in backslashes</issue>
+    <issue status='Open' key='PAY-9'>org.osjava.payload.interpolate.conf=sar.properties</issue>
+    <issue status='Open' key='PAY-8'>Create a maven plugin</issue>
+    <issue status='Open' key='PAY-7'>Build an Ant task</issue>
+    <issue status='Open' key='PAY-6'>Optional GUI mode?</issue>
+    <issue status='Closed' key='PAY-5'>Allow interpolated files to be specified</issue>
+    <issue status='Closed' key='PAY-4'>Improve project description/overview</issue>
+    <issue status='Closed' key='PAY-3'>Write a changes page</issue>
+    <issue status='Closed' key='PAY-2'>Work on how-to page</issue>
+    <issue status='Closed' key='PAY-1'>Handle directories</issue>
+    <issue status='Closed' key='OSC-7'>Support stored procedures</issue>
+    <issue status='Closed' key='OSC-6'>NullStore should not print to console</issue>
+    <issue status='Open' key='OSC-5'>FileStore needs to output csv</issue>
+    <issue status='Closed' key='OSC-4'>Need to use log4j when FactoryUtils can&apos;t find an object</issue>
+    <issue status='Open' key='OSC-3'>Replace Store needed</issue>
+    <issue status='Open' key='OSC-2'>More features for the FileStore</issue>
+    <issue status='Closed' key='OSC-1'>Rename PrinterStore to ConsoleStore</issue>
+    <issue status='Closed' key='NRB-10'>If a 3xx response code; follow links</issue>
+    <issue status='Closed' key='NRB-9'>&quot;Disallow: &quot; should indicate that nothing is disallowed</issue>
+    <issue status='Closed' key='NRB-8'>User-Agent name comparison should be case insensitive</issue>
+    <issue status='Open' key='NRB-7'>A 403 or 401 should be considered a false and not an error</issue>
+    <issue status='Closed' key='NRB-6'>Spec bug; check user agents first and then the first wildcard</issue>
+    <issue status='Closed' key='NRB-5'>User-Agent setting doesn&apos;t work</issue>
+    <issue status='Closed' key='NRB-4'>Doesn&apos;t send User-Agent in the request</issue>
+    <issue status='Closed' key='NRB-3'>isUrlAllowed gets confused by ending /</issue>
+    <issue status='Closed' key='NRB-2'>Switch to Log4j</issue>
+    <issue status='Closed' key='NRB-1'>Unit Tests are hardcoded</issue>
+    <issue status='Closed' key='GJC-34'>CsvWriter doesn&apos;t gracefully handle null field values</issue>
+    <issue status='Open' key='GJC-33'>CSV outputs with the wrong line endings on Windows</issue>
+    <issue status='Open' key='GJC-31'>Doesn&apos;t quote the field when the field contains a block delimiter</issue>
+    <issue status='Open' key='GJC-30'>moveTo doesn&apos;t support the . or [] notiations</issue>
+    <issue status='Open' key='GJC-29'>Allow users to move backwards</issue>
+    <issue status='Open' key='GJC-28'>Create a generic HTML Table scraper</issue>
+    <issue status='Closed' key='GJC-27'>Simple DataSource implementation</issue>
+    <issue status='Closed' key='GJC-26'>NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</issue>
+    <issue status='Closed' key='GJC-25'>Character entities don&apos;t get escaped</issue>
+    <issue status='Open' key='GJC-24'>Wrong number of fields when last character is fieldDelimiter</issue>
+    <issue status='Closed' key='GJC-23'>No newline after first tag in a toString</issue>
+    <issue status='Closed' key='GJC-22'>enumerateNode cannot handle single-nodes</issue>
+    <issue status='Closed' key='GJC-21'>Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</issue>
+    <issue status='Closed' key='GJC-20'>Improve CsvWriter API</issue>
+    <issue status='Closed' key='GJC-19'>Target is always the first argument in HtmlW/XmlW. </issue>
+    <issue status='Closed' key='GJC-18'>Add a scrape(String tag) method </issue>
+    <issue status='Closed' key='GJC-17'>Performance Bottleneck: extensive use of  toLowerCase in com.generationjava.web.HtmlW.getIndexOpeningTag</issue>
+    <issue status='Open' key='GJC-16'>Easy Iterate method</issue>
+    <issue status='Open' key='GJC-15'>Reconsider the END_OF_LINE variable</issue>
+    <issue status='Open' key='GJC-14'>Unit test and Javadoc</issue>
+    <issue status='Closed' key='GJC-13'>Pull io.find out into its own gj-find jar</issue>
+    <issue status='Closed' key='GJC-12'>Link components on front page</issue>
+    <issue status='Closed' key='GJC-11'>Split the front page up</issue>
+    <issue status='Open' key='GJC-10'>Recode XmlW/HtmlW to be two different childish parsers</issue>
+    <issue status='Open' key='GJC-9'>Hard-coded to escape field delimiters of &quot; and not the field delimiter</issue>
+    <issue status='Closed' key='GJC-7'>moveToTagWith called twice will find the first one again</issue>
+    <issue status='Closed' key='GJC-6'>XMLProperties: Comments and other invisible tags are added</issue>
+    <issue status='Closed' key='GJC-5'>XMLProperties does not add root&apos;s attributes as properties</issue>
+    <issue status='Closed' key='GJC-4'>Create genjava-xmlparser and genjava-props</issue>
+    <issue status='Closed' key='GJC-3'>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</issue>
+    <issue status='Closed' key='GJC-2'>HtmlScraper needs to be case insensitive</issue>
+    <issue status='Closed' key='GJC-1'>Remove deprecated functions</issue>
+  </assigned>
+</user>

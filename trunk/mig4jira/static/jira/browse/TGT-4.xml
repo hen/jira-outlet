@@ -1,0 +1,50 @@
+<item>
+<title>[TGT-4] Add methods to allow properly created threads to the ThreadManager.</title>
+<link>http://issues.osjava.org/jira/browse/TGT-4</link>
+
+                    <description>Add methods to handle adding properly created threads to the ThreadManager for control.&lt;br/&gt;
+&lt;br/&gt;
+Properly created threads must:&lt;br/&gt;
+1.) implement org.osjava.threads.ExtendedRunnable&lt;br/&gt;
+2.) have a parent ThreadGroup that is an ExtendedThreadGroup already controlled by the ThreadManager.</description>
+                <environment>All</environment>
+            <key id='10123'>TGT-4</key>
+        <summary>Add methods to allow properly created threads to the ThreadManager.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='tigran'>Robert M. Zigweid</reporter>
+            
+    <created>Wed, 26 Nov 2003 20:19:04 -0800 (PST)</created>
+    <updated>Sun, 30 Nov 2003 09:42:34 -0800 (PST)</updated>
+
+                        <version>1.1</version>
+            
+                        <fixVersion>2.0</fixVersion>
+            
+                        <component>Threading</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='tigran' id='10102' created='Sun, 30 Nov 2003 09:42:34 -0800 (PST)'>Committed</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='TGT'>OSJava Threads</project>
+</item>

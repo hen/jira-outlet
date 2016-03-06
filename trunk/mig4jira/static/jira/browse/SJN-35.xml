@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-35] Lies about how to access CVS on the website</title>
+<link>http://issues.osjava.org/jira/browse/SJN-35</link>
+
+                    <description>Maven&apos;s fault, but I ought to hack this out of this and other released Maven projects.</description>
+                <environment/>
+            <key id='10111'>SJN-35</key>
+        <summary>Lies about how to access CVS on the website</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 28 Sep 2003 13:31:47 -0700 (PDT)</created>
+    <updated>Sun, 28 Sep 2003 20:55:21 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10074' created='Sun, 28 Sep 2003 20:55:21 -0700 (PDT)'>Website and project.xml fixed. Anonymous cvs setup.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

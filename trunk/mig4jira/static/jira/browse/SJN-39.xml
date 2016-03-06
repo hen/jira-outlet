@@ -1,0 +1,51 @@
+<item>
+<title>[SJN-39] XML does not work well if at all in the 0.6 release.</title>
+<link>http://issues.osjava.org/jira/browse/SJN-39</link>
+
+                    <description>Lorrin Nelson has pointed out problems in the XmlProperties loading code. I suspect it did work for whatever example I was based on, but not for other variants.</description>
+                <environment/>
+            <key id='10121'>SJN-39</key>
+        <summary>XML does not work well if at all in the 0.6 release.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_critical.gif' id='2'>Critical</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 21 Nov 2003 02:53:26 -0800 (PST)</created>
+    <updated>Sat, 6 Dec 2003 16:51:21 -0800 (PST)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.7</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10094' created='Fri, 21 Nov 2003 02:54:00 -0800 (PST)'>A first pass of code at this has been made and passes an initial unit test.&lt;br/&gt;
+More testing is required.</comment>
+                    <comment author='bayard' id='10111' created='Sat, 6 Dec 2003 15:40:49 -0800 (PST)'>Parsing itself seems okay except that the xml file must have a top level container element.&lt;br/&gt;
+&lt;br/&gt;
+This makes DataStores a bit hard to set up as they need the org flag to say what their type is. Moving to a generic type system might help here, but it would mean _type being a special sub-element or something.</comment>
+                    <comment author='bayard' id='10115' created='Sat, 6 Dec 2003 16:51:21 -0800 (PST)'>Sticking with the rule that my XML parser won&apos;t load xml files with multiple roots.&lt;br/&gt;
+DataSources are now implemented as a type attribute or sub-tag which seems to work nicely.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

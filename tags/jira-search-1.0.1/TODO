@@ -1,0 +1,6 @@
+Allow custom fields to be searched. ie) list of extra things to search; both the standard stuff and being able to list custom fields.
+    Tricky to do. Maybe if I write my own IssueNavigator.jspa impl and then reuse the existing vm file. Maybe. Perhaps. Probably not.
+
+Consider flattening so it only takes up one line. Same thing is needed for filterlist.
+Consider merging into filter list?
+Search by Key? [ie assumes that the entered text is a key?] Atlassian's uses a regexp, so if the text you want to search for looks like a key, you're screwed. Easy to do, but Quick Search does this well so why bother. 

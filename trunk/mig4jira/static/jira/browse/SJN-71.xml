@@ -1,0 +1,62 @@
+<item>
+<title>[SJN-71] Documentation for simple-jndi property-names are inconsistent and incorrect</title>
+<link>http://issues.osjava.org/jira/browse/SJN-71</link>
+
+                    <description>The simple-jndi manual pages on &lt;a href=&quot;http://www.osjava.org/simple-jndi/manual/Configuring.html&quot;&gt;http://www.osjava.org/simple-jndi/manual/Configuring.html&lt;/a&gt; defines the following jndi.properties:&lt;br/&gt;
+org.osjava.jndi.root&lt;br/&gt;
+org.osjava.jndi.delimiter&lt;br/&gt;
+&lt;br/&gt;
+The page &lt;a href=&quot;http://www.osjava.org/simple-jndi/manual/PropertyIndex.html&quot;&gt;http://www.osjava.org/simple-jndi/manual/PropertyIndex.html&lt;/a&gt; defines the same properties as:&lt;br/&gt;
+org.osjava.sj.root&lt;br/&gt;
+org.osjava.sj.delimiter&lt;br/&gt;
+&lt;br/&gt;
+Furthermore, when not defining org.osjava.sj.root an exception is thrown &amp;quot;java.lang.IllegalStateException: Property org.osjava.sj.root is mandatory&amp;quot;, which is in breach of the statement &amp;quot;If no org.osjava.jndi.root is specified, then a classpath root is chosen, with no package&amp;quot; on page &lt;a href=&quot;http://www.osjava.org/simple-jndi/manual/Configuring.html&quot;&gt;http://www.osjava.org/simple-jndi/manual/Configuring.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment>Documentation on &lt;a href=&quot;http://www.osjava.org/simple-jndi/&quot;&gt;http://www.osjava.org/simple-jndi/&lt;/a&gt;</environment>
+            <key id='10520'>SJN-71</key>
+        <summary>Documentation for simple-jndi property-names are inconsistent and incorrect</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='mortenhattesen'>Morten Hattesen</reporter>
+            
+    <created>Thu, 3 Nov 2005 02:55:54 -0800 (PST)</created>
+    <updated>Tue, 8 Nov 2005 09:56:41 -0800 (PST)</updated>
+
+                        <version>0.11.1</version>
+            
+                        <fixVersion>0.11.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10456' created='Thu, 3 Nov 2005 06:03:35 -0800 (PST)'>Yep, Configuring.html is definitely out of date. Rewriting it.</comment>
+                    <comment author='bayard' id='10457' created='Tue, 8 Nov 2005 09:56:41 -0800 (PST)'>Sorry, got this deployed a few days ago but forgot to close this off.&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.osjava.org/simple-jndi/manual/Configuring.html&quot;&gt;http://www.osjava.org/simple-jndi/manual/Configuring.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+Should be better now; please feel free to re-open the bug if something seems not right.&lt;br/&gt;
+&lt;br/&gt;
+Many thanks for finding the issue.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-47] Release and discuss the example Config class</title>
+<link>http://issues.osjava.org/jira/browse/SJN-47</link>
+
+                    <description>ie) src/examples/Config</description>
+                <environment/>
+            <key id='10142'>SJN-47</key>
+        <summary>Release and discuss the example Config class</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 3 Jan 2004 16:13:55 -0800 (PST)</created>
+    <updated>Sat, 7 Feb 2004 13:38:45 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.9</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10145' created='Sat, 7 Feb 2004 11:02:27 -0800 (PST)'>This will actually be released as gj-config, so need to add  bit to the site to point over to it.</comment>
+                    <comment author='bayard' id='10147' created='Sat, 7 Feb 2004 13:38:45 -0800 (PST)'>Added to the optional page.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

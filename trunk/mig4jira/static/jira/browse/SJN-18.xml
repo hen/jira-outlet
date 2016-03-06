@@ -1,0 +1,47 @@
+<item>
+<title>[SJN-18] NumberConverter needs to know what type was desired</title>
+<link>http://issues.osjava.org/jira/browse/SJN-18</link>
+
+                    <description>The NumberConverter links to java.lang.Number. If it knew exactly what type was wanted, it could try harder.&lt;br/&gt;
+&lt;br/&gt;
+To this end, Converters need to be told what type they are dealing with. That way a DateConverter could also handle java.sql.Date etc.</description>
+                <environment/>
+            <key id='10018'>SJN-18</key>
+        <summary>NumberConverter needs to know what type was desired</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:58:07 -0700 (PDT)</created>
+    <updated>Mon, 22 Aug 2005 21:59:13 -0700 (PDT)</updated>
+
+                        <version>0.5</version>
+            
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10411' created='Mon, 22 Aug 2005 21:59:13 -0700 (PDT)'>New system no longer contains a NumberConverter, but more importantly it does have the desired type in the API.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

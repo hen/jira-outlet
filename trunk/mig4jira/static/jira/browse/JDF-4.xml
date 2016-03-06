@@ -1,0 +1,49 @@
+<item>
+<title>[JDF-4] Oddity in commons-discovery 0.2 to 0.4 comparison (there was no 0.3)</title>
+<link>http://issues.osjava.org/jira/browse/JDF-4</link>
+
+                    <description>The:&lt;br/&gt;
+&lt;br/&gt;
+# org.apache.commons.discovery.ResourceIterator&lt;br/&gt;
+Removed:&lt;br/&gt;
+&lt;br/&gt;
+    * public abstract boolean hasNext()&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+Method does not exist in the source of ResourceIterator in either (according to the svn tagging).</description>
+                <environment/>
+            <key id='10634'>JDF-4</key>
+        <summary>Oddity in commons-discovery 0.2 to 0.4 comparison (there was no 0.3)</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='antony'>Antony Riley</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Dec 2006 15:23:20 -0800 (PST)</created>
+    <updated>Wed, 6 Jun 2007 08:42:33 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+            <attachment name='commons-discovery-0.2-to-0.4-jardiff.html' size='3267' author='bayard' id='10211' created='Fri, 1 Dec 2006 15:23:45 -0800 (PST)'/>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='JDF'>JarDiff</project>
+</item>

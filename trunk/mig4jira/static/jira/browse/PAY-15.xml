@@ -1,0 +1,46 @@
+<item>
+<title>[PAY-15] Create interface structure</title>
+<link>http://issues.osjava.org/jira/browse/PAY-15</link>
+
+                    <description>Create the interface for Paylet. Should it throw an Exception</description>
+                <environment/>
+            <key id='10374'>PAY-15</key>
+        <summary>Create interface structure</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10373'>PAY-14</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 17:58:59 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:50:15 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10368' created='Thu, 5 May 2005 19:29:11 -0700 (PDT)'>First version done.</comment>
+                    <comment author='bayard' id='10369' created='Thu, 5 May 2005 21:17:37 -0700 (PDT)'>Slight change, PayloadConfiguration class instead of Properties.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

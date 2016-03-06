@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#SCB-3] Needs to respect robots.txt before being unleashed fully</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [SCB-3]&#xA0;Needs to respect robots.txt before being unleashed fully<br/><span class="subText">
+                   Created: Wed, 20 Aug 2003 21:11:57 -0700 (PDT)                       &#xA0;Updated: Wed, 17 Jan 2007 13:08:45 -0800 (PST)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="SCB.html">Scraping</a></td></tr><tr><td><b>Component/s:</b></td><td>link-hunter</td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/SCB-.html"></a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/SCB-scraping-engine-0.1.html">scraping-engine-0.1</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">New Feature</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">I need to have a plugin robots.txt understander.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Wed, 20 Aug 2003 22:29:29 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">org.osjava.scraping.norobots.NoRobotClient is begun as a part of the scraping-engine. <br/>
+<br/>
+One problem is that it only needs to be used on HTTP [and HTTPS?] traffic, so it's linked to the protocol. Possibly it would be a configuration option per protocol?</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Thu, 21 Aug 2003 21:27:22 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Robots.txt handler written. Needs plugging in.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Fri, 22 Aug 2003 09:38:44 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">This is now a project called Norbert. So need to change Scabies to use Norbert.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Tue, 11 Nov 2003 22:25:27 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">The engine now pays attention to robots.txt unless overridden in the configuration. <br/>
+This is applied only to http/https and uses norbert.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Tue, 11 Nov 2003 22:29:33 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Tested on slashdot's robots.txt fiel with success.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/cisco77.html">cisco77</a><font size="-2"> [ <font color="#336699">Wed, 17 Jan 2007 13:08:44 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff"><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-201.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-201.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-200.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-200.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-199.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-199.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-198.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-198.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-197.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-197.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-196.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-196.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-195.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-195.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-194.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-194.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-193.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-193.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-192.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-192.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-191.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-191.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-190.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-190.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-189.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-189.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-188.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-188.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-187.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-187.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-186.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-186.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-185.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-185.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-184.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-184.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-183.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-183.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-182.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-182.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-181.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-181.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-180.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-180.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-179.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-179.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-178.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-178.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-177.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-177.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-176.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-176.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-175.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-175.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-174.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-174.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-173.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-173.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-172.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-172.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-171.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-171.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-170.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-170.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-169.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-169.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-168.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-168.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-167.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-167.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-166.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-166.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-165.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-165.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-164.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-164.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-163.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-163.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-162.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-162.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-161.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-161.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-160.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-160.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-159.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-159.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-158.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-158.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-157.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-157.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-156.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-156.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-155.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-155.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-154.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-154.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-153.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-153.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-152.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-152.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-151.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-151.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-150.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-150.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-149.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-149.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-148.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-148.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-147.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-147.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-146.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-146.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-145.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-145.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-144.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-144.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-143.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-143.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-142.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-142.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-141.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-141.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-140.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-140.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-139.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-139.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-138.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-138.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-137.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-137.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-136.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-136.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-135.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-135.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-134.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-134.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-133.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-133.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-132.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-132.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-131.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-131.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-130.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-130.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-129.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-129.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-128.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-128.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-127.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-127.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-126.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-126.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-125.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-125.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-124.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-124.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-123.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-123.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-122.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-122.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-121.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-121.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-120.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-120.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-119.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-119.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-118.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-118.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-117.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-117.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-116.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-116.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-115.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-115.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-114.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-114.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-113.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-113.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-112.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-112.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-111.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-111.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-110.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-110.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-109.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-109.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-108.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-108.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-107.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-107.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-106.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-106.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-105.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-105.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-104.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-104.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-103.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-103.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-102.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-102.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-101.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-101.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-100.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-100.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-99.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-99.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-98.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-98.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-97.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-97.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-96.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-96.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-95.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-95.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-94.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-94.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-93.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-93.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-92.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-92.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-91.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-91.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-90.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-90.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-89.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-89.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-88.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-88.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-87.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-87.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-86.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-86.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-85.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-85.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-84.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-84.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-83.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-83.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-82.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-82.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-81.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-81.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-80.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-80.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-79.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-79.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-78.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-78.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-77.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-77.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-76.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-76.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-75.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-75.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-74.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-74.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-73.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-73.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-72.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-72.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-71.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-71.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-70.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-70.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-69.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-69.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-68.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-68.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-67.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-67.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-66.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-66.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-65.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-65.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-64.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-64.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-63.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-63.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-62.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-62.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-61.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-61.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-60.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-60.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-59.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-59.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-58.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-58.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-57.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-57.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-56.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-56.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-55.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-55.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-54.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-54.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-53.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-53.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-52.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-52.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-51.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-51.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-50.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-50.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-49.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-49.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-48.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-48.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-47.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-47.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-46.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-46.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-45.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-45.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-44.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-44.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-43.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-43.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-42.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-42.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-41.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-41.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-40.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-40.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-39.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-39.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-38.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-38.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-37.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-37.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-36.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-36.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-35.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-35.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-34.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-34.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-33.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-33.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-32.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-32.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-31.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-31.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-30.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-30.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-29.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-29.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-28.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-28.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-27.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-27.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-26.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-26.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-25.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-25.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-24.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-24.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-23.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-23.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-22.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-22.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-21.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-21.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-20.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-20.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-19.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-19.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-18.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-18.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-17.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-17.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-16.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-16.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-15.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-15.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-14.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-14.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-13.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-13.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-12.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-12.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-11.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-11.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-10.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-10.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-9.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-9.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-8.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-8.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-7.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-7.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-6.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-6.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-5.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-5.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-4.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-4.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-3.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-3.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-2.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-2.html</a><br/>
+<a href="http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-1.html">http://cisco21.onlyphpbb.de/board/nxtopicf35446363nx7776-1.html</a></td></tr></table></body></html>

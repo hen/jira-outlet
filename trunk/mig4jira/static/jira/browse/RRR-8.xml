@@ -1,0 +1,86 @@
+<item>
+<title>[RRR-8] more features for htmltable renderer</title>
+<link>http://issues.osjava.org/jira/browse/RRR-8</link>
+
+                    <description>Needs to have a link for downloading as csv/xls etc?&lt;br/&gt;
+&lt;br/&gt;
+multi-sortable columns&lt;br/&gt;
+&lt;br/&gt;
+hide columns&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10269'>RRR-8</key>
+        <summary>more features for htmltable renderer</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:38:17 -0700 (PDT)</created>
+    <updated>Fri, 15 Oct 2004 14:14:16 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10250' created='Sun, 3 Oct 2004 10:28:42 -0700 (PDT)'>need a link/variant for a Printable version.</comment>
+                    <comment author='bayard' id='10261' created='Wed, 13 Oct 2004 13:54:41 -0700 (PDT)'>added a border, but going to leave improving this til later</comment>
+                    <comment author='bayard' id='10263' created='Wed, 13 Oct 2004 20:28:03 -0700 (PDT)'>Sortable columns in JS. Works in Safari so should be usable everywhere:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.kryogenix.org/code/browser/sorttable/&quot;&gt;http://www.kryogenix.org/code/browser/sorttable/&lt;/a&gt;</comment>
+                    <comment author='bayard' id='10264' created='Wed, 13 Oct 2004 20:28:26 -0700 (PDT)'>Zebra striping. Again, good in Safari:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.alistapart.com/articles/zebratables/&quot;&gt;http://www.alistapart.com/articles/zebratables/&lt;/a&gt;</comment>
+                    <comment author='bayard' id='10265' created='Thu, 14 Oct 2004 06:31:36 -0700 (PDT)'>The following has something on hiding a table column. Nothing fancy:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.ahfb2000.com/webmaster_help_desk/showthread.php?t=3356&quot;&gt;http://www.ahfb2000.com/webmaster_help_desk/showthread.php?t=3356&lt;/a&gt;</comment>
+                    <comment author='bayard' id='10266' created='Thu, 14 Oct 2004 06:34:14 -0700 (PDT)'>Also need to be able to click on a row and change the background colour of that row.</comment>
+                    <comment author='bayard' id='10267' created='Thu, 14 Oct 2004 06:34:36 -0700 (PDT)'>A commercial xls-style javascript table is available at:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.codethat.com/grid/&quot;&gt;http://www.codethat.com/grid/&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+and may have some interesting ideas.</comment>
+                    <comment author='bayard' id='10268' created='Thu, 14 Oct 2004 06:35:56 -0700 (PDT)'>Search facility?</comment>
+                    <comment author='bayard' id='10269' created='Thu, 14 Oct 2004 10:20:55 -0700 (PDT)'>Damn, I lied. Sortable table doesn&apos;t work in Safari.&lt;br/&gt;
+&lt;br/&gt;
+Neither does the one at:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://webfx.eae.net/dhtml/sortabletable/demo.html&quot;&gt;http://webfx.eae.net/dhtml/sortabletable/demo.html&lt;/a&gt;</comment>
+                    <comment author='bayard' id='10270' created='Thu, 14 Oct 2004 10:48:01 -0700 (PDT)'>&lt;a href=&quot;http://kongo.flamefew.net/~hen/test-table.html&quot;&gt;http://kongo.flamefew.net/~hen/test-table.html&lt;/a&gt; is a dev version.&lt;br/&gt;
+&lt;br/&gt;
+Current problems are that the striping does not get reapplied after the sorting. Also the event style is different between the two libraries.</comment>
+                    <comment author='bayard' id='10271' created='Fri, 15 Oct 2004 08:21:04 -0700 (PDT)'>color picker:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.mattkruse.com/javascript/colorpicker/&quot;&gt;http://www.mattkruse.com/javascript/colorpicker/&lt;/a&gt;</comment>
+                    <comment author='bayard' id='10272' created='Fri, 15 Oct 2004 14:14:16 -0700 (PDT)'>Color-choosable highlighted rows integrated.&lt;br/&gt;
+Sorting.&lt;br/&gt;
+Zebra striping.&lt;br/&gt;
+&lt;br/&gt;
+Not as configurable as would be hoped, and the Date sorting is weak (UK format only, though often works for US).</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

@@ -1,0 +1,47 @@
+<item>
+<title>[SJN-62] Create unit test containing java: subcontext</title>
+<link>http://issues.osjava.org/jira/browse/SJN-62</link>
+
+                    <description>Ensure you can do:&lt;br/&gt;
+&lt;br/&gt;
+Context envContext  = (Context)initContext.lookup(&amp;quot;java:/comp/env&amp;quot;);&lt;br/&gt;
+DataSource ds = (DataSource)envContext.lookup(&amp;quot;jdbc/myoracle&amp;quot;);</description>
+                <environment/>
+            <key id='10493'>SJN-62</key>
+        <summary>Create unit test containing java: subcontext</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:55:27 -0700 (PDT)</created>
+    <updated>Tue, 23 Aug 2005 19:47:48 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10419' created='Tue, 23 Aug 2005 19:47:48 -0700 (PDT)'>&lt;a href=&quot;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/EncTest.java?rev=1914&amp;view=log&quot;&gt;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/EncTest.java?rev=1914&amp;amp;view=log&lt;/a&gt;</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

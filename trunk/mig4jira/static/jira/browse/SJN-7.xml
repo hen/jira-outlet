@@ -1,0 +1,42 @@
+<item>
+<title>[SJN-7] Allow delimiter in search values to be configurable.</title>
+<link>http://issues.osjava.org/jira/browse/SJN-7</link>
+
+                    <description>Configure delimiter so LDAP or BeanUtils style lokups may be mimiced.&lt;br/&gt;
+Set in jndi.properties as org.osjava.jndi.delimiter</description>
+                <environment/>
+            <key id='10007'>SJN-7</key>
+        <summary>Allow delimiter in search values to be configurable.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:45:29 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:45:42 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

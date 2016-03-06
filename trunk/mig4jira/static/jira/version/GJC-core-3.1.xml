@@ -1,0 +1,8 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-27'>Simple DataSource implementation</issue>
+    <issue status='Closed' key='GJC-26'>NumericStringComparator thinks &apos;Brok1&apos; and &apos;Brok1A&apos; are equal</issue>
+    <issue status='Closed' key='GJC-13'>Pull io.find out into its own gj-find jar</issue>
+  </fixes-issues>
+  <name>core-3.1</name>
+</version>

@@ -1,0 +1,97 @@
+<item>
+<title>[SJN-80] strange behavior if property file is named  &quot;default.properties&quot;</title>
+<link>http://issues.osjava.org/jira/browse/SJN-80</link>
+
+                    <description>It seems like you cannot call your property file &amp;quot;default.properties&amp;quot; (yields to NullPointerException). Maybe this is a wellknown issue in the context of JNDI (as
+&lt;br/&gt;
+you have to have additional files for this to work properly), but it should be documented in the FAQ.
+&lt;br/&gt;
+
+&lt;br/&gt;
+Here&apos;s the stacktrace I got:
+&lt;br/&gt;
+
+&lt;br/&gt;
+ENTRY org.eclipse.osgi 4 0 2008-03-21 12:16:50.437
+&lt;br/&gt;
+!MESSAGE An unexpected runtime error has occurred.
+&lt;br/&gt;
+!STACK 0
+&lt;br/&gt;
+java.lang.NullPointerException
+&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.jndiPut(JndiLoader.java:314)
+&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.load(JndiLoader.java:277)
+&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:156)
+&lt;br/&gt;
+	at org.osjava.sj.loader.JndiLoader.loadDirectory(JndiLoader.java:104)
+&lt;br/&gt;
+	at org.osjava.sj.SimpleContext.&amp;lt;init&amp;gt;(SimpleContext.java:96)
+&lt;br/&gt;
+	at org.osjava.sj.SimpleContextFactory.getInitialContext(SimpleContextFactory.java:69)
+&lt;br/&gt;
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source)
+&lt;br/&gt;
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source)
+&lt;br/&gt;
+	at javax.naming.InitialContext.init(Unknown Source)
+&lt;br/&gt;
+	at javax.naming.InitialContext.&amp;lt;init&amp;gt;(Unknown Source)
+&lt;br/&gt;
+	at de.evandor.easyc.server.db.ConnectionManager.getDataSource(ConnectionManager.java:152)
+&lt;br/&gt;
+	at de.evandor.easyc.server.repository.internal.EasyCBundleRegistry.runInstallDDL(EasyCBundleRegistry.java:133)
+&lt;br/&gt;
+	at de.evandor.easyc.server.repository.internal.EasyCBundleRegistry.bundleChanged(EasyCBundleRegistry.java:72)
+&lt;br/&gt;
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:1210)
+&lt;br/&gt;
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:195)
+&lt;br/&gt;
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:297)</description>
+                <environment/>
+            <key id='10760'>SJN-80</key>
+        <summary>strange behavior if property file is named  &quot;default.properties&quot;</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='-1'>Unassigned</assignee>
+            
+                        <reporter username='evandor'>Carsten Graef</reporter>
+            
+    <created>Fri, 21 Mar 2008 07:37:07 -0700 (PDT)</created>
+    <updated>Sun, 6 Apr 2008 00:33:23 -0700 (PDT)</updated>
+
+                        <version>0.11.2</version>
+            
+                        <fixVersion>0.12</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10690' created='Sun, 6 Apr 2008 00:33:08 -0700 (PDT)'>You should be able to call your file default.properties - however the &apos;default&apos; does not become a part of the name. It&apos;s the equivalent of index.html for a webpage.
+&lt;br/&gt;
+
+&lt;br/&gt;
+Ideally - including default in the name should be possible - the same way you can goto foo/index.html in a url, and you can goto foo/. Making this issue an improvement for that feature.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

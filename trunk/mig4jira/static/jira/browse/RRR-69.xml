@@ -1,0 +1,56 @@
+<item>
+<title>[RRR-69] Test if this is still a problem</title>
+<link>http://issues.osjava.org/jira/browse/RRR-69</link>
+
+                    <description>Eric to test if it&apos;s still a problem</description>
+                <environment/>
+            <key id='10353'>RRR-69</key>
+        <summary>Test if this is still a problem</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10342'>RRR-62</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Feb 2005 13:00:14 -0800 (PST)</created>
+    <updated>Sun, 10 Apr 2005 19:13:42 -0700 (PDT)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10351' created='Thu, 17 Mar 2005 20:46:53 -0800 (PST)'>Pretty sure it&apos;s not.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                    <customfield id='customfield_10000' key='com.atlassian.jira.plugin.system.customfieldtypes:select'>
+                    <customfieldname>Estimate</customfieldname>
+                    <customfieldvalues>
+                        <customfieldvalue><![CDATA[EZ - S]]></customfieldvalue>
+
+                    </customfieldvalues>
+                </customfield>
+                        </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

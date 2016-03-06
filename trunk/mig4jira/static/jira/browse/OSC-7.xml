@@ -1,0 +1,45 @@
+<item>
+<title>[OSC-7] Support stored procedures</title>
+<link>http://issues.osjava.org/jira/browse/OSC-7</link>
+
+                    <description>Be able to call stored procedures with the result of a scrape.</description>
+                <environment/>
+            <key id='10392'>OSC-7</key>
+        <summary>Support stored procedures</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 2 Aug 2005 14:02:10 -0700 (PDT)</created>
+    <updated>Wed, 6 Jun 2007 08:44:04 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10386' created='Tue, 2 Aug 2005 14:02:47 -0700 (PDT)'>CallableJdbcStore created. Doesn&apos;t allow for OUT parameters of any kind, there&apos;d be nothing to do with them.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

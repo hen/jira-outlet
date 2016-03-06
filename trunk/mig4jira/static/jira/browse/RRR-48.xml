@@ -1,0 +1,52 @@
+<item>
+<title>[RRR-48] Create DTDs for various XML files</title>
+<link>http://issues.osjava.org/jira/browse/RRR-48</link>
+
+                    <description>DTDs or XML Schema? Any reason not to use schema?&lt;br/&gt;
+&lt;br/&gt;
+Needs to be done before a release.</description>
+                <environment/>
+            <key id='10324'>RRR-48</key>
+        <summary>Create DTDs for various XML files</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 8 Dec 2004 17:03:01 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:55:17 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10303' created='Thu, 16 Dec 2004 17:34:53 -0800 (PST)'>Generated from oxygen. Needs looking at before release for sanity.&lt;br/&gt;
+Also linking into the examples.</comment>
+                    <comment author='bayard' id='10311' created='Wed, 22 Dec 2004 10:18:55 -0800 (PST)'>Generated ones are there, improved ones for 0.4.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

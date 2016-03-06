@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-80] create param.toURL() and variant.toUrl()</title>
+<link>http://issues.osjava.org/jira/browse/RRR-80</link>
+
+                    <description>this will allow a way to pass paramaters and variants to reports&lt;br/&gt;
+&lt;br/&gt;
+(Multiple lines graph -&amp;gt; single lines graph)</description>
+                <environment/>
+            <key id='10365'>RRR-80</key>
+        <summary>create param.toURL() and variant.toUrl()</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Mon, 21 Mar 2005 14:40:51 -0800 (PST)</created>
+    <updated>Mon, 21 Mar 2005 14:40:51 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

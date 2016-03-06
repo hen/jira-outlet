@@ -1,0 +1,55 @@
+<item>
+<title>[XMLW-9] PrettyPrinterXMLWriter does not implement all methods</title>
+<link>http://issues.osjava.org/jira/browse/XMLW-9</link>
+
+                    <description/>
+                <environment/>
+            <key id='10741'>XMLW-9</key>
+        <summary>PrettyPrinterXMLWriter does not implement all methods</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='-1'>Unassigned</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Dec 2007 04:48:51 -0800 (PST)</created>
+    <updated>Wed, 5 Dec 2007 04:48:56 -0800 (PST)</updated>
+
+                        <version>2.2.1</version>
+            
+                        <fixVersion>2.2.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10641' created='Wed, 5 Dec 2007 04:48:56 -0800 (PST)'>r2610 | flamefew | 2007-12-05 01:13:59 -0800 (Wed, 05 Dec 2007) | 1 line
+&lt;br/&gt;
+Changed paths:
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;M /trunk/xmlwriter/src/java/com/generationjava/io/xml/PrettyPrinterXmlWriter.java
+&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;M /trunk/xmlwriter/src/test/com/generationjava/io/xml/XmlWriterTest.java
+&lt;br/&gt;
+
+&lt;br/&gt;
+Dmitriy Volk pointed out that PrettyPrinterXmlWriter did not implement writeEntityWithText or writeEmptyEntity and supplied a patch fixing this</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

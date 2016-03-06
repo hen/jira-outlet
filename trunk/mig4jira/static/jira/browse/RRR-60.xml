@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-60] Calendar widget fails in Firefox</title>
+<link>http://issues.osjava.org/jira/browse/RRR-60</link>
+
+                    <description>The calendar widget does not go back a year properly in Firefox. You get stuck in 2005.</description>
+                <environment/>
+            <key id='10340'>RRR-60</key>
+        <summary>Calendar widget fails in Firefox</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 10 Jan 2005 15:28:11 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:54:09 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10331' created='Thu, 3 Feb 2005 12:39:51 -0800 (PST)'>Seems to fail in IE too.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

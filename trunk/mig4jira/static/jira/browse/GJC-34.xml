@@ -1,0 +1,50 @@
+<item>
+<title>[GJC-34] CsvWriter doesn&apos;t gracefully handle null field values</title>
+<link>http://issues.osjava.org/jira/browse/GJC-34</link>
+
+                    <description>If a null is written into a field of the CsvWriter, a NullPointerException is thrown.  This is easy enough to work around in the caller, however I think it&apos;s something which the library could handle quietly by leaving the cell empty.
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10640'>GJC-34</key>
+        <summary>CsvWriter doesn&apos;t gracefully handle null field values</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='trejkaz'>Trejkaz</reporter>
+            
+    <created>Wed, 17 Jan 2007 21:24:12 -0800 (PST)</created>
+    <updated>Tue, 26 Feb 2008 03:02:24 -0800 (PST)</updated>
+
+                        <version>csv-1.0</version>
+            
+                        <fixVersion>csv-1.1</fixVersion>
+            
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='trejkaz' id='10548' created='Wed, 17 Jan 2007 21:26:17 -0800 (PST)'>Patch to fix the issue.</comment>
+                    <comment author='bayard' id='10670' created='Tue, 26 Feb 2008 03:02:24 -0800 (PST)'>Fixed in r2029; also for Csv and CsvReader.</comment>
+                </comments>
+    
+    <attachments>
+            <attachment name='nullfix.patch' size='731' author='trejkaz' id='10220' created='Wed, 17 Jan 2007 21:26:16 -0800 (PST)'/>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

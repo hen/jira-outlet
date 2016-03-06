@@ -1,0 +1,13 @@
+<projects>
+  <project key='XMLW'>XmlWriter</project>
+  <project key='GJC'>Genjava</project>
+  <project key='SJN'>Simple-JNDI</project>
+  <project key='TGT'>OSJava Threads</project>
+  <project key='JDF'>JarDiff</project>
+  <project key='TRA'>Trail-Taglib</project>
+  <project key='SCB'>Scraping</project>
+  <project key='RRR'>ReportRunner</project>
+  <project key='PAY'>Payload</project>
+  <project key='NRB'>Norbert</project>
+  <project key='OSC'>OSCube</project>
+</projects>

@@ -1,0 +1,41 @@
+<item>
+<title>[SJN-13] Allow Lists in the format</title>
+<link>http://issues.osjava.org/jira/browse/SJN-13</link>
+
+                    <description>If keys are equal in name, then they should form a Collection. With OrderedProperties the Collection used is a List.</description>
+                <environment/>
+            <key id='10013'>SJN-13</key>
+        <summary>Allow Lists in the format</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:51:20 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:51:26 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,51 @@
+<item>
+<title>[SJN-33] Unable to have DataSource files with more than 2 elements</title>
+<link>http://issues.osjava.org/jira/browse/SJN-33</link>
+
+                    <description>This is recorded as a TODO in the sourcecode. While you can have a .properties file with:&lt;br/&gt;
+&lt;br/&gt;
+BlahDS.url=...&lt;br/&gt;
+&lt;br/&gt;
+you cannot have:&lt;br/&gt;
+&lt;br/&gt;
+com.foo.BlahDS.url-....</description>
+                <environment/>
+            <key id='10042'>SJN-33</key>
+        <summary>Unable to have DataSource files with more than 2 elements</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sat, 9 Aug 2003 00:31:14 -0700 (PDT)</created>
+    <updated>Tue, 23 Aug 2005 20:09:56 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10422' created='Tue, 23 Aug 2005 20:09:56 -0700 (PDT)'>&lt;a href=&quot;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/SimpleContextTest.java?rev=1916&amp;r1=1912&amp;r2=1916&quot;&gt;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/SimpleContextTest.java?rev=1916&amp;amp;r1=1912&amp;amp;r2=1916&lt;/a&gt;</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

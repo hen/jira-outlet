@@ -1,0 +1,99 @@
+<project>
+  <key>RRR</key>
+  <name>ReportRunner</name>
+  <issues>
+    <issue status='Open' key='RRR-93'>Allow value fields to get assignments from scripting language evaluation.</issue>
+    <issue status='Open' key='RRR-92'>SQL Binding for &lt;columns&gt; tag.</issue>
+    <issue status='Open' key='RRR-91'>Remove gj-xml dependency</issue>
+    <issue status='Open' key='RRR-90'>Run ReportRunner outside of the servlet</issue>
+    <issue status='Open' key='RRR-89'>Create Resource test page</issue>
+    <issue status='Open' key='RRR-88'>webwizard&apos;s xmlview servlet needs to escape &lt; and &gt;</issue>
+    <issue status='Open' key='RRR-87'>Make breadcrumb code generic</issue>
+    <issue status='Open' key='RRR-86'>CallableSqlReport</issue>
+    <issue status='Open' key='RRR-85'>Put the velocity.properties into the code?</issue>
+    <issue status='Open' key='RRR-84'>Get rid of the &quot;z&quot; and &quot;y&quot; hacks</issue>
+    <issue status='Open' key='RRR-83'>Need to delete the unneeded servlets when the time comes</issue>
+    <issue status='Open' key='RRR-82'>Need to implement the exception pages in velocity.</issue>
+    <issue status='Open' key='RRR-81'>weird empty param</issue>
+    <issue status='Open' key='RRR-80'>create param.toURL() and variant.toUrl()</issue>
+    <issue status='Closed' key='RRR-79'>i18n problems - web pages lack encoding info</issue>
+    <issue status='Open' key='RRR-78'>Show group and report comments on current-state panel</issue>
+    <issue status='Closed' key='RRR-77'>Missing chosen-resource on jsp pages</issue>
+    <issue status='Open' key='RRR-76'>Plan reports for the following feature list</issue>
+    <issue status='Open' key='RRR-75'>Customised demo database + reports</issue>
+    <issue status='Open' key='RRR-74'>Add a type of report that merely links to a different url</issue>
+    <issue status='Closed' key='RRR-73'>Improve applet to work in java 1.4</issue>
+    <issue status='Closed' key='RRR-72'>Results need a Header</issue>
+    <issue status='Closed' key='RRR-71'>Temporary widget hack</issue>
+    <issue status='Closed' key='RRR-70'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-69'>Test if this is still a problem</issue>
+    <issue status='Open' key='RRR-68'>Renderers need parameters</issue>
+    <issue status='Closed' key='RRR-67'>Named sql parameters</issue>
+    <issue status='Open' key='RRR-66'>Tomcat did not startup properly</issue>
+    <issue status='Open' key='RRR-65'>Exception/page when group not found</issue>
+    <issue status='Closed' key='RRR-64'>Need page when results are empty</issue>
+    <issue status='Open' key='RRR-63'>Add a taglib</issue>
+    <issue status='Open' key='RRR-62'>&apos;Enter Information&apos; needs to clear previous value in URL.</issue>
+    <issue status='Open' key='RRR-61'>Reprot to show system config xml files</issue>
+    <issue status='Open' key='RRR-60'>Calendar widget fails in Firefox</issue>
+    <issue status='Open' key='RRR-59'>Add boolean widget</issue>
+    <issue status='Open' key='RRR-58'>Author understanding</issue>
+    <issue status='Open' key='RRR-57'>Error handling</issue>
+    <issue status='Closed' key='RRR-56'>Helper tag for creating multiple columns</issue>
+    <issue status='Open' key='RRR-55'>maven plugin for building a reportrunner&apos;d system</issue>
+    <issue status='Open' key='RRR-54'>Filter system</issue>
+    <issue status='Open' key='RRR-53'>User Authentication</issue>
+    <issue status='Open' key='RRR-52'>Logging</issue>
+    <issue status='Open' key='RRR-51'>Search system</issue>
+    <issue status='Closed' key='RRR-50'>Description on param tag</issue>
+    <issue status='Open' key='RRR-49'>No way to set defaults other than Strings</issue>
+    <issue status='Open' key='RRR-48'>Create DTDs for various XML files</issue>
+    <issue status='Open' key='RRR-47'>Descriptions for params, columns and resource-params</issue>
+    <issue status='Closed' key='RRR-46'>Bookmark trail needs choose-resources</issue>
+    <issue status='Closed' key='RRR-45'>Cleanup the reportrunner.xml schema</issue>
+    <issue status='Closed' key='RRR-44'>Need to be able to choose resources from a list</issue>
+    <issue status='Closed' key='RRR-43'>Description for each report and reportgroup</issue>
+    <issue status='Closed' key='RRR-42'>View xml code for each report</issue>
+    <issue status='Closed' key='RRR-41'>Trail of urls to let the user go backwards</issue>
+    <issue status='Closed' key='RRR-40'>Show the resource a report is on in reports</issue>
+    <issue status='Closed' key='RRR-39'>Stilted language</issue>
+    <issue status='Closed' key='RRR-38'>Pages show the name and not the label for things</issue>
+    <issue status='Open' key='RRR-37'>Calendar widget fails in Safari</issue>
+    <issue status='Closed' key='RRR-36'>Use classpath if file not found</issue>
+    <issue status='Closed' key='RRR-35'>Allow multiple parameters</issue>
+    <issue status='Closed' key='RRR-34'>Excel rendering doesn&apos;t understand types</issue>
+    <issue status='Open' key='RRR-33'>Text too dark on html webpage rendering</issue>
+    <issue status='Open' key='RRR-32'>Default formatter for all columns in a report</issue>
+    <issue status='Closed' key='RRR-31'>XML files need to stop being loaded throgh classpath</issue>
+    <issue status='Closed' key='RRR-30'>Servlet takes DataSourceName as an init parameter</issue>
+    <issue status='Closed' key='RRR-29'>Downloadable renderers need to have a filename</issue>
+    <issue status='Closed' key='RRR-28'>Parsing needs to happen after data entered</issue>
+    <issue status='Closed' key='RRR-27'>SqlReport should set column names if unset</issue>
+    <issue status='Closed' key='RRR-26'>Need default values for columns</issue>
+    <issue status='Closed' key='RRR-25'>Reports should also have names and labels</issue>
+    <issue status='Closed' key='RRR-24'>Same named reports clash</issue>
+    <issue status='Closed' key='RRR-23'>Renderers need names and labels</issue>
+    <issue status='Closed' key='RRR-22'>Automatically choose renderer when only one</issue>
+    <issue status='Closed' key='RRR-21'>Columns need formatting</issue>
+    <issue status='Open' key='RRR-20'>End times...</issue>
+    <issue status='Closed' key='RRR-19'>Default values</issue>
+    <issue status='Open' key='RRR-18'>Implement ReportRunner in ReportRunner</issue>
+    <issue status='In Progress' key='RRR-17'>Use Velocity instead of JSP</issue>
+    <issue status='Closed' key='RRR-16'>Writer vs OutputStream</issue>
+    <issue status='Closed' key='RRR-15'>Create a Param object</issue>
+    <issue status='Closed' key='RRR-14'>report needs column names</issue>
+    <issue status='Closed' key='RRR-13'>param choices</issue>
+    <issue status='Open' key='RRR-12'>widget system</issue>
+    <issue status='Closed' key='RRR-11'>renderer page shows chosen params</issue>
+    <issue status='Closed' key='RRR-10'>converting</issue>
+    <issue status='Open' key='RRR-9'>composite renderer</issue>
+    <issue status='Closed' key='RRR-8'>more features for htmltable renderer</issue>
+    <issue status='Open' key='RRR-7'>user chooses columns to show</issue>
+    <issue status='Closed' key='RRR-6'>time graph</issue>
+    <issue status='Open' key='RRR-5'>PDF</issue>
+    <issue status='Closed' key='RRR-4'>XML Renderer</issue>
+    <issue status='Closed' key='RRR-3'>excel renderer</issue>
+    <issue status='Closed' key='RRR-2'>CSV renderer</issue>
+    <issue status='Closed' key='RRR-1'>Servlet so it can change content-type</issue>
+  </issues>
+</project>

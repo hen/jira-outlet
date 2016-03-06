@@ -1,0 +1,41 @@
+<item>
+<title>[OSC-3] Replace Store needed</title>
+<link>http://issues.osjava.org/jira/browse/OSC-3</link>
+
+                    <description>Implement a &apos;Replace&apos; Store which does an UPDATE then INSERT depending on whether it is already there. Alternatively, SELECT then INSERT or UPDATE.</description>
+                <environment/>
+            <key id='10061'>OSC-3</key>
+        <summary>Replace Store needed</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 19 Aug 2003 21:08:17 -0700 (PDT)</created>
+    <updated>Sun, 8 Apr 2007 23:53:39 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

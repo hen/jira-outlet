@@ -1,0 +1,50 @@
+<item>
+<title>[RRR-78] Show group and report comments on current-state panel</title>
+<link>http://issues.osjava.org/jira/browse/RRR-78</link>
+
+                    <description>The current state panel should show the comment for the currently chosen report and the comment for the currently chosen group.&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10363'>RRR-78</key>
+        <summary>Show group and report comments on current-state panel</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Mar 2005 20:28:40 -0800 (PST)</created>
+    <updated>Sun, 10 Apr 2005 19:15:37 -0700 (PDT)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10354' created='Thu, 17 Mar 2005 21:04:58 -0800 (PST)'>Now shown, though not very clearly. Need to rethink how to display the information in the current state panel.&lt;br/&gt;
+&lt;br/&gt;
+Code is also becoming quite the hack. Need the the 0.5 velocity version to make the code a lot simpler.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

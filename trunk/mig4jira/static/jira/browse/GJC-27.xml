@@ -1,0 +1,44 @@
+<item>
+<title>[GJC-27] Simple DataSource implementation</title>
+<link>http://issues.osjava.org/jira/browse/GJC-27</link>
+
+                    <description>Like a SystemClassLoader, but for DataSources that sits on top of DriverManager and System.getProperty.&lt;br/&gt;
+&lt;br/&gt;
+Very basic.</description>
+                <environment/>
+            <key id='10403'>GJC-27</key>
+        <summary>Simple DataSource implementation</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 9 Aug 2005 21:05:31 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 21:06:29 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>core-3.1</fixVersion>
+            
+                        <component>gj-core</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

@@ -1,0 +1,7 @@
+<user>
+  <login>alancanon</login>
+  <name>Alan B. Canon</name>
+  <reported>
+    <issue status='Open' key='SCB-26'>Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</issue>
+  </reported>
+</user>

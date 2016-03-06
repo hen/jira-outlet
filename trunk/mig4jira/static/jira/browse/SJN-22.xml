@@ -1,0 +1,69 @@
+<item>
+<title>[SJN-22] Pluggable converters</title>
+<link>http://issues.osjava.org/jira/browse/SJN-22</link>
+
+                    <description>Need a pluggable converter system. It would specify the object to create and sub-properties would be bean-properties.&lt;br/&gt;
+ie)&lt;br/&gt;
+&lt;br/&gt;
+org.osjava.converter.java.util.Date=DateConverter&lt;br/&gt;
+org.osjava.converter.java.util.Date.leapyear=true&lt;br/&gt;
+org.osjava.converter.java.util.Date.leapyear.type=java.lang.Boolean&lt;br/&gt;
+&lt;br/&gt;
+or maybe not. Something like that I think, but the recursiveness there is scary.&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10022'>SJN-22</key>
+        <summary>Pluggable converters</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:30:07 -0700 (PDT)</created>
+    <updated>Wed, 6 Jun 2007 08:44:47 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                        <component>Converter</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10150' created='Wed, 28 Apr 2004 20:28:23 -0700 (PDT)'>Once hierarchies work correctly it can be:&lt;br/&gt;
+&lt;br/&gt;
+org.osjava.converter=DateConverter&lt;br/&gt;
+org.osjava.converter.converts=java.util.Date&lt;br/&gt;
+org.osjava.converter.timezone=GMT&lt;br/&gt;
+&lt;br/&gt;
+or:&lt;br/&gt;
+&lt;br/&gt;
+org.osjava.converter=DateConverter&lt;br/&gt;
+DateConverter.converts=java.util.Date&lt;br/&gt;
+DateConverter.timezone=GMT&lt;br/&gt;
+&lt;br/&gt;
+</comment>
+                    <comment author='bayard' id='10412' created='Mon, 22 Aug 2005 22:00:01 -0700 (PDT)'>Pluggable converter system created. Not very like the proposed examples in this issue though :)&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/java/org/osjava/sj/loader/convert/Converter.java?rev=1834&amp;view=auto&quot;&gt;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/java/org/osjava/sj/loader/convert/Converter.java?rev=1834&amp;amp;view=auto&lt;/a&gt;</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

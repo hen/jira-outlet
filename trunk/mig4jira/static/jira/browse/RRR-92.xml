@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-92] SQL Binding for &lt;columns&gt; tag.</title>
+<link>http://issues.osjava.org/jira/browse/RRR-92</link>
+
+                    <description/>
+                <environment/>
+            <key id='10533'>RRR-92</key>
+        <summary>SQL Binding for &lt;columns&gt; tag.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='mhill'>Mike Hill</reporter>
+            
+    <created>Tue, 20 Dec 2005 15:36:51 -0800 (PST)</created>
+    <updated>Tue, 20 Dec 2005 15:36:51 -0800 (PST)</updated>
+
+                        <version>0.4</version>
+            
+                
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

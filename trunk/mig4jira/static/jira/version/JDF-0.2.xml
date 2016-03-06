@@ -1,0 +1,6 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='JDF-5'>ArrayIndexOutOfBoundsException when comparing jaxb 2.0 and 2.1 APi jars</issue>
+  </affects-issues>
+  <name>0.2</name>
+</version>

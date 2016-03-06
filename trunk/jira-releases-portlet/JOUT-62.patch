@@ -1,0 +1,82 @@
+Index: src/java/com/sourcelabs/jira/plugin/portlet/releases/ReleaseStatusPortlet.java
+===================================================================
+--- src/java/com/sourcelabs/jira/plugin/portlet/releases/ReleaseStatusPortlet.java	(revision 37864)
++++ src/java/com/sourcelabs/jira/plugin/portlet/releases/ReleaseStatusPortlet.java	(working copy)
+@@ -406,7 +406,7 @@
+         long open = searchProvider.searchCount(builder.buildQuery(), user);
+         PercentageGraphModel model = new PercentageGraphModel();
+         if(total != 0) {
+-            String commonQuery = "fixFor="+version.getId()+"&pid="+version.getProject().getLong("id")+"&"; //new FixForParameter(list).getQueryString() + new ProjectParameter(version.getProject().getLong("id")).getQueryString();
++            String commonQuery = "fixfor="+version.getId()+"&pid="+version.getProject().getLong("id")+"&"; //new FixForParameter(list).getQueryString() + new ProjectParameter(version.getProject().getLong("id")).getQueryString();
+             if(currentUser) commonQuery += DocumentConstants.ISSUE_ASSIGNEE + "=" + DocumentConstants.ISSUE_CURRENT_USER;
+             String resolvedQuery = commonQuery + "&status=5&status=6"; //new ResolutionParameter((List) ManagerFactory.getConstantsManager().getResolutions()).getQueryString();
+             String unresolvedQuery = commonQuery + "&resolution=-1"; // ResolutionParameter.UNRESOLVED.getQueryString();
+Index: src/etc/templates/releasesportlet/releasestatus.vm
+===================================================================
+--- src/etc/templates/releasesportlet/releasestatus.vm	(revision 37864)
++++ src/etc/templates/releasesportlet/releasestatus.vm	(working copy)
+@@ -23,7 +23,7 @@
+             #if ($graphModel.getPercentage($row) != 0)
+             <td width="$graphModel.getPercentage($row)" bgcolor="$row.color" >
+                 #if ($row.statuses)
+-                    <a href="$req.contextPath/secure/IssueNavigator.jspa?reset=true$row.statuses"
++                    <a href="$req.contextPath/secure/IssueNavigator.jspa?reset=true&$row.statuses"
+                         title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)"
+                     ><img src="$req.contextPath/images/border/spacer.gif"
+                         height=10 width="$graphModel.getPercentage($row)" border=0
+@@ -60,8 +60,7 @@
+ #if( $loggedin || $versionlist )
+ <script type="text/javascript">
+ 
+-    function createRequestObject${portletId}()
+-    {
++    function createRequestObject() {
+         var ro;
+         try
+         {
+@@ -92,13 +91,12 @@
+     }
+ 
+ 
+-    function getPortlet${portletId}(projectid, id, portletId, versionlist, defaultUserType)
+-    {
++    function getPortlet(projectid, id, portletId, versionlist, defaultUserType) {
+         var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.releases:releases&projectid="+projectid+"&versionid="+id+"&versionlist="+versionlist+"%3A"+portletId+"&defaultUserType="+defaultUserType;
+         var elementId = "releasestatus-" + portletId;
+         var elem = document.getElementById(elementId);
+ 
+-        var httpReq = createRequestObject${portletId}();
++        var httpReq = createRequestObject();
+         httpReq.open('get', reqUrl, true);
+         httpReq.onreadystatechange = function() {
+             if (httpReq.readyState == 4)
+@@ -142,9 +140,9 @@
+   <td align="right">
+    #if ($loggedin)
+      #if ($showCurrentUser) 
+-      (<font size="1"> $user.fullName </font>) <a href="javascript:getPortlet${portletId}('$!projectid', '$version.id', '$portletId', '$!versionlist', '$switchUserType')" title="$i18n.getText('portlet.releasestatus.icons.switchtogroup.description')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/group_go.png"/></a>
++      (<font size="1"> $user.fullName </font>) <a onclick="getPortlet('$!projectid', '$version.id', '$portletId', '$!versionlist', '$switchUserType')" title="$i18n.getText('portlet.releasestatus.icons.switchtogroup.description')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/group_go.png"/></a>
+      #else
+-      <a href="javascript:getPortlet${portletId}('$!projectid', '$version.id', '$portletId', '$!versionlist', '$switchUserType')" title="$i18n.getText('portlet.releasestatus.icons.switchtouser.description')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/user_go.png"/></a>
++      <a onclick="getPortlet('$!projectid', '$version.id', '$portletId', '$!versionlist', '$switchUserType')" title="$i18n.getText('portlet.releasestatus.icons.switchtouser.description')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/user_go.png"/></a>
+      #end
+    #end
+   <a href="$req.contextPath/secure/ReleaseNote.jspa?projectId=$version.project.id&styleName=Html&version=$version.id" title="$i18n.getText('portlet.releasestatus.icons.releasenotes.description')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/report.png"/></a>&nbsp;
+@@ -199,7 +197,7 @@
+    #if ($versionlist)
+         <td valign="top">
+           #if ($previousVersion)
+-           <a href="javascript:getPortlet${portletId}('$!projectid', '$previousVersion.id', '$portletId', '$versionlist', '$defaultUserType')" title="$previousVersion.name"><img src="$requestContext.baseUrl/images/icons/arrow_left_small.gif"/></a>
++           <a onclick="getPortlet('$!projectid', '$previousVersion.id', '$portletId', '$versionlist', '$defaultUserType')" title="$previousVersion.name"><img src="$requestContext.baseUrl/images/icons/arrow_left_small.gif"/></a>
+           #else
+            <img src="$requestContext.baseUrl/images/icons/arrow_left_faded.gif"/>
+           #end
+@@ -241,7 +239,7 @@
+    #if ($versionlist)
+     <td width="5%" valign="top">
+           #if ($nextVersion)
+-           <a href="javascript:getPortlet${portletId}('$!projectid', '$nextVersion.id', '$portletId', '$versionlist', '$defaultUserType')" title="$nextVersion.name"><img src="$requestContext.baseUrl/images/icons/arrow_right_small.gif"/></a>
++           <a onclick="getPortlet('$!projectid', '$nextVersion.id', '$portletId', '$versionlist', '$defaultUserType')" title="$nextVersion.name"><img src="$requestContext.baseUrl/images/icons/arrow_right_small.gif"/></a>
+           #else
+            <img src="$requestContext.baseUrl/images/icons/arrow_right_faded.gif"/>
+           #end

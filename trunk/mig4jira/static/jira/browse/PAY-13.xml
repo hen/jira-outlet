@@ -1,0 +1,45 @@
+<item>
+<title>[PAY-13] Inteprolating in archives needs to recurse</title>
+<link>http://issues.osjava.org/jira/browse/PAY-13</link>
+
+                    <description>Go ahead and make it interpolate files inside zips in zips in zips etc.</description>
+                <environment/>
+            <key id='10372'>PAY-13</key>
+        <summary>Inteprolating in archives needs to recurse</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 29 Apr 2005 11:55:41 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:50:19 -0700 (PDT)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10365' created='Fri, 29 Apr 2005 12:55:49 -0700 (PDT)'>Should be done. Passes basic tests.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

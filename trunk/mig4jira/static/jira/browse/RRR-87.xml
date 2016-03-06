@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-87] Make breadcrumb code generic</title>
+<link>http://issues.osjava.org/jira/browse/RRR-87</link>
+
+                    <description>Currently each jsp page handles its breadcrumbs trail via hardcoding.&lt;br/&gt;
+&lt;br/&gt;
+Need to come up with a way to make this a single velocity macro in the header.inc.</description>
+                <environment/>
+            <key id='10398'>RRR-87</key>
+        <summary>Make breadcrumb code generic</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10278'>RRR-17</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 2 Aug 2005 21:19:27 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 21:19:27 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

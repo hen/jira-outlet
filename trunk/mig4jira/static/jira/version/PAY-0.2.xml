@@ -1,0 +1,14 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='PAY-12'>Interpolate zips/wars/jars etc</issue>
+    <issue status='Closed' key='PAY-10'>Jarring on Windows puts in backslashes</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='PAY-5'>Allow interpolated files to be specified</issue>
+    <issue status='Closed' key='PAY-4'>Improve project description/overview</issue>
+    <issue status='Closed' key='PAY-3'>Write a changes page</issue>
+    <issue status='Closed' key='PAY-2'>Work on how-to page</issue>
+    <issue status='Closed' key='PAY-1'>Handle directories</issue>
+  </fixes-issues>
+  <name>0.2</name>
+</version>

@@ -1,0 +1,11 @@
+<user>
+  <login>rssh</login>
+  <name>Ruslan Shevchenko</name>
+  <commented>
+    <issue status='Closed' key='SJN-78'>Does not compiled with JDK-1.6</issue>
+  </commented>
+  <reported>
+    <issue status='Closed' key='SJN-79'>lookup return null instead throiwiung exceptions</issue>
+    <issue status='Closed' key='SJN-78'>Does not compiled with JDK-1.6</issue>
+  </reported>
+</user>

@@ -1,0 +1,73 @@
+<!--
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<atlassian-plugin key="com.sourcelabs.jira.plugin.portlet.projectlist" name="Project List Plugin">
+    <plugin-info>
+        <description>Project List Plugin</description>
+        <version>1.1</version>
+        <application-version min="4.0" max="4.0"/>
+        <vendor name="Henri Yandell" url="http://www.buildguy.com/"/>
+    </plugin-info>
+
+    <portlet key="projectlist" name="Concise Project List" class="com.sourcelabs.jira.plugin.portlet.projectlist.ProjectListPortlet">
+        <description key="portlet.projectlist.description">i18n description</description>
+        <resource type="velocity" name="view" location="templates/projectlistportlet/projectlist.vm" />
+        <resource type="i18n" name="i18n" location="com.sourcelabs.jira.plugin.portlets.projectlist.projectlist_portlet" />
+        <label key="portlet.projectlist.name" />
+        <objectdescriptor key="portlet.projectlist.display.name" />
+        <resource type="download" name="control_play.png" location="templates/images/control_play.png">
+            <param name="content-type" value="image/png"/>
+        </resource>
+        <resource type="download" name="control_rewind.png" location="templates/images/control_rewind.png">
+            <param name="content-type" value="image/png"/>
+        </resource>
+        <properties>
+            <property>
+                <key>projectlist-title</key>
+                <name>portlet.projectlist.field.projects.title.name</name>
+                <description>portlet.projectlist.field.projects.title.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>projectlist-includelinks</key>
+                <name>portlet.projectlist.field.projects.links.name</name>
+                <description>portlet.projectlist.field.projects.links.description</description>
+                <type>select</type>
+                <default>false</default>
+                <values>
+                    <value>
+                        <key>true</key>
+                        <value>portlet.projectlist.field.projects.links.true</value>
+                    </value>
+                    <value>
+                        <key>false</key>
+                        <value>portlet.projectlist.field.projects.links.false</value>
+                    </value>
+                </values>
+            </property>
+            <property>
+                <key>projectlist-regexp</key>
+                <name>portlet.projectlist.field.projects.regexp.name</name>
+                <description>portlet.projectlist.field.projects.regexp.description</description>
+                <type>string</type>
+            </property>
+            <property>
+                <key>projectlist-keys</key>
+                <name>portlet.projectlist.field.projects.keys.name</name>
+                <description>portlet.projectlist.field.projects.keys.description</description>
+                <type>text</type>
+            </property>
+        </properties>
+    </portlet>
+
+</atlassian-plugin>

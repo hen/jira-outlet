@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-18] Implement ReportRunner in ReportRunner</title>
+<link>http://issues.osjava.org/jira/browse/RRR-18</link>
+
+                    <description>The list_reports, list_renderers pages could actually just be reports.&lt;br/&gt;
+&lt;br/&gt;
+Sick and sweet.</description>
+                <environment/>
+            <key id='10279'>RRR-18</key>
+        <summary>Implement ReportRunner in ReportRunner</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 4 Oct 2004 09:29:43 -0700 (PDT)</created>
+    <updated>Fri, 19 Nov 2004 13:57:03 -0800 (PST)</updated>
+
+                
+                
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

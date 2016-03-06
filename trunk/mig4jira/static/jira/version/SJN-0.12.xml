@@ -1,0 +1,7 @@
+<version>
+  <fixes-issues>
+    <issue status='Open' key='SJN-80'>strange behavior if property file is named  &quot;default.properties&quot;</issue>
+    <issue status='Open' key='SJN-72'>FooDS.properties seems to fail</issue>
+  </fixes-issues>
+  <name>0.12</name>
+</version>

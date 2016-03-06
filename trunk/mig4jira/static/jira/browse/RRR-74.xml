@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-74] Add a type of report that merely links to a different url</title>
+<link>http://issues.osjava.org/jira/browse/RRR-74</link>
+
+                    <description>Bit of a hack. Instead of having a report, have some way to link out of the system at the report level. This allows for other report like things to be plugged in.&lt;br/&gt;
+&lt;br/&gt;
+Possibly just use:&lt;br/&gt;
+&lt;br/&gt;
+&amp;lt;report-link uri=&amp;quot;...&amp;quot; name=&amp;quot;...&amp;quot;/&amp;gt;</description>
+                <environment/>
+            <key id='10358'>RRR-74</key>
+        <summary>Add a type of report that merely links to a different url</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Feb 2005 23:07:08 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 23:07:08 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

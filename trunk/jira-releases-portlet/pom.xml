@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.sourcelabs.jira</groupId>
+        <artifactId>jira-outlet-parent</artifactId>
+        <version>1-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.sourcelabs.jira</groupId>
+    <artifactId>sourcelabs-jira-plugin-portlet-releases</artifactId>
+    <version>2.5</version>
+
+    <name>Releases Plugin for JIRA</name>
+    <packaging>jar</packaging>
+
+    <description>Release information plugins for the JIRA front page.</description>
+    <url>http://confluence.atlassian.com/display/JIRAEXT/Release+Status+Plugin</url>
+
+    <scm>
+        <connection>scm:svn:https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-releases-portlet</connection>
+        <developerConnection>scm:svn:https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-releases-portlet</developerConnection>
+        <url>https://svn.atlassian.com/svn/public/contrib/jira/jira-outlet/trunk/jira-releases-portlet</url>
+    </scm>
+
+</project>

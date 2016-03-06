@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-4] Write maven.xml to copy config into target/test-classes</title>
+<link>http://issues.osjava.org/jira/browse/SJN-4</link>
+
+                    <description>Need somehow to hook a goal into maven.xml so that it copies some values over into target/test-classes. Some kind of hook.</description>
+                <environment/>
+            <key id='10003'>SJN-4</key>
+        <summary>Write maven.xml to copy config into target/test-classes</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 10:15:49 -0700 (PDT)</created>
+    <updated>Fri, 8 Aug 2003 23:07:48 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10010' created='Fri, 8 Aug 2003 23:07:47 -0700 (PDT)'>This fix is handled by upgrading to Maven b10. It allows resources to be passed to the tests.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

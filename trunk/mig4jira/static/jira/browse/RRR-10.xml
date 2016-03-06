@@ -1,0 +1,51 @@
+<item>
+<title>[RRR-10] converting</title>
+<link>http://issues.osjava.org/jira/browse/RRR-10</link>
+
+                    <description>definitely need Date and Number converting&lt;br/&gt;
+&lt;br/&gt;
+use commons-convert</description>
+                <environment/>
+            <key id='10271'>RRR-10</key>
+        <summary>converting</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:39:30 -0700 (PDT)</created>
+    <updated>Wed, 6 Oct 2004 10:01:01 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10255' created='Tue, 5 Oct 2004 20:55:48 -0700 (PDT)'>Dropped commons-convert. The formatting/parsing in there is too weak and I don&apos;t need the generic object-&amp;gt;object registry.&lt;br/&gt;
+&lt;br/&gt;
+Instead RRR will have its own format/parse system which will allow the report.xml to drive the format in use etc.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

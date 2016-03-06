@@ -1,0 +1,50 @@
+<item>
+<title>[SJN-42] Seems to accept anything as a DS id in java.properties</title>
+<link>http://issues.osjava.org/jira/browse/SJN-42</link>
+
+                    <description>Unsure how big this is, but if java.properties has TestDS, and I ask for java:/FlamefewDS, I seem to get a FlamefewDS with the values for TestDS in it.&lt;br/&gt;
+&lt;br/&gt;
+It should be throwing a NamingException.</description>
+                <environment/>
+            <key id='10133'>SJN-42</key>
+        <summary>Seems to accept anything as a DS id in java.properties</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 14 Dec 2003 19:07:32 -0800 (PST)</created>
+    <updated>Fri, 2 Jan 2004 23:46:05 -0800 (PST)</updated>
+
+                        <version>0.8</version>
+            
+                        <fixVersion>0.8</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10127' created='Fri, 2 Jan 2004 23:45:41 -0800 (PST)'>Note:&lt;br/&gt;
+&lt;br/&gt;
+This is only if &apos;org.osjava.jndi.datasource=true&apos; exists and deprecating/removing this feature will also get rid of the bug.</comment>
+                    <comment author='bayard' id='10128' created='Fri, 2 Jan 2004 23:46:05 -0800 (PST)'>Exists on a deprecated feature.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

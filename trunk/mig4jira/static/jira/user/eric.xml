@@ -1,0 +1,12 @@
+<user>
+  <login>eric</login>
+  <name>Eric Alexander</name>
+  <reported>
+    <issue status='Closed' key='SJN-59'>Move from gj-xml to DOM</issue>
+  </reported>
+  <assigned>
+    <issue status='Closed' key='SJN-59'>Move from gj-xml to DOM</issue>
+    <issue status='Open' key='RRR-91'>Remove gj-xml dependency</issue>
+    <issue status='Open' key='RRR-88'>webwizard&apos;s xmlview servlet needs to escape &lt; and &gt;</issue>
+  </assigned>
+</user>

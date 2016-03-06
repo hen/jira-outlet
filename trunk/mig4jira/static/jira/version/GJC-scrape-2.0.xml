@@ -1,0 +1,13 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='GJC-21'>Get is not working when inside a loop. Very bizarre behaviour. It gets the next one.</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Closed' key='GJC-19'>Target is always the first argument in HtmlW/XmlW. </issue>
+    <issue status='Closed' key='GJC-18'>Add a scrape(String tag) method </issue>
+    <issue status='Closed' key='GJC-17'>Performance Bottleneck: extensive use of  toLowerCase in com.generationjava.web.HtmlW.getIndexOpeningTag</issue>
+    <issue status='Closed' key='GJC-7'>moveToTagWith called twice will find the first one again</issue>
+    <issue status='Closed' key='GJC-3'>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</issue>
+  </fixes-issues>
+  <name>scrape-2.0</name>
+</version>

@@ -1,0 +1,8 @@
+Todo:
+
+1) Make it so comments use the real names if they are known
+2) Provide links to the top level somehow.
+3) Remember to do the mod rewrite rule for issues.osjava.org
+4) Check for https existence in osjava pages - change if so
+
+Bugs:

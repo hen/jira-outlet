@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#RRR-13] param choices</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [RRR-13]&#xA0;param choices<br/><span class="subText">
+                   Created: Fri, 1 Oct 2004 23:41:29 -0700 (PDT)                       &#xA0;Updated: Mon, 17 Jan 2005 10:34:43 -0800 (PST)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="RRR.html">ReportRunner</a></td></tr><tr><td><b>Component/s:</b></td><td>Engine</td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/RRR-.html"></a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/RRR-0.4.html">0.4</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Task</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">variants of a report..<br/>
+ie) search for user info by name or by id.<br/>
+<br/>
+should these be different reports? variants? an or-parameter?</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Wed, 29 Dec 2004 10:02:27 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">&lt;variants name=&quot;by?&quot;&gt;<br/>
+&nbsp;&lt;variant name=&quot;foo&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;sql&gt;where foo=?&lt;/sql&gt;<br/>
+&nbsp;&nbsp;&lt;param...string.../&gt;<br/>
+&nbsp;&lt;/variant&gt;<br/>
+&nbsp;&lt;variant name=&quot;bar&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;sql&gt;where bar=?&lt;/sql&gt;<br/>
+&nbsp;&nbsp;&lt;param...number.../&gt;<br/>
+&nbsp;&lt;/variant&gt;<br/>
+&lt;/variants&gt;</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Thu, 13 Jan 2005 08:38:54 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">So...talking with Eric has lead to:<br/>
+<br/>
+<br/>
+&lt;variant name=&quot;by&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;option name=&quot;foo&quot; value=&quot;where foo=?&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;param name=&quot;foo&quot; type=&quot;java.lang.Integer&quot;.../&gt;<br/>
+&nbsp;&nbsp;&lt;/option&gt;<br/>
+&nbsp;&nbsp;&lt;option name=&quot;bar&quot; value=&quot;where bar=?&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;param name=&quot;bar&quot; type=&quot;java.lang.Integer&quot;.../&gt;<br/>
+&nbsp;&nbsp;&lt;/option&gt;<br/>
+&nbsp;&nbsp;&lt;option name=&quot;foobar&quot; value=&quot;where foo=? and bar=?&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;param name=&quot;foo&quot; type=&quot;java.lang.Integer&quot;.../&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;param name=&quot;bar&quot; type=&quot;java.lang.Integer&quot;.../&gt;<br/>
+&nbsp;&nbsp;&lt;/option&gt;<br/>
+&lt;/variant&gt;<br/>
+<br/>
+The choice of the variant will be a completely new page in the web-wizard, between the choose database and the enter information options.<br/>
+</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Mon, 17 Jan 2005 10:34:43 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Now added to the system.</td></tr></table></body></html>

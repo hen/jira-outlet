@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-46] Bookmark trail needs choose-resources</title>
+<link>http://issues.osjava.org/jira/browse/RRR-46</link>
+
+                    <description>The trail doesn&apos;t contain the choose-resources section.</description>
+                <environment/>
+            <key id='10322'>RRR-46</key>
+        <summary>Bookmark trail needs choose-resources</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 7 Dec 2004 16:44:06 -0800 (PST)</created>
+    <updated>Thu, 16 Dec 2004 17:07:14 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10302' created='Thu, 16 Dec 2004 17:07:14 -0800 (PST)'>Fixed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

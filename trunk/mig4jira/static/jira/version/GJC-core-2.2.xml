@@ -1,0 +1,8 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='GJC-6'>XMLProperties: Comments and other invisible tags are added</issue>
+    <issue status='Closed' key='GJC-5'>XMLProperties does not add root&apos;s attributes as properties</issue>
+    <issue status='Closed' key='GJC-3'>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</issue>
+  </affects-issues>
+  <name>core-2.2</name>
+</version>

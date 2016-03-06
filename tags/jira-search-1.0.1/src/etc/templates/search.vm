@@ -1,0 +1,45 @@
+<script>
+function submitForm(formId, name, values) {
+  frm = document.getElementById(formId);
+  for(i=0; i<values.length; i++) {
+      hdn = document.createElement("input");
+      hdn.name = name;
+      hdn.type = 'hidden';
+      hdn.value = values[i];
+      frm.appendChild(hdn);
+  }
+  frm.submit();
+}
+</script>
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">$i18n.getText('portlet.search.title')&nbsp;
+        <font size="1">
+        (<a href="$req.contextPath/secure/IssueNavigator.jspa?createNew=true&mode=show" title="$i18n.getText('portlet.search.words.advanced.description')">$i18n.getText('portlet.search.words.advanced')</a>)
+        </font>
+        </td>
+    </tr>
+                               <tr  class="rowNormal"  >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+
+                    <td width="100%" >
+<!-- TODO: Add portlet id to id's -->
+<form id="searchJira" action="$req.contextPath/secure/IssueNavigator.jspa">
+<input type="hidden" name="reset" value="true"/>
+<input type="hidden" name="mode" value="true"/>
+<input type="hidden" name="description" value="true"/>
+<input type="hidden" name="body" value="true"/>
+<input type="hidden" name="summary" value="true"/>
+<input type="hidden" name="environment" value="true"/>
+<input type="hidden" name="tempMax" value="100"/>
+<input type="text" name="query" size="30"/>
+<input type="image" src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_end.png" title="$i18n.getText('portlet.search.words.searchall')"/>
+<a href="javascript:submitForm('searchJira', 'resolution', ['-1'])" title="$i18n.getText('portlet.search.words.searchopen')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_play.png" border="0"/></a>
+<a href="javascript:submitForm('searchJira', 'status', ['5', '6'])" title="$i18n.getText('portlet.search.words.searchclosed')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.search:search/control_stop.png" border="0"/></a>
+</form>
+
+</td></tr></table>
+</td></tr></table>
+</td></tr></table>

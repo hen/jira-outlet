@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-69] Does not load DataSource correctly when the name comes from the filename of the .properties/.xml file.</title>
+<link>http://issues.osjava.org/jira/browse/SJN-69</link>
+
+                    <description>When my DataSource was configured in file called JFit.properties, trying to retrieve the DataSource from JNDI returned null which led to NullPointerException when getting the connection.  Had to rename the file to jdbc.properties and have the name of the DataSource as a prefix inside each line of jdbc.properties.</description>
+                <environment>j2se 5</environment>
+            <key id='10507'>SJN-69</key>
+        <summary>Does not load DataSource correctly when the name comes from the filename of the .properties/.xml file.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='mhill'>Mike Hill</reporter>
+            
+    <created>Thu, 15 Sep 2005 07:48:16 -0700 (PDT)</created>
+    <updated>Wed, 28 Sep 2005 20:46:16 -0700 (PDT)</updated>
+
+                        <version>0.11</version>
+            
+                        <fixVersion>0.11.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10436' created='Wed, 28 Sep 2005 20:46:16 -0700 (PDT)'>Test created to prove it fails, and now fixed. Took a surprising chunk of work to get solved.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

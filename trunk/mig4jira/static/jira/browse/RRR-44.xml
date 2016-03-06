@@ -1,0 +1,69 @@
+<item>
+<title>[RRR-44] Need to be able to choose resources from a list</title>
+<link>http://issues.osjava.org/jira/browse/RRR-44</link>
+
+                    <description>Rather than just having a report run on only one resource, it should be able to run against a list of options. Currently thinking that the resource attribute of a report would look something like:&lt;br/&gt;
+&lt;br/&gt;
+resource=&amp;quot;JiraDS or ConfluenceDS&amp;quot;.&lt;br/&gt;
+&lt;br/&gt;
+This won&apos;t scope well when people want to run a report that uses two resources though. &lt;br/&gt;
+&lt;br/&gt;
+***&lt;br/&gt;
+&lt;br/&gt;
+It&apos;s a param! Doh :) Though it has to be answered before the param page can, so maybe a new tag: &amp;lt;resource-param name=&amp;quot;SqlReportDS&amp;quot; options=&amp;quot;JiraDS,ConfluenceDS,RollerDS&amp;quot;/&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+This scopes nicely and can even replace the resource attribute of the report tag:&lt;br/&gt;
+&lt;br/&gt;
+&amp;lt;resource-param name=&amp;quot;SqlReportDS&amp;quot; value=&amp;quot;JiraDS&amp;quot;/&amp;gt; would replace resource=&amp;quot;JiraDS&amp;quot; in report tag.</description>
+                <environment/>
+            <key id='10320'>RRR-44</key>
+        <summary>Need to be able to choose resources from a list</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 6 Dec 2004 14:32:26 -0800 (PST)</created>
+    <updated>Tue, 7 Dec 2004 16:42:01 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10294' created='Mon, 6 Dec 2004 18:02:22 -0800 (PST)'>Half coded, and now needs recoding.&lt;br/&gt;
+&lt;br/&gt;
+The &amp;lt;resource-param&amp;gt; should be a part of a ReportGroup, not a Report.&lt;br/&gt;
+&lt;br/&gt;
+The Resource should use reflection to be set on the report. So SqlReport should have setSqlReportDS() as a method.&lt;br/&gt;
+&lt;br/&gt;
+The report xml may need nothing resource-wise...ponder.&lt;br/&gt;
+&lt;br/&gt;
+The jsp choice should happen in the same place as currently, ie) after the report is chosen.</comment>
+                    <comment author='bayard' id='10295' created='Tue, 7 Dec 2004 16:42:01 -0800 (PST)'>This is implemented. Bit of cleanup to do, but I&apos;ll make that a new issue. The use tag needs to die in the reportrunner.xml and should just be a resource-param without options.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

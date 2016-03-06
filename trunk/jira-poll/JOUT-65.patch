@@ -1,0 +1,45 @@
+Index: src/etc/templates/poll.vm
+===================================================================
+--- src/etc/templates/poll.vm	(revision 37864)
++++ src/etc/templates/poll.vm	(working copy)
+@@ -1,8 +1,7 @@
+ #if($votingEnabled)
+ <div id="voteportlet-$portletId">
+-<script type="text/javascript">
+-
+-    function createRequestObject${portletId}()
++<script>
++    function createRequestObject()
+     {
+         var ro;
+         try
+@@ -34,7 +33,7 @@
+     }
+ 
+ 
+-    function toggleVote${portletId}(portletId, elementId, toggleKey, issueKeys, title, diluteVote)
++    function toggleVote(portletId, elementId, toggleKey, issueKeys, title, diluteVote)
+     {
+         var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.poll:poll&issue-keys="+issueKeys+"%3A"+portletId+"%3A"+toggleKey+"&title="+title+"&diluteVote="+diluteVote;
+ 
+@@ -43,7 +42,7 @@
+ 
+         var icon = document.getElementById("voteIcon"+toggleKey+portletId);
+ 
+-        var httpReq = createRequestObject${portletId}();
++        var httpReq = createRequestObject();
+         httpReq.open('get', reqUrl, true);
+         httpReq.onreadystatechange = function() {
+             if (httpReq.readyState == 4)
+@@ -108,9 +107,9 @@
+     <a href="$req.contextPath/browse/$entry.getIssue().getKey()"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/information.png" title="$entry.getIssue().getKey()"/></a>
+   #if($loggedIn)
+     #if($entry.hasVoted)
+-      <a href="javascript:toggleVote${portletId}('$portletId', 'voteportlet-${portletId}', '$entry.issue.key', '${issue-keys}', '${title}', '${diluteVote}')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/pencil_delete.png" title="$i18n.getText('portlet.poll.icons.unvote.description')"/></a>
++      <a onclick="toggleVote('$portletId','voteportlet-${portletId}','$entry.issue.key','${issue-keys}','${title}','${diluteVote}')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/pencil_delete.png" title="$i18n.getText('portlet.poll.icons.unvote.description')"/></a>
+     #else
+-      <a href="javascript:toggleVote${portletId}('$portletId', 'voteportlet-${portletId}', '$entry.issue.key', '${issue-keys}', '${title}', '${diluteVote}')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/pencil_add.png" title="$i18n.getText('portlet.poll.icons.vote.description')"/></a>
++      <a onclick="toggleVote('$portletId','voteportlet-${portletId}','$entry.issue.key','${issue-keys}','${title}','${diluteVote}')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.poll:poll/icons/pencil_add.png" title="$i18n.getText('portlet.poll.icons.vote.description')"/></a>
+     #end
+   #end
+   </td>

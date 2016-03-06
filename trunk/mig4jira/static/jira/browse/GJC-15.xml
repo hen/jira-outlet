@@ -1,0 +1,44 @@
+<item>
+<title>[GJC-15] Reconsider the END_OF_LINE variable</title>
+<link>http://issues.osjava.org/jira/browse/GJC-15</link>
+
+                    <description>Would be nice if the END_OF_LINE was some kind of special String and not equal to something the user is likely to have in their CSV.&lt;br/&gt;
+&lt;br/&gt;
+Currently it is &amp;quot;END_OF_LINE&amp;quot;, so if that appears in the CSV, things get screwed. A better one might be to use something like (char)0.</description>
+                <environment/>
+            <key id='10224'>GJC-15</key>
+        <summary>Reconsider the END_OF_LINE variable</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 15 Jun 2004 22:43:06 -0700 (PDT)</created>
+    <updated>Tue, 15 Jun 2004 22:43:24 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>csv-1.1</fixVersion>
+            
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

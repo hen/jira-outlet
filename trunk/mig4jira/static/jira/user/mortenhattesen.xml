@@ -1,0 +1,11 @@
+<user>
+  <login>mortenhattesen</login>
+  <name>Morten Hattesen</name>
+  <commented>
+    <issue status='Closed' key='SJN-73'>Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException</issue>
+  </commented>
+  <reported>
+    <issue status='Closed' key='SJN-73'>Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException</issue>
+    <issue status='Closed' key='SJN-71'>Documentation for simple-jndi property-names are inconsistent and incorrect</issue>
+  </reported>
+</user>

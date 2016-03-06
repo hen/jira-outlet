@@ -1,0 +1,86 @@
+<project>
+  <key>SJN</key>
+  <name>Simple-JNDI</name>
+  <issues>
+    <issue status='Closed' key='SJN-81'>Allow DBCP parameters to be passed in</issue>
+    <issue status='Open' key='SJN-80'>strange behavior if property file is named  &quot;default.properties&quot;</issue>
+    <issue status='Closed' key='SJN-79'>lookup return null instead throiwiung exceptions</issue>
+    <issue status='Closed' key='SJN-78'>Does not compiled with JDK-1.6</issue>
+    <issue status='Closed' key='SJN-77'>InitialContext.close() improperly throws exception when using JNDI Memory implementation separately</issue>
+    <issue status='Closed' key='SJN-75'>Using simple-jndi for testing with Maven 2</issue>
+    <issue status='Closed' key='SJN-74'>Avoiding &quot;Missing javax.sql:jdbc-stdext:jar:2.0&quot;  caused by DBCP 1.1 while using Maven 2 </issue>
+    <issue status='Closed' key='SJN-73'>Using shared memory (org.osjava.sj.jndi.shared=true) causes javax.naming.NameAlreadyBoundException</issue>
+    <issue status='Open' key='SJN-72'>FooDS.properties seems to fail</issue>
+    <issue status='Closed' key='SJN-71'>Documentation for simple-jndi property-names are inconsistent and incorrect</issue>
+    <issue status='Closed' key='SJN-70'>AbstractContext: Can&apos;t unbind a subcontext</issue>
+    <issue status='Closed' key='SJN-69'>Does not load DataSource correctly when the name comes from the filename of the .properties/.xml file.</issue>
+    <issue status='Closed' key='SJN-68'>Subcontexts not shared when org.osjava.sj.jndi.shared=true</issue>
+    <issue status='Open' key='SJN-67'>Pluggable lookup system + http lookup</issue>
+    <issue status='Open' key='SJN-66'>Write classpath lookup</issue>
+    <issue status='Closed' key='SJN-65'>Test COLON_REPLACE concept</issue>
+    <issue status='Closed' key='SJN-64'>Test the SPACE concept</issue>
+    <issue status='Closed' key='SJN-63'>Test System properties</issue>
+    <issue status='Closed' key='SJN-62'>Create unit test containing java: subcontext</issue>
+    <issue status='Open' key='SJN-61'>Submit to Sun</issue>
+    <issue status='Closed' key='SJN-60'>Create user-guide</issue>
+    <issue status='Closed' key='SJN-59'>Move from gj-xml to DOM</issue>
+    <issue status='Closed' key='SJN-58'>Unable to create subcontexts</issue>
+    <issue status='Closed' key='SJN-57'>NotContextException error in GenericContext.createSubContext</issue>
+    <issue status='Closed' key='SJN-56'>If JNDI name begins with java:/ and if using a PropertiesContext, search will fail</issue>
+    <issue status='Open' key='SJN-55'>Add support for javax.naming.event</issue>
+    <issue status='Closed' key='SJN-54'>If a resource directory config/java and file config/java.properties both exist, indeterminate result</issue>
+    <issue status='Closed' key='SJN-53'>simple-jndi-0.5.pom is 0 sized in repo</issue>
+    <issue status='Closed' key='SJN-52'>Do conversion of values on parse and not on lookup?</issue>
+    <issue status='Closed' key='SJN-51'>Fix hierarchies in configuration files</issue>
+    <issue status='Open' key='SJN-50'>Enable JTA transactions to work through the DataSource</issue>
+    <issue status='Closed' key='SJN-49'>Unable to load a DS in jdbc/FooDS.properties</issue>
+    <issue status='Closed' key='SJN-48'>Can/t use System properties to initialise the JNDI</issue>
+    <issue status='Closed' key='SJN-47'>Release and discuss the example Config class</issue>
+    <issue status='Closed' key='SJN-46'>Create example system for Converters</issue>
+    <issue status='Closed' key='SJN-45'>XML variant cannot handle multiple properties to make a List</issue>
+    <issue status='Closed' key='SJN-44'>Remove &apos;org.osjava.jndi.datasource&apos; code</issue>
+    <issue status='Closed' key='SJN-43'>.ini files do not lod blockless values correctly</issue>
+    <issue status='Closed' key='SJN-42'>Seems to accept anything as a DS id in java.properties</issue>
+    <issue status='Closed' key='SJN-41'>Add examples download</issue>
+    <issue status='Open' key='SJN-40'>Test with p6spy.</issue>
+    <issue status='Closed' key='SJN-39'>XML does not work well if at all in the 0.6 release.</issue>
+    <issue status='Closed' key='SJN-38'>Inline all dependencies and see how it feels</issue>
+    <issue status='Closed' key='SJN-37'>Need to improve how site archiving is done</issue>
+    <issue status='Closed' key='SJN-36'>Remove &apos;Development Process&apos; link</issue>
+    <issue status='Closed' key='SJN-35'>Lies about how to access CVS on the website</issue>
+    <issue status='Closed' key='SJN-34'>Redirect old site over to new one</issue>
+    <issue status='Closed' key='SJN-33'>Unable to have DataSource files with more than 2 elements</issue>
+    <issue status='Closed' key='SJN-32'>Not possible to mix delimiters</issue>
+    <issue status='Closed' key='SJN-31'>Switch to Log4J</issue>
+    <issue status='Closed' key='SJN-30'>Static memory</issue>
+    <issue status='Closed' key='SJN-29'>Allow Maps to be specified?</issue>
+    <issue status='Open' key='SJN-28'>Confirm that .jars and .zips in the classpath work okay with the lookup</issue>
+    <issue status='Closed' key='SJN-27'>Allow values to be accessed over http</issue>
+    <issue status='Closed' key='SJN-26'>Implement list methods</issue>
+    <issue status='Open' key='SJN-25'>Implement binding persistence</issue>
+    <issue status='Closed' key='SJN-24'>Switch to using Names and not Strings?</issue>
+    <issue status='Open' key='SJN-23'>Implement DirContext</issue>
+    <issue status='Closed' key='SJN-22'>Pluggable converters</issue>
+    <issue status='Closed' key='SJN-21'>Allow the standard simple-jndi properties to be modifiable</issue>
+    <issue status='Closed' key='SJN-20'>simple-jndi sees System.getProperty first</issue>
+    <issue status='Closed' key='SJN-19'>Allow users to bind variables</issue>
+    <issue status='Closed' key='SJN-18'>NumberConverter needs to know what type was desired</issue>
+    <issue status='Closed' key='SJN-17'>Implement Number converter</issue>
+    <issue status='Closed' key='SJN-16'>Implement BooleanConverter</issue>
+    <issue status='Closed' key='SJN-15'>URLConverter</issue>
+    <issue status='Closed' key='SJN-14'>Implement basic converter system</issue>
+    <issue status='Closed' key='SJN-13'>Allow Lists in the format</issue>
+    <issue status='Closed' key='SJN-12'>Support XML as the underlying data format</issue>
+    <issue status='Closed' key='SJN-11'>Add Types to the system</issue>
+    <issue status='Closed' key='SJN-10'>Keep the order of the .properties file.</issue>
+    <issue status='Closed' key='SJN-9'>Add classpath protocol</issue>
+    <issue status='Closed' key='SJN-8'>Default for root should be the classpath</issue>
+    <issue status='Closed' key='SJN-7'>Allow delimiter in search values to be configurable.</issue>
+    <issue status='Closed' key='SJN-6'>Support a .ini backend</issue>
+    <issue status='Closed' key='SJN-5'>Implement DataSource creation as a part of the type converting system</issue>
+    <issue status='Closed' key='SJN-4'>Write maven.xml to copy config into target/test-classes</issue>
+    <issue status='Closed' key='SJN-3'>Unable to use simple-jndi on Windows with standard java naming</issue>
+    <issue status='Closed' key='SJN-2'>Can org.osjava.jndi.datasource be obtained as shown in the Examples?</issue>
+    <issue status='Closed' key='SJN-1'>Simple-JNDI parameters can be read through simple-jndi interface.</issue>
+  </issues>
+</project>

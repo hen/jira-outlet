@@ -1,0 +1,54 @@
+<item>
+<title>[RRR-76] Plan reports for the following feature list</title>
+<link>http://issues.osjava.org/jira/browse/RRR-76</link>
+
+                    <description>basic report running&lt;br/&gt;
+database-choosing&lt;br/&gt;
+variants&lt;br/&gt;
+entering parameters&lt;br/&gt;
+entering comma-separated delimiters&lt;br/&gt;
+velocity&lt;br/&gt;
+jfreechart&lt;br/&gt;
+jfreechart applet&lt;br/&gt;
+various renderers&lt;br/&gt;
+date widget&lt;br/&gt;
+binding&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10361'>RRR-76</key>
+        <summary>Plan reports for the following feature list</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10360'>RRR-75</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 3 Mar 2005 15:31:05 -0800 (PST)</created>
+    <updated>Thu, 3 Mar 2005 15:31:05 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

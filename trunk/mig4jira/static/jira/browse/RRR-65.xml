@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-65] Exception/page when group not found</title>
+<link>http://issues.osjava.org/jira/browse/RRR-65</link>
+
+                    <description>ReportGroupNotFoundException should be thrown, and needs to hit a jsp.</description>
+                <environment/>
+            <key id='10345'>RRR-65</key>
+        <summary>Exception/page when group not found</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 12 Jan 2005 21:15:43 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:51:12 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

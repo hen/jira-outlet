@@ -1,0 +1,46 @@
+<item>
+<title>[GJC-20] Improve CsvWriter API</title>
+<link>http://issues.osjava.org/jira/browse/GJC-20</link>
+
+                    <description>add writeLine(Object[]) and writeField(Object) to save people a bit of effort. Especially on the Object[].</description>
+                <environment/>
+            <key id='10231'>GJC-20</key>
+        <summary>Improve CsvWriter API</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 22 Jun 2004 13:46:28 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 15:50:36 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>csv-1.1</fixVersion>
+            
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10215' created='Tue, 22 Jun 2004 21:07:58 -0700 (PDT)'>Added, need more unit tests.</comment>
+                    <comment author='bayard' id='10389' created='Tue, 2 Aug 2005 15:50:36 -0700 (PDT)'>Will add more tests if needed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

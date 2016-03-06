@@ -1,0 +1,42 @@
+<item>
+<title>[PAY-21] Not possible to store an empty directory in Payload</title>
+<link>http://issues.osjava.org/jira/browse/PAY-21</link>
+
+                    <description>When contracting, empty directories are ignored.</description>
+                <environment/>
+            <key id='10380'>PAY-21</key>
+        <summary>Not possible to store an empty directory in Payload</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 12 May 2005 14:56:22 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:50:00 -0700 (PDT)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

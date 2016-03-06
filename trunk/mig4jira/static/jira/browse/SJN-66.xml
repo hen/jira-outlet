@@ -1,0 +1,40 @@
+<item>
+<title>[SJN-66] Write classpath lookup</title>
+<link>http://issues.osjava.org/jira/browse/SJN-66</link>
+
+                    <description>Need to be able to look values up in the classpath again.</description>
+                <environment/>
+            <key id='10497'>SJN-66</key>
+        <summary>Write classpath lookup</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:56:47 -0700 (PDT)</created>
+    <updated>Wed, 6 Jun 2007 08:44:52 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

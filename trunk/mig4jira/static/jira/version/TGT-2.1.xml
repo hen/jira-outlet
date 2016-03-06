@@ -1,0 +1,8 @@
+<version>
+  <fixes-issues>
+    <issue status='Open' key='TGT-7'>Unit tests</issue>
+    <issue status='Open' key='TGT-6'>Implement an object factory</issue>
+    <issue status='Open' key='TGT-1'>Add Thread Pooling</issue>
+  </fixes-issues>
+  <name>2.1</name>
+</version>

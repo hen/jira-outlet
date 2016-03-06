@@ -1,0 +1,50 @@
+<item>
+<title>[RRR-19] Default values</title>
+<link>http://issues.osjava.org/jira/browse/RRR-19</link>
+
+                    <description>Need default values for params.</description>
+                <environment/>
+            <key id='10280'>RRR-19</key>
+        <summary>Default values</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 4 Oct 2004 09:32:30 -0700 (PDT)</created>
+    <updated>Thu, 16 Dec 2004 16:26:34 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                        <component>Reports</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10299' created='Thu, 16 Dec 2004 16:12:43 -0800 (PST)'>Use the value attribute :)</comment>
+                    <comment author='bayard' id='10300' created='Thu, 16 Dec 2004 16:26:34 -0800 (PST)'>Bollocks to that actually. Attribute is &apos;default&apos; as the default value is a String and the actual value is an Object.&lt;br/&gt;
+&lt;br/&gt;
+Issue that will need fixing someday is to be able to set the default to something other than a String (such as the current date/time).</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

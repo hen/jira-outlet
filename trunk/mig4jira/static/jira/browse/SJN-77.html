@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>[#SJN-77] InitialContext.close() improperly throws exception when using JNDI Memory implementation separately</title><style type="text/css">
+BODY{margin:0;font-family:Arial,Sans-Serif,sans-serif;color:black;}
+BODY,P,UL,OL,DL,LI,TD,TEXTAREA,INPUT,SELECT,BUTTON,option,optgroup{font-family:Arial,Sans-Serif;font-size:12px;color:black;}
+H3{font-weight:bold;font-size:16px;font-family:Arial,Sans-Serif;margin-top:10px;margin-bottom:0;}
+    *
+    {
+        border: 0;
+        padding: 0;
+    }
+
+    .tableBorder, .grid
+    {
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    h3.formtitle
+    {
+    }
+
+    .tableBorder td, .grid td
+    {
+        vertical-align: top;
+        padding: 2px;
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+    }
+
+.noPadding
+{
+    padding: 0px !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 2px;
+    border-collapse: collapse;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+
+#descriptionArea
+{
+    margin: 0px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+}
+
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, Sans-Serif, sans-serif;
+    color:black;
+}
+
+</style></head><body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" link="#003366" vlink="#003366" alink="#660000"><table cellpadding="0" cellspacing="0" border="0" width="100%"><p style="background-color: red; padding: 8px">This is an exported version of the JIRA issue tracker. Please use the <a href="http://code.google.com/p/osjava/issues/list">Google Code</a> site to open new tickets or report updates to these existing tickets. Feel free to contact the <a href="http://groups.google.com/group/osjava">mailing list</a> with any questions. </p></table><table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top"><h3 class="formtitle">
+
+                                [SJN-77]&#xA0;InitialContext.close() improperly throws exception when using JNDI Memory implementation separately<br/><span class="subText">
+                   Created: Mon, 25 Dec 2006 12:47:13 -0800 (PST)                       &#xA0;Updated: Sun, 6 Apr 2008 00:31:01 -0700 (PDT)</span></h3></td></tr><tr><td width="20%"><b>Status:</b></td><td width="80%">Closed</td></tr><tr><td width="20%"><b>Project:</b></td><td width="80%"><a href="SJN.html">Simple-JNDI</a></td></tr><tr><td><b>Component/s:</b></td><td></td></tr><tr><td><b>Affects Version/s:</b></td><td><a href="../version/SJN-0.11.1.html">0.11.1</a></td></tr><tr><td><b>Fix Version/s:</b></td><td><a href="../version/SJN-0.11.3.html">0.11.3</a></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Type:</b></td><td bgcolor="#ffffff" valign="top" width="30%">Bug</td><td bgcolor="#f0f0f0"><b>Priority:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap">
+                Major
+            </td></tr><tr><td bgcolor="#f0f0f0" valign="top" width="20%"><b>Reporter:</b></td><td bgcolor="#ffffff" valign="top" width="30%"><a href="../user/lorban.html">Ludovic Orban</a></td><td bgcolor="#f0f0f0" width="20%"><b>Assignee:</b></td><td bgcolor="#ffffff" valign="top" nowrap="nowrap" width="30%"><a href="../user/bayard.html">Henri Yandell</a></td></tr><tr><td bgcolor="#f0f0f0" width="20%"><b>Resolution:</b></td><td bgcolor="#ffffff" valign="top" width="30%" nowrap="nowrap">Fixed</td><td bgcolor="#ffffff" colspan="2">&#xA0;</td></tr><tr><td bgcolor="#f0f0f0" width="20%" valign="top"><b>Environment:</b></td><td bgcolor="#ffffff" valign="top" colspan="3"></td></tr></table><br/><table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%"/><br/><table cellpadding="2" cellspacing="0" border="0" width="100%" align="center"><tr><td bgcolor="#bbbbbb" width="1%" nowrap="nowrap" align="center">
+                    &#xA0;<font color="#ffffff"><b>Description</b></font>&#xA0;
+            </td><td>&#xA0;</td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td id="descriptionArea">According to this page <a href="http://www.osjava.org/simple-jndi/manual/MemoryContext.html">http://www.osjava.org/simple-jndi/manual/MemoryContext.html</a> it should be possible to use Simple JNDI as an in-memory context.<br/>
+<br/>
+When I try with this jndi.properties in classpath:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java.naming.factory.initial=org.osjava.sj.memory.MemoryContextFactory<br/>
+<br/>
+this code:<br/>
+<br/>
+        Context ctx = new InitialContext();<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctx.bind(&quot;aaa&quot;, &quot;bbb&quot;);<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ctx.close();<br/>
+<br/>
+throws this exception:<br/>
+<br/>
+java.lang.ClassCastException<br/>
+	at org.osjava.sj.jndi.AbstractContext.close(AbstractContext.java:704)<br/>
+	at javax.naming.InitialContext.close(InitialContext.java:478)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
+<br/>
+and if you set this property in jndi.properties:<br/>
+<br/>
+        org.osjava.sj.jndi.shared=true<br/>
+<br/>
+you get that exception instead:<br/>
+<br/>
+javax.naming.NotContextException<br/>
+	at org.osjava.sj.jndi.AbstractContext.destroySubcontext(AbstractContext.java:529)<br/>
+	at org.osjava.sj.jndi.AbstractContext.close(AbstractContext.java:697)<br/>
+	at javax.naming.InitialContext.close(InitialContext.java:478)</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bulenterdemir.html">bulenterdemir</a><font size="-2"> [ <font color="#336699">Sun, 17 Feb 2008 06:28:27 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Hi, the problem is in the AbstractContext's close() method. This method iterates through the internal HashTable (called table) in which it holds the JNDI bound objects. And while iterating it casts each object from this table to a Thread and tries to see it the thread's are alive by calling isAlive() on them. 
+<br/>
+
+<br/>
+So, obviously, if you've bound an object to the JNDI which is NOT a Thread, then the cast operation fails. Here's the code:
+<br/>
+
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(table.size() &gt; 0 || subContexts.size() &gt; 0) {
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it = table.keySet().iterator();
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while(it.hasNext()) {
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name name = (Name)it.next();
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!((Thread)table.get(name)).isAlive()) {
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;table.remove(name);
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br/>
+
+<br/>
+I don't understand why the author does this (Thread casting and calling isAlive()), however, this is the cause of your problem. And mine, too... :)
+<br/>
+
+<br/>
+Here's a JUnit 4 test to reproduce the problem:
+<br/>
+
+<br/>
+package org.falez.falez.jndi.test;
+<br/>
+import javax.naming.InitialContext;
+<br/>
+import javax.naming.NamingException;
+<br/>
+import org.junit.Before;
+<br/>
+import org.junit.Test;
+<br/>
+
+<br/>
+public class TestMemoryContext {
+<br/>
+	InitialContext ic;
+<br/>
+	@Before
+<br/>
+	public void setup() throws NamingException {
+<br/>
+		System.setProperty(&quot;java.naming.factory.initial&quot;, &quot;org.osjava.sj.memory.MemoryContextFactory&quot;);
+<br/>
+		ic = new InitialContext();
+<br/>
+	}
+<br/>
+	@Test
+<br/>
+	public void testPut() throws NamingException {
+<br/>
+		String name = &quot;falez:/hoba&quot;;
+<br/>
+		String value = &quot;hoba1&quot;;
+<br/>
+		ic.bind(name, value);
+<br/>
+		String result = (String) ic.lookup(name);
+<br/>
+		ic.close();
+<br/>
+	}
+<br/>
+}
+<br/>
+</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bulenterdemir.html">bulenterdemir</a><font size="-2"> [ <font color="#336699">Sun, 17 Feb 2008 11:43:51 -0800 (PST)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Another problem with the MemoryContext is that, the close() method on the AbstractContext, literally closes everything. :) 
+<br/>
+This means, it releases all the resources related to the particular context: unbind objects, frees up the internal HashTable, etc. 
+<br/>
+This essentially destroys the Jndi registry. 
+<br/>
+
+<br/>
+However, the close() call should deallocate the resources the JNDI client uses to connect to the JNDI contect. For example, for a remote JNDI connection, the socket should be closed. 
+<br/>
+In other words, when close() is called, the registry should continue to live. 
+<br/>
+
+<br/>
+If you execute the code below:
+<br/>
+Context ctx = new InitialContext();
+<br/>
+ic.bind(&quot;falez:/hoba&quot;, &quot;hoba&quot;);
+<br/>
+ic.close();
+<br/>
+
+<br/>
+the object bound is lost forever. If you create another InitialContext() and try to lookup for the object just bound, you won't find it there. 
+<br/>
+
+<br/>
+Normally, the resources used to connect to the registry should be freed. Not the JNDI registry itself.
+<br/>
+
+<br/>
+Another implication is, if you use Spring's JndiTemplate to access the JNDI registry, you won't be able to use it all because JndiTemplate automatically closes the created InitialContext for every expression it executes. Therefore, after every call, the JNDI registry is destroyed. 
+<br/>
+
+<br/>
+As a result, AbstractContext's close() method should be empty. 
+<br/>
+
+<br/>
+Regards,
+<br/>
+Bulent Erdemir
+<br/>
+</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sat, 22 Mar 2008 13:21:56 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">svn ci -m &quot;Applying Bulent Erdemir's unit test and protecting from the ClassCastException as per <a href="http://issues.osjava.org/jira/browse/SJN-77" title="InitialContext.close() improperly throws exception when using JNDI Memory implementation separately"><strike>SJN-77</strike></a>&quot;
+<br/>
+
+<br/>
+Sending        simple-jndi/src/java/org/osjava/sj/jndi/AbstractContext.java
+<br/>
+Adding         simple-jndi/src/test/org/osjava/sj/Sjn77Test.java
+<br/>
+Transmitting file data ..
+<br/>
+Committed revision 2657.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sat, 22 Mar 2008 13:22:23 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Still need to deal with the question of what should be in the close() method.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sat, 22 Mar 2008 13:25:56 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Doesn't fix the NotContextException. </td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sat, 22 Mar 2008 13:49:01 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">Latter problem is because StaticHashTable is used twice; which makes it the same table.
+<br/>
+
+<br/>
+svn ci -m &quot;Making it so there can be more than one StaticHashtable. This fixes the NotContextException reported in <a href="http://issues.osjava.org/jira/browse/SJN-77" title="InitialContext.close() improperly throws exception when using JNDI Memory implementation separately"><strike>SJN-77</strike></a>&quot;
+<br/>
+
+<br/>
+Sending        simple-jndi/src/java/org/osjava/sj/jndi/AbstractContext.java
+<br/>
+Sending        simple-jndi/src/java/org/osjava/sj/jndi/StaticHashtable.java
+<br/>
+Sending        simple-jndi/src/test/org/osjava/sj/Sjn77Test.java
+<br/>
+Transmitting file data ...
+<br/>
+Committed revision 2658.</td></tr><tr><td bgcolor="#f0f0f0">
+                Comment by  <a href="../user/bayard.html">bayard</a><font size="-2"> [ <font color="#336699">Sun, 6 Apr 2008 00:31:01 -0700 (PDT)</font> ] </font></td></tr><tr><td bgcolor="#ffffff">As for what should be in the close() method - that's the reason why the Static option exists. In that instance the registry exists beyond the mere object that was created.
+<br/>
+
+<br/>
+So I believe this issue can be closed.</td></tr></table></body></html>

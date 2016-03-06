@@ -1,0 +1,45 @@
+<item>
+<title>[SJN-68] Subcontexts not shared when org.osjava.sj.jndi.shared=true</title>
+<link>http://issues.osjava.org/jira/browse/SJN-68</link>
+
+                    <description>Bug in AbstractMemoryContext. Only this.table is static, the subcontext table is not static.</description>
+                <environment/>
+            <key id='10506'>SJN-68</key>
+        <summary>Subcontexts not shared when org.osjava.sj.jndi.shared=true</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='tigran'>Robert M. Zigweid</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 14 Sep 2005 22:09:53 -0700 (PDT)</created>
+    <updated>Wed, 28 Sep 2005 20:50:44 -0700 (PDT)</updated>
+
+                        <version>0.11</version>
+            
+                        <fixVersion>0.11.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10437' created='Wed, 28 Sep 2005 20:50:44 -0700 (PDT)'>Test added, and StaticHashtables created in AbstractContext to provide shared contexts.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

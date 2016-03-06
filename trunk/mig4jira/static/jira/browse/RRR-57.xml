@@ -1,0 +1,52 @@
+<item>
+<title>[RRR-57] Error handling</title>
+<link>http://issues.osjava.org/jira/browse/RRR-57</link>
+
+                    <description>Need to present errors nicely to the user.&lt;br/&gt;
+&lt;br/&gt;
+Most likely this will be when SQL errors are thrown. The user needs to be able to see the body of the error and a way to go back a step. This presents a difficulty as the bookmark/trail is hardcoded.</description>
+                <environment/>
+            <key id='10337'>RRR-57</key>
+        <summary>Error handling</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 23 Dec 2004 14:01:59 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:54:41 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10317' created='Wed, 29 Dec 2004 09:59:56 -0800 (PST)'>Included with this is when a report returns nothing. Need a nice &apos;there was no data&apos; page.</comment>
+                    <comment author='bayard' id='10321' created='Mon, 10 Jan 2005 10:37:53 -0800 (PST)'>Exceptions are now handled in a jsp page. Needs more work to allow the owner of a report to be mailto&apos;d automatically. This needs an owners.xml file to exist etc.</comment>
+                    <comment author='bayard' id='10332' created='Thu, 3 Feb 2005 12:40:40 -0800 (PST)'>Mailto stuff partly done. owners.xml still needed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

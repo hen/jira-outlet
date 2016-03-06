@@ -1,0 +1,44 @@
+<item>
+<title>[PAY-20] Change packages</title>
+<link>http://issues.osjava.org/jira/browse/PAY-20</link>
+
+                    <description>Time to repackage the code under osjava and not generationjava.</description>
+                <environment/>
+            <key id='10379'>PAY-20</key>
+        <summary>Change packages</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 19:18:47 -0700 (PDT)</created>
+    <updated>Thu, 5 May 2005 19:27:15 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10367' created='Thu, 5 May 2005 19:27:15 -0700 (PDT)'>Doneski.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

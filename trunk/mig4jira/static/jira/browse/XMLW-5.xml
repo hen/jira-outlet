@@ -1,0 +1,51 @@
+<item>
+<title>[XMLW-5] No data entities lead to </title>
+<link>http://issues.osjava.org/jira/browse/XMLW-5</link>
+
+                    <description>Received by email:&lt;br/&gt;
+&lt;br/&gt;
+----&lt;br/&gt;
+I think I found a bug in XmlWriter when writing entities with no data&lt;br/&gt;
+(just attributes); I added a this.closed = true to endEntity().&lt;br/&gt;
+----&lt;br/&gt;
+&lt;br/&gt;
+Bug leads to two &amp;gt;&amp;gt;&apos;s.</description>
+                <environment/>
+            <key id='10680'>XMLW-5</key>
+        <summary>No data entities lead to </summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='5'>Cannot Reproduce</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 29 Mar 2007 09:34:59 -0700 (PDT)</created>
+    <updated>Thu, 29 Mar 2007 10:47:38 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>2.2.1</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10600' created='Thu, 29 Mar 2007 10:47:37 -0700 (PDT)'>I think this was on a very old version - have communicated back to the reporter. There&apos;s a unit test that tests this already.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='XMLW'>XmlWriter</project>
+</item>

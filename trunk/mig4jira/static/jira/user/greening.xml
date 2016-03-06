@@ -1,0 +1,10 @@
+<user>
+  <login>greening</login>
+  <name>Dan Greening</name>
+  <commented>
+    <issue status='Closed' key='SJN-56'>If JNDI name begins with java:/ and if using a PropertiesContext, search will fail</issue>
+  </commented>
+  <reported>
+    <issue status='Closed' key='SJN-54'>If a resource directory config/java and file config/java.properties both exist, indeterminate result</issue>
+  </reported>
+</user>

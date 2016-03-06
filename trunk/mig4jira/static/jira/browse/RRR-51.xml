@@ -1,0 +1,42 @@
+<item>
+<title>[RRR-51] Search system</title>
+<link>http://issues.osjava.org/jira/browse/RRR-51</link>
+
+                    <description>Add feature to search reports</description>
+                <environment/>
+            <key id='10331'>RRR-51</key>
+        <summary>Search system</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Tue, 21 Dec 2004 14:13:05 -0800 (PST)</created>
+    <updated>Tue, 21 Dec 2004 14:13:05 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

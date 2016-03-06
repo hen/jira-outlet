@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-79] i18n problems - web pages lack encoding info</title>
+<link>http://issues.osjava.org/jira/browse/RRR-79</link>
+
+                    <description>Need to set iso_8895_1 or whatever it is somehow.</description>
+                <environment/>
+            <key id='10364'>RRR-79</key>
+        <summary>i18n problems - web pages lack encoding info</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Mar 2005 20:30:28 -0800 (PST)</created>
+    <updated>Sun, 10 Apr 2005 19:15:03 -0700 (PDT)</updated>
+
+                        <version>0.4</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10361' created='Sun, 10 Apr 2005 19:15:03 -0700 (PDT)'>I don&apos;t think this is an RRR problem. I think the problem is in the Red Hat server it was being deployed to.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

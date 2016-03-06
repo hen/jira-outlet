@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-23] Renderers need names and labels</title>
+<link>http://issues.osjava.org/jira/browse/RRR-23</link>
+
+                    <description>&amp;lt;renderer name=&amp;quot;csv&amp;quot; label=&amp;quot;Comma separated values&amp;quot; ...&amp;gt;</description>
+                <environment/>
+            <key id='10284'>RRR-23</key>
+        <summary>Renderers need names and labels</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Tue, 5 Oct 2004 08:03:34 -0700 (PDT)</created>
+    <updated>Tue, 5 Oct 2004 09:07:41 -0700 (PDT)</updated>
+
+                        <version>0.2</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

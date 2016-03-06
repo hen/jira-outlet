@@ -1,0 +1,49 @@
+<item>
+<title>[RRR-58] Author understanding</title>
+<link>http://issues.osjava.org/jira/browse/RRR-58</link>
+
+                    <description>Need a owner.xml or something file which contains:&lt;br/&gt;
+&amp;lt;people&amp;gt;&lt;br/&gt;
+&amp;lt;person id=&amp;quot;hen&amp;quot; name=&amp;quot;Henri Yandell&amp;quot; email=&amp;quot;bayard@...&amp;quot;/&amp;gt;&lt;br/&gt;
+&amp;lt;/people&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+and is referred to by author=&amp;quot;&amp;quot; and owner=&amp;quot;&amp;quot; etc.</description>
+                <environment/>
+            <key id='10338'>RRR-58</key>
+        <summary>Author understanding</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 10 Jan 2005 15:26:54 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:54:26 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

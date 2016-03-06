@@ -1,0 +1,42 @@
+<item>
+<title>[SCB-15] Create a default csv-parser</title>
+<link>http://issues.osjava.org/jira/browse/SCB-15</link>
+
+                    <description>Using gj-csv, need something that will take a csv in from a url and turn it into a TabularResult.</description>
+                <environment/>
+            <key id='10222'>SCB-15</key>
+        <summary>Create a default csv-parser</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 15 Jun 2004 22:40:19 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 21:36:18 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>scraping-engine-0.6</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

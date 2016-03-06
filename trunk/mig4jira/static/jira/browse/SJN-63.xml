@@ -1,0 +1,46 @@
+<item>
+<title>[SJN-63] Test System properties</title>
+<link>http://issues.osjava.org/jira/browse/SJN-63</link>
+
+                    <description>Test you can set java.naming.factory.initial, org.osjava.sj.root and org.osjava.sj.delimiter via the System property.&lt;br/&gt;
+&lt;br/&gt;
+</description>
+                <environment/>
+            <key id='10494'>SJN-63</key>
+        <summary>Test System properties</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:55:48 -0700 (PDT)</created>
+    <updated>Wed, 6 Jun 2007 08:44:56 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.11</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10416' created='Tue, 23 Aug 2005 19:01:43 -0700 (PDT)'>&lt;a href=&quot;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/SystemPropertyTest.java?rev=1908&amp;view=log&quot;&gt;http://svn.osjava.org/cgi-bin/viewcvs.cgi/trunk/simple-jndi/src/test/org/osjava/sj/SystemPropertyTest.java?rev=1908&amp;amp;view=log&lt;/a&gt;</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

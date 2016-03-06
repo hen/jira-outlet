@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-36] Use classpath if file not found</title>
+<link>http://issues.osjava.org/jira/browse/RRR-36</link>
+
+                    <description>If file is not found when looking for a report.xml; it should use the classpath instead.</description>
+                <environment/>
+            <key id='10310'>RRR-36</key>
+        <summary>Use classpath if file not found</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 12 Nov 2004 11:38:57 -0800 (PST)</created>
+    <updated>Wed, 22 Dec 2004 11:33:41 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10313' created='Wed, 22 Dec 2004 11:33:41 -0800 (PST)'>Slight change to the config lookup. &amp;quot;file:...&amp;quot; will load as a File, &amp;quot;classpath:...&amp;quot; will load from classpath, and anything else will currently default to file.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

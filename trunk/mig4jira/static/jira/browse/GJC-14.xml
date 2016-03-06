@@ -1,0 +1,44 @@
+<item>
+<title>[GJC-14] Unit test and Javadoc</title>
+<link>http://issues.osjava.org/jira/browse/GJC-14</link>
+
+                    <description>Need to get the csv code unit tested and javadoc&apos;d.&lt;br/&gt;
+&lt;br/&gt;
+Most importantly, CsvReader and CsvWriter.</description>
+                <environment/>
+            <key id='10223'>GJC-14</key>
+        <summary>Unit test and Javadoc</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 15 Jun 2004 22:41:23 -0700 (PDT)</created>
+    <updated>Tue, 15 Jun 2004 22:41:23 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>csv-1.1</fixVersion>
+            
+                        <component>gj-csv</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

@@ -1,0 +1,32 @@
+#if ($loggedin)
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    #if ($justReleased && $justReleased.size() > 0)
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">$i18n.getText("portlet.latestreleases.title")</td>
+    </tr>
+            #foreach ($version in $justReleased)
+                #set ($versionURL = "$req.contextPath/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id")
+                #set ($projectURL = "$req.contextPath/browse/$version.project.key")
+                <tr #if ($velocityCount % 2 == 1) class="rowNormal" #else class="rowAlternate" #end >
+                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
+                    <td width="50%" >
+                        <a title="$textutils.htmlEncode($version.getString('description'))" href="$versionURL">$textutils.htmlEncode($version.getString('name'))</a>
+                    </td>
+                    <td width="50%"><a title="$textutils.htmlEncode($version.project.description)" href="$projectURL">$textutils.htmlEncode($version.project.name)</td>
+                    <td>#versionReleaseDate($action $version)</td>
+                    </tr></table></td>
+                </tr>
+            #end
+    #else
+         <tr bgcolor="#FFFFFF">
+            <td width="100%" colspan="2">
+                $i18n.getText('portlet.latestreleases.noreleases').
+            </td>
+        </tr>
+    #end
+
+</table>
+</table>
+#end

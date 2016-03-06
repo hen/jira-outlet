@@ -1,0 +1,39 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='RRR-87'>Make breadcrumb code generic</issue>
+    <issue status='Open' key='RRR-86'>CallableSqlReport</issue>
+    <issue status='Open' key='RRR-85'>Put the velocity.properties into the code?</issue>
+    <issue status='Open' key='RRR-84'>Get rid of the &quot;z&quot; and &quot;y&quot; hacks</issue>
+    <issue status='Open' key='RRR-83'>Need to delete the unneeded servlets when the time comes</issue>
+    <issue status='Open' key='RRR-82'>Need to implement the exception pages in velocity.</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Open' key='RRR-91'>Remove gj-xml dependency</issue>
+    <issue status='Open' key='RRR-90'>Run ReportRunner outside of the servlet</issue>
+    <issue status='Open' key='RRR-88'>webwizard&apos;s xmlview servlet needs to escape &lt; and &gt;</issue>
+    <issue status='Open' key='RRR-87'>Make breadcrumb code generic</issue>
+    <issue status='Open' key='RRR-86'>CallableSqlReport</issue>
+    <issue status='Open' key='RRR-85'>Put the velocity.properties into the code?</issue>
+    <issue status='Open' key='RRR-84'>Get rid of the &quot;z&quot; and &quot;y&quot; hacks</issue>
+    <issue status='Open' key='RRR-83'>Need to delete the unneeded servlets when the time comes</issue>
+    <issue status='Open' key='RRR-82'>Need to implement the exception pages in velocity.</issue>
+    <issue status='Open' key='RRR-78'>Show group and report comments on current-state panel</issue>
+    <issue status='Open' key='RRR-74'>Add a type of report that merely links to a different url</issue>
+    <issue status='Open' key='RRR-68'>Renderers need parameters</issue>
+    <issue status='Open' key='RRR-66'>Tomcat did not startup properly</issue>
+    <issue status='Open' key='RRR-65'>Exception/page when group not found</issue>
+    <issue status='Open' key='RRR-62'>&apos;Enter Information&apos; needs to clear previous value in URL.</issue>
+    <issue status='Open' key='RRR-61'>Reprot to show system config xml files</issue>
+    <issue status='Open' key='RRR-60'>Calendar widget fails in Firefox</issue>
+    <issue status='Open' key='RRR-59'>Add boolean widget</issue>
+    <issue status='Open' key='RRR-58'>Author understanding</issue>
+    <issue status='Open' key='RRR-57'>Error handling</issue>
+    <issue status='Open' key='RRR-55'>maven plugin for building a reportrunner&apos;d system</issue>
+    <issue status='Open' key='RRR-52'>Logging</issue>
+    <issue status='Open' key='RRR-48'>Create DTDs for various XML files</issue>
+    <issue status='Open' key='RRR-47'>Descriptions for params, columns and resource-params</issue>
+    <issue status='In Progress' key='RRR-17'>Use Velocity instead of JSP</issue>
+    <issue status='Open' key='RRR-12'>widget system</issue>
+  </fixes-issues>
+  <name>0.6</name>
+</version>

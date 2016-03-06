@@ -1,0 +1,46 @@
+<item>
+<title>[NRB-7] A 403 or 401 should be considered a false and not an error</title>
+<link>http://issues.osjava.org/jira/browse/NRB-7</link>
+
+                    <description>If you can&apos;t access a robots.txt for security reasons; the robot should assume the entire site is off limits.</description>
+                <environment/>
+            <key id='10512'>NRB-7</key>
+        <summary>A 403 or 401 should be considered a false and not an error</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 5 Oct 2005 08:02:17 -0700 (PDT)</created>
+    <updated>Wed, 5 Oct 2005 10:34:25 -0700 (PDT)</updated>
+
+                        <version>0.3.1</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10453' created='Wed, 5 Oct 2005 10:34:25 -0700 (PDT)'>Not going to do this in 0.3.2; it&apos;s not entirely simple, and would be easier if I became dependent on httpclient (which would make the ssl support easier too). So trying to decide whether I should depend on httpclient.&lt;br/&gt;
+&lt;br/&gt;
+Given that it may join httpclient at apache someday; not entirely a dumb suggestion.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='NRB'>Norbert</project>
+</item>

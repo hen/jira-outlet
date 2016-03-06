@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-39] Stilted language</title>
+<link>http://issues.osjava.org/jira/browse/RRR-39</link>
+
+                    <description>A lot of the language reads very poorly due to a) my style of English and b) the genericity of it all.</description>
+                <environment/>
+            <key id='10313'>RRR-39</key>
+        <summary>Stilted language</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 19 Nov 2004 11:45:08 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:56:06 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10334' created='Thu, 3 Feb 2005 12:56:06 -0800 (PST)'>It&apos;s fine for me. Will let people complain about specific bits.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

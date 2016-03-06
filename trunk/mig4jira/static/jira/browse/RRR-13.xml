@@ -1,0 +1,78 @@
+<item>
+<title>[RRR-13] param choices</title>
+<link>http://issues.osjava.org/jira/browse/RRR-13</link>
+
+                    <description>variants of a report..&lt;br/&gt;
+ie) search for user info by name or by id.&lt;br/&gt;
+&lt;br/&gt;
+should these be different reports? variants? an or-parameter?</description>
+                <environment/>
+            <key id='10274'>RRR-13</key>
+        <summary>param choices</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:41:29 -0700 (PDT)</created>
+    <updated>Mon, 17 Jan 2005 10:34:43 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.4</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10318' created='Wed, 29 Dec 2004 10:02:27 -0800 (PST)'>&amp;lt;variants name=&amp;quot;by?&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;lt;variant name=&amp;quot;foo&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;sql&amp;gt;where foo=?&amp;lt;/sql&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;param...string.../&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;lt;/variant&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;lt;variant name=&amp;quot;bar&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;sql&amp;gt;where bar=?&amp;lt;/sql&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;param...number.../&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;lt;/variant&amp;gt;&lt;br/&gt;
+&amp;lt;/variants&amp;gt;</comment>
+                    <comment author='bayard' id='10325' created='Thu, 13 Jan 2005 08:38:54 -0800 (PST)'>So...talking with Eric has lead to:&lt;br/&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+&amp;lt;variant name=&amp;quot;by&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;option name=&amp;quot;foo&amp;quot; value=&amp;quot;where foo=?&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;param name=&amp;quot;foo&amp;quot; type=&amp;quot;java.lang.Integer&amp;quot;.../&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/option&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;option name=&amp;quot;bar&amp;quot; value=&amp;quot;where bar=?&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;param name=&amp;quot;bar&amp;quot; type=&amp;quot;java.lang.Integer&amp;quot;.../&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/option&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;option name=&amp;quot;foobar&amp;quot; value=&amp;quot;where foo=? and bar=?&amp;quot;&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;param name=&amp;quot;foo&amp;quot; type=&amp;quot;java.lang.Integer&amp;quot;.../&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;param name=&amp;quot;bar&amp;quot; type=&amp;quot;java.lang.Integer&amp;quot;.../&amp;gt;&lt;br/&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/option&amp;gt;&lt;br/&gt;
+&amp;lt;/variant&amp;gt;&lt;br/&gt;
+&lt;br/&gt;
+The choice of the variant will be a completely new page in the web-wizard, between the choose database and the enter information options.&lt;br/&gt;
+</comment>
+                    <comment author='bayard' id='10326' created='Mon, 17 Jan 2005 10:34:43 -0800 (PST)'>Now added to the system.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

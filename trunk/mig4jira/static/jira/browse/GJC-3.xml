@@ -1,0 +1,58 @@
+<item>
+<title>[GJC-3] HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</title>
+<link>http://issues.osjava.org/jira/browse/GJC-3</link>
+
+                    <description>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].&lt;br/&gt;
+&lt;br/&gt;
+I think anyway. Need to fix this, though will wait until after the fix for the lowercase/uppercase.</description>
+                <environment/>
+            <key id='10103'>GJC-3</key>
+        <summary>HtmlScraper does not handle apostrophe&apos;s [rather than double-quotes].</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 14 Sep 2003 19:47:05 -0700 (PDT)</created>
+    <updated>Wed, 5 May 2004 22:35:11 -0700 (PDT)</updated>
+
+                        <version>core-2.2</version>
+            
+                        <fixVersion>scrape-2.0</fixVersion>
+            
+                        <component>gj-scrape</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10184' created='Wed, 5 May 2004 22:35:11 -0700 (PDT)'>Unit test exists, it passes, job done.</comment>
+                </comments>
+    
+    <issuelinks>
+                <issuelinktype id='10000'>
+            <name>Depends on</name>
+                            <outwardlinks description='depends on'>
+                            <issuelink>
+            <issuekey id='10097'>GJC-2</issuekey>
+        </issuelink>
+                    </outwardlinks>
+                                </issuelinktype>
+            </issuelinks>
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

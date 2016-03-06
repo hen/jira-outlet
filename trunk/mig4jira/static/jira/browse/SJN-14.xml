@@ -1,0 +1,42 @@
+<item>
+<title>[SJN-14] Implement basic converter system</title>
+<link>http://issues.osjava.org/jira/browse/SJN-14</link>
+
+                    <description>A basic level converter system. Not yet pluggable.</description>
+                <environment/>
+            <key id='10014'>SJN-14</key>
+        <summary>Implement basic converter system</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 11:53:13 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 11:53:19 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                        <component>Converter</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

@@ -1,0 +1,7 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='XMLW-7'>Use an xmlenc version that&apos;s on ibiblio</issue>
+    <issue status='Closed' key='XMLW-6'>Fix or remove java-channel link</issue>
+  </affects-issues>
+  <name>2.2</name>
+</version>

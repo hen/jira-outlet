@@ -1,0 +1,56 @@
+<item>
+<title>[GJC-4] Create genjava-xmlparser and genjava-props</title>
+<link>http://issues.osjava.org/jira/browse/GJC-4</link>
+
+                    <description>I&apos;d like to take the properties implementations out of the simple-jndi setup. &lt;br/&gt;
+I&apos;d then like to make them their own jar, though would also need the XML parser as its own jar again.&lt;br/&gt;
+&lt;br/&gt;
+So idea is to experiment with lots of small jars. Now that I&apos;m better at handling releases etc. genjava-core would become a multi-project, so would need some maven learning there.</description>
+                <environment/>
+            <key id='10106'>GJC-4</key>
+        <summary>Create genjava-xmlparser and genjava-props</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 15 Sep 2003 21:32:03 -0700 (PDT)</created>
+    <updated>Sat, 6 Dec 2003 13:34:19 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10060' created='Mon, 15 Sep 2003 21:36:09 -0700 (PDT)'>genjava-scraper is a possible to take out. It would end up with XmlW, HtmlW, HtmlScraper.&lt;br/&gt;
+&lt;br/&gt;
+Also worth removing is the beans package and the random package. All the proxy stuff together. Unsure what the name would be. &lt;br/&gt;
+&lt;br/&gt;
+The jdbc package really ought to die in favour of dbutils.&lt;br/&gt;
+io stuff needs to go in various directions. &lt;br/&gt;
+math be folded into lang? or just folded?&lt;br/&gt;
+&lt;br/&gt;
+Mailer should go into its own piece. Would need some more work then. </comment>
+                    <comment author='bayard' id='10091' created='Tue, 18 Nov 2003 18:02:11 -0800 (PST)'>Also genjava-csv.</comment>
+                    <comment author='bayard' id='10104' created='Sat, 6 Dec 2003 13:34:09 -0800 (PST)'>This is all now done in the new genjava/ cvs module and not the genjava-core/ module. Ready for release and a new site.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='GJC'>Genjava</project>
+</item>

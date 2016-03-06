@@ -1,0 +1,49 @@
+<item>
+<title>[SCB-17] Support Cookies</title>
+<link>http://issues.osjava.org/jira/browse/SCB-17</link>
+
+                    <description>When getting a second page, it should remember cookies returned.&lt;br/&gt;
+&lt;br/&gt;
+No persistent cookies though, that&apos;s over the top currently.</description>
+                <environment/>
+            <key id='10243'>SCB-17</key>
+        <summary>Support Cookies</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 29 Jun 2004 12:10:17 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 21:29:11 -0700 (PDT)</updated>
+
+                        <version>scraping-engine-0.3</version>
+            
+                        <fixVersion>scraping-engine-0.4</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10222' created='Tue, 29 Jun 2004 13:10:19 -0700 (PDT)'>Added. I&apos;ve not tested, but a tester tells me it works fine for him.</comment>
+                    <comment author='bayard' id='10396' created='Tue, 9 Aug 2005 21:29:11 -0700 (PDT)'>Modified the implementation of this to cache a HttpClient object instead of messing around with the Cookies themselves. Seems simpler to just reuse the same HttpClient object again and again.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

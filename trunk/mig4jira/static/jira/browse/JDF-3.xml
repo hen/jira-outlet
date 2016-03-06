@@ -1,0 +1,41 @@
+<item>
+<title>[JDF-3] Inheritence confusion on Jardiff&apos;s part</title>
+<link>http://issues.osjava.org/jira/browse/JDF-3</link>
+
+                    <description>Running jardiff against dbutils 1.0 and 1.1 shows some confusion because Jardiff doesn&apos;t understand inheritence.</description>
+                <environment/>
+            <key id='10633'>JDF-3</key>
+        <summary>Inheritence confusion on Jardiff&apos;s part</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='antony'>Antony Riley</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Dec 2006 15:20:56 -0800 (PST)</created>
+    <updated>Wed, 6 Jun 2007 08:43:25 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+            <attachment name='dbutils-1.0-to-1.1-jardiff.html' size='4504' author='bayard' id='10210' created='Fri, 1 Dec 2006 15:21:25 -0800 (PST)'/>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='JDF'>JarDiff</project>
+</item>

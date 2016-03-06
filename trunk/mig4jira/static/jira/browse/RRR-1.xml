@@ -1,0 +1,49 @@
+<item>
+<title>[RRR-1] Servlet so it can change content-type</title>
+<link>http://issues.osjava.org/jira/browse/RRR-1</link>
+
+                    <description>Currently the system is hacked together in JSP. &lt;br/&gt;
+&lt;br/&gt;
+Need to start switching to servlets so I can change content-type and return non html pages.</description>
+                <environment/>
+            <key id='10262'>RRR-1</key>
+        <summary>Servlet so it can change content-type</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:34:44 -0700 (PDT)</created>
+    <updated>Mon, 4 Oct 2004 21:28:01 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10252' created='Mon, 4 Oct 2004 21:28:01 -0700 (PDT)'>Done.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

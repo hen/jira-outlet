@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-61] Reprot to show system config xml files</title>
+<link>http://issues.osjava.org/jira/browse/RRR-61</link>
+
+                    <description>Need a standard report to show the renderers.xml at the very least.</description>
+                <environment/>
+            <key id='10341'>RRR-61</key>
+        <summary>Reprot to show system config xml files</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 10 Jan 2005 15:29:15 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:53:43 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Reports</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

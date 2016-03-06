@@ -1,0 +1,274 @@
+#if ($projectVisible)
+
+## This can go away when 3.10 is sufficiently in the past. It won't work in 3.7.3, I know that.
+## They changed the versionReleaseDate API. 
+#macro(myVersionReleaseDate $versionManager $version $)
+#if ($version.releaseDate)
+    #if ($version.isArchived() == true)
+        <span class="grey" title="$i18n.getText("version.releasedate")">$outlookdate.formatDMY($version.releaseDate)</span>
+    #elseif ($versionManager.isVersionOverDue($version) == true && $version.isReleased() == false)
+        <span class="warning" title="$i18n.getText("version.releasedate.past")">$outlookdate.formatDMY($version.releaseDate)</span>
+    #else
+        <span title="$i18n.getText("version.releasedate")">$outlookdate.formatDMY($version.releaseDate)</span>
+    #end
+#end
+#end
+
+#macro(percentageBar $graphModel)
+    <table cellpadding="0" border="0" cellspacing="0"><tr height="6">
+    #if (!$graphModel || $graphModel.rows.size() == 0)
+        <td width="100" align="right"><font size=1>$i18n.getText("common.concepts.noissues")</font></td>
+    #else
+        #foreach ($row in $graphModel.rows)
+            #if ($graphModel.getPercentage($row) != 0)
+            <td width="$graphModel.getPercentage($row)" bgcolor="$row.colour" >
+                #if ($row.statuses)
+                    <a href="$req.contextPath/secure/IssueNavigator.jspa?reset=true$row.statuses"
+                        title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)"
+                    ><img src="$req.contextPath/images/border/spacer.gif"
+                        height=10 width="$graphModel.getPercentage($row)" border=0
+                        title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)"></a>
+                #else
+                    <img src="$req.contextPath/images/border/spacer.gif"
+                        height=10 width="$graphModel.getPercentage($row)" border=0
+                        title="$row.description - $graphModel.getPercentage($row)% ($row.number issues)">
+                #end
+            </td>
+            #end
+        #end
+    #end
+    </tr></table>
+#end
+
+<div id="releasestatus-$portletId" class="releasestatus">
+
+ #if ($releaseError)
+    <!-- THIS ISN'T WORKING :( -->
+    <table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+    <table border="0" cellpadding="3" cellspacing="1" width="100%">
+        <tr class=rowHeader>
+            <td class="colHeaderLink">
+              #set ($msg = $i18n.getText($releaseError, $versionid, $versionlist))
+              $msg
+            </td>
+        </tr>
+    </table>
+    </td></tr>
+    </table>
+ #else
+
+#if( $loggedin || $versionlist )
+<script type="text/javascript">
+
+    function createRequestObject${portletId}()
+    {
+        var ro;
+        try
+        {
+                    // Opera 8.0+, Firefox, Safari
+                    ro = new XMLHttpRequest();
+            }
+        catch (e)
+        {
+                    // Internet Explorer Browsers
+                    try
+            {
+                            ro = new ActiveXObject("Msxml2.XMLHTTP");
+                    }
+            catch (e)
+            {
+                            try
+                {
+                                    ro = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                catch (e)
+                {
+                                    // Unable to create a request object
+                                    return false;
+                            }
+                    }
+            }
+        return ro;
+    }
+
+
+    function getPortlet${portletId}(projectid, id, portletId, versionlist, defaultUserType)
+    {
+        var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.releases:releases&projectid="+projectid+"&versionid="+id+"&versionlist="+versionlist+"%3A"+portletId+"&defaultUserType="+defaultUserType;
+        var elementId = "releasestatus-" + portletId;
+        var elem = document.getElementById(elementId);
+
+        var httpReq = createRequestObject${portletId}();
+        httpReq.open('get', reqUrl, true);
+        httpReq.onreadystatechange = function() {
+            if (httpReq.readyState == 4)
+            {
+                var response = httpReq.responseText;
+                /*
+                var elementId = httpReq.getResponseHeader("elementId");
+                elem = document.getElementById(elementId);
+                elem.style.height = 'auto';  
+                */
+                elem.innerHTML = response;
+            }
+        }
+        httpReq.send(null);
+
+/* Nice to do
+        var loadingText = "<img src=\"${req.ContextPath}/images/icons/wait.gif\" />";
+        var height = elem.clientHeight;
+        elem.innerHTML = loadingText;
+        var elemStyle = elem.style;
+        elemStyle.height = height;
+*/
+
+    }
+</script>
+#end
+
+  #if ($showCurrentUser) 
+    #set ($userClause = '&assigneeSelect=issue_current_user')
+  #end
+
+<table class="tableBorder maxWidth" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">
+  <table width="100%">
+  <tr>
+  <td>
+  <b><u><a href="$req.contextPath/browse/$version.project.key" title="$textutils.htmlEncode("$version.project.description")">$version.project.name</a></u></b>
+  </td>
+  <td align="right">
+   #if ($loggedin)
+     #if ($showCurrentUser) 
+      (<font size="1"> $user.fullName </font>) <a href="javascript:getPortlet${portletId}('$!projectid', '$version.id', '$portletId', '$!versionlist', '$switchUserType')" title="$i18n.getText('portlet.releases.icons.switchtogroup.description')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/group_go.png"/></a>
+     #else
+      <a href="javascript:getPortlet${portletId}('$!projectid', '$version.id', '$portletId', '$!versionlist', '$switchUserType')" title="$i18n.getText('portlet.releases.icons.switchtouser.description')"><img src="$requestContext.baseUrl/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/user_go.png"/></a>
+     #end
+   #end
+  <a href="$req.contextPath/secure/ReleaseNote.jspa?projectId=$version.project.id&styleName=Html&version=$version.id" title="$i18n.getText('portlet.releases.icons.releasenotes.description')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/report.png"/></a>&nbsp;
+  <a href="$req.contextPath/secure/ConfigureReport.jspa?versionId=$version.id&displayUnknown=yes&selectedProjectId=$version.project.id&reportKey=com.atlassian.jira.plugin.system.reports%3Aversion-workload&Next=Next" title="$i18n.getText('portlet.releases.icons.workload.description')"><img src="$req.contextPath/download/resources/com.sourcelabs.jira.plugin.portlet.releases:releases/time.png"/></a>
+  </td>
+  </tr>
+  </table>
+  </tr>
+
+    <tr class=rowHeader>
+        <td class="colHeaderLink" colspan="2">
+  <table width="100%">
+  <tr>
+  <td>
+  #versionStatus($version 24)
+  <a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id" title="$textutils.htmlEncode("$!version.description")"><b><u>$version.name</u></b></a></font>
+  #if ($version.releaseDate)
+  (<font size="1"> #myVersionReleaseDate($versionManager $version)
+   </font>)
+  #end
+  </td>
+  <td>
+  <table width=180 valign=middle align=right cellspacing=0 cellpadding=0 border=0>
+      <tr height="6">
+          <td width="80%" valign="middle" align="right"><span class="subText">$i18n.getText("common.words.progress"):&nbsp;</span></td>
+          <td align="right" colspan="3">
+            #percentageBar ($pgm)
+          </td>
+      </tr>
+      #if ($totalCount)
+      <tr>
+        <td align="right" class="subText" style="padding-top: 3px">$i18n.getText('portlet.releases.totalissues'):&nbsp;</td>
+        <td align="left" class="subText" style="padding-top: 3px"><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id$!userClause" title="$i18n.getText('portlet.releases.totalissues')">$totalCount</a>&nbsp;</td>
+        <td align="right" class="subText" style="padding-top: 3px">$i18n.getText('portlet.releases.openissues'):&nbsp;</td>
+        <td align="left" class="subText" style="padding-top: 3px"><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&pid=$version.project.id&fixfor=$version.id&resolution=-1$!userClause" title="$i18n.getText('portlet.releases.openissues')">$totalOpenCount</a>&nbsp;</td>
+      </tr>
+      #end
+  </table>
+  </td>
+  </tr>
+  </table>
+  </tr>
+  <tr bgcolor="#ffffff">
+  <td>
+  <table width="100%">
+
+   <tr>
+
+   <td align="left" width="5%"><table><tr>
+   #if ($versionlist)
+        <td valign="top">
+          #if ($previousVersion)
+           <a href="javascript:getPortlet${portletId}('$!projectid', '$previousVersion.id', '$portletId', '$versionlist', '$defaultUserType')" title="$previousVersion.name"><img src="$requestContext.baseUrl/images/icons/arrow_left_small.gif"/></a>
+          #else
+           <img src="$requestContext.baseUrl/images/icons/arrow_left_faded.gif"/>
+          #end
+     </td>
+   #else
+     <td valign="top">&nbsp;</td>
+   #end
+  </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td></tr>
+  </table>
+  </td>
+
+    <td width="40%">
+
+  <table width="100%">
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&status=5&status=6&updated:previous=-1w&sorter/field=updated&sorter/order=DESC&fixfor=$version.id$!userClause" title='$i18n.getText("portlet.releases.words.resolvedRecently.description")'>$i18n.getText("portlet.releases.words.resolvedRecently")</a>:</td><td align="right">$resolvedCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&created:previous=-1w&sorter/field=created&sorter/order=DESC&fixfor=$version.id$!userClause" title='$i18n.getText("portlet.releases.words.addedRecently.description")'>$i18n.getText("portlet.releases.words.addedRecently")</a>:</td><td align="right">$addedCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&updated:previous=-1w&sorter/field=updated&sorter/order=DESC&fixfor=$version.id$!userClause" title='$i18n.getText("portlet.releases.words.updatedRecently.description")'>$i18n.getText("portlet.releases.words.updatedRecently")</a>:</td><td align="right">$updatedCount</td></tr>
+  </table>
+
+</td><td width="40%">
+  <table width="100%">
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&resolution=-1&fixfor=$version.id&duedate%3Anext=0&sorter/field=updated&sorter/order=DESC$!userClause" title='$i18n.getText("portlet.releases.words.overdue.description")'>$i18n.getText("portlet.releases.words.overdue")</a>:</td><td align="right">$overdueCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&resolution=-1&fixfor=$version.id&duedate%3Aprevious=0&duedate%3Anext=1w&sorter/field=updated&sorter/order=DESC$!userClause" title='$i18n.getText("portlet.releases.words.dueSoon.description")'>$i18n.getText("portlet.releases.words.dueSoon")</a>:</td><td align="right">$dueSoonCount</td></tr>
+  <tr><td><a href="$requestContext.baseUrl/secure/IssueNavigator.jspa?reset=true&mode=hide&pid=$version.project.id&resolution=-1&fixfor=$version.id&status=3$!userClause" title='$i18n.getText("portlet.releases.words.inProgress.description")'>$i18n.getText("portlet.releases.words.inProgress")</a>:</td><td align="right">$inProgressCount</td></tr>
+  </table>
+  </td><td align="right">
+  #if ($percentage)
+  <h1>$percentage%</h1>
+  #else
+  <h1>-%</h1>
+  #end
+
+    </td>
+    <td align="right" width="5%">
+    <table>
+    <tr>
+   #if ($versionlist)
+    <td width="5%" valign="top">
+          #if ($nextVersion)
+           <a href="javascript:getPortlet${portletId}('$!projectid', '$nextVersion.id', '$portletId', '$versionlist', '$defaultUserType')" title="$nextVersion.name"><img src="$requestContext.baseUrl/images/icons/arrow_right_small.gif"/></a>
+          #else
+           <img src="$requestContext.baseUrl/images/icons/arrow_right_faded.gif"/>
+          #end
+     </td>
+   #else
+     <td valign="top">&nbsp;</td>
+   #end
+   </tr>
+  <tr><td>&nbsp;</td></tr>
+  <tr>
+  #if ($version.releaseDate && $happinessMessage)
+  #set ($msg = $i18n.getText($happinessMessage))
+  #set ($img = $i18n.getText("${happinessMessage}.img"))
+  <td align="right" valign="bottom"><img src="${requestContext.baseUrl}${img}" title="${formula}"/></td>
+  #else
+  <td align="right" valian="bottom">&nbsp;</td>
+  #end
+  </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+</td></tr>
+</table>
+</td></tr>
+</table>
+
+ #end
+</div>
+#else
+<!-- Release Status portlet not showing - project is not visible -->
+#end

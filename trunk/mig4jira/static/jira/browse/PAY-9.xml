@@ -1,0 +1,48 @@
+<item>
+<title>[PAY-9] org.osjava.payload.interpolate.conf=sar.properties</title>
+<link>http://issues.osjava.org/jira/browse/PAY-9</link>
+
+                    <description>Instead of specifying a match, should be possible to specify a file that contains the variable on the LHS and the file list on the RHS.&lt;br/&gt;
+&lt;br/&gt;
+This is to support the current sar.properties and global_sar.properties in Genesis, though they will, by trickery, be joined into one file.</description>
+                <environment/>
+            <key id='10161'>PAY-9</key>
+        <summary>org.osjava.payload.interpolate.conf=sar.properties</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 18 Mar 2004 23:31:31 -0800 (PST)</created>
+    <updated>Thu, 5 May 2005 14:31:09 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.7</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10200' created='Mon, 14 Jun 2004 16:24:56 -0700 (PDT)'>Actually, this should be an include ability for including another file in directly, and import ability for sar.properties:&lt;br/&gt;
+&lt;br/&gt;
+org.osjava.interpolate.endsWith.include=...</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

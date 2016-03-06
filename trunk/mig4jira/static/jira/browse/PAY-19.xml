@@ -1,0 +1,46 @@
+<item>
+<title>[PAY-19] Create FileRemoverPaylet</title>
+<link>http://issues.osjava.org/jira/browse/PAY-19</link>
+
+                    <description/>
+                <environment/>
+            <key id='10378'>PAY-19</key>
+        <summary>Create FileRemoverPaylet</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/issue_subtask.gif' id='5'>Sub-task</type>
+            <parent id='10373'>PAY-14</parent>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 5 May 2005 18:00:56 -0700 (PDT)</created>
+    <updated>Mon, 16 May 2005 10:49:27 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.5</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10372' created='Mon, 16 May 2005 10:48:18 -0700 (PDT)'>Killing until later.</comment>
+                    <comment author='bayard' id='10373' created='Mon, 16 May 2005 10:48:32 -0700 (PDT)'>Killing until later.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

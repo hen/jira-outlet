@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-68] Renderers need parameters</title>
+<link>http://issues.osjava.org/jira/browse/RRR-68</link>
+
+                    <description>The user would be prompted after choosing the renderer.</description>
+                <environment/>
+            <key id='10351'>RRR-68</key>
+        <summary>Renderers need parameters</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 19 Jan 2005 14:52:10 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:50:29 -0800 (PST)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

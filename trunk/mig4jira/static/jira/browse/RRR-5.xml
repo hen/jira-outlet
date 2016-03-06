@@ -1,0 +1,43 @@
+<item>
+<title>[RRR-5] PDF</title>
+<link>http://issues.osjava.org/jira/browse/RRR-5</link>
+
+                    <description>iText?</description>
+                <environment/>
+            <key id='10266'>RRR-5</key>
+        <summary>PDF</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Fri, 1 Oct 2004 23:36:15 -0700 (PDT)</created>
+    <updated>Mon, 6 Dec 2004 14:23:53 -0800 (PST)</updated>
+
+                
+                
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

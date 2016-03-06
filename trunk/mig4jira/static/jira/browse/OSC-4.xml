@@ -1,0 +1,48 @@
+<item>
+<title>[OSC-4] Need to use log4j when FactoryUtils can&apos;t find an object</title>
+<link>http://issues.osjava.org/jira/browse/OSC-4</link>
+
+                    <description>Prints out odd debug when building objects.</description>
+                <environment/>
+            <key id='10232'>OSC-4</key>
+        <summary>Need to use log4j when FactoryUtils can&apos;t find an object</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='2'>Won&apos;t Fix</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 22 Jun 2004 13:50:19 -0700 (PDT)</created>
+    <updated>Tue, 2 Aug 2005 14:06:58 -0700 (PDT)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10214' created='Tue, 22 Jun 2004 21:06:24 -0700 (PDT)'>It&apos;s actually in genjava-core&apos;s ClassW. It can&apos;t use log4j.&lt;br/&gt;
+&lt;br/&gt;
+They&apos;ve been removed from head.</comment>
+                    <comment author='bayard' id='10387' created='Tue, 2 Aug 2005 14:06:58 -0700 (PDT)'>Slight improvement to error handling when it can&apos;t find classes, but in general this will not be fixed.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='OSC'>OSCube</project>
+</item>

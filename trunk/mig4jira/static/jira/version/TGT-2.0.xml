@@ -1,0 +1,9 @@
+<version>
+  <fixes-issues>
+    <issue status='Closed' key='TGT-5'>ThreadManager, AbstractExtendedRunnable, ExtendedThread and ExtendedThreadGroup should be uncloneable</issue>
+    <issue status='Closed' key='TGT-4'>Add methods to allow properly created threads to the ThreadManager.</issue>
+    <issue status='Closed' key='TGT-3'>Rename getAbort() to isAborting()</issue>
+    <issue status='Closed' key='TGT-2'>Refactor from org.tigransoft to org.osjava</issue>
+  </fixes-issues>
+  <name>2.0</name>
+</version>

@@ -1,0 +1,47 @@
+<item>
+<title>[RRR-29] Downloadable renderers need to have a filename</title>
+<link>http://issues.osjava.org/jira/browse/RRR-29</link>
+
+                    <description>They&apos;ll need an extension, then should set the filename as the report-name and the parameters used for this particular report. Possibly also the timestamp of the report.</description>
+                <environment/>
+            <key id='10290'>RRR-29</key>
+        <summary>Downloadable renderers need to have a filename</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 6 Oct 2004 09:57:13 -0700 (PDT)</created>
+    <updated>Wed, 13 Oct 2004 14:35:28 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.2</fixVersion>
+            
+                        <component>Renderers</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10262' created='Wed, 13 Oct 2004 14:35:28 -0700 (PDT)'>Solved!</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

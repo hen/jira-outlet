@@ -1,0 +1,45 @@
+<item>
+<title>[RRR-50] Description on param tag</title>
+<link>http://issues.osjava.org/jira/browse/RRR-50</link>
+
+                    <description>Add description on param tag</description>
+                <environment/>
+            <key id='10330'>RRR-50</key>
+        <summary>Description on param tag</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='3'>Duplicate</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='-1'>None</reporter>
+            
+    <created>Tue, 21 Dec 2004 14:12:32 -0800 (PST)</created>
+    <updated>Wed, 22 Dec 2004 09:21:33 -0800 (PST)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10310' created='Wed, 22 Dec 2004 09:21:33 -0800 (PST)'>Duplicate of #&lt;a href=&quot;http://issues.osjava.org/jira/browse/RRR-47&quot; title=&quot;Descriptions for params, columns and resource-params&quot;&gt;RRR-47&lt;/a&gt;.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

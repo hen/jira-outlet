@@ -1,0 +1,48 @@
+<item>
+<title>[RRR-55] maven plugin for building a reportrunner&apos;d system</title>
+<link>http://issues.osjava.org/jira/browse/RRR-55</link>
+
+                    <description>RRR has jsp&apos;s and web.xml bits, so somehow they have to be merged with a separate codebase to work the configuration and the custom code into them. This will mean a slightly modified variant of the Maven WAR plugin; possibly even just a pre-goal of the WAR plugin.</description>
+                <environment/>
+            <key id='10335'>RRR-55</key>
+        <summary>maven plugin for building a reportrunner&apos;d system</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 22 Dec 2004 10:25:14 -0800 (PST)</created>
+    <updated>Thu, 3 Feb 2005 12:50:13 -0800 (PST)</updated>
+
+                        <version>0.3</version>
+            
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10312' created='Wed, 22 Dec 2004 11:17:08 -0800 (PST)'>The reportrunner jar now gets the jsp and conf/renderers.xml in it.</comment>
+                    <comment author='bayard' id='10327' created='Mon, 17 Jan 2005 10:35:18 -0800 (PST)'>May actually be unnecessary if we just migrate to velocity for web-wizard. All you&apos;ll need to do is put various bits in the web.xml.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

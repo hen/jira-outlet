@@ -1,0 +1,44 @@
+<item>
+<title>[RRR-88] webwizard&apos;s xmlview servlet needs to escape &lt; and &gt;</title>
+<link>http://issues.osjava.org/jira/browse/RRR-88</link>
+
+                    <description>xmlview needs an escapeXml call :)</description>
+                <environment/>
+            <key id='10499'>RRR-88</key>
+        <summary>webwizard&apos;s xmlview servlet needs to escape &lt; and &gt;</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='eric'>Eric Alexander</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 30 Aug 2005 13:22:22 -0700 (PDT)</created>
+    <updated>Mon, 12 Sep 2005 12:38:28 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                        <component>Web Wizard</component>
+            
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+            <customfields>
+                                </customfields>
+    
+<project key='RRR'>ReportRunner</project>
+</item>

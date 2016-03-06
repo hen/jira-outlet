@@ -1,0 +1,57 @@
+<item>
+<title>[SCB-18] Add userAgent configuration</title>
+<link>http://issues.osjava.org/jira/browse/SCB-18</link>
+
+                    <description>Need to get around crappy sites that block user agents.</description>
+                <environment/>
+            <key id='10244'>SCB-18</key>
+        <summary>Add userAgent configuration</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 29 Jun 2004 12:11:09 -0700 (PDT)</created>
+    <updated>Tue, 9 Aug 2005 21:33:22 -0700 (PDT)</updated>
+
+                        <version>scraping-engine-0.3</version>
+            
+                        <fixVersion>scraping-engine-0.4</fixVersion>
+            
+                        <component>scraping-engine</component>
+            
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10223' created='Tue, 29 Jun 2004 13:14:48 -0700 (PDT)'>Initial header setting ability added.&lt;br/&gt;
+&lt;br/&gt;
+Problems with User-Agent in particular:&lt;br/&gt;
+&lt;br/&gt;
+Norbert is not using the User-Agent it is given correctly. It defaults to Java/1.4.2_03.&lt;br/&gt;
+&lt;br/&gt;
+FileStore is also not using the User-Agent.</comment>
+                    <comment author='bayard' id='10227' created='Wed, 7 Jul 2004 10:47:19 -0700 (PDT)'>Norbert 0.3 supports user-agent correctly.</comment>
+                    <comment author='bayard' id='10231' created='Sun, 1 Aug 2004 19:35:12 -0700 (PDT)'>Scraping-engine now uses the userAgent in its Norbert usage.</comment>
+                    <comment author='bayard' id='10390' created='Tue, 2 Aug 2005 15:51:27 -0700 (PDT)'>So should be closeable according to the last comment.</comment>
+                    <comment author='bayard' id='10397' created='Tue, 9 Aug 2005 21:32:05 -0700 (PDT)'>Doesn&apos;t look like it does use the user-agent properly. Seems to use a hardcoded value.</comment>
+                    <comment author='bayard' id='10398' created='Tue, 9 Aug 2005 21:33:22 -0700 (PDT)'>I tell a lie, the code is there :)</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SCB'>Scraping</project>
+</item>

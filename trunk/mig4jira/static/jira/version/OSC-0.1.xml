@@ -1,0 +1,9 @@
+<version>
+  <affects-issues>
+    <issue status='Closed' key='OSC-6'>NullStore should not print to console</issue>
+    <issue status='Closed' key='OSC-4'>Need to use log4j when FactoryUtils can&apos;t find an object</issue>
+    <issue status='Open' key='OSC-2'>More features for the FileStore</issue>
+    <issue status='Closed' key='OSC-1'>Rename PrinterStore to ConsoleStore</issue>
+  </affects-issues>
+  <name>0.1</name>
+</version>

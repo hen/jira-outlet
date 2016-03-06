@@ -1,0 +1,13 @@
+<version>
+  <affects-issues>
+    <issue status='Open' key='SCB-26'>Upgrade to HttpClient 3.0.1 from HttpClient 2.0.2</issue>
+  </affects-issues>
+  <fixes-issues>
+    <issue status='Open' key='SCB-23'>Create a tutorial entry on how to scrape from RSS</issue>
+    <issue status='Open' key='SCB-22'>Ability to scrape pop:// urls</issue>
+    <issue status='Open' key='SCB-20'>Sub-fetching should pass referrer of last page</issue>
+    <issue status='Open' key='SCB-19'>Set a referer for initial scrape</issue>
+    <issue status='Open' key='SCB-15'>Create a default csv-parser</issue>
+  </fixes-issues>
+  <name>scraping-engine-0.6</name>
+</version>

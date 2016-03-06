@@ -1,0 +1,44 @@
+<item>
+<title>[SJN-21] Allow the standard simple-jndi properties to be modifiable</title>
+<link>http://issues.osjava.org/jira/browse/SJN-21</link>
+
+                    <description>When a standard property is set, it should reset the value inside the PropertiesContext itself.</description>
+                <environment/>
+            <key id='10021'>SJN-21</key>
+        <summary>Allow the standard simple-jndi properties to be modifiable</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_minor.gif' id='4'>Minor</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 12:26:02 -0700 (PDT)</created>
+    <updated>Thu, 17 Jul 2003 17:48:06 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10003' created='Thu, 17 Jul 2003 17:48:06 -0700 (PDT)'>This now happens.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

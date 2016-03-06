@@ -1,0 +1,7 @@
+<user>
+  <login>bjones</login>
+  <name>Bill Jones</name>
+  <reported>
+    <issue status='Open' key='JDF-5'>ArrayIndexOutOfBoundsException when comparing jaxb 2.0 and 2.1 APi jars</issue>
+  </reported>
+</user>

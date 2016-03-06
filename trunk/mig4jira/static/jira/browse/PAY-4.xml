@@ -1,0 +1,42 @@
+<item>
+<title>[PAY-4] Improve project description/overview</title>
+<link>http://issues.osjava.org/jira/browse/PAY-4</link>
+
+                    <description>The project description only mentions extraction.</description>
+                <environment/>
+            <key id='10153'>PAY-4</key>
+        <summary>Improve project description/overview</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Tue, 3 Feb 2004 22:59:47 -0800 (PST)</created>
+    <updated>Wed, 4 Feb 2004 08:57:11 -0800 (PST)</updated>
+
+                        <version>0.1</version>
+            
+                        <fixVersion>0.2</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

@@ -1,0 +1,47 @@
+<item>
+<title>[SJN-36] Remove &apos;Development Process&apos; link</title>
+<link>http://issues.osjava.org/jira/browse/SJN-36</link>
+
+                    <description>Crappy link to Maven&apos;s development process needs removing.</description>
+                <environment/>
+            <key id='10112'>SJN-36</key>
+        <summary>Remove &apos;Development Process&apos; link</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/bug.gif' id='1'>Bug</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Sun, 28 Sep 2003 13:38:17 -0700 (PDT)</created>
+    <updated>Sun, 28 Sep 2003 17:43:38 -0700 (PDT)</updated>
+
+                        <version>0.6</version>
+            
+                
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10072' created='Sun, 28 Sep 2003 17:43:38 -0700 (PDT)'>Hacked out with a quick script. Same done for all my projects. Need to suggest it to others?</comment>
+                    <comment author='bayard' id='10073' created='Sun, 28 Sep 2003 17:43:59 -0700 (PDT)'>Script is:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://www.osjava.org/stripDevProcess.sh&quot;&gt;http://www.osjava.org/stripDevProcess.sh&lt;/a&gt;</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

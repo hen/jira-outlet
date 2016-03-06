@@ -1,0 +1,44 @@
+<item>
+<title>[PAY-11] Allow more than one .properties file to be passed in</title>
+<link>http://issues.osjava.org/jira/browse/PAY-11</link>
+
+                    <description>This allows cascading, so general.properties and specific1.properties can both be passed in, and specific2.properties for something else.</description>
+                <environment/>
+            <key id='10254'>PAY-11</key>
+        <summary>Allow more than one .properties file to be passed in</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/improvement.gif' id='4'>Improvement</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Wed, 28 Jul 2004 06:57:33 -0700 (PDT)</created>
+    <updated>Sun, 1 Aug 2004 19:24:46 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.3</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+            <comments>
+                    <comment author='bayard' id='10229' created='Sun, 1 Aug 2004 19:24:46 -0700 (PDT)'>Needs testing, but code is done. Will test in work system.</comment>
+                </comments>
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='PAY'>Payload</project>
+</item>

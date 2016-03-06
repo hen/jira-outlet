@@ -1,0 +1,46 @@
+Index: src/java/com/sourcelabs/jira/plugin/portlet/releases/ReleaseStatusPortlet.java
+===================================================================
+--- src/java/com/sourcelabs/jira/plugin/portlet/releases/ReleaseStatusPortlet.java	(revision 36633)
++++ src/java/com/sourcelabs/jira/plugin/portlet/releases/ReleaseStatusPortlet.java	(working copy)
+@@ -103,6 +103,8 @@
+         boolean loggedIn = (this.authenticationContext.getUser() != null);
+         params.put("loggedin", new Boolean(loggedIn) );
+ 
++        params.put("chosenProjects", this.permissionManager.getProjects(Permissions.BROWSE, user) );
++
+         try {
+             String projectIdConf = portletConfiguration.getProperty("projectid");
+             if("".equals(projectIdConf) || "-1".equals(projectIdConf)) {
+Index: src/etc/templates/releasesportlet/releasestatus.vm
+===================================================================
+--- src/etc/templates/releasesportlet/releasestatus.vm	(revision 36633)
++++ src/etc/templates/releasesportlet/releasestatus.vm	(working copy)
+@@ -94,7 +94,10 @@
+ 
+     function getPortlet${portletId}(projectid, id, portletId, versionlist, defaultUserType)
+     {
+-        var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.releases:releases&projectid="+projectid+"&versionid="+id+"&versionlist="+versionlist+"%3A"+portletId+"&defaultUserType="+defaultUserType;
++        if(versionlist != '') {
++            versionlist = versionlist + "%3A"+portletId;
++        }
++        var reqUrl = "${req.ContextPath}/secure/RunPortlet.jspa?portletKey=com.sourcelabs.jira.plugin.portlet.releases:releases&projectid="+projectid+"&versionid="+id+"&versionlist="+versionlist+"&defaultUserType="+defaultUserType;
+         var elementId = "releasestatus-" + portletId;
+         var elem = document.getElementById(elementId);
+ 
+@@ -138,6 +141,16 @@
+   <tr>
+   <td>
+   <b><u><a href="$req.contextPath/browse/$version.project.key" title="$textutils.htmlEncode("$!version.project.description")">$version.project.name</a></u></b>
++
++  <form name="releasestatus-dropdown-$portletId">
++  <select name="projectId" onChange="dropdown=document.forms['releasestatus-dropdown-$portletId'].projectId; pid=dropdown.options[1].value; getPortlet${portletId}(pid, '', '$portletId', '', '$switchUserType')">
++    <option value="">Select project...</option>
++    #foreach ($project in $chosenProjects)
++    <option value="$project.id">$textutils.htmlEncode($project.getString('name'))</option>
++    #end
++  </select>
++  </form>
++  
+   </td>
+   <td align="right">
+    #if ($loggedin)

@@ -1,0 +1,43 @@
+<item>
+<title>[SJN-1] Simple-JNDI parameters can be read through simple-jndi interface.</title>
+<link>http://issues.osjava.org/jira/browse/SJN-1</link>
+
+                    <description>Need to be able to get &apos;org.osjava.jndi.delimiter&apos; and ...root by doing:&lt;br/&gt;
+&lt;br/&gt;
+(String) ctxt.lookup(&amp;quot;org.osjava.jndi.delimiter&amp;quot;);</description>
+                <environment/>
+            <key id='10000'>SJN-1</key>
+        <summary>Simple-JNDI parameters can be read through simple-jndi interface.</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/newfeature.gif' id='2'>New Feature</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_closed.gif' id='6'>Closed</status>
+                        <resolution id='1'>Fixed</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Thu, 17 Jul 2003 10:05:58 -0700 (PDT)</created>
+    <updated>Wed, 27 Aug 2003 20:42:33 -0700 (PDT)</updated>
+
+                
+                        <fixVersion>0.6</fixVersion>
+            
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>

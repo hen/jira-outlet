@@ -1,0 +1,51 @@
+<item>
+<title>[SJN-61] Submit to Sun</title>
+<link>http://issues.osjava.org/jira/browse/SJN-61</link>
+
+                    <description>Post 0.11 release, as suggested by Dan Greening a year ago:&lt;br/&gt;
+&lt;br/&gt;
+------------&lt;br/&gt;
+Shouldn&apos;t Simple-JNDI be added to Sun&apos;s JNDI Service Providers list at:&lt;br/&gt;
+&lt;br/&gt;
+&lt;a href=&quot;http://java.sun.com/products/jndi/serviceproviders.html&quot;&gt;http://java.sun.com/products/jndi/serviceproviders.html&lt;/a&gt;&lt;br/&gt;
+&lt;br/&gt;
+You would do this by sending email to  &lt;a href=&apos;mailto:jndi-business@java.sun.com&apos;&gt;jndi-business@java.sun.com&lt;/a&gt;.&lt;br/&gt;
+&lt;br/&gt;
+Furthermore, documentation on Simple-JNDI should probably include the string &amp;quot;JNDI Service Provider&amp;quot;, since this&lt;br/&gt;
+is a great search term in Google to find it.&lt;br/&gt;
+--------------</description>
+                <environment/>
+            <key id='10492'>SJN-61</key>
+        <summary>Submit to Sun</summary>
+        <type iconUrl='http://issues.osjava.org/jira/images/icons/task.gif' id='3'>Task</type>
+    
+            <priority iconUrl='http://issues.osjava.org/jira/images/icons/priority_major.gif' id='3'>Major</priority>    
+        <status iconUrl='http://issues.osjava.org/jira/images/icons/status_open.gif' id='1'>Open</status>
+                        <resolution id='-1'>Unresolved</resolution>
+            
+    
+                        <assignee username='bayard'>Henri Yandell</assignee>
+            
+                        <reporter username='bayard'>Henri Yandell</reporter>
+            
+    <created>Mon, 22 Aug 2005 21:54:54 -0700 (PDT)</created>
+    <updated>Thu, 29 Mar 2007 20:20:34 -0700 (PDT)</updated>
+
+                
+                
+                
+            <due/>
+    
+    
+    
+
+    
+    <attachments>
+        </attachments>
+
+    <subtasks>
+        </subtasks>
+
+        
+<project key='SJN'>Simple-JNDI</project>
+</item>
